@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Box, Tooltip } from "@mui/material";
+import { Stack } from "@mui/system";
+import characters from "./data/characters.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <Box sx={{ maxWidth: 900, margin: "auto", p: 4 }}>
+      <header>
+        <h1>His Dark Materials</h1>
       </header>
-    </div>
+      <Stack spacing={2} direction="row">
+        {Object.keys(characters).map((c) => (
+          <div>
+            <div>{c}</div>
+            {characters[c].count}
+            {characters[c].char_count.map((l) => (
+              <Tooltip title={l.sentence} placement="right">
+                <div>{Math.round((l.char_count / 635682) * 100)}%</div>
+              </Tooltip>
+            ))}
+            {}
+          </div>
+        ))}
+      </Stack>
+    </Box>
   );
 }
 
