@@ -30,7 +30,7 @@ function chunkDataByChapter(data: typeof characters.Asriel) {
   }));
 }
 
-const COLORS = ["#FFFFFF", "#FCEADE", "#FF8A5B", "#EA526F", "#25CED1"];
+const COLORS = ["#FFFFFF", "#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
 
 function App() {
   const [selected, setSelected] = useState(["Lyra"]);
