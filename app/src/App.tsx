@@ -1,26 +1,96 @@
-import { Box, Tooltip } from "@mui/material";
+import { Box, Button, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
+import { useState } from "react";
+import { Checkboxes } from "./Checkboxes";
 import characters from "./data/characters.json";
+import { LineChart } from "./LineChart";
+
+const getPercent = (char_count) =>
+  Math.round(
+    (char_count /
+      characters.Lyra.char_count[characters.Lyra.char_count.length - 1]
+        .char_count) *
+      100
+  );
+
+function chunkDataByChapter(data: typeof characters.Asriel) {
+  const simpleData = [...Array(100)].reduce(
+    (acc, _, i) => ({ ...acc, [i]: 0 }),
+    {}
+  );
+
+  data.char_count.forEach((d) => {
+    const chapter = getPercent(d.char_count);
+    simpleData[chapter] = simpleData[chapter] || 0;
+    simpleData[chapter] += 1;
+  });
+  return Object.entries(simpleData).map(([date, value]) => ({
+    date,
+    value,
+  }));
+}
+
+const COLORS = ["#FFFFFF", "#FCEADE", "#FF8A5B", "#EA526F", "#25CED1"];
 
 function App() {
+  const [selected, setSelected] = useState(["Lyra"]);
+
+  const data = selected.map((s, i) => ({
+    color: COLORS[i] || "white",
+    info: chunkDataByChapter(characters[s]),
+  }));
+
+  const options = Object.keys(characters)
+    .map((label) => ({
+      value: label,
+      label: (
+        <div>
+          {label}{" "}
+          <span style={{ opacity: 0.4 }}>{characters[label].count}</span>
+        </div>
+      ),
+      count: characters[label].count,
+    }))
+    .filter((d) => d.count > 2);
+  options.sort((a, b) => b.count - a.count);
+
   return (
     <Box sx={{ maxWidth: 900, margin: "auto", p: 4 }}>
       <header>
         <h1>His Dark Materials</h1>
       </header>
+      {selected.join(", ")}{" "}
+      <Button onClick={() => setSelected([])}>Clear</Button>
       <Stack spacing={2} direction="row">
-        {Object.keys(characters).map((c) => (
-          <div>
-            <div>{c}</div>
-            {characters[c].count}
-            {characters[c].char_count.map((l) => (
-              <Tooltip title={l.sentence} placement="right">
-                <div>{Math.round((l.char_count / 635682) * 100)}%</div>
-              </Tooltip>
-            ))}
-            {}
-          </div>
-        ))}
+        <LineChart data={data} key={selected.length} />
+        <Box sx={{ height: 500, overflow: "scroll" }}>
+          <Checkboxes
+            onChange={(val) =>
+              selected.includes(val)
+                ? setSelected(selected.filter((d) => d !== val))
+                : setSelected([...selected, val])
+            }
+            options={options}
+            selected={selected}
+          />
+        </Box>
+      </Stack>
+      <Stack spacing={2} direction="row">
+        {options.map(
+          ({ value: c }) =>
+            selected.includes(c) && (
+              <div key={c}>
+                <div>{c}</div>
+                {characters[c].count}
+                {characters[c].char_count.map((l, i) => (
+                  <Tooltip key={i} title={l.sentence} placement="right">
+                    <div>{l.chapter}</div>
+                  </Tooltip>
+                ))}
+                {}
+              </div>
+            )
+        )}
       </Stack>
     </Box>
   );
