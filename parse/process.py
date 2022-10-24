@@ -33,7 +33,7 @@ def find_possible_people():
 
 characters = {
     "Lyra": {"count": 0, "char_count": [], "other_names": ["Lizzie", "Silvertounge"]},
-    "Asriel": {"count": 0, "char_count": []},
+    "Lord Asriel": {"count": 0, "char_count": [], "other_names": ["Asriel"]},
     "Roger": {"count": 0, "char_count": []},
     "Yambe-Akka": {"count": 0, "char_count": []},
     "Will": {
@@ -49,7 +49,7 @@ characters = {
         "disqualifiers": ["Mr. Coulter"],
         "other_names": ["Marisa", "Coulter"],
     },
-    "Lord Faa": {"count": 0, "char_count": []},
+    "Lord Faa": {"count": 0, "char_count": [], "other_names": ["John Faa"]},
     "Farder Coram": {"count": 0, "char_count": []},
     "Ma Costa": {"count": 0, "char_count": [], "other_names": ["Mrs. Costa"]},
     "Billy": {"count": 0, "char_count": []},
@@ -62,7 +62,7 @@ characters = {
     "Sir Charles": {
         "count": 0,
         "char_count": [],
-        "other_names": ["Latrom"],
+        "other_names": ["Latrom", "Boreal"],
     },
     "lorek Byrnison": {
         "count": 0,
@@ -81,6 +81,28 @@ characters = {
             "John Faa",
             "growed up, John",
         ],
+    },
+    "The Master": {
+        "count": 0,
+        "char_count": [],
+        "other_names": ["Master", "Charles"],
+        "disqualifiers": ["Sir Charles", "Latrom", "Master Will", "I’m Charles."],
+    },
+    "golden monkey": {
+        "count": 0,
+        "char_count": [],
+        "other_names": ["monkey"],
+        "disqualifiers": ["monkey faces", "monkey in the trees"],
+    },
+    "Lady Salmakia": {
+        "count": 0,
+        "char_count": [],
+        "other_names": ["Salmakia"],
+    },
+    "Lord Roke": {
+        "count": 0,
+        "char_count": [],
+        "other_names": ["Roke"],
     },
 }
 

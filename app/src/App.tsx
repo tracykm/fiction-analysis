@@ -13,7 +13,7 @@ const getPercent = (char_count) =>
       100
   );
 
-function chunkDataByChapter(data: typeof characters.Asriel) {
+function chunkDataByChapter(data: typeof characters.Lyra) {
   const simpleData = [...Array(100)].reduce(
     (acc, _, i) => ({ ...acc, [i]: 0 }),
     {}
@@ -61,9 +61,9 @@ function App() {
       </header>
       {selected.join(", ")}{" "}
       <Button onClick={() => setSelected([])}>Clear</Button>
-      <Stack spacing={2} direction="row">
+      <Stack spacing={2} direction={{ sm: "row" }}>
         <LineChart data={data} key={selected.length} />
-        <Box sx={{ height: 500, overflow: "scroll" }}>
+        <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
           <Checkboxes
             onChange={(val) =>
               selected.includes(val)

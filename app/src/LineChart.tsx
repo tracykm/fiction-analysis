@@ -1,11 +1,6 @@
 import * as d3 from "d3";
 import { useEffect, useRef } from "react";
 
-// set the dimensions and margins of the graph
-var margin = { top: 10, right: 30, bottom: 30, left: 60 },
-  width = 750 - margin.left - margin.right,
-  height = 500 - margin.top - margin.bottom;
-
 export const useD3 = (
   renderChartFn: (svg: d3.Selection<d3.BaseType, any, HTMLElement, any>) => any,
   dependencies: any[]
@@ -24,6 +19,8 @@ export function LineChart({
 }: {
   data: { color: string; info: { date: any; value: any }[] }[];
 }) {
+  let width = Math.min(750, document.body.offsetWidth - 64);
+  let height = Math.min(500, document.body.offsetWidth - 64);
   const ref = useD3(
     (svg) => {
       // Add X axis --> it is a date format
@@ -87,7 +84,7 @@ export function LineChart({
     <svg
       ref={ref}
       style={{
-        height: 500,
+        height: height,
         width: "100%",
         marginRight: "0px",
         marginLeft: "0px",
