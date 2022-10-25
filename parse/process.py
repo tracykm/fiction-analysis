@@ -1,7 +1,6 @@
 import json
 import re
 
-import humre
 import nltk
 
 import people_data
@@ -31,89 +30,10 @@ def find_possible_people():
 # find_possible_people()
 
 
-characters = {
-    "Lyra": {"count": 0, "char_count": [], "other_names": ["Lizzie", "Silvertounge"]},
-    "Lord Asriel": {"count": 0, "char_count": [], "other_names": ["Asriel"]},
-    "Roger": {"count": 0, "char_count": []},
-    "Yambe-Akka": {"count": 0, "char_count": []},
-    "Will": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["William", "Mark"],
-        "disqualifiers": ["Will you", "Will I", "Will he", "Will she"],
-    },
-    "Pantalaimon": {"count": 0, "char_count": [], "other_names": ["Pan"]},
-    "Mrs. Coulter": {
-        "count": 0,
-        "char_count": [],
-        "disqualifiers": ["Mr. Coulter"],
-        "other_names": ["Marisa", "Coulter"],
-    },
-    "Lord Faa": {"count": 0, "char_count": [], "other_names": ["John Faa"]},
-    "Farder Coram": {"count": 0, "char_count": []},
-    "Ma Costa": {"count": 0, "char_count": [], "other_names": ["Mrs. Costa"]},
-    "Billy": {"count": 0, "char_count": []},
-    "Father MacPhail": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["MacPhail"],
-        "disqualifiers": ["Hugh MacPhail"],
-    },
-    "Sir Charles": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["Latrom", "Boreal"],
-    },
-    "lorek Byrnison": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["lorek", "Byrnison", "Iorek"],
-    },
-    "John Parry": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["Parry", "Stanislaus", "Grumman", "Johnny", "John", "Jopari"],
-        "disqualifiers": [
-            "Mrs. Parry",
-            "Will Parry",
-            "William Parry",
-            "Johnny Fiorelli",
-            "John Faa",
-            "growed up, John",
-        ],
-    },
-    "The Master": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["Master", "Charles"],
-        "disqualifiers": ["Sir Charles", "Latrom", "Master Will", "I’m Charles."],
-    },
-    "golden monkey": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["monkey"],
-        "disqualifiers": ["monkey faces", "monkey in the trees"],
-    },
-    "Lady Salmakia": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["Salmakia"],
-    },
-    "Lord Roke": {
-        "count": 0,
-        "char_count": [],
-        "other_names": ["Roke"],
-    },
-}
+characters = {}
 
-
-for name in people_data.double_names:
-    [first, last] = name.split(" ")
-    characters[name] = {"count": 0, "char_count": [], "other_names": [first, last]}
-
-
-for name in people_data.single_names:
-    characters[name] = {"count": 0, "char_count": []}
+for character in people_data.characters_list:
+    characters[character["name"]] = {**character, "count": 0, "char_count": []}
 
 
 def has_word(text: str, word: str):
