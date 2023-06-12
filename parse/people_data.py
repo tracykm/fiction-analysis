@@ -9,7 +9,7 @@ characters = {
     },
     "Roger": {
         "other_names": [],
-        "category": ["Child", "Lyra's World"],
+        "category": ["Child", "Lyra's World", "Servant"],
     },
     "The Master": {
         "other_names": ["Master", "Charles"],
@@ -39,22 +39,28 @@ characters = {
     },
     "Jake Petersen": {
         "other_names": ["Jake", "Petersen"],
+        "category": ["Lyra's World"],
     },
     "Simon Parslow": {
         "other_names": ["Simon", "Parslow"],
         "disqualifiers": ["Hartmann", "Roger"],
+        "category": ["Lyra's World", "Child"],
     },
     "Semyon Borisovitch": {
         "other_names": ["Semyon", "Borisovitch"],
+        "category": ["Lyra's World", "Cleric"],
     },
     "Jacob Huismans": {
         "other_names": ["Jacob", "Huismans"],
     },
     "Iofur Raknison": {
         "other_names": ["Iofur", "Raknison"],
-        "category": ["Bear"],
+        "category": ["Bear", "Lyra's World"],
     },
-    "Mary Malone": {"other_names": ["Mary", "Malone"]},
+    "Mary Malone": {
+        "other_names": ["Mary", "Malone"],
+        "category": ["Scholar", "Will's World"],
+    },
     "Chevalier Tialys": {
         "other_names": ["Chevalier", "Tialys"],
         "category": ["Gallivespian"],
@@ -63,40 +69,62 @@ characters = {
         "other_names": ["Ruta", "Skadi"],
         "category": ["Witch", "Lyra's World"],
     },
-    "Nicholas Rokeby": {"other_names": ["Nicholas", "Rokeby"]},
+    "Nicholas Rokeby": {
+        "other_names": ["Nicholas", "Rokeby"],
+        "category": ["Gyptian", "Lyra's World"],
+    },
     "Lena Feldt": {
         "other_names": ["Lena", "Feldt"],
         "category": ["Witch", "Lyra's World"],
     },
-    "Oliver Payne": {"other_names": ["Oliver", "Payne"]},
-    "Giacomo Paradisi": {"other_names": ["Giacomo", "Paradisi"]},
-    "Tony Makarios": {"other_names": ["Tony", "Makarios"], "category": ["Child"]},
+    "Oliver Payne": {
+        "other_names": ["Oliver", "Payne"],
+        "category": ["Scholar", "Will's World"],
+    },
+    "Giacomo Paradisi": {
+        "other_names": ["Giacomo", "Paradisi"],
+        "category": ["Cittàgazze"],
+    },
+    "Tony Makarios": {
+        "other_names": ["Tony", "Makarios"],
+        "disqualifiers": ["Costa"],
+        "category": ["Child"],
+    },
     "Sayan Kötör": {"other_names": ["Sayan", "Kötör"]},
-    "Adèle Starminster": {"other_names": ["Adèle", "Starminster"]},
+    "Adèle Starminster": {
+        "other_names": ["Adèle", "Starminster"],
+        "category": ["Lyra's World"],
+    },
     "Joachim Lorenz": {"other_names": ["Joachim", "Lorenz"]},
-    "Bernie Johansen": {"other_names": ["Bernie", "Johansen"]},
-    "Fra Pavel": {"other_names": ["Fra", "Pavel"], "category": ["Cleric"]},
+    "Bernie Johansen": {
+        "other_names": ["Bernie", "Johansen"],
+        "category": ["Lyra's World", "Servant"],
+    },
+    "Fra Pavel": {
+        "other_names": ["Fra", "Pavel"],
+        "category": ["Cleric", "Lyra's World"],
+    },
     "Jessie Reynolds": {"other_names": ["Jessie", "Reynolds"]},
     "Hester": {"category": ["Dæmon", "Lyra's World"]},
     "Balthamos": {"category": ["Angel"]},
     "Baruch": {"category": ["Angel"]},
-    "Ama": {"category": ["Child"]},
+    "Ama": {"category": ["Child", "Ama's World"]},
     "Atal": {"category": ["Mulefa"]},
     "King Ogunwe": {"other_names": ["Ogunwe"]},
     "Father Gomez": {"other_names": ["Gomez"], "category": ["Cleric"]},
-    "Angelica": {"category": ["Child"]},
-    "Thorold": {},
+    "Angelica": {"category": ["Child", "Cittàgazze"]},
+    "Thorold": {"category": ["Servant", "Lyra's World"]},
     "Kirjava": {"category": ["Dæmon", "Lyra's World"]},
-    "Paolo": {"category": ["Child"]},
+    "Paolo": {"category": ["Child", "Cittàgazze"]},
     "Xaphania": {"category": ["Angel"]},
     "Metatron": {"category": ["Angel"]},
-    "Dame Hannah": {"other_names": ["Hannah"]},
-    "Brother Louis": {"other_names": ["Louis"], "category": ["Cleric"]},
+    "Dame Hannah": {"other_names": ["Hannah"], "category": ["Scholar", "Lyra's World"]},
+    "Brother Louis": {"other_names": ["Louis"], "category": ["Cleric", "Lyra's World"]},
     "Annie": {"category": ["Child"]},
-    "Tullio": {},
-    "Sister Clara": {"other_names": ["Clara"]},
+    "Tullio": {"category": ["Cittàgazze"]},
+    "Sister Clara": {"other_names": ["Clara"], "category": ["Cleric", "Lyra's World"]},
     "Ratter": {"category": ["Dæmon", "Lyra's World"]},
-    "Trelawney": {},
+    "Trelawney": {"category": ["Scholar", "Lyra's World"]},
     "Sattamax": {"category": ["Dæmon", "Lyra's World"]},
     "Kaisa": {"category": ["Dæmon", "Lyra's World"]},
     "Yambe-Akka": {
@@ -109,7 +137,7 @@ characters = {
     },
     "Pantalaimon": {
         "other_names": ["Pan"],
-        "category": ["Deamon", "Lyra's World"],
+        "category": ["Dæmon", "Lyra's World"],
     },
     "Mrs. Coulter": {
         "disqualifiers": ["Mr. Coulter"],
@@ -127,7 +155,7 @@ characters = {
         "category": ["Gyption", "Lyra's World"],
     },
     "Billy": {
-        "category": ["Child", "Lyra's World"],
+        "category": ["Child", "Lyra's World", "Gyption"],
     },
     "Father MacPhail": {
         "other_names": ["MacPhail"],
@@ -209,17 +237,18 @@ characters = {
     "Sam Cansino": {
         "category": ["Lyra's World"],
         "other_names": ["Sam"],
+        "disqualifiers": ["Broekman"],
     },
     "Sayan Kötör": {
-        "category": ["Deamon", "Lyra's World"],
+        "category": ["Dæmon", "Lyra's World"],
         "other_names": ["Sayan"],
     },
     "Kulang": {
-        "category": ["Deamon", "Lyra's World"],
+        "category": ["Dæmon", "Lyra's World"],
         "other_names": [],
     },
     "Kyrillion": {
-        "category": ["Deamon", "Lyra's World"],
+        "category": ["Dæmon", "Lyra's World"],
         "other_names": [],
     },
     "Annie": {
@@ -243,7 +272,7 @@ characters = {
         "other_names": ["Joachim"],
     },
     "Pagdzin": {
-        "category": ["Lyra's World"],
+        "category": ["Ama's World"],
         "other_names": [],
     },  # Amas healer
     "Juta Kamainen-": {
@@ -255,7 +284,7 @@ characters = {
         "other_names": [],
     },
     "Teukros Basilides": {
-        "category": ["Scholar"],
+        "category": ["Scholar", "Lyra's World"],
         "other_names": ["Basilides"],
     },
     "Jake Petersen": {
@@ -271,7 +300,7 @@ characters = {
         "other_names": ["Alexandrovna"],
     },
     "Inspector Walters": {
-        "category": [],
+        "category": ["Will's World"],
         "other_names": [],
     },
     "Pope John Calvin": {
