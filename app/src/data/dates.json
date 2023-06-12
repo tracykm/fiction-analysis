@@ -1,0 +1,66 @@
+[
+  {
+    "date": "1995",
+    "description": "in Oxford",
+    "days": 1,
+    "chapter": 1.01
+  },
+  {
+    "date": "1995",
+    "description": "in Oxford",
+    "days": 7,
+    "chapter": 1.02
+  },
+  {
+    "days": 45,
+    "description": "in London",
+    "chapter": 1.04
+  },
+  {
+    "days": 30,
+    "description": "Traveling North",
+    "chapter": 1.06
+  },
+  {
+    "days": 7,
+    "description": "Stuck in Institution",
+    "chapter": 1.14
+  },
+  {
+    "days": 3,
+    "description": "With Bears",
+    "chapter": 1.19
+  },
+  {
+    "days": 2,
+    "description": "With Asriel",
+    "chapter": 1.21
+  },
+  {
+    "date": "1996",
+    "days": 9,
+    "description": "Subtle Knife",
+    "chapter": 2.01
+},
+{
+    "date": "1998",
+    "days": 40,
+    "description": "Stuck with her mom",
+    "chapter": 3.01
+  },
+{
+    "days": 9,
+    "description": "on the way to death",
+    "chapter": 3.13
+  },
+{
+    "days": 3,
+    "description": "In death",
+    "chapter": 3.21
+  },
+{
+    "days": 7,
+    "description": "With Mary",
+    "chapter": 3.27
+  }
+]

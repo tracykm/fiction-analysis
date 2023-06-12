@@ -16,8 +16,13 @@ export const useD3 = (
 
 export function LineChart({
   data,
+  keyName = "chapterFlat",
 }: {
-  data: { color: string; info: { date: any; value: any }[] }[];
+  keyName: "chapterFlat" | "days";
+  data: {
+    color: string;
+    info: { chapterFlat?: any; days?: any; value: any }[];
+  }[];
 }) {
   let width = Math.min(750, document.body.offsetWidth - 64);
   let height = Math.min(500, document.body.offsetWidth - 64);
@@ -30,7 +35,7 @@ export function LineChart({
           d3.extent(
             data.flatMap((d) => d.info),
             function (d: any) {
-              return d.date;
+              return d[keyName] || "0";
             }
           ) as any
         )
@@ -54,7 +59,7 @@ export function LineChart({
         ])
         .range([height, 0]);
       svg.append("g").call(d3.axisLeft(y));
-
+      debugger;
       data.forEach((d) => {
         // Add the line
         svg
@@ -69,10 +74,10 @@ export function LineChart({
             d3
               .line()
               .x(function (d: any) {
-                return x(d.date);
+                return x(d[keyName]);
               })
               .y(function (d: any) {
-                return y(d.value);
+                return y(d.value || 0);
               }) as any
           );
       });

@@ -3,8 +3,10 @@ import { Stack } from "@mui/system";
 import { useState } from "react";
 import { Checkboxes } from "./Checkboxes";
 import characters from "./data/characters.json";
+import dates from "./data/dates.json";
 import { LineChart } from "./LineChart";
 import { SelectInput } from "./SelectInput";
+import { groupBy, keyBy } from "lodash-es";
 
 const getPercent = (char_count) =>
   Math.round(
@@ -14,22 +16,71 @@ const getPercent = (char_count) =>
       100
   );
 
-function chunkDataByChapter(data: typeof characters.Lyra) {
-  const simpleData = [...Array(100)].reduce(
-    (acc, _, i) => ({ ...acc, [i]: 0 }),
-    {}
-  );
+let daysSum = 0;
+const dayDates = dates.map((d, i) => {
+  daysSum += d.days;
 
-  data.char_count.forEach((d) => {
-    const chapter = getPercent(d.char_count);
-    simpleData[chapter] = simpleData[chapter] || 0;
-    simpleData[chapter] += 1;
-  });
-  return Object.entries(simpleData).map(([date, value]) => ({
-    date,
-    value,
-  }));
+  return { chapter: d.chapter, days: daysSum };
+});
+
+const CHAPTER_LENGTH = {
+  1: 23,
+  2: 15,
+  3: 38,
+};
+
+function toFlatChapter(fullChapter: number) {
+  const [book, chapter] = String(fullChapter).split(".");
+  if (book === "2") return Number(chapter) + CHAPTER_LENGTH["1"];
+  if (book === "3")
+    return Number(chapter) + CHAPTER_LENGTH["1"] + CHAPTER_LENGTH["2"];
+  return Number(chapter);
 }
+
+function chunkDataByChapter(data: typeof characters.Lyra) {
+  const newData = Object.values(groupBy(data.char_count, "chapter")).map(
+    (d: { chapter: number }[]) => {
+      // const chapter = getPercent(d.char_count);
+      const chapter = d[0].chapter;
+      let days = 0;
+      dayDates.forEach((dd) => {
+        if (dd.chapter >= chapter) {
+          days = dd.days;
+        }
+      });
+      return {
+        chapter,
+        chapterFlat: toFlatChapter(chapter),
+        value: d.length,
+        days,
+      };
+    }
+  );
+  const keyedNewData = keyBy(newData, "chapterFlat");
+  return Array.from({
+    length: CHAPTER_LENGTH["1"] + CHAPTER_LENGTH["2"] + CHAPTER_LENGTH["3"],
+  }).map((_, i) => {
+    return {
+      value: 0,
+      chapterFlat: i,
+      ...keyedNewData[i],
+    };
+  });
+}
+
+const characterOptions = Object.keys(characters).map((label) => ({
+  value: label,
+  label: (
+    <div>
+      {label} <span style={{ opacity: 0.4 }}>{characters[label].count}</span>
+    </div>
+  ),
+  count: characters[label].count,
+  category: characters[label].category,
+  tooltip: characters[label].category?.join(", "),
+}));
+
+characterOptions.sort((a, b) => b.count - a.count);
 
 const categories = new Set(
   Object.values(characters).flatMap((d) => (d as any)?.category)
@@ -49,22 +100,9 @@ function App() {
     color: COLORS[i] || "white",
     info: chunkDataByChapter(characters[s]),
   }));
+  debugger;
 
-  let options = Object.keys(characters)
-    .map((label) => ({
-      value: label,
-      label: (
-        <div>
-          {label}{" "}
-          <span style={{ opacity: 0.4 }}>{characters[label].count}</span>
-        </div>
-      ),
-      count: characters[label].count,
-      category: characters[label].category,
-      tooltip: characters[label].category?.join(", "),
-    }))
-    .filter((d) => d.count > 2);
-  options.sort((a, b) => b.count - a.count);
+  let options = characterOptions;
 
   if (category) {
     options = options.filter((d) => (d as any).category?.includes(category));
@@ -83,7 +121,7 @@ function App() {
       {selected.join(", ")}{" "}
       <Button onClick={() => setSelected([])}>Clear</Button>
       <Stack spacing={2} direction={{ sm: "row" }}>
-        <LineChart data={data} key={selected.length} />
+        <LineChart data={data} key={selected.length} keyName="chapterFlat" />
         <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
           <Checkboxes
             onChange={(val) =>
