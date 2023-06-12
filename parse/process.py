@@ -30,10 +30,11 @@ def find_possible_people():
 # find_possible_people()
 
 
-characters = {}
+characters = people_data.characters
 
-for character in people_data.characters_list:
-    characters[character["name"]] = {**character, "count": 0, "char_count": []}
+for name in characters:
+    characters[name]["count"] = 0
+    characters[name]["char_count"] = []
 
 
 def has_word(text: str, word: str):
