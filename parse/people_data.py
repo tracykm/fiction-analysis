@@ -2,6 +2,7 @@ characters = {
     "Lyra": {
         "other_names": ["Lizzie", "Silvertounge"],
         "category": ["Child", "Lyra's World"],
+        "disqualifiers": ["Lyra’s Jordan FOUR"],
     },
     "Lord Asriel": {
         "other_names": ["Asriel"],
@@ -18,7 +19,7 @@ characters = {
     },
     "golden monkey": {
         "other_names": ["monkey"],
-        "disqualifiers": ["monkey faces", "monkey in the trees"],
+        "disqualifiers": ["monkey faces", "monkey in the trees", "this a monkey"],
         "category": ["Dæmon", "Lyra's World"],
     },
     "Lady Salmakia": {
@@ -27,6 +28,10 @@ characters = {
     },
     "Lord Roke": {
         "other_names": ["Roke"],
+        "category": ["Gallivespian"],
+    },
+    "Madame Oxentiel": {
+        "other_names": ["Oxentiel"],
         "category": ["Gallivespian"],
     },
     "Serafina Pekkala": {
@@ -100,15 +105,22 @@ characters = {
         "other_names": ["Bernie", "Johansen"],
         "category": ["Lyra's World", "Servant"],
     },
+    "Mrs. Lonsdale": {
+        "other_names": ["Lonsdale"],
+        "category": ["Lyra's World", "Servant"],
+    },
     "Fra Pavel": {
         "other_names": ["Fra", "Pavel"],
+        "category": ["Cleric", "Lyra's World"],
+    },
+    "The Cardinal": {
         "category": ["Cleric", "Lyra's World"],
     },
     "Jessie Reynolds": {"other_names": ["Jessie", "Reynolds"]},
     "Hester": {"category": ["Dæmon", "Lyra's World"]},
     "Balthamos": {"category": ["Angel"]},
     "Baruch": {"category": ["Angel"]},
-    "Ama": {"category": ["Child", "Ama's World"]},
+    "Ama": {"category": ["Child", "Lyra's World"]},
     "Atal": {"category": ["Mulefa"]},
     "King Ogunwe": {"other_names": ["Ogunwe"]},
     "Father Gomez": {"other_names": ["Gomez"], "category": ["Cleric"]},
@@ -124,7 +136,21 @@ characters = {
     "Tullio": {"category": ["Cittàgazze"]},
     "Sister Clara": {"other_names": ["Clara"], "category": ["Cleric", "Lyra's World"]},
     "Ratter": {"category": ["Dæmon", "Lyra's World"]},
-    "Trelawney": {"category": ["Scholar", "Lyra's World"]},
+    "Trelawney": {
+        "other names": ["Palmerian"],
+        "category": ["Scholar", "Lyra's World"],
+    },
+    "Jotham Santelia": {
+        "other names": ["Santelia"],
+        "category": ["Scholar", "Lyra's World"],
+    },
+    "The Chaplain": {"category": ["Cleric", "Lyra's World"]},
+    "The Sub-rector": {"category": ["Scholar", "Lyra's World"]},
+    "The Librarian": {"category": ["Scholar", "Lyra's World"]},
+    "The Intercessor": {"category": ["Scholar", "Lyra's World"]},
+    "The Butler": {"category": ["Servant", "Lyra's World"]},
+    "The Steward": {"other names": ["Cawson"], "category": ["Servant", "Lyra's World"]},
+    "The Porter": {"other names": ["Shuter"], "category": ["Servant", "Lyra's World"]},
     "Sattamax": {"category": ["Dæmon", "Lyra's World"]},
     "Kaisa": {"category": ["Dæmon", "Lyra's World"]},
     "Yambe-Akka": {
@@ -132,7 +158,7 @@ characters = {
     },
     "Will": {
         "other_names": ["William", "Mark"],
-        "disqualifiers": ["Will you", "Will I", "Will he", "Will she"],
+        "disqualifiers": ["Will you", "Will I", "Will he", "Will she", "Will Serafina"],
         "category": ["Child", "Will's World"],
     },
     "Pantalaimon": {
@@ -145,6 +171,9 @@ characters = {
         "category": ["Lyra's World"],
     },
     "Lord Faa": {
+        "category": ["Gyption", "Lyra's World"],
+    },
+    "Jerry": {
         "category": ["Gyption", "Lyra's World"],
     },
     "Farder Coram": {
@@ -162,12 +191,30 @@ characters = {
         "disqualifiers": ["Hugh MacPhail"],
         "category": ["Cleric", "Lyra's World"],
     },
+    "Dr. Martin Lanselius": {
+        "other_names": [
+            "Lanselius",
+        ],
+        "category": ["Lyra's World"],
+    },
     "Sir Charles": {
-        "other_names": ["Latrom"],
+        "other_names": ["Latrom", "Carlo", "Boreal"],
         "category": ["Lyra's World"],
     },
     "Iorek Byrnison": {
         "other_names": ["lorek", "Byrnison", "Iorek"],
+        "category": ["Bear", "Lyra's World"],
+    },
+    "Søren Eisarson": {
+        "other_names": ["Søren", "Eisarson"],
+        "category": ["Bear", "Lyra's World"],
+    },
+    "Hjalmur Hjalmurson": {
+        "other_names": ["Hjalmur", "Hjalmurson"],
+        "category": ["Bear", "Lyra's World"],
+    },
+    "Soren Eisaron": {
+        "other_names": ["Soren", "Eisaron"],
         "category": ["Bear", "Lyra's World"],
     },
     "John Parry": {
@@ -191,6 +238,7 @@ characters = {
         "other_names": [],
     },
     "Adam Stefanski": {
+        "disqualifiers": ["Eve", "son of Adam", "Bible"],
         "category": ["Gyption", "Lyra's World"],
         "other_names": ["Adam", "Stefanski"],
     },
@@ -271,10 +319,10 @@ characters = {
         "category": ["Lyra's World"],
         "other_names": ["Joachim"],
     },
-    "Pagdzin": {
-        "category": ["Ama's World"],
+    "Pagdzin": {  # Amas healer
+        "category": ["Lyra's World"],
         "other_names": [],
-    },  # Amas healer
+    },
     "Juta Kamainen-": {
         "category": ["Witch", "Lyra's World"],
         "other_names": [],

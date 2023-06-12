@@ -41,6 +41,23 @@ def has_word(text: str, word: str):
     return re.search(rf"\b{word}\b", text)
 
 
+def combine_short_sentences(sentences_raw: list[str]):
+    sentences = []
+    for sentence in sentences_raw:
+
+        if sentences and (
+            sentences[-1].endswith("Mr.")
+            or sentences[-1].endswith("Mrs.")
+            or sentences[-1].endswith("Ms.")
+            or sentences[-1].endswith("Dr.")
+            or len(sentence) < 30
+        ):
+            sentences[-1] += " " + sentence
+        else:
+            sentences.append(sentence)
+    return sentences
+
+
 with open("./raw_text/full_text.txt", encoding="utf-8") as f:
     char_count = 0
     chapter = 0
@@ -51,7 +68,9 @@ with open("./raw_text/full_text.txt", encoding="utf-8") as f:
         if "~~~ BOOK" in line:
             book += 1
             chapter = 0
-        sentences = nltk.tokenize.sent_tokenize(line)
+
+        sentences = combine_short_sentences(nltk.tokenize.sent_tokenize(line))
+
         for sentence in sentences:
             char_count += len(sentence)
             sentence_lower = sentence.lower()

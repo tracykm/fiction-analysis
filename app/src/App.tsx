@@ -4,7 +4,6 @@ import { useState } from "react";
 import { Checkboxes } from "./Checkboxes";
 import characters from "./data/characters.json";
 import { LineChart } from "./LineChart";
-import { ButtonGroupInput } from "./ButtonGroup";
 import { SelectInput } from "./SelectInput";
 
 const getPercent = (char_count) =>
@@ -40,7 +39,7 @@ const categoryOptions = Array.from(categories).map((d) => ({
   label: d,
   id: d,
 }));
-const COLORS = ["#FFFFFF", "#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
+const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
 
 function App() {
   const [selected, setSelected] = useState(["Lyra"]);
@@ -97,24 +96,29 @@ function App() {
           />
         </Box>
       </Stack>
-      <Stack spacing={2} direction="row">
-        {options.map(
-          ({ value: c }) =>
-            selected.includes(c) && (
-              <div key={c}>
-                <div>{c}</div>
-                {characters[c].count}
-                {characters[c].char_count.map((l, i) => (
-                  <Tooltip key={i} title={l.sentence} placement="right">
-                    <div>{l.chapter}</div>
-                  </Tooltip>
-                ))}
-                {}
-              </div>
-            )
-        )}
+      <Stack sx={{ mt: 2 }} spacing={2} direction="row">
+        {selected.map((name, i) => (
+          <div key={name}>
+            <div style={{ color: COLORS[i] }}>{name}</div>
+            {characters[name].count}
+            {characters[name].char_count.map((l, i) => (
+              <TextPreview key={i} sentence={l.sentence} chapter={l.chapter} />
+            ))}
+            {}
+          </div>
+        ))}
       </Stack>
     </Box>
+  );
+}
+
+function TextPreview({ sentence, chapter }) {
+  return (
+    <Tooltip title={sentence} PopperProps={{ sx: { fontSize: 18 } }}>
+      <Box sx={{ height: 20, overflow: "hidden", my: 2 }}>
+        <b>{chapter}</b> {sentence}
+      </Box>
+    </Tooltip>
   );
 }
 
