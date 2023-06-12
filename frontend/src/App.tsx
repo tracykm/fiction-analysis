@@ -2,19 +2,65 @@ import { Box, Button, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useState } from "react";
 import { Checkboxes } from "./Checkboxes";
-import characters from "./data/characters.json";
+import charactersData from "./data/characters.json";
 import dates from "./data/dates.json";
-import { LineChart } from "./LineChart";
+import { LineChartTM } from "./LineChartTM";
 import { SelectInput } from "./SelectInput";
 import { groupBy, keyBy } from "lodash-es";
+import { PieChartTM } from "./PieChartTM";
 
-const getPercent = (char_count) =>
-  Math.round(
-    (char_count /
-      characters.Lyra.char_count[characters.Lyra.char_count.length - 1]
-        .char_count) *
-      100
-  );
+const characters: Record<
+  string,
+  {
+    char_count: { char_count: number; sentence: string; chapter: number }[];
+    count: number;
+    category?: string[];
+  }
+> = charactersData;
+
+function getNum(category: string) {
+  return Object.values(characters).filter((c) => c.category?.[0] === category)
+    .length;
+}
+
+const categoriesPlaces = [
+  {
+    name: "Scholar",
+    value: getNum("Scholar"),
+  },
+  {
+    name: "Cleric",
+    value: getNum("Cleric"),
+  },
+  {
+    name: "Servant",
+    value: getNum("Servant"),
+  },
+  {
+    name: "Gyption",
+    value: getNum("Gyption"),
+  },
+  {
+    name: "Witch",
+    value: getNum("Witch"),
+  },
+  {
+    name: "Dæmon",
+    value: getNum("Dæmon"),
+  },
+  {
+    name: "Angel",
+    value: getNum("Angel"),
+  },
+  {
+    name: "Gallivespian",
+    value: getNum("Gallivespian"),
+  },
+  {
+    name: "Bear",
+    value: getNum("Bear"),
+  },
+];
 
 let daysSum = 0;
 const dayDates = dates.map((d, i) => {
@@ -100,7 +146,6 @@ function App() {
     color: COLORS[i] || "white",
     info: chunkDataByChapter(characters[s]),
   }));
-  debugger;
 
   let options = characterOptions;
 
@@ -118,10 +163,11 @@ function App() {
         onChange={setCategory}
         label="Category"
       />
-      {selected.join(", ")}{" "}
+      {selected.join(", ")}
+      {/* <PieChartTM data={categoriesPlaces} /> */}
       <Button onClick={() => setSelected([])}>Clear</Button>
       <Stack spacing={2} direction={{ sm: "row" }}>
-        <LineChart data={data} key={selected.length} keyName="chapterFlat" />
+        <LineChartTM data={data} key={selected.length} keyName="chapterFlat" />
         <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
           <Checkboxes
             onChange={(val) =>

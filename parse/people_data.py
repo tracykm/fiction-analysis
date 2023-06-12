@@ -10,7 +10,7 @@ characters = {
     },
     "Roger": {
         "other_names": [],
-        "category": ["Child", "Lyra's World", "Servant"],
+        "category": ["Child", "Servant", "Lyra's World"],
     },
     "The Master": {
         "other_names": ["Master", "Charles"],
@@ -49,7 +49,7 @@ characters = {
     "Simon Parslow": {
         "other_names": ["Simon", "Parslow"],
         "disqualifiers": ["Hartmann", "Roger"],
-        "category": ["Lyra's World", "Child"],
+        "category": ["Child", "Lyra's World"],
     },
     "Semyon Borisovitch": {
         "other_names": ["Semyon", "Borisovitch"],
@@ -103,11 +103,11 @@ characters = {
     "Joachim Lorenz": {"other_names": ["Joachim", "Lorenz"]},
     "Bernie Johansen": {
         "other_names": ["Bernie", "Johansen"],
-        "category": ["Lyra's World", "Servant"],
+        "category": ["Servant", "Lyra's World"],
     },
     "Mrs. Lonsdale": {
         "other_names": ["Lonsdale"],
-        "category": ["Lyra's World", "Servant"],
+        "category": ["Servant", "Lyra's World"],
     },
     "Fra Pavel": {
         "other_names": ["Fra", "Pavel"],
@@ -123,7 +123,7 @@ characters = {
     "Ama": {"category": ["Child", "Lyra's World"]},
     "Atal": {"category": ["Mulefa"]},
     "King Ogunwe": {"other_names": ["Ogunwe"]},
-    "Father Gomez": {"other_names": ["Gomez"], "category": ["Cleric"]},
+    "Father Gomez": {"other_names": ["Gomez"], "category": ["Cleric", "Lyra's World"]},
     "Angelica": {"category": ["Child", "Cittàgazze"]},
     "Thorold": {"category": ["Servant", "Lyra's World"]},
     "Kirjava": {"category": ["Dæmon", "Lyra's World"]},
