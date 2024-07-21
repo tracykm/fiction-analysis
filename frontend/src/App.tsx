@@ -144,6 +144,7 @@ function App() {
 
   const data = selected.map((s, i) => ({
     color: COLORS[i] || "white",
+    name: s,
     info: chunkDataByChapter(characters[s]),
   }));
 
