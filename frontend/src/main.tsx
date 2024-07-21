@@ -1,9 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import App from "./App";
 import "./index.css";
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
+import { createRoot } from "react-dom/client";
 
 const darkTheme = createTheme({
   palette: {
@@ -11,10 +10,11 @@ const darkTheme = createTheme({
   },
 });
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <React.StrictMode>
-    <ThemeProvider theme={darkTheme}>
-      <App />
-    </ThemeProvider>
-  </React.StrictMode>
+const container = document.getElementById("root");
+const root = createRoot(container!);
+
+root.render(
+  <ThemeProvider theme={darkTheme}>
+    <App />
+  </ThemeProvider>
 );
