@@ -19,51 +19,37 @@ const characters: Record<
 > = charactersData;
 
 function getNum(category: string) {
-  return Object.values(characters).filter((c) => c.category?.[0] === category)
+  return Object.values(characters).filter((c) => c.category?.includes(category))
     .length;
 }
-
-const categoriesPlaces = [
-  {
-    name: "Scholar",
-    value: getNum("Scholar"),
-  },
-  {
-    name: "Cleric",
-    value: getNum("Cleric"),
-  },
-  {
-    name: "Servant",
-    value: getNum("Servant"),
-  },
-  {
-    name: "Gyption",
-    value: getNum("Gyption"),
-  },
-  {
-    name: "Witch",
-    value: getNum("Witch"),
-  },
-  {
-    name: "Dæmon",
-    value: getNum("Dæmon"),
-  },
-  {
-    name: "Angel",
-    value: getNum("Angel"),
-  },
-  {
-    name: "Gallivespian",
-    value: getNum("Gallivespian"),
-  },
-  {
-    name: "Bear",
-    value: getNum("Bear"),
-  },
+const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
+const BLUES = [
+  "#25CED1",
+  "#3BC0C6",
+  "#51B2BB",
+  "#67A5B0",
+  "#7D97A5",
+  "#92899B",
+  "#A87B90",
+  "#BE6E85",
+  "#D4607A",
+  "#EA526F",
 ];
 
+function getPieChartData(types: string[]) {
+  return types.map((type, i) => {
+    const colorIndex = i % types.length ? BLUES.length - i : i;
+    return {
+      label: type,
+      id: type,
+      amount: getNum(type),
+      color: BLUES[colorIndex],
+    };
+  });
+}
+
 let daysSum = 0;
-const dayDates = dates.map((d, i) => {
+const dayDates = dates.map((d) => {
   daysSum += d.days;
 
   return { chapter: d.chapter, days: daysSum };
@@ -136,7 +122,37 @@ const categoryOptions = Array.from(categories).map((d) => ({
   label: d,
   id: d,
 }));
-const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
+
+function CharacterPieCharts() {
+  return (
+    <Stack direction="row" spacing={3} sx={{ mb: 2 }}>
+      <PieChartTM data={getPieChartData(["Adult", "Child"])} name="Ages" />
+      <PieChartTM
+        data={getPieChartData([
+          "Lyra's World",
+          "Will's World",
+          "Angel",
+          "Gallivespian",
+          "Citt\u00e0gazze",
+          "Mulefa",
+        ])}
+        name="Universes"
+      />
+      <PieChartTM
+        data={getPieChartData([
+          "Human",
+          "Witch",
+          "Angel",
+          "Dæmon",
+          "Mulefa",
+          "Gallivespian",
+          "Bear",
+        ])}
+        name="Species"
+      />
+    </Stack>
+  );
+}
 
 function App() {
   const [selected, setSelected] = useState(["Lyra"]);
@@ -158,6 +174,7 @@ function App() {
       <header>
         <h1>His Dark Materials</h1>
       </header>
+      <CharacterPieCharts />
       <SelectInput
         options={[{ label: "All", id: "" }, ...categoryOptions]}
         selected={category}
@@ -165,7 +182,6 @@ function App() {
         label="Category"
       />
       {selected.join(", ")}
-      {/* <PieChartTM data={categoriesPlaces} /> */}
       <Button onClick={() => setSelected([])}>Clear</Button>
       <Stack spacing={2} direction={{ sm: "row" }}>
         <LineChartTM data={data} keyName="chapterFlat" />
@@ -188,8 +204,11 @@ function App() {
       >
         {selected.map((name, i) => (
           <div key={name || i} style={{ width: "100%" }}>
-            <div style={{ color: COLORS[i] }}>{name}</div>
-            {characters[name].count}
+            <Box sx={{ color: COLORS[i], fontSize: 18 }}>{name}</Box>
+            <Box sx={{ color: "#888" }}>
+              {characters[name].category?.join(", ")}
+            </Box>
+            {characters[name].count.toLocaleString()} References
             {characters[name].char_count.map((l, i) => (
               <TextPreview key={i} sentence={l.sentence} chapter={l.chapter} />
             ))}
@@ -205,7 +224,9 @@ function TextPreview({ sentence, chapter }) {
   return (
     <Tooltip
       title={sentence}
-      componentsProps={{ tooltip: { sx: { fontSize: "16px" } } }}
+      componentsProps={{
+        tooltip: { sx: { fontSize: "16px", maxWidth: 500, lineHeight: 1.5 } },
+      }}
     >
       <Box
         sx={{
@@ -214,9 +235,9 @@ function TextPreview({ sentence, chapter }) {
           my: 2,
           whiteSpace: "nowrap",
           width: "100%",
-          // maxWidth: 900,
           textOverflow: "ellipsis",
           minWidth: 0,
+          color: "#888",
         }}
       >
         <b>{chapter}</b> {sentence}

@@ -16,7 +16,7 @@ export function Checkboxes({
           <FormControlLabel
             key={i}
             control={<Checkbox />}
-            onChange={(e) => {
+            onChange={() => {
               onChange(opt.value);
             }}
             label={opt.label}

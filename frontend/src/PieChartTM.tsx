@@ -1,56 +1,103 @@
-import React, { PureComponent } from "react";
-import { PieChart, Pie, Sector, Cell, ResponsiveContainer } from "recharts";
+import { useState, useMemo } from "react";
+import { Pie } from "@visx/shape";
+import { Group } from "@visx/group";
+import { Text } from "@visx/text";
 
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-
-const RADIAN = Math.PI / 180;
-const renderCustomizedLabel = ({
-  cx,
-  cy,
-  midAngle,
-  innerRadius,
-  outerRadius,
-  percent,
-  name,
-}) => {
-  const radius = innerRadius + (outerRadius - innerRadius) * 0.5;
-  const x = cx + radius * Math.cos(-midAngle * RADIAN);
-  const y = cy + radius * Math.sin(-midAngle * RADIAN);
-
-  return (
-    <text
-      x={x}
-      y={y}
-      fill="white"
-      textAnchor={x > cx ? "start" : "end"}
-      dominantBaseline="central"
-    >
-      {name} {`${(percent * 100).toFixed(0)}%`}
-    </text>
-  );
+export type PieData = {
+  label: string;
+  amount: number;
+  id: string;
+  color?: string;
 };
 
 export function PieChartTM({
   data,
+  name = "Sections",
+  width = 280,
 }: {
-  data: { name: string; value: number }[];
+  data: PieData[];
+  name: string;
+  width?: number;
 }) {
+  const [active, setActive] = useState<PieData>();
+  const half = width / 2;
+
+  const total = useMemo(
+    () => Math.floor(data.reduce((acc, d) => acc + d.amount, 0)),
+    []
+  );
+
   return (
-    <PieChart width={600} height={600}>
-      <Pie
-        data={data}
-        cx="50%"
-        cy="50%"
-        labelLine={false}
-        label={renderCustomizedLabel}
-        outerRadius={200}
-        fill="#8884d8"
-        dataKey="value"
-      >
-        {data.map((entry, index) => (
-          <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-        ))}
-      </Pie>
-    </PieChart>
+    <main>
+      <svg width={width} height={width}>
+        <Group top={half} left={half}>
+          <Pie
+            data={data}
+            pieValue={(data) => data.amount}
+            outerRadius={half}
+            innerRadius={({ data }) => {
+              const size = active && data.id === active.id ? 52 : 40;
+              return half - size;
+            }}
+            cornerRadius={3}
+            padAngle={0.005}
+          >
+            {(pie) => {
+              return pie.arcs.map((arc) => {
+                const [centroidX, centroidY] = pie.path.centroid(arc);
+                return (
+                  <g
+                    key={arc.data.id}
+                    onMouseEnter={() => setActive(arc.data)}
+                    onMouseLeave={() => setActive()}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <path d={pie.path(arc)} fill={arc.data.color}></path>
+                    <Text
+                      fill="white"
+                      x={centroidX}
+                      y={centroidY}
+                      dy=".33em"
+                      fontSize={10}
+                      textAnchor="middle"
+                      pointerEvents="none"
+                    >
+                      {arc.data.label}
+                    </Text>
+                  </g>
+                );
+              });
+            }}
+          </Pie>
+
+          {active ? (
+            <>
+              <Text textAnchor="middle" fill="#ccc" fontSize={28} dy={0}>
+                {active.label}
+              </Text>
+
+              <Text
+                textAnchor="middle"
+                fill={active.color}
+                fontSize={20}
+                dy={30}
+              >
+                {`${active.amount} characters`}
+              </Text>
+            </>
+          ) : (
+            <>
+              <Text textAnchor="middle" fill="#ccc" fontSize={28} dy={0}>
+                {`${data.length} ${name}`}
+              </Text>
+
+              <Text textAnchor="middle" fill="#888" fontSize={18} dy={30}>
+                {`${total} characters`}
+              </Text>
+            </>
+          )}
+        </Group>
+      </svg>
+    </main>
   );
 }

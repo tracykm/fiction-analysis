@@ -97,5 +97,5 @@ with open("./raw_text/full_text.txt", encoding="utf-8") as f:
                         }
                     )
 
-with open("../app/src/data/characters.json", "w") as f:
+with open("../frontend/src/data/characters.json", "w") as f:
     f.write(json.dumps(characters))

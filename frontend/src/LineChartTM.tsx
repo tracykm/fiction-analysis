@@ -55,7 +55,7 @@ export function LineChartTM({
           tickLabelProps={() => ({ dx: 0 })}
         />
 
-        {data.map((d, i) => (
+        {data.map((d) => (
           <AnimatedLineSeries
             stroke={d.color}
             dataKey={d.name}
