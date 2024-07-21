@@ -15,6 +15,7 @@ export function ButtonGroupInput({
         <Button
           variant={selected.includes(option.id) ? "contained" : "outlined"}
           onClick={() => onChange(option.id)}
+          key={option.id}
         >
           {option.label}
         </Button>

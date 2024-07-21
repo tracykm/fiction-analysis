@@ -12,7 +12,7 @@ export function Checkboxes({
   return (
     <FormGroup>
       {options.map((opt, i) => (
-        <Tooltip title={opt.tooltip}>
+        <Tooltip key={i} title={opt.tooltip}>
           <FormControlLabel
             key={i}
             control={<Checkbox />}

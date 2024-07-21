@@ -114,10 +114,10 @@ function chunkDataByChapter(data: typeof characters.Lyra) {
   });
 }
 
-const characterOptions = Object.keys(characters).map((label) => ({
+const characterOptions = Object.keys(characters).map((label, i) => ({
   value: label,
   label: (
-    <div>
+    <div key={label || i}>
       {label} <span style={{ opacity: 0.4 }}>{characters[label].count}</span>
     </div>
   ),
@@ -182,7 +182,7 @@ function App() {
       </Stack>
       <Stack sx={{ mt: 2 }} spacing={2} direction="row">
         {selected.map((name, i) => (
-          <div key={name}>
+          <div key={name || i}>
             <div style={{ color: COLORS[i] }}>{name}</div>
             {characters[name].count}
             {characters[name].char_count.map((l, i) => (

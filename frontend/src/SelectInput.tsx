@@ -20,8 +20,10 @@ export function SelectInput({
         label="Age"
         onChange={(e) => onChange(e.target.value as string)}
       >
-        {options.map((opt) => (
-          <MenuItem value={opt.id}>{opt.label}</MenuItem>
+        {options.map((opt, i) => (
+          <MenuItem key={opt.id || opt.label || i} value={opt.id}>
+            {opt.label}
+          </MenuItem>
         ))}
       </Select>
     </FormControl>
