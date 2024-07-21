@@ -1,95 +1,176 @@
+import { format } from "date-fns";
 import {
-  CartesianGrid,
-  Legend,
-  Line,
-  LineChart,
-  ResponsiveContainer,
+  AnimatedAxis,
+  AnimatedGrid,
+  AnimatedLineSeries,
   Tooltip,
-  XAxis,
-  YAxis,
-} from "recharts";
+  XYChart,
+} from "@visx/xychart";
 
-const data = [
+const data1 = [
   {
-    name: "Page A",
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    x: "2018-03-01",
+    y: 30,
   },
   {
-    name: "Page B",
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    x: "2018-04-01",
+    y: 16,
   },
   {
-    name: "Page C",
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    x: "2018-05-01",
+    y: 17,
   },
   {
-    name: "Page D",
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    x: "2018-06-01",
+    y: 24,
   },
   {
-    name: "Page E",
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
+    x: "2018-07-01",
+    y: 47,
   },
   {
-    name: "Page F",
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
+    x: "2018-08-01",
+    y: 32,
   },
   {
-    name: "Page G",
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
+    x: "2018-09-01",
+    y: 8,
+  },
+  {
+    x: "2018-10-01",
+    y: 27,
+  },
+  {
+    x: "2018-11-01",
+    y: 31,
+  },
+  {
+    x: "2018-12-01",
+    y: 105,
+  },
+  {
+    x: "2019-01-01",
+    y: 166,
+  },
+  {
+    x: "2019-02-01",
+    y: 181,
+  },
+  {
+    x: "2019-03-01",
+    y: 232,
+  },
+  {
+    x: "2019-04-01",
+    y: 224,
+  },
+  {
+    x: "2019-05-01",
+    y: 196,
+  },
+  {
+    x: "2019-06-01",
+    y: 211,
   },
 ];
 
-export function LineChartTM({
-  // data,
-  keyName = "chapterFlat",
-}: {
-  keyName: "chapterFlat" | "days";
-  data: {
-    color: string;
-    info: { chapterFlat?: any; days?: any; value: any }[];
-  }[];
-}) {
+const tickLabelOffset = 10;
+
+const accessors = {
+  xAccessor: (d) => new Date(`${d.x}T00:00:00`),
+  yAccessor: (d) => d.y,
+};
+
+const LineChart = () => {
   return (
-    <ResponsiveContainer width="500px" height="400px">
-      <LineChart
-        width={500}
-        height={300}
-        data={data}
-        margin={{
-          top: 5,
-          right: 30,
-          left: 20,
-          bottom: 5,
-        }}
+    <div>
+      <XYChart
+        height={270}
+        width={400}
+        margin={{ left: 60, top: 35, bottom: 38, right: 27 }}
+        xScale={{ type: "time" }}
+        yScale={{ type: "linear" }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="pv" />
-        <YAxis />
-        <Tooltip />
-        <Legend />
-        <Line
-          type="monotone"
-          dataKey="pv"
-          stroke="#8884d8"
-          activeDot={{ r: 8 }}
+        <AnimatedGrid
+          columns={false}
+          numTicks={4}
+          lineStyle={{
+            stroke: "#e1e1e1",
+            strokeLinecap: "round",
+            strokeWidth: 1,
+          }}
+          strokeDasharray="0, 4"
         />
-        <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-      </LineChart>
-    </ResponsiveContainer>
+        <AnimatedAxis
+          hideAxisLine
+          hideTicks
+          orientation="bottom"
+          tickLabelProps={() => ({ dy: tickLabelOffset })}
+          left={30}
+          numTicks={4}
+        />
+        <AnimatedAxis
+          hideAxisLine
+          hideTicks
+          orientation="left"
+          numTicks={4}
+          tickLabelProps={() => ({ dx: -10 })}
+        />
+
+        <AnimatedLineSeries
+          stroke="#008561"
+          dataKey="primary_line"
+          data={data1}
+          {...accessors}
+        />
+        <Tooltip
+          snapTooltipToDatumX
+          snapTooltipToDatumY
+          showSeriesGlyphs
+          glyphStyle={{
+            fill: "#008561",
+            strokeWidth: 0,
+          }}
+          renderTooltip={({ tooltipData }) => {
+            return (
+              <div>
+                {Object.entries(tooltipData.datumByKey).map((lineDataArray) => {
+                  const [key, value] = lineDataArray;
+
+                  return (
+                    <div className="row" key={key}>
+                      <div className="date">
+                        {format(accessors.xAccessor(value.datum), "MMM d")}
+                      </div>
+                      <div className="value">
+                        <div
+                          style={{
+                            display: "inline-block",
+                            width: "11px",
+                            height: "11px",
+                            marginRight: "8px",
+                            background: "#008561",
+                            borderRadius: "4px",
+                          }}
+                        />
+                        {accessors.yAccessor(value.datum)}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            );
+          }}
+        />
+      </XYChart>
+    </div>
+  );
+};
+
+export function LineChartTM() {
+  return (
+    <div className="App">
+      <LineChart />
+    </div>
   );
 }
