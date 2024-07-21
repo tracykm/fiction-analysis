@@ -1,6 +1,5 @@
 import {
   AnimatedAxis,
-  AnimatedGrid,
   AnimatedLineSeries,
   Tooltip,
   XYChart,
@@ -14,18 +13,21 @@ const accessors = {
   yAccessor: (d) => d.value,
 };
 
+type RowShape = {
+  chapterFlat?: number;
+  days?: number;
+  value: number;
+  chapter: number;
+};
+
 export function LineChartTM({
   data,
 }: {
   keyName: "chapterFlat" | "days";
   data: {
+    name: string;
     color: string;
-    info: {
-      chapterFlat?: number;
-      days?: number;
-      value: number;
-      chapter: number;
-    }[];
+    info: RowShape[];
   }[];
 }) {
   return (
@@ -33,20 +35,10 @@ export function LineChartTM({
       <XYChart
         width={700}
         height={500}
-        margin={{ left: 60, top: 35, bottom: 38, right: 27 }}
+        margin={{ left: 24, top: 35, bottom: 38, right: 27 }}
         xScale={{ type: "linear" }}
         yScale={{ type: "linear" }}
       >
-        <AnimatedGrid
-          columns={false}
-          numTicks={4}
-          lineStyle={{
-            stroke: "#e1e1e1",
-            strokeLinecap: "round",
-            strokeWidth: 1,
-          }}
-          strokeDasharray="0, 4"
-        />
         <AnimatedAxis
           hideAxisLine
           hideTicks
@@ -60,7 +52,7 @@ export function LineChartTM({
           hideTicks
           orientation="left"
           numTicks={4}
-          tickLabelProps={() => ({ dx: -10 })}
+          tickLabelProps={() => ({ dx: 0 })}
         />
 
         {data.map((d, i) => (
@@ -71,7 +63,7 @@ export function LineChartTM({
             {...accessors}
           />
         ))}
-        <Tooltip
+        <Tooltip<RowShape>
           snapTooltipToDatumX
           snapTooltipToDatumY
           showSeriesGlyphs
@@ -79,10 +71,7 @@ export function LineChartTM({
             fill: "#008561",
             strokeWidth: 0,
           }}
-          renderTooltip={({
-            tooltipData: { datumByKey, nearestDatum },
-            ...rest
-          }) => {
+          renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
             const [book, chapterDetail] = String(
               nearestDatum.datum.chapter
             ).split(".");

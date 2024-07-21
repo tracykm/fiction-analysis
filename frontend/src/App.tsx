@@ -168,7 +168,7 @@ function App() {
       {/* <PieChartTM data={categoriesPlaces} /> */}
       <Button onClick={() => setSelected([])}>Clear</Button>
       <Stack spacing={2} direction={{ sm: "row" }}>
-        <LineChartTM data={data} key={selected.length} keyName="chapterFlat" />
+        <LineChartTM data={data} keyName="chapterFlat" />
         <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
           <Checkboxes
             onChange={(val) =>
@@ -181,9 +181,13 @@ function App() {
           />
         </Box>
       </Stack>
-      <Stack sx={{ mt: 2 }} spacing={2} direction="row">
+      <Stack
+        sx={{ mt: 2, width: `${100 / selected.length}%` }}
+        spacing={2}
+        direction="row"
+      >
         {selected.map((name, i) => (
-          <div key={name || i}>
+          <div key={name || i} style={{ width: "100%" }}>
             <div style={{ color: COLORS[i] }}>{name}</div>
             {characters[name].count}
             {characters[name].char_count.map((l, i) => (
@@ -199,8 +203,22 @@ function App() {
 
 function TextPreview({ sentence, chapter }) {
   return (
-    <Tooltip title={sentence} PopperProps={{ sx: { fontSize: 18 } }}>
-      <Box sx={{ height: 20, overflow: "hidden", my: 2 }}>
+    <Tooltip
+      title={sentence}
+      componentsProps={{ tooltip: { sx: { fontSize: "16px" } } }}
+    >
+      <Box
+        sx={{
+          height: 20,
+          overflow: "hidden",
+          my: 2,
+          whiteSpace: "nowrap",
+          width: "100%",
+          // maxWidth: 900,
+          textOverflow: "ellipsis",
+          minWidth: 0,
+        }}
+      >
         <b>{chapter}</b> {sentence}
       </Box>
     </Tooltip>
