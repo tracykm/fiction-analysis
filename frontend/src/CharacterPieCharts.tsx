@@ -1,7 +1,8 @@
-import { Button, ButtonGroup } from "@mui/material";
+import { Box, Button, ButtonGroup } from "@mui/material";
 import { Stack } from "@mui/system";
 import charactersData from "./data/characters.json";
 import { PieChartTM } from "./PieChartTM";
+import { useState } from "react";
 
 const characters: Record<
   string,
@@ -12,10 +13,6 @@ const characters: Record<
   }
 > = charactersData;
 
-function getNum(category: string) {
-  return Object.values(characters).filter((c) => c.category?.includes(category))
-    .length;
-}
 const PIE_COLORS = [
   "#25CED1",
   "#3BC0C6",
@@ -29,14 +26,35 @@ const PIE_COLORS = [
   "#EA526F",
 ];
 
-function getPieChartData(types: string[]) {
-  return types.map((type, i) => {
+function getPieChartDataIndividuals(types: { label: string; id: string }[]) {
+  return types.map(({ label, id }, i) => {
     const colorIndex = i % types.length ? PIE_COLORS.length - i : i;
+    const validChars = Object.values(characters).filter((c) =>
+      c.category?.includes(id)
+    );
+    const amount = validChars.length;
     return {
-      label: type,
-      id: type,
-      amount: getNum(type),
+      label,
+      id,
+      amount,
       color: PIE_COLORS[colorIndex],
+      detail: validChars,
+    };
+  });
+}
+function getPieChartDataRefs(types: { label: string; id: string }[]) {
+  return types.map(({ label, id }, i) => {
+    const colorIndex = i % types.length ? PIE_COLORS.length - i : i;
+    const validChars = Object.values(characters).filter((c) =>
+      c.category?.includes(id)
+    );
+    const amount = validChars.reduce((acc, info) => acc + info.count, 0);
+    return {
+      label,
+      id,
+      amount,
+      color: PIE_COLORS[colorIndex],
+      detail: validChars,
     };
   });
 }
@@ -56,38 +74,72 @@ const characterOptions = Object.keys(characters).map((label, i) => ({
 characterOptions.sort((a, b) => b.count - a.count);
 
 export function CharacterPieCharts() {
+  const [countType, setCountType] = useState<"individuals" | "refs">(
+    "individuals"
+  );
+  const getPieChartData =
+    countType === "individuals"
+      ? getPieChartDataIndividuals
+      : getPieChartDataRefs;
+
+  const subtitle = countType === "individuals" ? "Characters" : "References";
   return (
     <>
-      <ButtonGroup sx={{ mb: 2 }}>
-        <Button>Absolute</Button>
-        <Button>Times Referenced</Button>
-      </ButtonGroup>
       <Stack direction="row" spacing={3} sx={{ mb: 2 }}>
-        <PieChartTM data={getPieChartData(["Adult", "Child"])} name="Ages" />
         <PieChartTM
           data={getPieChartData([
-            "Lyra's World",
-            "Will's World",
-            "Angel",
-            "Gallivespian",
-            "Citt\u00e0gazze",
-            "Mulefa",
-          ])}
-          name="Universes"
-        />
-        <PieChartTM
-          data={getPieChartData([
-            "Human",
-            "Witch",
-            "Angel",
-            "Dæmon",
-            "Mulefa",
-            "Gallivespian",
-            "Bear",
+            { id: "Human", label: "Human" },
+            { id: "Witch", label: "Witch" },
+            { id: "Angel", label: "Angel" },
+            { id: "Dæmon", label: "Dæmon" },
+            { id: "Mulefa", label: "Mulefa" },
+            { id: "Gallivespian", label: "Gallivespian" },
+            { id: "Bear", label: "Bear" },
           ])}
           name="Species"
+          subtitle={subtitle}
+          includeDetailPercent={countType === "refs"}
+        />
+        <PieChartTM
+          data={getPieChartData([
+            { id: "Lyra's World", label: "Lyra's World" },
+            { id: "Will's World", label: "Will's World" },
+            { id: "Angel", label: "Angel Realm" },
+            { id: "Gallivespian", label: "Gallivespian's" },
+            { id: "Citt\u00e0gazze", label: "Citt\u00e0gazze's" },
+            { id: "Mulefa", label: "Mulefa's" },
+          ])}
+          name="Worlds"
+          subtitle={subtitle}
+          includeDetailPercent={countType === "refs"}
+        />
+        <PieChartTM
+          data={getPieChartData([
+            { id: "Adult", label: "Adult" },
+            { id: "Child", label: "Child" },
+          ])}
+          name="Ages"
+          subtitle={subtitle}
+          includeDetailPercent={countType === "refs"}
         />
       </Stack>
+
+      <Box sx={{ width: "100%", textAlign: "center" }}>
+        <ButtonGroup sx={{ mb: 2 }}>
+          <Button
+            onClick={() => setCountType("individuals")}
+            variant={countType === "individuals" ? "contained" : "outlined"}
+          >
+            By Individual
+          </Button>
+          <Button
+            onClick={() => setCountType("refs")}
+            variant={countType === "refs" ? "contained" : "outlined"}
+          >
+            By References
+          </Button>
+        </ButtonGroup>
+      </Box>
     </>
   );
 }

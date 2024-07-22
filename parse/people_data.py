@@ -23,8 +23,12 @@ characters = {
         "category": ["Dæmon", "Lyra's World", "Adult"],
     },
     "Lady Salmakia": {
-        "other_names": ["Salmakia"],
+        "other_names": ["Salmakia", "the Lady", "The Lady"],
         "category": ["Gallivespian", "Adult"],
+        "disqualifiers": [
+            "Lady Coulter",
+            "whether the Lady is now",
+        ],
     },
     "Lord Roke": {
         "other_names": ["Roke"],

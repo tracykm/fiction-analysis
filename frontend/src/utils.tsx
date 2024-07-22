@@ -8,8 +8,12 @@ export const characters: Record<
     char_count: { char_count: number; sentence: string; chapter: number }[];
     count: number;
     category?: string[];
+    name: string;
   }
 > = charactersData;
+Object.keys(charactersData).forEach((c) => {
+  characters[c].name = c;
+});
 
 export const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
 

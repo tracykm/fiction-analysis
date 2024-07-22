@@ -16368,9 +16368,10 @@
     ]
   },
   "Lady Salmakia": {
-    "other_names": ["Salmakia"],
+    "other_names": ["Salmakia", "the Lady", "The Lady"],
     "category": ["Gallivespian", "Adult"],
-    "count": 87,
+    "disqualifiers": ["Lady Coulter", "whether the Lady is now"],
+    "count": 114,
     "char_count": [
       {
         "char_count": 1255610,
@@ -16385,6 +16386,11 @@
       {
         "char_count": 1281801,
         "sentence": "That evening the Chevalier Tialys, the Gallivespian spy, made his way through the lanes and alleys of Geneva to meet his colleague, the Lady Salmakia.",
+        "chapter": 3.06
+      },
+      {
+        "char_count": 1282158,
+        "sentence": "More than one prowling cat had met its death at their spurs, but only the week before, the Chevalier had nearly lost an arm to the teeth of a mangy dog; only the Lady\u2019s swift action had saved him.",
         "chapter": 3.06
       },
       {
@@ -16418,6 +16424,11 @@
         "chapter": 3.09
       },
       {
+        "char_count": 1351556,
+        "sentence": "When the zeppelins arrived at the valley, he and the Lady were to go ahead and make their way independently to the cave where Lyra was held, and protect her as well as they could until King Ogunwe\u2019s force arrived to rescue her.",
+        "chapter": 3.09
+      },
+      {
         "char_count": 1352444,
         "sentence": "The Chevalier Tialys\u2019s clan bred powerful red-and-yellow-striped dragonflies with vigorous and brutal appetites, whereas the one the Lady Salmakia was nurturing would be a slender, fast- flying creature with an electric blue body and the power of glowing in the dark.",
         "chapter": 3.09
@@ -16443,8 +16454,18 @@
         "chapter": 3.11
       },
       {
+        "char_count": 1399011,
+        "sentence": "The Lady and I shall leave at once.\u201d The little spy closed the resonator and gathered his equipment together.",
+        "chapter": 3.11
+      },
+      {
         "char_count": 1399564,
         "sentence": "Salmakia was fitting her dragonfly with the harness she carried everywhere: spider- silk reins, stirrups of titanium, a saddle of hummingbird skin. It was almost weightless.",
+        "chapter": 3.11
+      },
+      {
+        "char_count": 1399924,
+        "sentence": "Beside him, the Lady had mounted her dragonfly, and now she urged it through the narrow gap into the hammering gusts.",
         "chapter": 3.11
       },
       {
@@ -16463,8 +16484,18 @@
         "chapter": 3.13
       },
       {
+        "char_count": 1433235,
+        "sentence": "\u201cStalemate again,\u201d said the Lady calmly.",
+        "chapter": 3.13
+      },
+      {
         "char_count": 1433646,
         "sentence": "Salmakia lifted her foot away from Pantalaimon\u2019s leg, and at once he fought free of her grasp and changed into a wildcat, hissing ferociously, fur on end, tail lashing.",
+        "chapter": 3.13
+      },
+      {
+        "char_count": 1433750,
+        "sentence": "His bared teeth were a hand\u2019s breadth from the Lady\u2019s face, and she gazed at him with perfect composure.",
         "chapter": 3.13
       },
       {
@@ -16473,8 +16504,33 @@
         "chapter": 3.13
       },
       {
+        "char_count": 1438931,
+        "sentence": "Do you eat our food?\u201d \u201cThank you, yes,\u201d said the Lady.",
+        "chapter": 3.14
+      },
+      {
         "char_count": 1442519,
         "sentence": "The Lady Salmakia said, \u201cRest.",
+        "chapter": 3.14
+      },
+      {
+        "char_count": 1442827,
+        "sentence": "\u201cYou don\u2019t know him any more than you know me.\u201d \u201cI know impertinence when I hear it,\u201d said the Lady calmly.",
+        "chapter": 3.14
+      },
+      {
+        "char_count": 1442998,
+        "sentence": "Save your energy for the walking.\u201d Lyra felt mutinous, but the Lady\u2019s glittering spurs were very clear in the sunlight, so she said nothing.",
+        "chapter": 3.14
+      },
+      {
+        "char_count": 1443154,
+        "sentence": "The Lady\u2019s companion, the Chevalier, was opening the case of the lodestone resonator, and, curiosity overcoming resentment, Lyra watched to see what he did.",
+        "chapter": 3.14
+      },
+      {
+        "char_count": 1444885,
+        "sentence": "When I play on this one with my bow, the other one reproduces the sounds exactly, and so we communicate.\u201d He put everything away and said something to the Lady.",
         "chapter": 3.14
       },
       {
@@ -16485,6 +16541,11 @@
       {
         "char_count": 1451733,
         "sentence": "\u201cThe habit of concealment is hard to break, and my companion, the Chevalier Tialys, and I, the Lady Salmakia, have been among our enemies for so long that out of pure habit we neglected to pay you the proper courtesy.",
+        "chapter": 3.14
+      },
+      {
+        "char_count": 1452128,
+        "sentence": "We have no other aim, and certainly no harmful intention toward you, King Iorek Byrnison.\u201d If Iorek wondered how any such tiny beings could cause him harm, he didn\u2019t show it; not only was his expression naturally hard to read, but he had his courtesy, too, and the Lady had spoken graciously enough.",
         "chapter": 3.14
       },
       {
@@ -16538,6 +16599,11 @@
         "chapter": 3.18
       },
       {
+        "char_count": 1551377,
+        "sentence": "\u201cWe know how to deal with big people,\u201d Tialys replied, not very helpfully, and went to talk quietly to the Lady.",
+        "chapter": 3.18
+      },
+      {
         "char_count": 1554263,
         "sentence": "\u201cWe should like to know what you intend,\u201d said Salmakia.",
         "chapter": 3.18
@@ -16573,8 +16639,23 @@
         "chapter": 3.18
       },
       {
+        "char_count": 1565572,
+        "sentence": "The dragonfly\u2019s little claws pricked as the Lady said, \u201cThere are people walking from the village\u2014people like this man\u2014all walking in the same direction.\u201d \u201cThen we\u2019ll go with them,\u201d said Will, and swung his rucksack over his shoulder.",
+        "chapter": 3.18
+      },
+      {
         "char_count": 1570053,
         "sentence": "The Chevalier Tialys had spoken to Salmakia before skimming ahead, and Will and Lyra watched the dragonfly with eyes greedy for its brightness and vigor as it got smaller and smaller.",
+        "chapter": 3.18
+      },
+      {
+        "char_count": 1570110,
+        "sentence": "The Lady flew down and perched her insect on Will\u2019s hand.",
+        "chapter": 3.18
+      },
+      {
+        "char_count": 1570599,
+        "sentence": "They\u2019re afraid of it.\u201d \u201cNo, they\u2019re pulled onward by something,\u201d said the Lady.",
         "chapter": 3.18
       },
       {
@@ -16603,6 +16684,11 @@
         "chapter": 3.19
       },
       {
+        "char_count": 1602111,
+        "sentence": "So I\u2019m glad you were here, you and the Lady, I\u2019m really grateful to you for being with us.\u201d So Lyra persuaded her own death to guide her and the others into the land where Roger had gone, and Will\u2019s father, and Tony Makarios, and so many others; and her death told her to go down to the jetty when the first light came to the sky, and prepare to leave.",
+        "chapter": 3.19
+      },
+      {
         "char_count": 1614381,
         "sentence": "Tialys and Salmakia were attending to their dragonflies, bringing them moths lassoed near the anbaric lamp over the oil drum outside, flies cut from spiderwebs, and water in a tin plate.",
         "chapter": 3.21
@@ -16618,8 +16704,18 @@
         "chapter": 3.21
       },
       {
+        "char_count": 1615136,
+        "sentence": "She hadn\u2019t really looked at the Lady before; but she could see her very clearly now, in the smoky light of the naphtha lamp, standing on the table just an arm\u2019s length away.",
+        "chapter": 3.21
+      },
+      {
         "char_count": 1615843,
         "sentence": "But she suddenly thought now that if ever there was a voice that would lap you in safety and warm you with love, it would be a voice like the Lady Salmakia\u2019s, and she felt a wish in her heart to have a child of her own, to lull and soothe and sing to, one day, in a voice like that.",
+        "chapter": 3.21
+      },
+      {
+        "char_count": 1615965,
+        "sentence": "\u201cWe\u2019ll see,\u201d said the Lady, and turned back.",
         "chapter": 3.21
       },
       {
@@ -16640,6 +16736,11 @@
       {
         "char_count": 1638408,
         "sentence": "We shall scream at her in her sleep!\u201d Will didn\u2019t move, because out of the corner of his eye, he could see the Lady Salmakia moving delicately along the branch where the harpy was perching.",
+        "chapter": 3.21
+      },
+      {
+        "char_count": 1638647,
+        "sentence": "Her dragonfly, wings quivering, was being held by Tialys on the ground, and then two things happened: the Lady leapt at the harpy and spun around to dig her spur deep into the creature\u2019s scaly leg, and Tialys launched the dragonfly upward.",
         "chapter": 3.21
       },
       {
@@ -16675,6 +16776,11 @@
       {
         "char_count": 1656431,
         "sentence": "The children couldn\u2019t see it, but Tialys and Salmakia, flying above, watched the little pale figures all moving with an effect that looked like the migration of immense flocks of birds or herds of reindeer.",
+        "chapter": 3.22
+      },
+      {
+        "char_count": 1656839,
+        "sentence": "\u201cDo we have d\u00e6mons, Tialys?\u201d said the Lady.",
         "chapter": 3.22
       },
       {
@@ -16718,6 +16824,16 @@
         "chapter": 3.23
       },
       {
+        "char_count": 1670644,
+        "sentence": "The Authority will be powerless after this.\u201d \u201cHow would they ever suspect it?\u201d said the Lady.",
+        "chapter": 3.23
+      },
+      {
+        "char_count": 1675904,
+        "sentence": "The Lady and I will hold them off as long as we can, but you might need to fight.\u201d Without worrying Lyra, Will loosened the knife in its sheath and kept his hand close to it.",
+        "chapter": 3.23
+      },
+      {
         "char_count": 1681246,
         "sentence": "The Chevalier left his dragonfly in the care of Salmakia, and his little tense figure, green- clad and dark-haired, leapt to a rock where they could all see him.",
         "chapter": 3.23
@@ -16743,6 +16859,11 @@
         "chapter": 3.26
       },
       {
+        "char_count": 1739460,
+        "sentence": "So while Tialys sat on Will\u2019s shoulder, Lyra held the Lady\u2019s dragonfly in her hands as the Lady soothed it and whispered to the trembling creature, feeding it first on crumbs of biscuit and then on her own blood.",
+        "chapter": 3.26
+      },
+      {
         "char_count": 1743839,
         "sentence": "With his right hand he felt for the knife; it was still there at his belt. \u201cTialys? Salmakia?\u201d said Will shakily.",
         "chapter": 3.26
@@ -16750,6 +16871,11 @@
       {
         "char_count": 1748401,
         "sentence": "Then the Lady Salmakia spoke, and her clear, calm voice carried a long way in the great emptiness. \u201cFriends, be brave! Stay together and keep going!",
+        "chapter": 3.26
+      },
+      {
+        "char_count": 1748589,
+        "sentence": "Be patient and cheerful and we\u2019ll lead you out, don\u2019t fear!\u201d Lyra felt herself strengthened by hearing this, and that was really the Lady\u2019s intention.",
         "chapter": 3.26
       },
       {
@@ -16800,6 +16926,16 @@
       {
         "char_count": 1838002,
         "sentence": "\u201cLyra,\u201d said the lady on the hawk, \u201cand Will: follow us now, and we shall take you to your d\u00e6mons.\u201d As the hawk spread its wings and lifted away from one hand, Lyra felt the little weight of Salmakia fall into the other, and knew in a moment that only the Lady\u2019s strength of mind had kept her alive this long.",
+        "chapter": 3.31
+      },
+      {
+        "char_count": 1838184,
+        "sentence": "She cradled her body close, and ran with Will under the cloud of dragonflies, stumbling and falling more than once, but holding the Lady gently against her heart all the time. \u201cLeft!",
+        "chapter": 3.31
+      },
+      {
+        "char_count": 1839338,
+        "sentence": "\u201cThis way!\u201d came the Lady\u2019s voice, and then she said, \u201cDuck, now\u2014get down low!\u201d They did, and felt the earth shake under them. Could that be hoofbeats?",
         "chapter": 3.31
       },
       {

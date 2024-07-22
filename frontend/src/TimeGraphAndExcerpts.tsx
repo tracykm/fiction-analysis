@@ -16,7 +16,7 @@ const characterOptions = Object.keys(characters).map((label, i) => ({
   ),
   count: characters[label].count,
   category: characters[label].category,
-  tooltip: characters[label].category?.join(", "),
+  // tooltip: characters[label].category?.join(", "),
 }));
 
 characterOptions.sort((a, b) => b.count - a.count);
@@ -40,37 +40,55 @@ export function TimeGraphAndExcerpts() {
     name: s,
   }));
 
+  return (
+    <>
+      <Stack spacing={2} direction={{ sm: "row" }}>
+        <LineChartTM data={data} keyName="chapterFlat" />
+        <SelectionSidebar
+          {...{ selected, setSelected, category, setCategory }}
+        />
+      </Stack>
+      <TextExcerpts selected={selected} />
+    </>
+  );
+}
+
+function SelectionSidebar({
+  selected,
+  setSelected,
+  category,
+  setCategory,
+}: {
+  selected: string[];
+  setSelected: (arg: string[]) => void;
+  category?: string;
+  setCategory: (arg: string) => void;
+}) {
   let options = characterOptions;
 
   if (category) {
     options = options.filter((d) => (d as any).category?.includes(category));
   }
   return (
-    <>
+    <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
       <SelectInput
         options={[{ label: "All", id: "" }, ...categoryOptions]}
         selected={category}
         onChange={setCategory}
         label="Category"
       />
-      {selected.join(", ")}
-      <Button onClick={() => setSelected([])}>Clear</Button>
-      <Stack spacing={2} direction={{ sm: "row" }}>
-        <LineChartTM data={data} keyName="chapterFlat" />
-        <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
-          <Checkboxes
-            onChange={(val) =>
-              selected.includes(val)
-                ? setSelected(selected.filter((d) => d !== val))
-                : setSelected([...selected, val])
-            }
-            options={options}
-            selected={selected}
-          />
-        </Box>
-      </Stack>
-      <TextExcerpts selected={selected} />
-    </>
+      {selected.length} Selected
+      <Button onClick={() => setSelected([])}>X Clear</Button>
+      <Checkboxes
+        onChange={(val) =>
+          selected.includes(val)
+            ? setSelected(selected.filter((d) => d !== val))
+            : setSelected([...selected, val])
+        }
+        options={options}
+        selected={selected}
+      />
+    </Box>
   );
 }
 

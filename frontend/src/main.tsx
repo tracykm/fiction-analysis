@@ -7,6 +7,14 @@ import { createRoot } from "react-dom/client";
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
+    primary: {
+      main: "#25CED1",
+    },
+  },
+  typography: {
+    button: {
+      textTransform: "none",
+    },
   },
 });
 

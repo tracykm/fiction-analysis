@@ -2,33 +2,91 @@ import { useState, useMemo } from "react";
 import { Pie } from "@visx/shape";
 import { Group } from "@visx/group";
 import { Text } from "@visx/text";
+import { Box, Stack } from "@mui/material";
+import { sortBy, sumBy } from "lodash-es";
 
 export type PieData = {
   label: string;
   amount: number;
   id: string;
   color?: string;
+  detail: any[];
 };
+
+function ActiveDetail({
+  active,
+  width,
+  includeDetailPercent,
+}: {
+  active: PieData;
+  width: number;
+  includeDetailPercent?: boolean;
+}) {
+  const cutoffAt = 12;
+  const count = active.detail.length;
+
+  let details = sortBy(active.detail, (d) => d.count * -1);
+  details = details.slice(0, cutoffAt);
+
+  const totalRefsInCategory = sumBy(details, "count");
+
+  return (
+    <Box
+      sx={{
+        position: "absolute",
+        left: width + 8,
+        top: 0,
+        background: "black",
+        zIndex: 10,
+        p: 2,
+        opacity: 0.8,
+      }}
+    >
+      {details.slice(0, cutoffAt).map((d) => (
+        <Stack direction="row">
+          <div style={{ whiteSpace: "nowrap" }}>{d.name}</div>
+          <div style={{ flexGrow: 1, minWidth: 8 }} />
+          {includeDetailPercent && (
+            <div>{Math.round((d.count / totalRefsInCategory) * 100)}%</div>
+          )}
+        </Stack>
+      ))}
+      {count > cutoffAt && (
+        <Box sx={{ whiteSpace: "nowrap" }}>+ {count - cutoffAt} more</Box>
+      )}
+    </Box>
+  );
+}
 
 export function PieChartTM({
   data,
   name = "Sections",
+  subtitle,
   width = 280,
+  includeDetailPercent,
 }: {
   data: PieData[];
   name: string;
+  subtitle: string;
   width?: number;
+  includeDetailPercent?: boolean;
 }) {
-  const [active, setActive] = useState<PieData>();
+  const [active, setActive] = useState<PieData | undefined>();
   const half = width / 2;
 
   const total = useMemo(
     () => Math.floor(data.reduce((acc, d) => acc + d.amount, 0)),
-    []
+    [data[0].amount]
   );
-
   return (
-    <main>
+    <Box sx={{ position: "relative" }}>
+      {active && (
+        <ActiveDetail
+          active={active}
+          width={width}
+          includeDetailPercent={includeDetailPercent}
+        />
+      )}
       <svg width={width} height={width}>
         <Group top={half} left={half}>
           <Pie
@@ -82,7 +140,7 @@ export function PieChartTM({
                 fontSize={20}
                 dy={30}
               >
-                {`${active.amount} characters`}
+                {`${active.amount} ${subtitle}`}
               </Text>
             </>
           ) : (
@@ -92,12 +150,12 @@ export function PieChartTM({
               </Text>
 
               <Text textAnchor="middle" fill="#888" fontSize={18} dy={30}>
-                {`${total} characters`}
+                {`${total} ${subtitle}`}
               </Text>
             </>
           )}
         </Group>
       </svg>
-    </main>
+    </Box>
   );
 }
