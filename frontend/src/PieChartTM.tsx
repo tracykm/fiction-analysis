@@ -42,15 +42,20 @@ function ActiveDetail({
         opacity: 0.8,
       }}
     >
-      {details.slice(0, cutoffAt).map((d) => (
-        <Stack direction="row">
-          <div style={{ whiteSpace: "nowrap" }}>{d.name}</div>
-          <div style={{ flexGrow: 1, minWidth: 8 }} />
-          {includeDetailPercent && (
-            <div>{Math.round((d.count / totalRefsInCategory) * 100)}%</div>
-          )}
-        </Stack>
-      ))}
+      {details.slice(0, cutoffAt).map((d) => {
+        const percent = (d.count / totalRefsInCategory) * 100;
+        return (
+          <Stack direction="row">
+            <div style={{ whiteSpace: "nowrap" }}>{d.name}</div>
+            <div style={{ flexGrow: 1, minWidth: 8 }} />
+            {includeDetailPercent && (
+              <div>
+                {percent > 9 ? Math.round(percent) : percent.toFixed(1)}%
+              </div>
+            )}
+          </Stack>
+        );
+      })}
       {count > cutoffAt && (
         <Box sx={{ whiteSpace: "nowrap" }}>+ {count - cutoffAt} more</Box>
       )}

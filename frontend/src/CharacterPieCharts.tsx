@@ -1,4 +1,4 @@
-import { Box, Button, ButtonGroup } from "@mui/material";
+import { Box, Button, ButtonGroup, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
 import charactersData from "./data/characters.json";
 import { PieChartTM } from "./PieChartTM";
@@ -109,7 +109,7 @@ export function CharacterPieCharts() {
             { id: "Citt\u00e0gazze", label: "Citt\u00e0gazze's" },
             { id: "Mulefa", label: "Mulefa's" },
           ])}
-          name="Worlds"
+          name="Universes"
           subtitle={subtitle}
           includeDetailPercent={countType === "refs"}
         />
@@ -126,18 +126,22 @@ export function CharacterPieCharts() {
 
       <Box sx={{ width: "100%", textAlign: "center" }}>
         <ButtonGroup sx={{ mb: 2 }}>
-          <Button
-            onClick={() => setCountType("individuals")}
-            variant={countType === "individuals" ? "contained" : "outlined"}
-          >
-            By Individual
-          </Button>
-          <Button
-            onClick={() => setCountType("refs")}
-            variant={countType === "refs" ? "contained" : "outlined"}
-          >
-            By References
-          </Button>
+          <Tooltip title="The number of unique characters in each category">
+            <Button
+              onClick={() => setCountType("individuals")}
+              variant={countType === "individuals" ? "contained" : "outlined"}
+            >
+              By Individual
+            </Button>
+          </Tooltip>
+          <Tooltip title="The total number of times any character in each category is referenced in the text">
+            <Button
+              onClick={() => setCountType("refs")}
+              variant={countType === "refs" ? "contained" : "outlined"}
+            >
+              By References
+            </Button>
+          </Tooltip>
         </ButtonGroup>
       </Box>
     </>

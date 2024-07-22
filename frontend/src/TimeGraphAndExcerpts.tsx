@@ -123,6 +123,7 @@ function ExcerptLine({
   sentence: string;
   chapter: number;
 }) {
+  const [book, chapterDetail] = String(chapter).split(".");
   return (
     <Tooltip
       title={sentence}
@@ -142,7 +143,10 @@ function ExcerptLine({
           color: "#888",
         }}
       >
-        <b>{chapter}</b> {sentence}
+        <b style={{ width: 70 }}>
+          B{book} Ch{chapterDetail}
+        </b>{" "}
+        {sentence}
       </Box>
     </Tooltip>
   );
