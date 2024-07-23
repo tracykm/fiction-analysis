@@ -4,7 +4,13 @@ import { useState } from "react";
 import { Checkboxes } from "./Checkboxes";
 import { LineChartTM } from "./LineChartTM";
 import { SelectInput } from "./SelectInput";
-import { COLORS, chapters, characters } from "./utils";
+import {
+  BOOK_START_LETTER_INDEX,
+  COLORS,
+  LETTERS_PER_PAGE,
+  chapters,
+  characters,
+} from "./utils";
 import { uniq } from "lodash-es";
 import { ErrorBoundary } from "./ErrorBoundry";
 
@@ -54,7 +60,9 @@ export function TimeGraphAndExcerpts() {
           {...{ selected, setSelected, category, setCategory }}
         />
       </Stack>
-      <TextExcerpts selected={selected} />
+      <ErrorBoundary>
+        <TextExcerpts selected={selected} />
+      </ErrorBoundary>
     </>
   );
 }
@@ -133,7 +141,7 @@ function ChapterExcerpt({
   refs,
 }: {
   chapterFlat: string;
-  refs: { sentence: string }[];
+  refs: { sentence: string; letterIndex: number }[];
 }) {
   const chapter = chapters[Number(chapterFlat) - 1];
   const [showMore, setShowMore] = useState(false);
@@ -149,19 +157,31 @@ function ChapterExcerpt({
         B{chapter?.book}, Ch{chapter?.chapter}
       </Box>
       {baseRefs.map((l) => (
-        <ExcerptLine sentence={l.sentence} />
+        <ExcerptLine chapter={chapter} {...l} />
       ))}
       {moreRefs.length && !showMore ? (
         <Button onClick={() => setShowMore(!showMore)} sx={{ my: -1 }}>
           + {moreRefs.length} More
         </Button>
       ) : null}
-      {showMore && moreRefs.map((l) => <ExcerptLine sentence={l.sentence} />)}
+      {showMore &&
+        moreRefs.map((l) => <ExcerptLine chapter={chapter} {...l} />)}
     </Box>
   );
 }
 
-function ExcerptLine({ sentence }: { sentence: string }) {
+function ExcerptLine({
+  sentence,
+  letterIndex,
+  chapter,
+}: {
+  sentence: string;
+  letterIndex: number;
+  chapter;
+}) {
+  const page = Math.floor(
+    (letterIndex - BOOK_START_LETTER_INDEX[chapter.book]) / LETTERS_PER_PAGE
+  );
   return (
     <Tooltip
       title={sentence}
@@ -170,20 +190,22 @@ function ExcerptLine({ sentence }: { sentence: string }) {
       }}
       placement="top"
     >
-      <Box
-        sx={{
-          height: 20,
-          overflow: "hidden",
-          my: 0.5,
-          whiteSpace: "nowrap",
-          width: "100%",
-          textOverflow: "ellipsis",
-          minWidth: 0,
-          color: "#888",
-        }}
-      >
-        {sentence}
-      </Box>
+      <>
+        <Box
+          sx={{
+            height: 20,
+            overflow: "hidden",
+            my: 0.5,
+            whiteSpace: "nowrap",
+            width: "100%",
+            textOverflow: "ellipsis",
+            minWidth: 0,
+            color: "#888",
+          }}
+        >
+          <span>p.{page}</span> {sentence}
+        </Box>
+      </>
     </Tooltip>
   );
 }

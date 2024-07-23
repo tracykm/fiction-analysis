@@ -44,8 +44,17 @@ const CHAPTER_LENGTH = {
   3: 38,
 };
 
+export const BOOK_START_LETTER_INDEX = {
+  1: 0,
+  2: chapters[CHAPTER_LENGTH[1]].letterIndex,
+  3: chapters[CHAPTER_LENGTH[1] + CHAPTER_LENGTH[2]].letterIndex,
+};
+
 type DataInfo = {
   chapterFlat: number;
   value: number;
   // days: number;
 };
+/** rough approximation, so many different prints out there people don't depend on it being accurate,
+ * gives ballpark idea of how far along in chapter */
+export const LETTERS_PER_PAGE = 1500;
