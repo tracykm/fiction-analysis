@@ -1,17 +1,8 @@
 import { Box, Button, ButtonGroup, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
-import charactersData from "./data/characters.json";
 import { PieChartTM } from "./PieChartTM";
 import { useState } from "react";
-
-const characters: Record<
-  string,
-  {
-    char_count: { char_count: number; sentence: string; chapter: number }[];
-    count: number;
-    category?: string[];
-  }
-> = charactersData;
+import { characters } from "./utils";
 
 const PIE_COLORS = [
   "#25CED1",

@@ -1,0 +1,2194 @@
+[
+  {
+    "chapter": 1,
+    "book": 1,
+    "letterIndex": 31,
+    "chapterFlat": 1,
+    "characterRefCount": 0,
+    "length": 8825
+  },
+  {
+    "chapter": 2,
+    "book": 1,
+    "letterIndex": 8856,
+    "chapterFlat": 2,
+    "characterRefCount": 0,
+    "length": 10621
+  },
+  {
+    "chapter": 3,
+    "book": 1,
+    "letterIndex": 19477,
+    "chapterFlat": 3,
+    "characterRefCount": 0,
+    "length": 8706
+  },
+  {
+    "chapter": 4,
+    "book": 1,
+    "letterIndex": 28183,
+    "chapterFlat": 4,
+    "characterRefCount": 0,
+    "length": 10910
+  },
+  {
+    "chapter": 5,
+    "book": 1,
+    "letterIndex": 39093,
+    "chapterFlat": 5,
+    "characterRefCount": 0,
+    "length": 5779
+  },
+  {
+    "chapter": 6,
+    "book": 1,
+    "letterIndex": 44872,
+    "chapterFlat": 6,
+    "characterRefCount": 0,
+    "length": 7444
+  },
+  {
+    "chapter": 7,
+    "book": 1,
+    "letterIndex": 52316,
+    "chapterFlat": 7,
+    "characterRefCount": 0,
+    "length": 7323
+  },
+  {
+    "chapter": 8,
+    "book": 1,
+    "letterIndex": 59639,
+    "chapterFlat": 8,
+    "characterRefCount": 0,
+    "length": 6937
+  },
+  {
+    "chapter": 9,
+    "book": 1,
+    "letterIndex": 66576,
+    "chapterFlat": 9,
+    "characterRefCount": 0,
+    "length": 10385
+  },
+  {
+    "chapter": 10,
+    "book": 1,
+    "letterIndex": 76961,
+    "chapterFlat": 10,
+    "characterRefCount": 0,
+    "length": 11874
+  },
+  {
+    "chapter": 11,
+    "book": 1,
+    "letterIndex": 88835,
+    "chapterFlat": 11,
+    "characterRefCount": 0,
+    "length": 8330
+  },
+  {
+    "chapter": 12,
+    "book": 1,
+    "letterIndex": 97165,
+    "chapterFlat": 12,
+    "characterRefCount": 0,
+    "length": 9111
+  },
+  {
+    "chapter": 13,
+    "book": 1,
+    "letterIndex": 106276,
+    "chapterFlat": 13,
+    "characterRefCount": 0,
+    "length": 11322
+  },
+  {
+    "chapter": 14,
+    "book": 1,
+    "letterIndex": 117598,
+    "chapterFlat": 14,
+    "characterRefCount": 0,
+    "length": 8292
+  },
+  {
+    "chapter": 15,
+    "book": 1,
+    "letterIndex": 125890,
+    "chapterFlat": 15,
+    "characterRefCount": 0,
+    "length": 14091
+  },
+  {
+    "chapter": 16,
+    "book": 1,
+    "letterIndex": 139981,
+    "chapterFlat": 16,
+    "characterRefCount": 0,
+    "length": 11289
+  },
+  {
+    "chapter": 17,
+    "book": 1,
+    "letterIndex": 151270,
+    "chapterFlat": 17,
+    "characterRefCount": 0,
+    "length": 8990
+  },
+  {
+    "chapter": 18,
+    "book": 1,
+    "letterIndex": 160260,
+    "chapterFlat": 18,
+    "characterRefCount": 0,
+    "length": 8570
+  },
+  {
+    "chapter": 19,
+    "book": 1,
+    "letterIndex": 168830,
+    "chapterFlat": 19,
+    "characterRefCount": 0,
+    "length": 15998
+  },
+  {
+    "chapter": 20,
+    "book": 1,
+    "letterIndex": 184828,
+    "chapterFlat": 20,
+    "characterRefCount": 0,
+    "length": 12673
+  },
+  {
+    "chapter": 21,
+    "book": 1,
+    "letterIndex": 197501,
+    "chapterFlat": 21,
+    "characterRefCount": 0,
+    "length": 16429
+  },
+  {
+    "chapter": 22,
+    "book": 1,
+    "letterIndex": 213930,
+    "chapterFlat": 22,
+    "characterRefCount": 0,
+    "length": 15332
+  },
+  {
+    "chapter": 23,
+    "book": 1,
+    "letterIndex": 229262,
+    "chapterFlat": 23,
+    "characterRefCount": 0,
+    "length": 13549
+  },
+  {
+    "chapter": 24,
+    "book": 1,
+    "letterIndex": 242811,
+    "chapterFlat": 24,
+    "characterRefCount": 0,
+    "length": 11418
+  },
+  {
+    "chapter": 25,
+    "book": 1,
+    "letterIndex": 254229,
+    "chapterFlat": 25,
+    "characterRefCount": 0,
+    "length": 10736
+  },
+  {
+    "chapter": 26,
+    "book": 1,
+    "letterIndex": 264965,
+    "chapterFlat": 26,
+    "characterRefCount": 0,
+    "length": 14266
+  },
+  {
+    "chapter": 27,
+    "book": 1,
+    "letterIndex": 279231,
+    "chapterFlat": 27,
+    "characterRefCount": 0,
+    "length": 14043
+  },
+  {
+    "chapter": 28,
+    "book": 1,
+    "letterIndex": 293274,
+    "chapterFlat": 28,
+    "characterRefCount": 0,
+    "length": 8236
+  },
+  {
+    "chapter": 29,
+    "book": 1,
+    "letterIndex": 301510,
+    "chapterFlat": 29,
+    "characterRefCount": 0,
+    "length": 21037
+  },
+  {
+    "chapter": 30,
+    "book": 1,
+    "letterIndex": 322547,
+    "chapterFlat": 30,
+    "characterRefCount": 0,
+    "length": 16206
+  },
+  {
+    "chapter": 31,
+    "book": 1,
+    "letterIndex": 338753,
+    "chapterFlat": 31,
+    "characterRefCount": 0,
+    "length": 21051
+  },
+  {
+    "chapter": 32,
+    "book": 1,
+    "letterIndex": 359804,
+    "chapterFlat": 32,
+    "characterRefCount": 0,
+    "length": 14462
+  },
+  {
+    "chapter": 33,
+    "book": 1,
+    "letterIndex": 374266,
+    "chapterFlat": 33,
+    "characterRefCount": 0,
+    "length": 16618
+  },
+  {
+    "chapter": 34,
+    "book": 1,
+    "letterIndex": 390884,
+    "chapterFlat": 34,
+    "characterRefCount": 0,
+    "length": 15102
+  },
+  {
+    "chapter": 35,
+    "book": 1,
+    "letterIndex": 405986,
+    "chapterFlat": 35,
+    "characterRefCount": 0,
+    "length": 12845
+  },
+  {
+    "chapter": 36,
+    "book": 1,
+    "letterIndex": 418831,
+    "chapterFlat": 36,
+    "characterRefCount": 0,
+    "length": 17285
+  },
+  {
+    "chapter": 37,
+    "book": 1,
+    "letterIndex": 436116,
+    "chapterFlat": 37,
+    "characterRefCount": 0,
+    "length": 24280
+  },
+  {
+    "chapter": 38,
+    "book": 1,
+    "letterIndex": 460396,
+    "chapterFlat": 38,
+    "characterRefCount": 0,
+    "length": 16459
+  },
+  {
+    "chapter": 39,
+    "book": 1,
+    "letterIndex": 476855,
+    "chapterFlat": 39,
+    "characterRefCount": 0,
+    "length": 11113
+  },
+  {
+    "chapter": 40,
+    "book": 1,
+    "letterIndex": 487968,
+    "chapterFlat": 40,
+    "characterRefCount": 0,
+    "length": 14085
+  },
+  {
+    "chapter": 41,
+    "book": 1,
+    "letterIndex": 502053,
+    "chapterFlat": 41,
+    "characterRefCount": 0,
+    "length": 14326
+  },
+  {
+    "chapter": 42,
+    "book": 1,
+    "letterIndex": 516379,
+    "chapterFlat": 42,
+    "characterRefCount": 0,
+    "length": 10299
+  },
+  {
+    "chapter": 43,
+    "book": 1,
+    "letterIndex": 526678,
+    "chapterFlat": 43,
+    "characterRefCount": 0,
+    "length": 19539
+  },
+  {
+    "chapter": 44,
+    "book": 1,
+    "letterIndex": 546217,
+    "chapterFlat": 44,
+    "characterRefCount": 0,
+    "length": 29697
+  },
+  {
+    "chapter": 45,
+    "book": 1,
+    "letterIndex": 575914,
+    "chapterFlat": 45,
+    "characterRefCount": 0,
+    "length": 12018
+  },
+  {
+    "chapter": 46,
+    "book": 1,
+    "letterIndex": 587932,
+    "chapterFlat": 46,
+    "characterRefCount": 0,
+    "length": 16264
+  },
+  {
+    "chapter": 47,
+    "book": 1,
+    "letterIndex": 604196,
+    "chapterFlat": 47,
+    "characterRefCount": 0,
+    "length": 13337
+  },
+  {
+    "chapter": 48,
+    "book": 1,
+    "letterIndex": 617533,
+    "chapterFlat": 48,
+    "characterRefCount": 0,
+    "length": 7221
+  },
+  {
+    "chapter": 49,
+    "book": 1,
+    "letterIndex": 624754,
+    "chapterFlat": 49,
+    "characterRefCount": 0,
+    "length": 23630
+  },
+  {
+    "chapter": 50,
+    "book": 1,
+    "letterIndex": 648384,
+    "chapterFlat": 50,
+    "characterRefCount": 0,
+    "length": 14443
+  },
+  {
+    "chapter": 1,
+    "book": 2,
+    "letterIndex": 662827,
+    "chapterFlat": 51,
+    "characterRefCount": 1,
+    "length": 4649
+  },
+  {
+    "chapter": 2,
+    "book": 2,
+    "letterIndex": 667476,
+    "chapterFlat": 52,
+    "characterRefCount": 1,
+    "length": 4331
+  },
+  {
+    "chapter": 3,
+    "book": 2,
+    "letterIndex": 671807,
+    "chapterFlat": 53,
+    "characterRefCount": 10,
+    "length": 9645
+  },
+  {
+    "chapter": 4,
+    "book": 2,
+    "letterIndex": 681452,
+    "chapterFlat": 54,
+    "characterRefCount": 7,
+    "length": 5944
+  },
+  {
+    "chapter": 5,
+    "book": 2,
+    "letterIndex": 687396,
+    "chapterFlat": 55,
+    "characterRefCount": 9,
+    "length": 5337
+  },
+  {
+    "chapter": 6,
+    "book": 2,
+    "letterIndex": 692733,
+    "chapterFlat": 56,
+    "characterRefCount": 26,
+    "length": 13050
+  },
+  {
+    "chapter": 7,
+    "book": 2,
+    "letterIndex": 705783,
+    "chapterFlat": 57,
+    "characterRefCount": 29,
+    "length": 11239
+  },
+  {
+    "chapter": 8,
+    "book": 2,
+    "letterIndex": 717022,
+    "chapterFlat": 58,
+    "characterRefCount": 21,
+    "length": 10962
+  },
+  {
+    "chapter": 9,
+    "book": 2,
+    "letterIndex": 727984,
+    "chapterFlat": 59,
+    "characterRefCount": 18,
+    "length": 9675
+  },
+  {
+    "chapter": 10,
+    "book": 2,
+    "letterIndex": 737659,
+    "chapterFlat": 60,
+    "characterRefCount": 22,
+    "length": 12497
+  },
+  {
+    "chapter": 11,
+    "book": 2,
+    "letterIndex": 750156,
+    "chapterFlat": 61,
+    "characterRefCount": 18,
+    "length": 8864
+  },
+  {
+    "chapter": 12,
+    "book": 2,
+    "letterIndex": 759020,
+    "chapterFlat": 62,
+    "characterRefCount": 14,
+    "length": 3946
+  },
+  {
+    "chapter": 13,
+    "book": 2,
+    "letterIndex": 762966,
+    "chapterFlat": 63,
+    "characterRefCount": 5,
+    "length": 9381
+  },
+  {
+    "chapter": 14,
+    "book": 2,
+    "letterIndex": 772347,
+    "chapterFlat": 64,
+    "characterRefCount": 2,
+    "length": 6486
+  },
+  {
+    "chapter": 15,
+    "book": 2,
+    "letterIndex": 778833,
+    "chapterFlat": 65,
+    "characterRefCount": 16,
+    "length": 9762
+  },
+  {
+    "chapter": 16,
+    "book": 2,
+    "letterIndex": 788595,
+    "chapterFlat": 66,
+    "characterRefCount": 21,
+    "length": 19030
+  },
+  {
+    "chapter": 17,
+    "book": 2,
+    "letterIndex": 807625,
+    "chapterFlat": 67,
+    "characterRefCount": 15,
+    "length": 7255
+  },
+  {
+    "chapter": 18,
+    "book": 2,
+    "letterIndex": 814880,
+    "chapterFlat": 68,
+    "characterRefCount": 42,
+    "length": 29068
+  },
+  {
+    "chapter": 19,
+    "book": 2,
+    "letterIndex": 843948,
+    "chapterFlat": 69,
+    "characterRefCount": 11,
+    "length": 10622
+  },
+  {
+    "chapter": 20,
+    "book": 2,
+    "letterIndex": 854570,
+    "chapterFlat": 70,
+    "characterRefCount": 12,
+    "length": 9161
+  },
+  {
+    "chapter": 21,
+    "book": 2,
+    "letterIndex": 863731,
+    "chapterFlat": 71,
+    "characterRefCount": 21,
+    "length": 11305
+  },
+  {
+    "chapter": 22,
+    "book": 2,
+    "letterIndex": 875036,
+    "chapterFlat": 72,
+    "characterRefCount": 11,
+    "length": 10126
+  },
+  {
+    "chapter": 23,
+    "book": 2,
+    "letterIndex": 885162,
+    "chapterFlat": 73,
+    "characterRefCount": 17,
+    "length": 9335
+  },
+  {
+    "chapter": 24,
+    "book": 2,
+    "letterIndex": 894497,
+    "chapterFlat": 74,
+    "characterRefCount": 24,
+    "length": 10747
+  },
+  {
+    "chapter": 25,
+    "book": 2,
+    "letterIndex": 905244,
+    "chapterFlat": 75,
+    "characterRefCount": 16,
+    "length": 8675
+  },
+  {
+    "chapter": 26,
+    "book": 2,
+    "letterIndex": 913919,
+    "chapterFlat": 76,
+    "characterRefCount": 25,
+    "length": 12870
+  },
+  {
+    "chapter": 27,
+    "book": 2,
+    "letterIndex": 926789,
+    "chapterFlat": 77,
+    "characterRefCount": 12,
+    "length": 7201
+  },
+  {
+    "chapter": 28,
+    "book": 2,
+    "letterIndex": 933990,
+    "chapterFlat": 78,
+    "characterRefCount": 14,
+    "length": 8374
+  },
+  {
+    "chapter": 29,
+    "book": 2,
+    "letterIndex": 942364,
+    "chapterFlat": 79,
+    "characterRefCount": 16,
+    "length": 13564
+  },
+  {
+    "chapter": 30,
+    "book": 2,
+    "letterIndex": 955928,
+    "chapterFlat": 80,
+    "characterRefCount": 11,
+    "length": 7197
+  },
+  {
+    "chapter": 31,
+    "book": 2,
+    "letterIndex": 963125,
+    "chapterFlat": 81,
+    "characterRefCount": 13,
+    "length": 8679
+  },
+  {
+    "chapter": 32,
+    "book": 2,
+    "letterIndex": 971804,
+    "chapterFlat": 82,
+    "characterRefCount": 14,
+    "length": 8509
+  },
+  {
+    "chapter": 33,
+    "book": 2,
+    "letterIndex": 980313,
+    "chapterFlat": 83,
+    "characterRefCount": 8,
+    "length": 10295
+  },
+  {
+    "chapter": 34,
+    "book": 2,
+    "letterIndex": 990608,
+    "chapterFlat": 84,
+    "characterRefCount": 12,
+    "length": 11951
+  },
+  {
+    "chapter": 35,
+    "book": 2,
+    "letterIndex": 1002559,
+    "chapterFlat": 85,
+    "characterRefCount": 3,
+    "length": 16898
+  },
+  {
+    "chapter": 36,
+    "book": 2,
+    "letterIndex": 1019457,
+    "chapterFlat": 86,
+    "characterRefCount": 7,
+    "length": 11861
+  },
+  {
+    "chapter": 37,
+    "book": 2,
+    "letterIndex": 1031318,
+    "chapterFlat": 87,
+    "characterRefCount": 9,
+    "length": 7833
+  },
+  {
+    "chapter": 38,
+    "book": 2,
+    "letterIndex": 1039151,
+    "chapterFlat": 88,
+    "characterRefCount": 13,
+    "length": 6031
+  },
+  {
+    "chapter": 39,
+    "book": 2,
+    "letterIndex": 1045182,
+    "chapterFlat": 89,
+    "characterRefCount": 15,
+    "length": 8726
+  },
+  {
+    "chapter": 40,
+    "book": 2,
+    "letterIndex": 1053908,
+    "chapterFlat": 90,
+    "characterRefCount": 17,
+    "length": 9256
+  },
+  {
+    "chapter": 41,
+    "book": 2,
+    "letterIndex": 1063164,
+    "chapterFlat": 91,
+    "characterRefCount": 12,
+    "length": 13008
+  },
+  {
+    "chapter": 42,
+    "book": 2,
+    "letterIndex": 1076172,
+    "chapterFlat": 92,
+    "characterRefCount": 12,
+    "length": 10631
+  },
+  {
+    "chapter": 43,
+    "book": 2,
+    "letterIndex": 1086803,
+    "chapterFlat": 93,
+    "characterRefCount": 40,
+    "length": 27255
+  },
+  {
+    "chapter": 44,
+    "book": 2,
+    "letterIndex": 1114058,
+    "chapterFlat": 94,
+    "characterRefCount": 17,
+    "length": 13438
+  },
+  {
+    "chapter": 45,
+    "book": 2,
+    "letterIndex": 1127496,
+    "chapterFlat": 95,
+    "characterRefCount": 20,
+    "length": 10068
+  },
+  {
+    "chapter": 46,
+    "book": 2,
+    "letterIndex": 1137564,
+    "chapterFlat": 96,
+    "characterRefCount": 19,
+    "length": 16903
+  },
+  {
+    "chapter": 47,
+    "book": 2,
+    "letterIndex": 1154467,
+    "chapterFlat": 97,
+    "characterRefCount": 40,
+    "length": 22215
+  },
+  {
+    "chapter": 48,
+    "book": 2,
+    "letterIndex": 1176682,
+    "chapterFlat": 98,
+    "characterRefCount": 12,
+    "length": 12719
+  },
+  {
+    "chapter": 49,
+    "book": 2,
+    "letterIndex": 1189401,
+    "chapterFlat": 99,
+    "characterRefCount": 25,
+    "length": 12421
+  },
+  {
+    "chapter": 50,
+    "book": 2,
+    "letterIndex": 1201822,
+    "chapterFlat": 100,
+    "characterRefCount": 5,
+    "length": 12475
+  },
+  {
+    "chapter": 51,
+    "book": 2,
+    "letterIndex": 1214297,
+    "chapterFlat": 101,
+    "characterRefCount": 22,
+    "length": 11168
+  },
+  {
+    "chapter": 52,
+    "book": 2,
+    "letterIndex": 1225465,
+    "chapterFlat": 102,
+    "characterRefCount": 8,
+    "length": 17080
+  },
+  {
+    "chapter": 53,
+    "book": 2,
+    "letterIndex": 1242545,
+    "chapterFlat": 103,
+    "characterRefCount": 29,
+    "length": 15967
+  },
+  {
+    "chapter": 54,
+    "book": 2,
+    "letterIndex": 1258512,
+    "chapterFlat": 104,
+    "characterRefCount": 19,
+    "length": 8859
+  },
+  {
+    "chapter": 55,
+    "book": 2,
+    "letterIndex": 1267371,
+    "chapterFlat": 105,
+    "characterRefCount": 38,
+    "length": 12858
+  },
+  {
+    "chapter": 56,
+    "book": 2,
+    "letterIndex": 1280229,
+    "chapterFlat": 106,
+    "characterRefCount": 33,
+    "length": 15248
+  },
+  {
+    "chapter": 57,
+    "book": 2,
+    "letterIndex": 1295477,
+    "chapterFlat": 107,
+    "characterRefCount": 12,
+    "length": 9426
+  },
+  {
+    "chapter": 58,
+    "book": 2,
+    "letterIndex": 1304903,
+    "chapterFlat": 108,
+    "characterRefCount": 17,
+    "length": 13619
+  },
+  {
+    "chapter": 59,
+    "book": 2,
+    "letterIndex": 1318522,
+    "chapterFlat": 109,
+    "characterRefCount": 27,
+    "length": 13475
+  },
+  {
+    "chapter": 60,
+    "book": 2,
+    "letterIndex": 1331997,
+    "chapterFlat": 110,
+    "characterRefCount": 12,
+    "length": 8661
+  },
+  {
+    "chapter": 61,
+    "book": 2,
+    "letterIndex": 1340658,
+    "chapterFlat": 111,
+    "characterRefCount": 14,
+    "length": 7116
+  },
+  {
+    "chapter": 1,
+    "book": 3,
+    "letterIndex": 1347774,
+    "chapterFlat": 112,
+    "characterRefCount": 0,
+    "length": 7833
+  },
+  {
+    "chapter": 2,
+    "book": 3,
+    "letterIndex": 1355607,
+    "chapterFlat": 113,
+    "characterRefCount": 0,
+    "length": 12219
+  },
+  {
+    "chapter": 3,
+    "book": 3,
+    "letterIndex": 1367826,
+    "chapterFlat": 114,
+    "characterRefCount": 0,
+    "length": 9290
+  },
+  {
+    "chapter": 4,
+    "book": 3,
+    "letterIndex": 1377116,
+    "chapterFlat": 115,
+    "characterRefCount": 0,
+    "length": 7321
+  },
+  {
+    "chapter": 5,
+    "book": 3,
+    "letterIndex": 1384437,
+    "chapterFlat": 116,
+    "characterRefCount": 0,
+    "length": 163
+  },
+  {
+    "chapter": 6,
+    "book": 3,
+    "letterIndex": 1384600,
+    "chapterFlat": 117,
+    "characterRefCount": 0,
+    "length": 5663
+  },
+  {
+    "chapter": 7,
+    "book": 3,
+    "letterIndex": 1390263,
+    "chapterFlat": 118,
+    "characterRefCount": 0,
+    "length": 1526
+  },
+  {
+    "chapter": 8,
+    "book": 3,
+    "letterIndex": 1391789,
+    "chapterFlat": 119,
+    "characterRefCount": 0,
+    "length": 8869
+  },
+  {
+    "chapter": 9,
+    "book": 3,
+    "letterIndex": 1400658,
+    "chapterFlat": 120,
+    "characterRefCount": 0,
+    "length": 15329
+  },
+  {
+    "chapter": 10,
+    "book": 3,
+    "letterIndex": 1415987,
+    "chapterFlat": 121,
+    "characterRefCount": 0,
+    "length": 14798
+  },
+  {
+    "chapter": 11,
+    "book": 3,
+    "letterIndex": 1430785,
+    "chapterFlat": 122,
+    "characterRefCount": 0,
+    "length": 17993
+  },
+  {
+    "chapter": 12,
+    "book": 3,
+    "letterIndex": 1448778,
+    "chapterFlat": 123,
+    "characterRefCount": 0,
+    "length": 21183
+  },
+  {
+    "chapter": 13,
+    "book": 3,
+    "letterIndex": 1469961,
+    "chapterFlat": 124,
+    "characterRefCount": 0,
+    "length": 15948
+  },
+  {
+    "chapter": 14,
+    "book": 3,
+    "letterIndex": 1485909,
+    "chapterFlat": 125,
+    "characterRefCount": 0,
+    "length": 11016
+  },
+  {
+    "chapter": 15,
+    "book": 3,
+    "letterIndex": 1496925,
+    "chapterFlat": 126,
+    "characterRefCount": 0,
+    "length": 17009
+  },
+  {
+    "chapter": 16,
+    "book": 3,
+    "letterIndex": 1513934,
+    "chapterFlat": 127,
+    "characterRefCount": 0,
+    "length": 18495
+  },
+  {
+    "chapter": 17,
+    "book": 3,
+    "letterIndex": 1532429,
+    "chapterFlat": 128,
+    "characterRefCount": 0,
+    "length": 17578
+  },
+  {
+    "chapter": 18,
+    "book": 3,
+    "letterIndex": 1550007,
+    "chapterFlat": 129,
+    "characterRefCount": 0,
+    "length": 15020
+  },
+  {
+    "chapter": 19,
+    "book": 3,
+    "letterIndex": 1565027,
+    "chapterFlat": 130,
+    "characterRefCount": 0,
+    "length": 7987
+  },
+  {
+    "chapter": 20,
+    "book": 3,
+    "letterIndex": 1573014,
+    "chapterFlat": 131,
+    "characterRefCount": 0,
+    "length": 11091
+  },
+  {
+    "chapter": 21,
+    "book": 3,
+    "letterIndex": 1584105,
+    "chapterFlat": 132,
+    "characterRefCount": 0,
+    "length": 8394
+  },
+  {
+    "chapter": 22,
+    "book": 3,
+    "letterIndex": 1592499,
+    "chapterFlat": 133,
+    "characterRefCount": 0,
+    "length": 17831
+  },
+  {
+    "chapter": 23,
+    "book": 3,
+    "letterIndex": 1610330,
+    "chapterFlat": 134,
+    "characterRefCount": 0,
+    "length": 16696
+  },
+  {
+    "chapter": 24,
+    "book": 3,
+    "letterIndex": 1627026,
+    "chapterFlat": 135,
+    "characterRefCount": 0,
+    "length": 18836
+  },
+  {
+    "chapter": 25,
+    "book": 3,
+    "letterIndex": 1645862,
+    "chapterFlat": 136,
+    "characterRefCount": 0,
+    "length": 14636
+  },
+  {
+    "chapter": 26,
+    "book": 3,
+    "letterIndex": 1660498,
+    "chapterFlat": 137,
+    "characterRefCount": 0,
+    "length": 15714
+  },
+  {
+    "chapter": 27,
+    "book": 3,
+    "letterIndex": 1676212,
+    "chapterFlat": 138,
+    "characterRefCount": 0,
+    "length": 16406
+  },
+  {
+    "chapter": 28,
+    "book": 3,
+    "letterIndex": 1692618,
+    "chapterFlat": 139,
+    "characterRefCount": 0,
+    "length": 14073
+  },
+  {
+    "chapter": 29,
+    "book": 3,
+    "letterIndex": 1706691,
+    "chapterFlat": 140,
+    "characterRefCount": 0,
+    "length": 7034
+  },
+  {
+    "chapter": 30,
+    "book": 3,
+    "letterIndex": 1713725,
+    "chapterFlat": 141,
+    "characterRefCount": 0,
+    "length": 19302
+  },
+  {
+    "chapter": 31,
+    "book": 3,
+    "letterIndex": 1733027,
+    "chapterFlat": 142,
+    "characterRefCount": 0,
+    "length": 18737
+  },
+  {
+    "chapter": 32,
+    "book": 3,
+    "letterIndex": 1751764,
+    "chapterFlat": 143,
+    "characterRefCount": 0,
+    "length": 16469
+  },
+  {
+    "chapter": 33,
+    "book": 3,
+    "letterIndex": 1768233,
+    "chapterFlat": 144,
+    "characterRefCount": 0,
+    "length": 7058
+  },
+  {
+    "chapter": 1,
+    "book": 4,
+    "letterIndex": 1775291,
+    "chapterFlat": 145,
+    "characterRefCount": 0,
+    "length": 16926
+  },
+  {
+    "chapter": 2,
+    "book": 4,
+    "letterIndex": 1792217,
+    "chapterFlat": 146,
+    "characterRefCount": 0,
+    "length": 20541
+  },
+  {
+    "chapter": 3,
+    "book": 4,
+    "letterIndex": 1812758,
+    "chapterFlat": 147,
+    "characterRefCount": 0,
+    "length": 19463
+  },
+  {
+    "chapter": 4,
+    "book": 4,
+    "letterIndex": 1832221,
+    "chapterFlat": 148,
+    "characterRefCount": 0,
+    "length": 19370
+  },
+  {
+    "chapter": 5,
+    "book": 4,
+    "letterIndex": 1851591,
+    "chapterFlat": 149,
+    "characterRefCount": 0,
+    "length": 15275
+  },
+  {
+    "chapter": 6,
+    "book": 4,
+    "letterIndex": 1866866,
+    "chapterFlat": 150,
+    "characterRefCount": 0,
+    "length": 20474
+  },
+  {
+    "chapter": 7,
+    "book": 4,
+    "letterIndex": 1887340,
+    "chapterFlat": 151,
+    "characterRefCount": 0,
+    "length": 22787
+  },
+  {
+    "chapter": 8,
+    "book": 4,
+    "letterIndex": 1910127,
+    "chapterFlat": 152,
+    "characterRefCount": 0,
+    "length": 15515
+  },
+  {
+    "chapter": 9,
+    "book": 4,
+    "letterIndex": 1925642,
+    "chapterFlat": 153,
+    "characterRefCount": 0,
+    "length": 24528
+  },
+  {
+    "chapter": 10,
+    "book": 4,
+    "letterIndex": 1950170,
+    "chapterFlat": 154,
+    "characterRefCount": 0,
+    "length": 17966
+  },
+  {
+    "chapter": 11,
+    "book": 4,
+    "letterIndex": 1968136,
+    "chapterFlat": 155,
+    "characterRefCount": 0,
+    "length": 13222
+  },
+  {
+    "chapter": 12,
+    "book": 4,
+    "letterIndex": 1981358,
+    "chapterFlat": 156,
+    "characterRefCount": 0,
+    "length": 12219
+  },
+  {
+    "chapter": 13,
+    "book": 4,
+    "letterIndex": 1993577,
+    "chapterFlat": 157,
+    "characterRefCount": 0,
+    "length": 17152
+  },
+  {
+    "chapter": 14,
+    "book": 4,
+    "letterIndex": 2010729,
+    "chapterFlat": 158,
+    "characterRefCount": 0,
+    "length": 14554
+  },
+  {
+    "chapter": 15,
+    "book": 4,
+    "letterIndex": 2025283,
+    "chapterFlat": 159,
+    "characterRefCount": 0,
+    "length": 21148
+  },
+  {
+    "chapter": 16,
+    "book": 4,
+    "letterIndex": 2046431,
+    "chapterFlat": 160,
+    "characterRefCount": 0,
+    "length": 13517
+  },
+  {
+    "chapter": 17,
+    "book": 4,
+    "letterIndex": 2059948,
+    "chapterFlat": 161,
+    "characterRefCount": 0,
+    "length": 10882
+  },
+  {
+    "chapter": 18,
+    "book": 4,
+    "letterIndex": 2070830,
+    "chapterFlat": 162,
+    "characterRefCount": 0,
+    "length": 17021
+  },
+  {
+    "chapter": 19,
+    "book": 4,
+    "letterIndex": 2087851,
+    "chapterFlat": 163,
+    "characterRefCount": 0,
+    "length": 23558
+  },
+  {
+    "chapter": 20,
+    "book": 4,
+    "letterIndex": 2111409,
+    "chapterFlat": 164,
+    "characterRefCount": 0,
+    "length": 15980
+  },
+  {
+    "chapter": 21,
+    "book": 4,
+    "letterIndex": 2127389,
+    "chapterFlat": 165,
+    "characterRefCount": 0,
+    "length": 16568
+  },
+  {
+    "chapter": 22,
+    "book": 4,
+    "letterIndex": 2143957,
+    "chapterFlat": 166,
+    "characterRefCount": 0,
+    "length": 22146
+  },
+  {
+    "chapter": 23,
+    "book": 4,
+    "letterIndex": 2166103,
+    "chapterFlat": 167,
+    "characterRefCount": 0,
+    "length": 21765
+  },
+  {
+    "chapter": 24,
+    "book": 4,
+    "letterIndex": 2187868,
+    "chapterFlat": 168,
+    "characterRefCount": 0,
+    "length": 17401
+  },
+  {
+    "chapter": 25,
+    "book": 4,
+    "letterIndex": 2205269,
+    "chapterFlat": 169,
+    "characterRefCount": 0,
+    "length": 26560
+  },
+  {
+    "chapter": 26,
+    "book": 4,
+    "letterIndex": 2231829,
+    "chapterFlat": 170,
+    "characterRefCount": 0,
+    "length": 17135
+  },
+  {
+    "chapter": 27,
+    "book": 4,
+    "letterIndex": 2248964,
+    "chapterFlat": 171,
+    "characterRefCount": 0,
+    "length": 21250
+  },
+  {
+    "chapter": 28,
+    "book": 4,
+    "letterIndex": 2270214,
+    "chapterFlat": 172,
+    "characterRefCount": 0,
+    "length": 18353
+  },
+  {
+    "chapter": 29,
+    "book": 4,
+    "letterIndex": 2288567,
+    "chapterFlat": 173,
+    "characterRefCount": 0,
+    "length": 15738
+  },
+  {
+    "chapter": 30,
+    "book": 4,
+    "letterIndex": 2304305,
+    "chapterFlat": 174,
+    "characterRefCount": 0,
+    "length": 13314
+  },
+  {
+    "chapter": 31,
+    "book": 4,
+    "letterIndex": 2317619,
+    "chapterFlat": 175,
+    "characterRefCount": 0,
+    "length": 20237
+  },
+  {
+    "chapter": 32,
+    "book": 4,
+    "letterIndex": 2337856,
+    "chapterFlat": 176,
+    "characterRefCount": 0,
+    "length": 28098
+  },
+  {
+    "chapter": 33,
+    "book": 4,
+    "letterIndex": 2365954,
+    "chapterFlat": 177,
+    "characterRefCount": 0,
+    "length": 15667
+  },
+  {
+    "chapter": 34,
+    "book": 4,
+    "letterIndex": 2381621,
+    "chapterFlat": 178,
+    "characterRefCount": 0,
+    "length": 21648
+  },
+  {
+    "chapter": 35,
+    "book": 4,
+    "letterIndex": 2403269,
+    "chapterFlat": 179,
+    "characterRefCount": 0,
+    "length": 19971
+  },
+  {
+    "chapter": 36,
+    "book": 4,
+    "letterIndex": 2423240,
+    "chapterFlat": 180,
+    "characterRefCount": 0,
+    "length": 18845
+  },
+  {
+    "chapter": 37,
+    "book": 4,
+    "letterIndex": 2442085,
+    "chapterFlat": 181,
+    "characterRefCount": 0,
+    "length": 17471
+  },
+  {
+    "chapter": 38,
+    "book": 4,
+    "letterIndex": 2459556,
+    "chapterFlat": 182,
+    "characterRefCount": 0,
+    "length": 25937
+  },
+  {
+    "chapter": 39,
+    "book": 4,
+    "letterIndex": 2485493,
+    "chapterFlat": 183,
+    "characterRefCount": 0,
+    "length": 9142
+  },
+  {
+    "chapter": 40,
+    "book": 4,
+    "letterIndex": 2494635,
+    "chapterFlat": 184,
+    "characterRefCount": 0,
+    "length": 12327
+  },
+  {
+    "chapter": 41,
+    "book": 4,
+    "letterIndex": 2506962,
+    "chapterFlat": 185,
+    "characterRefCount": 0,
+    "length": 16421
+  },
+  {
+    "chapter": 42,
+    "book": 4,
+    "letterIndex": 2523383,
+    "chapterFlat": 186,
+    "characterRefCount": 0,
+    "length": 11837
+  },
+  {
+    "chapter": 43,
+    "book": 4,
+    "letterIndex": 2535220,
+    "chapterFlat": 187,
+    "characterRefCount": 0,
+    "length": 7989
+  },
+  {
+    "chapter": 44,
+    "book": 4,
+    "letterIndex": 2543209,
+    "chapterFlat": 188,
+    "characterRefCount": 0,
+    "length": 1711
+  },
+  {
+    "chapter": 45,
+    "book": 4,
+    "letterIndex": 2544920,
+    "chapterFlat": 189,
+    "characterRefCount": 0,
+    "length": 17481
+  },
+  {
+    "chapter": 46,
+    "book": 4,
+    "letterIndex": 2562401,
+    "chapterFlat": 190,
+    "characterRefCount": 0,
+    "length": 15767
+  },
+  {
+    "chapter": 47,
+    "book": 4,
+    "letterIndex": 2578168,
+    "chapterFlat": 191,
+    "characterRefCount": 0,
+    "length": 20362
+  },
+  {
+    "chapter": 48,
+    "book": 4,
+    "letterIndex": 2598530,
+    "chapterFlat": 192,
+    "characterRefCount": 0,
+    "length": 24807
+  },
+  {
+    "chapter": 49,
+    "book": 4,
+    "letterIndex": 2623337,
+    "chapterFlat": 193,
+    "characterRefCount": 0,
+    "length": 25725
+  },
+  {
+    "chapter": 1,
+    "book": 5,
+    "letterIndex": 2649062,
+    "chapterFlat": 194,
+    "characterRefCount": 0,
+    "length": 17640
+  },
+  {
+    "chapter": 2,
+    "book": 5,
+    "letterIndex": 2666702,
+    "chapterFlat": 195,
+    "characterRefCount": 0,
+    "length": 9823
+  },
+  {
+    "chapter": 3,
+    "book": 5,
+    "letterIndex": 2676525,
+    "chapterFlat": 196,
+    "characterRefCount": 0,
+    "length": 10570
+  },
+  {
+    "chapter": 4,
+    "book": 5,
+    "letterIndex": 2687095,
+    "chapterFlat": 197,
+    "characterRefCount": 0,
+    "length": 18859
+  },
+  {
+    "chapter": 5,
+    "book": 5,
+    "letterIndex": 2705954,
+    "chapterFlat": 198,
+    "characterRefCount": 0,
+    "length": 10566
+  },
+  {
+    "chapter": 6,
+    "book": 5,
+    "letterIndex": 2716520,
+    "chapterFlat": 199,
+    "characterRefCount": 0,
+    "length": 14854
+  },
+  {
+    "chapter": 7,
+    "book": 5,
+    "letterIndex": 2731374,
+    "chapterFlat": 200,
+    "characterRefCount": 0,
+    "length": 12911
+  },
+  {
+    "chapter": 8,
+    "book": 5,
+    "letterIndex": 2744285,
+    "chapterFlat": 201,
+    "characterRefCount": 0,
+    "length": 23057
+  },
+  {
+    "chapter": 9,
+    "book": 5,
+    "letterIndex": 2767342,
+    "chapterFlat": 202,
+    "characterRefCount": 0,
+    "length": 1126
+  },
+  {
+    "chapter": 10,
+    "book": 5,
+    "letterIndex": 2768468,
+    "chapterFlat": 203,
+    "characterRefCount": 0,
+    "length": 9390
+  },
+  {
+    "chapter": 11,
+    "book": 5,
+    "letterIndex": 2777858,
+    "chapterFlat": 204,
+    "characterRefCount": 0,
+    "length": 14785
+  },
+  {
+    "chapter": 12,
+    "book": 5,
+    "letterIndex": 2792643,
+    "chapterFlat": 205,
+    "characterRefCount": 0,
+    "length": 14175
+  },
+  {
+    "chapter": 13,
+    "book": 5,
+    "letterIndex": 2806818,
+    "chapterFlat": 206,
+    "characterRefCount": 0,
+    "length": 11844
+  },
+  {
+    "chapter": 14,
+    "book": 5,
+    "letterIndex": 2818662,
+    "chapterFlat": 207,
+    "characterRefCount": 0,
+    "length": 17355
+  },
+  {
+    "chapter": 15,
+    "book": 5,
+    "letterIndex": 2836017,
+    "chapterFlat": 208,
+    "characterRefCount": 0,
+    "length": 16373
+  },
+  {
+    "chapter": 16,
+    "book": 5,
+    "letterIndex": 2852390,
+    "chapterFlat": 209,
+    "characterRefCount": 0,
+    "length": 13114
+  },
+  {
+    "chapter": 17,
+    "book": 5,
+    "letterIndex": 2865504,
+    "chapterFlat": 210,
+    "characterRefCount": 0,
+    "length": 18274
+  },
+  {
+    "chapter": 18,
+    "book": 5,
+    "letterIndex": 2883778,
+    "chapterFlat": 211,
+    "characterRefCount": 0,
+    "length": 10565
+  },
+  {
+    "chapter": 19,
+    "book": 5,
+    "letterIndex": 2894343,
+    "chapterFlat": 212,
+    "characterRefCount": 0,
+    "length": 6653
+  },
+  {
+    "chapter": 20,
+    "book": 5,
+    "letterIndex": 2900996,
+    "chapterFlat": 213,
+    "characterRefCount": 0,
+    "length": 13642
+  },
+  {
+    "chapter": 21,
+    "book": 5,
+    "letterIndex": 2914638,
+    "chapterFlat": 214,
+    "characterRefCount": 0,
+    "length": 15898
+  },
+  {
+    "chapter": 22,
+    "book": 5,
+    "letterIndex": 2930536,
+    "chapterFlat": 215,
+    "characterRefCount": 0,
+    "length": 13703
+  },
+  {
+    "chapter": 23,
+    "book": 5,
+    "letterIndex": 2944239,
+    "chapterFlat": 216,
+    "characterRefCount": 0,
+    "length": 20723
+  },
+  {
+    "chapter": 24,
+    "book": 5,
+    "letterIndex": 2964962,
+    "chapterFlat": 217,
+    "characterRefCount": 0,
+    "length": 9298
+  },
+  {
+    "chapter": 25,
+    "book": 5,
+    "letterIndex": 2974260,
+    "chapterFlat": 218,
+    "characterRefCount": 0,
+    "length": 18111
+  },
+  {
+    "chapter": 26,
+    "book": 5,
+    "letterIndex": 2992371,
+    "chapterFlat": 219,
+    "characterRefCount": 0,
+    "length": 16455
+  },
+  {
+    "chapter": 27,
+    "book": 5,
+    "letterIndex": 3008826,
+    "chapterFlat": 220,
+    "characterRefCount": 0,
+    "length": 12631
+  },
+  {
+    "chapter": 28,
+    "book": 5,
+    "letterIndex": 3021457,
+    "chapterFlat": 221,
+    "characterRefCount": 0,
+    "length": 35169
+  },
+  {
+    "chapter": 29,
+    "book": 5,
+    "letterIndex": 3056626,
+    "chapterFlat": 222,
+    "characterRefCount": 0,
+    "length": 16761
+  },
+  {
+    "chapter": 30,
+    "book": 5,
+    "letterIndex": 3073387,
+    "chapterFlat": 223,
+    "characterRefCount": 0,
+    "length": 10846
+  },
+  {
+    "chapter": 31,
+    "book": 5,
+    "letterIndex": 3084233,
+    "chapterFlat": 224,
+    "characterRefCount": 0,
+    "length": 17599
+  },
+  {
+    "chapter": 32,
+    "book": 5,
+    "letterIndex": 3101832,
+    "chapterFlat": 225,
+    "characterRefCount": 0,
+    "length": 11688
+  },
+  {
+    "chapter": 33,
+    "book": 5,
+    "letterIndex": 3113520,
+    "chapterFlat": 226,
+    "characterRefCount": 0,
+    "length": 10909
+  },
+  {
+    "chapter": 34,
+    "book": 5,
+    "letterIndex": 3124429,
+    "chapterFlat": 227,
+    "characterRefCount": 0,
+    "length": 20569
+  },
+  {
+    "chapter": 35,
+    "book": 5,
+    "letterIndex": 3144998,
+    "chapterFlat": 228,
+    "characterRefCount": 0,
+    "length": 16475
+  },
+  {
+    "chapter": 36,
+    "book": 5,
+    "letterIndex": 3161473,
+    "chapterFlat": 229,
+    "characterRefCount": 0,
+    "length": 16804
+  },
+  {
+    "chapter": 37,
+    "book": 5,
+    "letterIndex": 3178277,
+    "chapterFlat": 230,
+    "characterRefCount": 0,
+    "length": 11807
+  },
+  {
+    "chapter": 38,
+    "book": 5,
+    "letterIndex": 3190084,
+    "chapterFlat": 231,
+    "characterRefCount": 0,
+    "length": 15051
+  },
+  {
+    "chapter": 39,
+    "book": 5,
+    "letterIndex": 3205135,
+    "chapterFlat": 232,
+    "characterRefCount": 0,
+    "length": 6930
+  },
+  {
+    "chapter": 40,
+    "book": 5,
+    "letterIndex": 3212065,
+    "chapterFlat": 233,
+    "characterRefCount": 0,
+    "length": 24185
+  },
+  {
+    "chapter": 41,
+    "book": 5,
+    "letterIndex": 3236250,
+    "chapterFlat": 234,
+    "characterRefCount": 0,
+    "length": 9591
+  },
+  {
+    "chapter": 42,
+    "book": 5,
+    "letterIndex": 3245841,
+    "chapterFlat": 235,
+    "characterRefCount": 0,
+    "length": 11064
+  },
+  {
+    "chapter": 43,
+    "book": 5,
+    "letterIndex": 3256905,
+    "chapterFlat": 236,
+    "characterRefCount": 0,
+    "length": 16343
+  },
+  {
+    "chapter": 44,
+    "book": 5,
+    "letterIndex": 3273248,
+    "chapterFlat": 237,
+    "characterRefCount": 0,
+    "length": 27949
+  },
+  {
+    "chapter": 45,
+    "book": 5,
+    "letterIndex": 3301197,
+    "chapterFlat": 238,
+    "characterRefCount": 0,
+    "length": 18081
+  },
+  {
+    "chapter": 46,
+    "book": 5,
+    "letterIndex": 3319278,
+    "chapterFlat": 239,
+    "characterRefCount": 0,
+    "length": 14843
+  },
+  {
+    "chapter": 47,
+    "book": 5,
+    "letterIndex": 3334121,
+    "chapterFlat": 240,
+    "characterRefCount": 0,
+    "length": 13802
+  },
+  {
+    "chapter": 48,
+    "book": 5,
+    "letterIndex": 3347923,
+    "chapterFlat": 241,
+    "characterRefCount": 0,
+    "length": 17004
+  },
+  {
+    "chapter": 49,
+    "book": 5,
+    "letterIndex": 3364927,
+    "chapterFlat": 242,
+    "characterRefCount": 0,
+    "length": 23819
+  },
+  {
+    "chapter": 50,
+    "book": 5,
+    "letterIndex": 3388746,
+    "chapterFlat": 243,
+    "characterRefCount": 0,
+    "length": 16705
+  },
+  {
+    "chapter": 51,
+    "book": 5,
+    "letterIndex": 3405451,
+    "chapterFlat": 244,
+    "characterRefCount": 0,
+    "length": 18552
+  },
+  {
+    "chapter": 52,
+    "book": 5,
+    "letterIndex": 3424003,
+    "chapterFlat": 245,
+    "characterRefCount": 0,
+    "length": 19965
+  },
+  {
+    "chapter": 53,
+    "book": 5,
+    "letterIndex": 3443968,
+    "chapterFlat": 246,
+    "characterRefCount": 0,
+    "length": 12953
+  },
+  {
+    "chapter": 54,
+    "book": 5,
+    "letterIndex": 3456921,
+    "chapterFlat": 247,
+    "characterRefCount": 0,
+    "length": 17955
+  },
+  {
+    "chapter": 55,
+    "book": 5,
+    "letterIndex": 3474876,
+    "chapterFlat": 248,
+    "characterRefCount": 0,
+    "length": 16878
+  },
+  {
+    "chapter": 56,
+    "book": 5,
+    "letterIndex": 3491754,
+    "chapterFlat": 249,
+    "characterRefCount": 0,
+    "length": 19875
+  },
+  {
+    "chapter": 57,
+    "book": 5,
+    "letterIndex": 3511629,
+    "chapterFlat": 250,
+    "characterRefCount": 0,
+    "length": 6964
+  },
+  {
+    "chapter": 1,
+    "book": 6,
+    "letterIndex": 3518593,
+    "chapterFlat": 251,
+    "characterRefCount": 6,
+    "length": 14986
+  },
+  {
+    "chapter": 2,
+    "book": 6,
+    "letterIndex": 3533579,
+    "chapterFlat": 252,
+    "characterRefCount": 15,
+    "length": 11197
+  },
+  {
+    "chapter": 3,
+    "book": 6,
+    "letterIndex": 3544776,
+    "chapterFlat": 253,
+    "characterRefCount": 0,
+    "length": 15503
+  },
+  {
+    "chapter": 4,
+    "book": 6,
+    "letterIndex": 3560279,
+    "chapterFlat": 254,
+    "characterRefCount": 9,
+    "length": 10466
+  },
+  {
+    "chapter": 5,
+    "book": 6,
+    "letterIndex": 3570745,
+    "chapterFlat": 255,
+    "characterRefCount": 11,
+    "length": 18113
+  },
+  {
+    "chapter": 6,
+    "book": 6,
+    "letterIndex": 3588858,
+    "chapterFlat": 256,
+    "characterRefCount": 2,
+    "length": 20980
+  },
+  {
+    "chapter": 7,
+    "book": 6,
+    "letterIndex": 3609838,
+    "chapterFlat": 257,
+    "characterRefCount": 0,
+    "length": 18270
+  },
+  {
+    "chapter": 8,
+    "book": 6,
+    "letterIndex": 3628108,
+    "chapterFlat": 258,
+    "characterRefCount": 0,
+    "length": 18186
+  },
+  {
+    "chapter": 9,
+    "book": 6,
+    "letterIndex": 3646294,
+    "chapterFlat": 259,
+    "characterRefCount": 0,
+    "length": 15920
+  },
+  {
+    "chapter": 10,
+    "book": 6,
+    "letterIndex": 3662214,
+    "chapterFlat": 260,
+    "characterRefCount": 2,
+    "length": 21282
+  },
+  {
+    "chapter": 11,
+    "book": 6,
+    "letterIndex": 3683496,
+    "chapterFlat": 261,
+    "characterRefCount": 4,
+    "length": 17263
+  },
+  {
+    "chapter": 12,
+    "book": 6,
+    "letterIndex": 3700759,
+    "chapterFlat": 262,
+    "characterRefCount": 2,
+    "length": 30410
+  },
+  {
+    "chapter": 13,
+    "book": 6,
+    "letterIndex": 3731169,
+    "chapterFlat": 263,
+    "characterRefCount": 14,
+    "length": 15130
+  },
+  {
+    "chapter": 14,
+    "book": 6,
+    "letterIndex": 3746299,
+    "chapterFlat": 264,
+    "characterRefCount": 21,
+    "length": 13802
+  },
+  {
+    "chapter": 15,
+    "book": 6,
+    "letterIndex": 3760101,
+    "chapterFlat": 265,
+    "characterRefCount": 1,
+    "length": 15568
+  },
+  {
+    "chapter": 16,
+    "book": 6,
+    "letterIndex": 3775669,
+    "chapterFlat": 266,
+    "characterRefCount": 10,
+    "length": 13491
+  },
+  {
+    "chapter": 17,
+    "book": 6,
+    "letterIndex": 3789160,
+    "chapterFlat": 267,
+    "characterRefCount": 11,
+    "length": 19540
+  },
+  {
+    "chapter": 18,
+    "book": 6,
+    "letterIndex": 3808700,
+    "chapterFlat": 268,
+    "characterRefCount": 2,
+    "length": 22032
+  },
+  {
+    "chapter": 19,
+    "book": 6,
+    "letterIndex": 3830732,
+    "chapterFlat": 269,
+    "characterRefCount": 10,
+    "length": 13183
+  },
+  {
+    "chapter": 20,
+    "book": 6,
+    "letterIndex": 3843915,
+    "chapterFlat": 270,
+    "characterRefCount": 5,
+    "length": 19311
+  },
+  {
+    "chapter": 21,
+    "book": 6,
+    "letterIndex": 3863226,
+    "chapterFlat": 271,
+    "characterRefCount": 2,
+    "length": 37538
+  },
+  {
+    "chapter": 22,
+    "book": 6,
+    "letterIndex": 3900764,
+    "chapterFlat": 272,
+    "characterRefCount": 6,
+    "length": 32427
+  },
+  {
+    "chapter": 23,
+    "book": 6,
+    "letterIndex": 3933191,
+    "chapterFlat": 273,
+    "characterRefCount": 2,
+    "length": 36014
+  },
+  {
+    "chapter": 24,
+    "book": 6,
+    "letterIndex": 3969205,
+    "chapterFlat": 274,
+    "characterRefCount": 8,
+    "length": 8951
+  }
+]

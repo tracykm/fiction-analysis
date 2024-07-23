@@ -5,19 +5,19 @@ import {
   XYChart,
 } from "@visx/xychart";
 import { Box, Stack } from "@mui/material";
+import { chapters } from "./utils";
 
 const tickLabelOffset = 10;
 
 const accessors = {
-  xAccessor: (d) => d.chapterFlat,
-  yAccessor: (d) => d.value,
+  xAccessor: (d) => d?.chapterFlat,
+  yAccessor: (d) => d.value || 0,
 };
 
 type RowShape = {
   chapterFlat?: number;
   days?: number;
   value: number;
-  chapter: number;
 };
 
 export function LineChartTM({
@@ -72,14 +72,11 @@ export function LineChartTM({
             strokeWidth: 0,
           }}
           renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
-            const [book, chapterDetail] = String(
-              nearestDatum.datum.chapter
-            ).split(".");
+            const chapter = chapters[nearestDatum.datum.chapterFlat - 1];
             return (
               <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
                 <Box>
-                  Book {Number(book) || "-"}, Chapter{" "}
-                  {Number(chapterDetail) || "-"}
+                  Book {chapter?.book}, Chapter {chapter?.chapter}
                 </Box>
                 {data.map((d) => {
                   return (

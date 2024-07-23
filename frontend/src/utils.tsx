@@ -1,19 +1,33 @@
-import charactersData from "./data/characters.json";
-import dates from "./data/dates.json";
+import charactersData from "./data/his_dark_materials/characters.json";
+import chaptersData from "./data/his_dark_materials/chapters.json";
+import dates from "./data/his_dark_materials/dates.json";
 import { groupBy, keyBy } from "lodash-es";
 
 export const characters: Record<
   string,
   {
-    char_count: { char_count: number; sentence: string; chapter: number }[];
+    refs: {
+      [chapter: string]: {
+        letterIndex: number;
+        sentence: string;
+        chapterFlat: number;
+      }[];
+    };
     count: number;
     category?: string[];
-    name: string;
   }
 > = charactersData;
-Object.keys(charactersData).forEach((c) => {
-  characters[c].name = c;
-});
+
+export type ChapterRow = {
+  chapter: number;
+  book: number;
+  letterIndex: number;
+  chapterFlat: number;
+  characterRefCount: number;
+  length: number;
+};
+
+export const chapters: ChapterRow[] = chaptersData;
 
 export const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
 
@@ -30,56 +44,8 @@ const CHAPTER_LENGTH = {
   3: 38,
 };
 
-function toFlatChapter(fullChapter: number) {
-  const [book, chapter] = String(fullChapter).split(".");
-  if (book === "2") return Number(chapter) + CHAPTER_LENGTH["1"];
-  if (book === "3")
-    return Number(chapter) + CHAPTER_LENGTH["1"] + CHAPTER_LENGTH["2"];
-  return Number(chapter);
-}
-
-function chunkDataByChapter(data: typeof characters.Lyra) {
-  const newData = Object.values(groupBy(data.char_count, "chapter")).map(
-    (d: { chapter: number }[]) => {
-      // const chapter = getPercent(d.char_count);
-      const chapter = d[0].chapter;
-      let days = 0;
-      dayDates.forEach((dd) => {
-        if (dd.chapter >= chapter) {
-          days = dd.days;
-        }
-      });
-      return {
-        chapter,
-        chapterFlat: toFlatChapter(chapter),
-        value: d.length,
-        days,
-      };
-    }
-  );
-  const keyedNewData = keyBy(newData, "chapterFlat");
-  return Array.from({
-    length: CHAPTER_LENGTH["1"] + CHAPTER_LENGTH["2"] + CHAPTER_LENGTH["3"],
-  }).map((_, i) => {
-    return {
-      value: 0,
-      chapterFlat: i,
-      ...keyedNewData[i],
-    } as DataInfo;
-  });
-}
-
 type DataInfo = {
-  chapter: number;
   chapterFlat: number;
   value: number;
-  days: number;
+  // days: number;
 };
-
-export const processedCharacters = Object.keys(characters).reduce(
-  (acc, name) => {
-    acc[name] = chunkDataByChapter(characters[name]);
-    return acc;
-  },
-  {} as Record<string, ReturnType<typeof chunkDataByChapter>>
-);

@@ -4,8 +4,9 @@ import { useState } from "react";
 import { Checkboxes } from "./Checkboxes";
 import { LineChartTM } from "./LineChartTM";
 import { SelectInput } from "./SelectInput";
-import { COLORS, characters, processedCharacters } from "./utils";
+import { COLORS, chapters, characters } from "./utils";
 import { uniq } from "lodash-es";
+import { ErrorBoundary } from "./ErrorBoundry";
 
 const characterOptions = Object.keys(characters).map((label, i) => ({
   value: label,
@@ -34,16 +35,21 @@ export function TimeGraphAndExcerpts() {
   const [selected, setSelected] = useState(["Lee Scoresby"]);
   const [category, setCategory] = useState<string>();
 
-  const data = selected.map((s, i) => ({
+  const data = selected.map((name, i) => ({
     color: COLORS[i] || "white",
-    info: processedCharacters[s],
-    name: s,
+    info: chapters.map((d) => ({
+      chapterFlat: d.chapterFlat,
+      value: characters[name].refs[d.chapterFlat]?.length || 0,
+    })),
+    name,
   }));
 
   return (
     <>
       <Stack spacing={2} direction={{ sm: "row" }}>
-        <LineChartTM data={data} keyName="chapterFlat" />
+        <ErrorBoundary>
+          <LineChartTM data={data} keyName="chapterFlat" />
+        </ErrorBoundary>
         <SelectionSidebar
           {...{ selected, setSelected, category, setCategory }}
         />
@@ -101,14 +107,20 @@ function TextExcerpts({ selected }: { selected: string[] }) {
     >
       {selected.map((name, i) => (
         <div key={name || i} style={{ width: "100%" }}>
-          <Box sx={{ color: COLORS[i], fontSize: 18 }}>{name}</Box>
-          <Box sx={{ color: "#888" }}>
-            {uniq(characters[name].category)?.join(", ")}
-          </Box>
-          {characters[name].count.toLocaleString()} References
-          {characters[name].char_count.map((l, i) => (
-            <ExcerptLine key={i} sentence={l.sentence} chapter={l.chapter} />
-          ))}
+          <Stack sx={{ mb: 2 }}>
+            <Box sx={{ color: COLORS[i], fontSize: 18 }}>{name}</Box>
+            <Box sx={{ color: "#888" }}>
+              {uniq(characters[name].category)?.join(", ")}
+            </Box>
+            <Box sx={{ color: "#888" }}>
+              {characters[name].count.toLocaleString()} References
+            </Box>
+          </Stack>
+          {Object.entries(characters[name].refs).map(
+            ([chapterFlat, refs], i) => (
+              <ChapterExcerpt chapterFlat={chapterFlat} refs={refs} />
+            )
+          )}
           {}
         </div>
       ))}
@@ -116,26 +128,53 @@ function TextExcerpts({ selected }: { selected: string[] }) {
   );
 }
 
-function ExcerptLine({
-  sentence,
-  chapter,
+function ChapterExcerpt({
+  chapterFlat,
+  refs,
 }: {
-  sentence: string;
-  chapter: number;
+  chapterFlat: string;
+  refs: { sentence: string }[];
 }) {
-  const [book, chapterDetail] = String(chapter).split(".");
+  const chapter = chapters[Number(chapterFlat) - 1];
+  const [showMore, setShowMore] = useState(false);
+
+  const cutoffNum = 3;
+
+  const baseRefs = refs.slice(0, cutoffNum);
+  const moreRefs = refs.slice(cutoffNum, -1);
+
+  return (
+    <Box key={chapterFlat} sx={{ my: 2 }}>
+      <Box>
+        B{chapter?.book}, Ch{chapter?.chapter}
+      </Box>
+      {baseRefs.map((l) => (
+        <ExcerptLine sentence={l.sentence} />
+      ))}
+      {moreRefs.length && !showMore ? (
+        <Button onClick={() => setShowMore(!showMore)} sx={{ my: -1 }}>
+          + {moreRefs.length} More
+        </Button>
+      ) : null}
+      {showMore && moreRefs.map((l) => <ExcerptLine sentence={l.sentence} />)}
+    </Box>
+  );
+}
+
+function ExcerptLine({ sentence }: { sentence: string }) {
   return (
     <Tooltip
       title={sentence}
       componentsProps={{
         tooltip: { sx: { fontSize: "16px", maxWidth: 500, lineHeight: 1.5 } },
       }}
+      placement="top"
     >
       <Box
         sx={{
           height: 20,
           overflow: "hidden",
-          my: 2,
+          my: 0.5,
           whiteSpace: "nowrap",
           width: "100%",
           textOverflow: "ellipsis",
@@ -143,9 +182,6 @@ function ExcerptLine({
           color: "#888",
         }}
       >
-        <b style={{ width: 70 }}>
-          B{book} Ch{chapterDetail}
-        </b>{" "}
         {sentence}
       </Box>
     </Tooltip>

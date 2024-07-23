@@ -1,6 +1,7 @@
 import { Box, Divider, Typography } from "@mui/material";
 import { CharacterPieCharts } from "./CharacterPieCharts";
 import { TimeGraphAndExcerpts } from "./TimeGraphAndExcerpts";
+import { ErrorBoundary } from "./ErrorBoundry";
 
 function Section({
   children,
@@ -31,11 +32,15 @@ function App() {
       </header>
 
       <Section title="Character Categories">
-        <CharacterPieCharts />
+        <ErrorBoundary>
+          <CharacterPieCharts />
+        </ErrorBoundary>
       </Section>
 
       <Section title="Character References Over Time">
-        <TimeGraphAndExcerpts />
+        <ErrorBoundary>
+          <TimeGraphAndExcerpts />
+        </ErrorBoundary>
       </Section>
     </Box>
   );

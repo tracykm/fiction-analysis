@@ -1,40 +1,16 @@
 import json
 import re
+import os
 
 import nltk
 
-import people_data
+import books.his_dark_materials.people_data as his_dark_materials
+import books.jane_austen.people_data as jane_austen
 
 nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger")
 nltk.download("maxent_ne_chunker")
 nltk.download("words")
-
-
-def find_possible_people():
-    people = {}
-
-    def add_people(sentence):
-        for l in re.findall(r"\w\s[A-Z][a-z]+", sentence):
-            people[l[2:]] = True
-
-    with open("./raw_text/full_text.txt", encoding="utf-8") as f:
-        for line in f:
-            add_people(line)
-
-    people_list = [*people.keys()]
-    people_list.sort()
-    print(people_list)
-
-
-# find_possible_people()
-
-
-characters = people_data.characters
-
-for name in characters:
-    characters[name]["count"] = 0
-    characters[name]["char_count"] = []
 
 
 def has_word(text: str, word: str):
@@ -58,13 +34,53 @@ def combine_short_sentences(sentences_raw: list[str]):
     return sentences
 
 
-with open("./raw_text/full_text.txt", encoding="utf-8") as f:
-    char_count = 0
+def has_character(character: dict, sentence: str, book: int):
+    if character.get("books"):
+        valid_book = book in character.get("books")
+        if not valid_book:
+            return False
+
+    all_names = [character["name"]] + character.get("other_names", [])
+    in_sentence = any(name for name in all_names if has_word(sentence, name))
+    if not in_sentence:
+        return False
+
+    disqualifiers = any(
+        name for name in character.get("disqualifiers", []) if has_word(sentence, name)
+    )
+    if disqualifiers:
+        return False
+    return True
+
+
+def find_references(file: list[str], people_data: dict[str, dict]):
+    chapters = []
+    characters = people_data
+
+    for name in characters:
+        characters[name]["name"] = name
+        characters[name]["count"] = 0
+        characters[name]["refs"] = []
+
+    letter_index = 0
     chapter = 0
     book = 0
-    for line in f:
+    chapter_flat = 0
+    for line in file:
         if "~~~ CHAPTER" in line:
             chapter += 1
+            chapter_flat += 1
+            if chapters:
+                chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
+            chapters.append(
+                {
+                    "chapter": chapter,
+                    "book": book,
+                    "letterIndex": letter_index,
+                    "chapterFlat": chapter_flat,
+                    "characterRefCount": 0,
+                }
+            )
         if "~~~ BOOK" in line:
             book += 1
             chapter = 0
@@ -72,30 +88,53 @@ with open("./raw_text/full_text.txt", encoding="utf-8") as f:
         sentences = combine_short_sentences(nltk.tokenize.sent_tokenize(line))
 
         for sentence in sentences:
-            char_count += len(sentence)
-            sentence_lower = sentence.lower()
+            letter_index += len(sentence)
             for name, character in characters.items():
-                in_sentence = any(
-                    name
-                    for name in character.get("other_names", [])
-                    if has_word(sentence, name)
-                )
-                disqualifiers = any(
-                    name
-                    for name in character.get("disqualifiers", [])
-                    if has_word(sentence, name)
-                )
-
-                if (has_word(sentence, name) or in_sentence) and not disqualifiers:
+                if has_character(character, sentence, book):
+                    if chapters:
+                        chapters[-1]["characterRefCount"] += 1
                     character["count"] += 1
-                    pad_num = "0" if chapter < 10 else ""
-                    character["char_count"].append(
+                    character["refs"].append(
                         {
-                            "char_count": char_count,
+                            "letterIndex": letter_index,
                             "sentence": sentence,
-                            "chapter": float(f"{book}.{pad_num}{chapter}"),
+                            "chapterFlat": chapter_flat,
                         }
                     )
+    chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
+    return characters, chapters
 
-with open("../frontend/src/data/characters.json", "w") as f:
-    f.write(json.dumps(characters))
+
+# Function to group references by chapter
+def group_by_chapter(refs):
+    grouped = {}
+    for ref in refs:
+        chapter = ref["chapterFlat"]
+        if chapter not in grouped:
+            grouped[chapter] = []
+        grouped[chapter].append(ref)
+    return grouped
+
+
+def generate_data(book_title="his_dark_materials"):
+    if book_title == "his_dark_materials":
+        people_data = his_dark_materials.characters
+    elif book_title == "jane_austen":
+        people_data = jane_austen.characters
+    with open(f"./books/{book_title}/raw_text.txt", encoding="utf-8") as file:
+        (characters, chapters) = find_references(file, people_data)
+        characters = {
+            k: {**v, "refs": group_by_chapter(v["refs"])} for k, v in characters.items()
+        }
+
+    # Ensure the directory exists
+    directory_path = f"../frontend/src/data/{book_title}"
+    os.makedirs(directory_path, exist_ok=True)
+    with open(f"../frontend/src/data/{book_title}/characters.json", "w") as f:
+        f.write(json.dumps(characters))
+    with open(f"../frontend/src/data/{book_title}/chapters.json", "w") as f:
+        f.write(json.dumps(chapters))
+
+
+generate_data("his_dark_materials")
+generate_data("jane_austen")

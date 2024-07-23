@@ -14,7 +14,12 @@ characters = {
     },
     "The Master": {
         "other_names": ["Master", "Charles"],
-        "disqualifiers": ["Sir Charles", "Latrom", "Master Will", "I’m Charles."],
+        "disqualifiers": [
+            "Sir Charles",
+            "Latrom",
+            "Master Will",
+            "Lizzie",
+        ],
         "category": ["Scholar", "Human", "Adult", "Lyra's World", "Adult", "Human"],
     },
     "golden monkey": {
@@ -25,6 +30,7 @@ characters = {
     "Lady Salmakia": {
         "other_names": ["Salmakia", "the Lady", "The Lady"],
         "category": ["Gallivespian", "Adult"],
+        "books": [3],
         "disqualifiers": [
             "Lady Coulter",
             "whether the Lady is now",
@@ -33,10 +39,12 @@ characters = {
     "Lord Roke": {
         "other_names": ["Roke"],
         "category": ["Gallivespian", "Adult"],
+        "books": [3],
     },
     "Madame Oxentiel": {
         "other_names": ["Oxentiel"],
         "category": ["Gallivespian", "Adult"],
+        "books": [3],
     },
     "Serafina Pekkala": {
         "other_names": ["Serafina", "Pekkala"],
@@ -70,6 +78,7 @@ characters = {
     "Mary Malone": {
         "other_names": ["Mary", "Malone"],
         "category": ["Scholar", "Human", "Adult", "Will's World"],
+        "books": [2, 3],
     },
     "Chevalier Tialys": {
         "other_names": ["Chevalier", "Tialys"],
@@ -202,6 +211,7 @@ characters = {
         "other_names": ["William", "Mark"],
         "disqualifiers": ["Will you", "Will I", "Will he", "Will she", "Will Serafina"],
         "category": ["Child", "Will's World", "Human"],
+        "books": [2, 3],
     },
     "Pantalaimon": {
         "other_names": ["Pan"],
@@ -264,6 +274,8 @@ characters = {
             "Johnny Fiorelli",
             "John Faa",
             "growed up, John",
+            "Farder Coram",
+            "treat with him, John",
         ],
         "category": ["Will's World", "Human", "Adult"],
     },
@@ -287,6 +299,12 @@ characters = {
     "Peter Hawker": {
         "category": ["Gyption", "Lyra's World", "Human", "Adult"],
         "other_names": ["Peter"],
+        "books": [1],
+    },
+    "Peter": {
+        "category": ["Borderland with Death", "Human", "Adult"],
+        "other_names": ["Peter"],
+        "books": [3],
     },
     "Raymond van Gerrit": {
         "category": ["Gyption", "Lyra's World", "Human", "Adult"],
@@ -328,26 +346,32 @@ characters = {
     "Kulang": {
         "category": ["Dæmon", "Lyra's World", "Child"],
         "other_names": [],
+        "books": [1],
     },
     "Kyrillion": {
         "category": ["Dæmon", "Lyra's World", "Child"],
         "other_names": [],
+        "books": [1],
     },
     "Annie": {
         "category": ["Child", "Lyra's World", "Human"],
         "other_names": [],
+        "books": [1],
     },
     "Martha": {
         "category": ["Child", "Lyra's World", "Human"],
         "other_names": [],
+        "books": [1],
     },
     "Hugh Lovat": {
         "category": ["Child", "Lyra's World", "Human"],
         "other_names": ["Hugh"],
+        "books": [1],
     },
     "Bella": {
         "category": ["Child", "Lyra's World", "Human"],
         "other_names": [],
+        "books": [1],
     },
     "Joachim Lorenz": {
         "category": ["Lyra's World", "Adult", "Human"],
