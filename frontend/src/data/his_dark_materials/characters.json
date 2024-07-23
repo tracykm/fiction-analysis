@@ -29446,6 +29446,7 @@
   "Annie": {
     "category": ["Child", "Lyra's World", "Human"],
     "other_names": [],
+    "books": [1],
     "name": "Annie",
     "count": 12,
     "refs": {
@@ -49217,48 +49218,15 @@
   "Kulang": {
     "category": ["D\u00e6mon", "Lyra's World", "Child"],
     "other_names": [],
+    "books": [1],
     "name": "Kulang",
-    "count": 6,
-    "refs": {
-      "42": [
-        {
-          "letterIndex": 1237400,
-          "sentence": "The monk\u2019s bat d\u00e6mon swooped and darted around her, frightening her own d\u00e6mon, Kulang, who crept into her hair to hide, but Ama tried to remain still and silent until Pagdzin tulku spoke. \u201cYes, child?",
-          "chapterFlat": 42
-        },
-        {
-          "letterIndex": 1247911,
-          "sentence": "She stopped in sight of the little huddle of stone houses and her d\u00e6mon perched on her fist. \u201cShe lied!\u201d Ama said. \u201cShe lied to us! What can we do, Kulang? Can we tell Dada?",
-          "chapterFlat": 42
-        }
-      ],
-      "49": [
-        {
-          "letterIndex": 1377570,
-          "sentence": "Kulang, her d\u00e6mon, sprang to a rock near the top of the little waterfall, and she knew he\u2019d turn at once to make sure she didn\u2019t brush the moisture off her eyelashes\u2014except that he didn\u2019t.",
-          "chapterFlat": 49
-        },
-        {
-          "letterIndex": 1378489,
-          "sentence": "It flew to Kulang and spoke briefly: Friends. We shan\u2019t hurt you.",
-          "chapterFlat": 49
-        },
-        {
-          "letterIndex": 1378862,
-          "sentence": "Kulang became a butterfly and settled for a moment on her cheek, but left it to flutter around the other d\u00e6mon, who sat still on the boy\u2019s hand.",
-          "chapterFlat": 49
-        },
-        {
-          "letterIndex": 1379326,
-          "sentence": "The boy\u2019s d\u00e6mon took to the air and fluttered with Kulang among the rainbows, and slowly they began to understand each other.",
-          "chapterFlat": 49
-        }
-      ]
-    }
+    "count": 0,
+    "refs": {}
   },
   "Kyrillion": {
     "category": ["D\u00e6mon", "Lyra's World", "Child"],
     "other_names": [],
+    "books": [1],
     "name": "Kyrillion",
     "count": 3,
     "refs": {
@@ -49284,8 +49252,9 @@
   "Martha": {
     "category": ["Child", "Lyra's World", "Human"],
     "other_names": [],
+    "books": [1],
     "name": "Martha",
-    "count": 4,
+    "count": 3,
     "refs": {
       "14": [
         {
@@ -49303,21 +49272,15 @@
           "sentence": "\u201cI think I\u2019ll ask Mrs. Coulter when she comes.\u201d \u201cYou wouldn\u2019t dare!\u201d said Martha admiringly.",
           "chapterFlat": 14
         }
-      ],
-      "57": [
-        {
-          "letterIndex": 1589635,
-          "sentence": "The woman, Martha, dished the stew onto chipped enamel plates and put some in a bowl for the deaths to pass among themselves.",
-          "chapterFlat": 57
-        }
       ]
     }
   },
   "Hugh Lovat": {
     "category": ["Child", "Lyra's World", "Human"],
     "other_names": ["Hugh"],
+    "books": [1],
     "name": "Hugh Lovat",
-    "count": 5,
+    "count": 3,
     "refs": {
       "3": [
         {
@@ -49335,26 +49298,13 @@
           "sentence": "That\u2019s why they call \u2019em Gobblers.\u201d \u201cThey eat kids?\u201d said Lyra\u2019s other crony, Hugh Lovat, a kitchen boy from St. Michael\u2019s.",
           "chapterFlat": 3
         }
-      ],
-      "44": [
-        {
-          "letterIndex": 1272683,
-          "sentence": "The current President of the Consistorial Court was a Scot called Hugh MacPhail. He had been elected young.",
-          "chapterFlat": 44
-        }
-      ],
-      "61": [
-        {
-          "letterIndex": 1667482,
-          "sentence": "And I remembered the gyptian boat mother, Ma Costa\u2014you remember\u2014it was their boat we got on board of, in Jericho, with Simon and Hugh and them\u2014\u201d \u201cYes!",
-          "chapterFlat": 61
-        }
       ]
     }
   },
   "Bella": {
     "category": ["Child", "Lyra's World", "Human"],
     "other_names": [],
+    "books": [1],
     "name": "Bella",
     "count": 5,
     "refs": {

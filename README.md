@@ -15,7 +15,7 @@
 - run parser
 
 `cd parse`
-`python process.py`
+`python process.py && npx prettier -w ../frontend/src/data`
 
 re-deploy frontend
 
