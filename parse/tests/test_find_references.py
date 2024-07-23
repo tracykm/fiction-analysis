@@ -1,20 +1,21 @@
-import unittest
-
-
-def find_references(sentence: str) -> list[str]:
-    """Return a list of references found in the given sentence."""
-    return []
+from ..find_references import find_references
 
 
 class TestFindReferences:
     def test_empty_sentence(self):
         """Test that an empty sentence returns an empty list."""
-        assert find_references("") == []
+        assert find_references("", {}) == []
 
     def test_no_references(self):
         """Test that a sentence with no references returns an empty list."""
         sentence = "This is a simple sentence."
-        assert find_references(sentence) == []
+        assert (
+            find_references(
+                sentence,
+                {"Lyra": {"other_names": [], "category": [], "disqualifiers": []}},
+            )
+            == []
+        )
 
     def test_single_reference(self):
         """Test that a sentence with a single reference returns a list with that reference."""
@@ -27,7 +28,3 @@ class TestFindReferences:
         sentence = "Lyra and Will are key characters."
         expected_references = ["Lyra", "Will"]
         assert find_references(sentence) == expected_references
-
-
-if __name__ == "__main__":
-    unittest.main()
