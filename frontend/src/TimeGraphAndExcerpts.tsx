@@ -189,23 +189,22 @@ function ExcerptLine({
         tooltip: { sx: { fontSize: "16px", maxWidth: 500, lineHeight: 1.5 } },
       }}
       placement="top"
+      disableInteractive
     >
-      <>
-        <Box
-          sx={{
-            height: 20,
-            overflow: "hidden",
-            my: 0.5,
-            whiteSpace: "nowrap",
-            width: "100%",
-            textOverflow: "ellipsis",
-            minWidth: 0,
-            color: "#888",
-          }}
-        >
-          <span>p.{page}</span> {sentence}
-        </Box>
-      </>
+      <Box
+        sx={{
+          height: 20,
+          overflow: "hidden",
+          my: 0.5,
+          whiteSpace: "nowrap",
+          width: "100%",
+          textOverflow: "ellipsis",
+          minWidth: 0,
+          color: "#888",
+        }}
+      >
+        <span>p.{page}</span> {sentence}
+      </Box>
     </Tooltip>
   );
 }

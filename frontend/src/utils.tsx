@@ -1,7 +1,7 @@
 import charactersData from "./data/his_dark_materials/characters.json";
 import chaptersData from "./data/his_dark_materials/chapters.json";
+import bookData from "./data/his_dark_materials/books.json";
 import dates from "./data/his_dark_materials/dates.json";
-import { groupBy, keyBy } from "lodash-es";
 
 export const characters: Record<
   string,
@@ -49,6 +49,8 @@ export const BOOK_START_LETTER_INDEX = {
   2: chapters[CHAPTER_LENGTH[1]].letterIndex,
   3: chapters[CHAPTER_LENGTH[1] + CHAPTER_LENGTH[2]].letterIndex,
 };
+
+export const books = bookData;
 
 type DataInfo = {
   chapterFlat: number;

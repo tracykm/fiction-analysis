@@ -4,8 +4,8 @@ import {
   Tooltip,
   XYChart,
 } from "@visx/xychart";
-import { Box, Stack } from "@mui/material";
-import { chapters } from "./utils";
+import { Box, Stack, Typography } from "@mui/material";
+import { books, chapters } from "./utils";
 
 const tickLabelOffset = 10;
 
@@ -76,9 +76,29 @@ export function LineChartTM({
             return (
               <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
                 <Box>
-                  Book {chapter?.book}, Chapter {chapter?.chapter}
+                  <Typography
+                    sx={{
+                      fontSize: 12,
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div>B{chapter?.book}</div>
+                    <div>{books[chapter?.book - 1].title}</div>
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: 12,
+                      display: "flex",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <div>Ch{chapter?.chapter}</div>
+                    <div>{chapter?.title}</div>
+                  </Typography>
                 </Box>
                 {data.map((d) => {
+                  const value = datumByKey[d.name].datum.value;
                   return (
                     <Stack spacing={1}>
                       <Stack spacing={1} direction="row">
@@ -87,7 +107,7 @@ export function LineChartTM({
                         />
                         <Box sx={{ fontSize: 18 }}>{d.name}</Box>
                         <Box sx={{ flexGrow: 1 }} />
-                        <div>{datumByKey[d.name].datum.value}</div>
+                        <div>{value}</div>
                       </Stack>
                     </Stack>
                   );

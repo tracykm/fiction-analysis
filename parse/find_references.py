@@ -49,7 +49,9 @@ def has_character(character: dict, sentence: str, book: int):
     return True
 
 
-def find_references(file: list[str], people_data: dict[str, dict]):
+def find_references(
+    file: list[str], people_data: dict[str, dict], chapter_names: dict[list[str]]
+):
     chapters = []
     characters = people_data
 
@@ -68,6 +70,11 @@ def find_references(file: list[str], people_data: dict[str, dict]):
             chapter_flat += 1
             if chapters:
                 chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
+            chapter_name = (
+                chapter_names.get(str(book), [])[chapter - 1]
+                if chapter_names
+                else str(chapter)
+            )
             chapters.append(
                 {
                     "chapter": chapter,
@@ -75,6 +82,7 @@ def find_references(file: list[str], people_data: dict[str, dict]):
                     "letterIndex": letter_index,
                     "chapterFlat": chapter_flat,
                     "characterRefCount": 0,
+                    "title": chapter_name,
                 }
             )
         if "~~~ BOOK" in line:
