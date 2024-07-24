@@ -2,7 +2,7 @@ import { Box, Button, ButtonGroup, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
 import { PieChartTM } from "./PieChartTM";
 import { useState } from "react";
-import { characters } from "./utils";
+import { ChapterRow, CharactersData } from "./utils";
 
 const PIE_COLORS = [
   "#25CED1",
@@ -17,7 +17,10 @@ const PIE_COLORS = [
   "#EA526F",
 ];
 
-function getPieChartDataIndividuals(types: { label: string; id: string }[]) {
+function getPieChartDataIndividuals(
+  characters: CharactersData,
+  types: { label: string; id: string }[]
+) {
   return types.map(({ label, id }, i) => {
     const colorIndex = i % types.length ? PIE_COLORS.length - i : i;
     const validChars = Object.values(characters).filter((c) =>
@@ -33,7 +36,10 @@ function getPieChartDataIndividuals(types: { label: string; id: string }[]) {
     };
   });
 }
-function getPieChartDataRefs(types: { label: string; id: string }[]) {
+function getPieChartDataRefs(
+  characters: CharactersData,
+  types: { label: string; id: string }[]
+) {
   return types.map(({ label, id }, i) => {
     const colorIndex = i % types.length ? PIE_COLORS.length - i : i;
     const validChars = Object.values(characters).filter((c) =>
@@ -50,21 +56,13 @@ function getPieChartDataRefs(types: { label: string; id: string }[]) {
   });
 }
 
-const characterOptions = Object.keys(characters).map((label, i) => ({
-  value: label,
-  label: (
-    <div key={label || i}>
-      {label} <span style={{ opacity: 0.4 }}>{characters[label].count}</span>
-    </div>
-  ),
-  count: characters[label].count,
-  category: characters[label].category,
-  tooltip: characters[label].category?.join(", "),
-}));
-
-characterOptions.sort((a, b) => b.count - a.count);
-
-export function CharacterPieCharts() {
+export function CharacterPieCharts({
+  characters,
+  chapters,
+}: {
+  characters: CharactersData;
+  chapters: ChapterRow[];
+}) {
   const [countType, setCountType] = useState<"individuals" | "refs">(
     "individuals"
   );
@@ -78,7 +76,7 @@ export function CharacterPieCharts() {
     <>
       <Stack direction="row" spacing={3} sx={{ mb: 2 }}>
         <PieChartTM
-          data={getPieChartData([
+          data={getPieChartData(characters, [
             { id: "Human", label: "Human" },
             { id: "Witch", label: "Witch" },
             { id: "Angel", label: "Angel" },
@@ -92,7 +90,7 @@ export function CharacterPieCharts() {
           includeDetailPercent={countType === "refs"}
         />
         <PieChartTM
-          data={getPieChartData([
+          data={getPieChartData(characters, [
             { id: "Lyra's World", label: "Lyra's World" },
             { id: "Will's World", label: "Will's World" },
             { id: "Angel", label: "Angel Realm" },
@@ -105,7 +103,7 @@ export function CharacterPieCharts() {
           includeDetailPercent={countType === "refs"}
         />
         <PieChartTM
-          data={getPieChartData([
+          data={getPieChartData(characters, [
             { id: "Adult", label: "Adult" },
             { id: "Child", label: "Child" },
           ])}

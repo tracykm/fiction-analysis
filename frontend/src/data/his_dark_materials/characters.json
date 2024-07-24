@@ -48957,37 +48957,6 @@
       ]
     }
   },
-  "Peter": {
-    "category": ["Borderland with Death", "Human", "Adult"],
-    "other_names": ["Peter"],
-    "books": [3],
-    "name": "Peter",
-    "count": 4,
-    "refs": {
-      "57": [
-        {
-          "letterIndex": 1587011,
-          "sentence": "\u201cYou\u2019re the first people we ever saw without a death,\u201d said the man, whose name, they\u2019d learned, was Peter. \u201cSince we come here, that is.",
-          "chapterFlat": 57
-        },
-        {
-          "letterIndex": 1588979,
-          "sentence": "\u201cThese are your deaths?\u201d said Tialys. \u201cIndeed, sir,\u201d said Peter.",
-          "chapterFlat": 57
-        },
-        {
-          "letterIndex": 1589836,
-          "sentence": "Presently all the family and their guests were eating hungrily, and Peter asked the children where they\u2019d come from, and what their world was like.",
-          "chapterFlat": 57
-        },
-        {
-          "letterIndex": 1595136,
-          "sentence": "\u201cExcuse me,\u201d she said to the man Peter, \u201cbut me and our friend the Chevalier, we\u2019ve got to go outside for a minute, because he needs to talk to his friends in  the moon through my special instrument.",
-          "chapterFlat": 57
-        }
-      ]
-    }
-  },
   "Raymond van Gerrit": {
     "category": ["Gyption", "Lyra's World", "Human", "Adult"],
     "other_names": ["Raymond"],

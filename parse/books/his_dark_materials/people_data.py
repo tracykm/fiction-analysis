@@ -301,11 +301,11 @@ characters = {
         "other_names": ["Peter"],
         "books": [1],
     },
-    "Peter": {
-        "category": ["Borderland with Death", "Human", "Adult"],
-        "other_names": ["Peter"],
-        "books": [3],
-    },
+    # "Peter": {
+    #     "category": ["Borderland with Death", "Human", "Adult"],
+    #     "other_names": ["Peter"],
+    #     "books": [3],
+    # },
     "Raymond van Gerrit": {
         "category": ["Gyption", "Lyra's World", "Human", "Adult"],
         "other_names": ["Raymond"],

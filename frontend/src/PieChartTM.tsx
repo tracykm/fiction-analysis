@@ -64,7 +64,7 @@ function ActiveDetail({
 }
 
 export function PieChartTM({
-  data,
+  data: _data,
   name = "Sections",
   subtitle,
   width = 280,
@@ -76,6 +76,7 @@ export function PieChartTM({
   width?: number;
   includeDetailPercent?: boolean;
 }) {
+  const data = _data.filter((d) => d.amount);
   const [active, setActive] = useState<PieData | undefined>();
   const half = width / 2;
 

@@ -1,9 +1,17 @@
-import charactersData from "./data/his_dark_materials/characters.json";
-import chaptersData from "./data/his_dark_materials/chapters.json";
-import bookData from "./data/his_dark_materials/books.json";
+import charactersJson from "./data/his_dark_materials/characters.json";
+import chaptersJson from "./data/his_dark_materials/chapters.json";
+import bookJson from "./data/his_dark_materials/books.json";
 import dates from "./data/his_dark_materials/dates.json";
 
-export const characters: Record<
+export type ChapterRow = (typeof chaptersJson)[0];
+export type CharactersRow = Omit<typeof charactersJson.Lyra, "refs"> & {
+  refs: { [chapter: string]: RefsRow[] };
+};
+export type CharactersData = { [characterName: string]: CharactersRow };
+
+export type RefsRow = (typeof charactersJson.Lyra)["refs"]["1"][0];
+
+export const charactersFullData: Record<
   string,
   {
     refs: {
@@ -16,18 +24,9 @@ export const characters: Record<
     count: number;
     category?: string[];
   }
-> = charactersData;
+> = charactersJson;
 
-export type ChapterRow = {
-  chapter: number;
-  book: number;
-  letterIndex: number;
-  chapterFlat: number;
-  characterRefCount: number;
-  length: number;
-};
-
-export const chapters: ChapterRow[] = chaptersData;
+export const chaptersFullData: ChapterRow[] = chaptersJson;
 
 export const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
 
@@ -46,11 +45,11 @@ const CHAPTER_LENGTH = {
 
 export const BOOK_START_LETTER_INDEX = {
   1: 0,
-  2: chapters[CHAPTER_LENGTH[1]].letterIndex,
-  3: chapters[CHAPTER_LENGTH[1] + CHAPTER_LENGTH[2]].letterIndex,
+  2: chaptersFullData[CHAPTER_LENGTH[1]].letterIndex,
+  3: chaptersFullData[CHAPTER_LENGTH[1] + CHAPTER_LENGTH[2]].letterIndex,
 };
 
-export const books = bookData;
+export const books = bookJson;
 
 type DataInfo = {
   chapterFlat: number;
@@ -60,3 +59,8 @@ type DataInfo = {
 /** rough approximation, so many different prints out there people don't depend on it being accurate,
  * gives ballpark idea of how far along in chapter */
 export const LETTERS_PER_PAGE = 1500;
+
+export const flatChapterToBook = chaptersFullData.reduce((acc, d) => {
+  acc[d.chapterFlat] = d.book;
+  return acc;
+}, {} as Record<string, number>);

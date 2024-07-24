@@ -1,7 +1,15 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
 import { CharacterPieCharts } from "./CharacterPieCharts";
 import { TimeGraphAndExcerpts } from "./TimeGraphAndExcerpts";
 import { ErrorBoundary } from "./ErrorBoundry";
+import {
+  books,
+  chaptersFullData,
+  charactersFullData,
+  flatChapterToBook,
+} from "./utils";
+import { useState } from "react";
+import { mapValues, pickBy } from "lodash-es";
 
 function Section({
   children,
@@ -24,22 +32,70 @@ function Section({
   );
 }
 
-function App() {
+function BookTabs({ selectedBook, setSelectedBook }) {
   return (
-    <Box sx={{ maxWidth: 900, margin: "auto", p: 4 }}>
+    <Tabs
+      sx={{
+        position: "sticky",
+        top: 0,
+        zIndex: 1,
+        background: "#333",
+        width: "100%",
+      }}
+      onChange={(e, opt) => {
+        setSelectedBook(opt);
+      }}
+      value={selectedBook}
+    >
+      <Tab key={0} label="All Books" />
+      {books.map((book) => (
+        <Tab key={book.id} label={book.title} />
+      ))}
+    </Tabs>
+  );
+}
+
+function App() {
+  const [selectedBook, setSelectedBook] = useState(0);
+  let characters = charactersFullData;
+  if (selectedBook != 0) {
+    characters = pickBy(charactersFullData, (d) =>
+      Object.keys(d.refs).some((ch) => flatChapterToBook[ch] === selectedBook)
+    );
+    characters = mapValues(characters, (d) => {
+      const refs = pickBy(
+        d.refs,
+        (v, k) => flatChapterToBook[k] === selectedBook
+      );
+      return {
+        ...d,
+        refs,
+        count: Object.values(refs).reduce((acc, d) => acc + d.length, 0),
+      };
+    });
+  }
+  const chapters = selectedBook
+    ? chaptersFullData.filter((d) => d.book === selectedBook)
+    : chaptersFullData;
+
+  return (
+    <Box sx={{ maxWidth: 900, margin: "auto", p: 1 }}>
       <header>
-        <h1>His Dark Materials</h1>
+        <Typography variant="h1" sx={{ fontSize: 34 }}>
+          His Dark Materials
+        </Typography>
       </header>
+      <BookTabs {...{ selectedBook, setSelectedBook }} />
 
       <Section title="Character Categories">
         <ErrorBoundary>
-          <CharacterPieCharts />
+          <CharacterPieCharts characters={characters} chapters={chapters} />
         </ErrorBoundary>
       </Section>
 
       <Section title="Character References Over Time">
         <ErrorBoundary>
-          <TimeGraphAndExcerpts />
+          <TimeGraphAndExcerpts characters={characters} chapters={chapters} />
         </ErrorBoundary>
       </Section>
     </Box>

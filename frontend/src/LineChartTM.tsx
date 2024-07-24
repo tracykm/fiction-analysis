@@ -5,7 +5,7 @@ import {
   XYChart,
 } from "@visx/xychart";
 import { Box, Stack, Typography } from "@mui/material";
-import { books, chapters } from "./utils";
+import { books, chaptersFullData } from "./utils";
 
 const tickLabelOffset = 10;
 
@@ -36,7 +36,7 @@ export function LineChartTM({
         width={700}
         height={500}
         margin={{ left: 24, top: 35, bottom: 38, right: 27 }}
-        xScale={{ type: "linear" }}
+        xScale={{ type: "point" }}
         yScale={{ type: "linear" }}
       >
         <AnimatedAxis
@@ -72,7 +72,8 @@ export function LineChartTM({
             strokeWidth: 0,
           }}
           renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
-            const chapter = chapters[nearestDatum.datum.chapterFlat - 1];
+            const chapter =
+              chaptersFullData[nearestDatum.datum.chapterFlat - 1];
             return (
               <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
                 <Box>
@@ -81,6 +82,7 @@ export function LineChartTM({
                       fontSize: 12,
                       display: "flex",
                       justifyContent: "space-between",
+                      gap: 1,
                     }}
                   >
                     <div>B{chapter?.book}</div>
@@ -91,6 +93,7 @@ export function LineChartTM({
                       fontSize: 12,
                       display: "flex",
                       justifyContent: "space-between",
+                      gap: 1,
                     }}
                   >
                     <div>Ch{chapter?.chapter}</div>
