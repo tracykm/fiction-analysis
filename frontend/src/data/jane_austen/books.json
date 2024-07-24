@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Sense and Sensibility",
+    "chapters": 50
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "chapters": 61
+  },
+  {
+    "id": 3,
+    "title": "Northanger Abbey",
+    "chapters": 33
+  },
+  {
+    "id": 4,
+    "title": "Mansfield Park",
+    "chapters": 49
+  },
+  {
+    "id": 5,
+    "title": "Emma",
+    "chapters": 57
+  },
+  {
+    "id": 6,
+    "title": "Persuasion",
+    "chapters": 24
+  }
+]
