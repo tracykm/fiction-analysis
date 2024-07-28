@@ -5,7 +5,6 @@ import {
   XYChart,
 } from "@visx/xychart";
 import { Box, Stack, Typography } from "@mui/material";
-import { BookData, ChapterRow } from "./utils";
 import { useDataContext } from "./DataContext";
 
 const tickLabelOffset = 10;
@@ -26,6 +25,7 @@ export function LineChartTM({
   xScale = { type: "point" },
   width = 700,
   height = 500,
+  onClick,
 }: {
   keyName: "chapterFlat" | "days";
   xScale?: { type: "point" | "linear" };
@@ -36,6 +36,7 @@ export function LineChartTM({
     color: string;
     info: RowShape[];
   }[];
+  onClick: (d: { datum: RowShape; key: string; index: number }) => void;
 }) {
   const { books, chapters } = useDataContext();
   return (
@@ -46,6 +47,7 @@ export function LineChartTM({
         margin={{ left: 24, top: 35, bottom: 38, right: 27 }}
         xScale={xScale}
         yScale={{ type: "linear" }}
+        onPointerDown={onClick}
       >
         <AnimatedAxis
           hideAxisLine

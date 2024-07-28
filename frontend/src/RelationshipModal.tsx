@@ -4,13 +4,13 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
-  IconButton,
   Typography,
 } from "@mui/material";
 import { sort } from "d3";
 import { uniq } from "lodash-es";
 import { getPercent, LETTERS_PER_PAGE, RelationshipRefs } from "./utils";
 import { useDataContext } from "./DataContext";
+import { useEffect } from "react";
 
 export function RelationshipModal({
   relationship,
@@ -19,6 +19,7 @@ export function RelationshipModal({
   onClose: () => void;
   title: string;
   relationship: RelationshipRefs;
+  selectedChapter?: number;
 }) {
   const flattenedSentences = relationship.flatMap((pair) => pair);
 
@@ -29,11 +30,33 @@ export function RefsModal({
   onClose,
   title,
   refs,
+  selectedChapter,
 }: {
   onClose: () => void;
   title: string;
   refs: number[];
+  selectedChapter?: number;
 }) {
+  useEffect(() => {
+    if (selectedChapter) {
+      const scrollToChapter = () => {
+        let chp = selectedChapter;
+        let chapter = document.getElementById(`chapter-${selectedChapter}`);
+        while (!chapter && chp > 0) {
+          chp--;
+          chapter = document.getElementById(`chapter-${chp}`);
+        }
+        if (chapter) {
+          chapter.scrollIntoView();
+        }
+      };
+
+      const timeoutId = setTimeout(scrollToChapter, 0);
+
+      return () => clearTimeout(timeoutId);
+    }
+  }, [selectedChapter]);
+
   const { chapters, indexedSentences, books, manualConfig } = useDataContext();
   const totalLength = refs.reduce(
     (sum, idx) => sum + (indexedSentences[idx]?.sentence.length || 0) + 1,
@@ -86,11 +109,14 @@ export function RefsModal({
                   </Typography>
                 )}
               {lastChapter?.chapterFlat !== chapter?.chapterFlat ? (
-                <Typography sx={{ fontSize: "1.2em", my: 4 }}>
-                  Chapter {chapter?.chapter}{" "}
+                <Typography
+                  sx={{ fontSize: "1.2em", my: 4 }}
+                  id={`chapter-${chapter?.chapterFlat}`}
+                >
+                  Chapter {chapter?.chapter}
                   {String(chapter?.chapter) === chapter?.title
                     ? ""
-                    : chapter?.title}
+                    : `: ${chapter?.title}`}
                 </Typography>
               ) : gapLen && gapLen !== sentenceText.length ? (
                 <>

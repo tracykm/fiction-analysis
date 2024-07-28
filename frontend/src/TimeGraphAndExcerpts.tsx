@@ -3,7 +3,6 @@ import { Stack } from "@mui/system";
 import { useEffect, useState } from "react";
 import { Checkboxes } from "./Checkboxes";
 import { LineChartTM } from "./LineChartTM";
-import { SelectInput } from "./SelectInput";
 import { COLORS, CharactersData, FullContextProps } from "./utils";
 import { uniq } from "lodash-es";
 import { ErrorBoundary } from "./ErrorBoundry";
@@ -19,6 +18,7 @@ export function TimeGraphAndExcerpts() {
     manualConfig: { defaultSelectedCharacter, sharedCharacters },
   } = useDataContext();
   const [selected, setSelected] = useState([defaultSelectedCharacter]);
+  const [selectedChapter, setSelectedChapter] = useState<number>();
   const [openedCharacter, setOpenedCharacter] = useState<string>();
 
   useEffect(() => {
@@ -51,6 +51,7 @@ export function TimeGraphAndExcerpts() {
           title={openedCharacter}
           refs={characters[openedCharacter].refs}
           onClose={() => setOpenedCharacter(undefined)}
+          selectedChapter={selectedChapter}
         />
       )}
       <Stack spacing={2} direction={{ sm: "row" }}>
@@ -59,6 +60,10 @@ export function TimeGraphAndExcerpts() {
             data={data}
             keyName="chapterFlat"
             width={600}
+            onClick={(d) => {
+              setOpenedCharacter(d.key);
+              setSelectedChapter(d.datum.chapterFlat);
+            }}
             {...{ chapters, books }}
           />
         </ErrorBoundary>

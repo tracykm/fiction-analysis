@@ -25,6 +25,7 @@ export function RelationshipsOverTime() {
     value,
   }));
   const [selected, setSelected] = useState(options[0].id);
+  const [selectedChapter, setSelectedChapter] = useState<number>();
 
   const selectedOption = options.find((d) => d.id === selected) || options[0];
 
@@ -33,12 +34,13 @@ export function RelationshipsOverTime() {
       {open && (
         <RelationshipModal
           onClose={() => setOpen(false)}
-          title={selectedOption.label}
+          title={selectedOption.label + " " + selectedChapter}
           relationship={
             relationships[selectedOption.value[0].from][
               selectedOption.value[0].to
             ]
           }
+          selectedChapter={selectedChapter}
         />
       )}
       <Stack direction="row" spacing={2}>
@@ -62,6 +64,11 @@ export function RelationshipsOverTime() {
         keyName="chapterFlat"
         width={900}
         height={300}
+        onClick={({ datum, key }) => {
+          setSelectedChapter(datum.chapterFlat);
+          setSelected(key);
+          setOpen(true);
+        }}
       />
     </>
   );
