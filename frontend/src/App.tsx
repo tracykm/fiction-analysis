@@ -47,6 +47,7 @@ function BookTabs({
         background: "#333",
         width: "100%",
       }}
+      variant={books.length > 3 ? "scrollable" : "standard"}
       onChange={(e, opt) => {
         setSelectedBook(opt);
       }}

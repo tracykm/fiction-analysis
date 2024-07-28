@@ -21,3 +21,15 @@ re-deploy frontend
 
 `cd ../frontend`
 `yarn && yarn deploy`
+
+## to set up a new book series
+
+add the folder and the people_data.py and raw_text.txt in same format as jane_austen
+
+- all books in one file
+- books start ~~~ BOOK
+- chapters start ~~~ CHAPTER
+
+from pdfs update chapters first with new line after
+then `(\w)\n\s*([a-z])` -> `$1 $2` to remove line breaks from page wrapping
+undo to double check

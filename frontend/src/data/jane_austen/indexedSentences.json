@@ -304,6 +304,10 @@
     "sentence": "Elinor had always thought it would be more prudent for them to settle at some distance from Norland, than immediately amongst their present acquaintance.",
     "chapterFlat": 4
   },
+  "39093": {
+    "sentence": "The house, too, as described by Sir John, was on so simple a scale, and the rent so uncommonly moderate, as to leave her no right of objection on either point; and, therefore, though it was not a plan which brought any charm to her fancy, though it was a removal from the vicinity of Norland beyond her wishes, she made no attempt to dissuade her mother from sending a letter of acquiescence.",
+    "chapterFlat": 4
+  },
   "39399": {
     "sentence": "No sooner was her answer dispatched, than Mrs. Dashwood indulged herself in the pleasure of announcing to her son-in-law and his wife that she was provided with a house, and should incommode them no longer than till every thing were ready for her inhabiting it. They heard her with surprise.",
     "chapterFlat": 5
@@ -376,13 +380,17 @@
     "sentence": "Lady Middleton had sent a very civil message by him, denoting her intention of waiting on Mrs. Dashwood as soon as she could be assured that her visit would be no inconvenience; and as this message was answered by an invitation equally polite, her ladyship was introduced to them the next day.",
     "chapterFlat": 6
   },
-  "50803": {
-    "sentence": "Lady Middleton was not more than six or seven and twenty; her face was handsome, her figure tall and striking,",
-    "chapterFlat": 6
-  },
   "51550": {
     "sentence": "Conversation however was not wanted, for Sir John was very chatty, and Lady Middleton had taken the wise precaution of bringing with her their eldest child, a fine little boy about six years old, by which means there was one subject always to be recurred to by the ladies in case of extremity, for they had to enquire his name and age, admire his beauty,",
     "chapterFlat": 6
+  },
+  "52316": {
+    "sentence": "An opportunity was soon to be given to the Dashwoods of debating on the rest of the children, as Sir John would not leave the house without securing their promise of dining at the park the next day.",
+    "chapterFlat": 6
+  },
+  "52698": {
+    "sentence": "The former was for Sir John\u2019s gratification, the latter for that of his lady.",
+    "chapterFlat": 7
   },
   "53188": {
     "sentence": "Sir John was a sportsman, Lady Middleton a mother.",
@@ -392,8 +400,12 @@
     "sentence": "Lady Middleton had the advantage of being able to spoil her children all the year round, while Sir John\u2019s independent employments were in existence only half the time.",
     "chapterFlat": 7
   },
-  "53818": {
-    "sentence": "Lady Middleton piqued herself upon the elegance of her table, and of all her domestic arrangements; and from this kind of vanity was her greatest enjoyment in any of their parties.",
+  "53638": {
+    "sentence": "supplied all the deficiencies of nature and education; supported the good spirits of Sir John, and gave exercise to the good breeding of his wife.",
+    "chapterFlat": 7
+  },
+  "54011": {
+    "sentence": "But Sir John\u2019s satisfaction in society was much more real; he delighted in collecting about him more young people than his house would hold, and the noisier they were the better was he pleased.",
     "chapterFlat": 7
   },
   "54540": {
@@ -402,10 +414,6 @@
   },
   "55360": {
     "sentence": "Mrs. Dashwood and her daughters were met at the door of the house by Sir John, who welcomed them to Barton Park with unaffected sincerity;",
-    "chapterFlat": 7
-  },
-  "56113": {
-    "sentence": "Luckily Lady Middleton\u2019s mother had arrived at Barton within the last hour, and as she was a very cheerful agreeable woman,",
     "chapterFlat": 7
   },
   "56397": {
@@ -428,10 +436,6 @@
     "sentence": "There was nothing in any of the party which could recommend them as companions to the Dashwoods; but the cold insipidity of Lady Middleton was so particularly repulsive, that in comparison of it the gravity of Colonel Brandon, and even the boisterous mirth of Sir John and his mother-in-law was interesting.",
     "chapterFlat": 7
   },
-  "57890": {
-    "sentence": "Lady Middleton seemed to be roused to enjoyment only by the entrance of her four noisy children after dinner,",
-    "chapterFlat": 7
-  },
   "58088": {
     "sentence": "In the evening, as Marianne was discovered to be musical, she was invited to play.",
     "chapterFlat": 7
@@ -442,6 +446,10 @@
   },
   "58590": {
     "sentence": "Marianne\u2019s performance was highly applauded.",
+    "chapterFlat": 7
+  },
+  "58724": {
+    "sentence": "Sir John was loud in his admiration at the end of every song, and as loud in his conversation with the others while every song lasted.",
     "chapterFlat": 7
   },
   "58925": {
@@ -600,6 +608,10 @@
     "sentence": "Sir John called on them as soon as the next interval of fair weather that morning allowed him to get out of doors; and Marianne\u2019s accident being related to him, he was eagerly asked whether he knew any gentleman of the name of Willoughby at Allenham.",
     "chapterFlat": 9
   },
+  "73534": {
+    "sentence": "\u201cWilloughby!\u201d cried Sir John; \u201cwhat, is _he_ in the country?",
+    "chapterFlat": 9
+  },
   "73663": {
     "sentence": "\u201cYou know him then,\u201d said Mrs. Dashwood.",
     "chapterFlat": 9
@@ -608,6 +620,7 @@
     "sentence": "\u201cAnd is _that_ all you can say for him?\u201d cried Marianne, indignantly.",
     "chapterFlat": 9
   },
+  "74075": { "sentence": "Sir John was rather puzzled.", "chapterFlat": 9 },
   "74348": {
     "sentence": "But Marianne could no more satisfy him as to the colour of Mr.",
     "chapterFlat": 9
@@ -636,8 +649,16 @@
     "sentence": "\u201cthat Mr. Willoughby will be incommoded by the attempts of either of _my_ daughters towards what you call _catching him_.",
     "chapterFlat": 9
   },
+  "75672": {
+    "sentence": "\u201cHe is as good a sort of fellow, I believe, as ever lived,\u201d repeated Sir John.",
+    "chapterFlat": 9
+  },
   "75881": {
     "sentence": "\u201cDid he indeed?\u201d cried Marianne with sparkling eyes, \u201cand with elegance, with spirit?\u201d",
+    "chapterFlat": 9
+  },
+  "76175": {
+    "sentence": "\u201cAye, aye, I see how it will be,\u201d said Sir John, \u201cI see how it will be.",
     "chapterFlat": 9
   },
   "76249": {
@@ -646,6 +667,10 @@
   },
   "76337": {
     "sentence": "\u201cThat is an expression, Sir John,\u201d said Marianne, warmly, \u201cwhich I particularly dislike.",
+    "chapterFlat": 9
+  },
+  "76728": {
+    "sentence": "Sir John did not much understand this reproof; but he laughed as heartily as if he did, and then replied,",
     "chapterFlat": 9
   },
   "76808": {
@@ -722,6 +747,10 @@
   },
   "84506": {
     "sentence": "Willoughby, an equally striking opposition of character was no hindrance to the regard of Colonel Brandon. She saw it with concern;",
+    "chapterFlat": 10
+  },
+  "85114": {
+    "sentence": "Sir John had dropped hints of past injuries and disappointments, which justified her belief of his being an unfortunate man, and she regarded him with respect and compassion.",
     "chapterFlat": 10
   },
   "85316": {
@@ -810,10 +839,6 @@
   },
   "92372": {
     "sentence": "She had already repeated her own history to Elinor three or four times; and had Elinor\u2019s memory been equal to her means of improvement, she might have known very early in their acquaintance all the particulars of Mr. Jennings\u2019s last illness, and what he said to his wife a few minutes before he died.",
-    "chapterFlat": 11
-  },
-  "92448": {
-    "sentence": "Lady Middleton was more agreeable than her mother only in being more silent.",
     "chapterFlat": 11
   },
   "92575": {
@@ -997,6 +1022,10 @@
     "sentence": "A party was formed this evening for going on the following day to see a very fine place about twelve miles from Barton, belonging to a brother-in-law of Colonel Brandon, without whose interest it could not be seen, as the proprietor, who was then abroad, had left strict orders on that head.",
     "chapterFlat": 12
   },
+  "105744": {
+    "sentence": "The grounds were declared to be highly beautiful, and Sir John, who was particularly warm in their praise, might be allowed to be a tolerable judge, for he had formed parties to visit them, at least,",
+    "chapterFlat": 12
+  },
   "106276": {
     "sentence": "considering the time of year, and that it had rained every day for the last fortnight;\u2014and Mrs. Dashwood, who had already a cold, was persuaded by Elinor to stay at home.",
     "chapterFlat": 12
@@ -1013,10 +1042,6 @@
     "sentence": "\u201cWhat is the matter with Brandon?\u201d said Sir John.",
     "chapterFlat": 13
   },
-  "107224": {
-    "sentence": "\u201cI hope he has had no bad news,\u201d said Lady Middleton.",
-    "chapterFlat": 13
-  },
   "107330": {
     "sentence": "\u201cIt must be something extraordinary that could make Colonel Brandon leave my breakfast table so suddenly.\u201d",
     "chapterFlat": 13
@@ -1029,10 +1054,6 @@
     "sentence": "Come, come, this won\u2019t do, Colonel; so let us hear the truth of it.\u201d",
     "chapterFlat": 13
   },
-  "107843": {
-    "sentence": "\u201cMy dear madam,\u201d said Lady Middleton, \u201crecollect what you are saying.\u201d",
-    "chapterFlat": 13
-  },
   "107970": {
     "sentence": "\u201cPerhaps it is to tell you that your cousin Fanny is married?\u201d said Mrs. Jennings, without attending to her daughter\u2019s reproof.",
     "chapterFlat": 13
@@ -1041,16 +1062,16 @@
     "sentence": "\u201cWell, then, I know who it is from, Colonel. And I hope she is well.\u201d",
     "chapterFlat": 13
   },
-  "108213": {
-    "sentence": "\u201cI am particularly sorry, ma\u2019am,\u201d said he, addressing Lady Middleton,",
-    "chapterFlat": 13
-  },
   "108356": {
     "sentence": "\u201cIn town!\u201d cried Mrs. Jennings.",
     "chapterFlat": 13
   },
   "108745": {
     "sentence": "\u201cBut if you write a note to the housekeeper, Mr. Brandon,\u201d said Marianne, eagerly, \u201cwill it not be sufficient?\u201d",
+    "chapterFlat": 13
+  },
+  "108840": {
+    "sentence": "\u201cWe must go,\u201d said Sir John.\u2014\u201cIt shall not be put off when we are so near it.",
     "chapterFlat": 13
   },
   "108899": {
@@ -1077,6 +1098,10 @@
     "sentence": "Colonel Brandon again repeated his sorrow at being the cause of disappointing the party; but at the same time declared it to be unavoidable.",
     "chapterFlat": 13
   },
+  "110503": {
+    "sentence": "he must and shall come back,\u201d cried Sir John.",
+    "chapterFlat": 13
+  },
   "110669": {
     "sentence": "\u201cAy, so do, Sir John,\u201d cried Mrs. Jennings, \u201cand then perhaps you may find out what his business is.\u201d",
     "chapterFlat": 13
@@ -1085,12 +1110,20 @@
     "sentence": "Colonel Brandon\u2019s horses were announced.",
     "chapterFlat": 13
   },
+  "110862": {
+    "sentence": "\u201cYou do not go to town on horseback, do you?\u201d added Sir John.",
+    "chapterFlat": 13
+  },
   "111315": {
     "sentence": "To Marianne, he merely bowed and said nothing.",
     "chapterFlat": 13
   },
   "111408": {
     "sentence": "\u201cCome Colonel,\u201d said Mrs. Jennings, \u201cbefore you go, do let us know what you are going about.\u201d",
+    "chapterFlat": 13
+  },
+  "111479": {
+    "sentence": "He wished her a good morning, and, attended by Sir John, left the room.",
     "chapterFlat": 13
   },
   "111736": {
@@ -1113,8 +1146,16 @@
     "sentence": "I dare say the Colonel will leave her all his fortune.\u201d",
     "chapterFlat": 13
   },
+  "112667": {
+    "sentence": "When Sir John returned, he joined most heartily in the general regret on so unfortunate an event; concluding however by observing, that as they were all got together, they must do something by way of being happy; and after some consultation it was agreed, that although happiness could only be enjoyed at Whitwell, they might procure a tolerable composure of mind by driving about the country.",
+    "chapterFlat": 13
+  },
   "112784": {
     "sentence": "The carriages were then ordered; Willoughby\u2019s was first, and Marianne never looked happier than when she got into it.",
+    "chapterFlat": 13
+  },
+  "113381": {
+    "sentence": "Some more of the Careys came to dinner, and they had the pleasure of sitting down nearly twenty to table, which Sir John observed with great contentment.",
     "chapterFlat": 13
   },
   "113450": {
@@ -1217,6 +1258,10 @@
     "sentence": "Why they should not openly acknowledge to her mother and herself, what their constant behaviour to each other declared to have taken place, Elinor could not imagine.",
     "chapterFlat": 14
   },
+  "120544": {
+    "sentence": "His estate had been rated by Sir John at about six or seven hundred a year; but he lived at an expense to which that income could hardly be equal, and he had himself often complained of his poverty.",
+    "chapterFlat": 14
+  },
   "120910": {
     "sentence": "she could not account; and it was so wholly contradictory to their general opinions and practice, that a doubt sometimes entered her mind of their being really engaged, and this doubt was enough to prevent her making any inquiry of Marianne.",
     "chapterFlat": 14
@@ -1259,10 +1304,6 @@
   },
   "125748": {
     "sentence": "\u201cShall we see you tomorrow to dinner?\u201d said Mrs. Dashwood, when he was leaving them.",
-    "chapterFlat": 14
-  },
-  "125847": {
-    "sentence": "\u201cI do not ask you to come in the morning, for we must walk to the park, to call on Lady Middleton.\u201d",
     "chapterFlat": 14
   },
   "126291": {
@@ -1391,6 +1432,10 @@
   },
   "142223": {
     "sentence": "\u201cRemember, Elinor,\u201d said she, \u201chow very often Sir John fetches our letters himself from the post, and carries them to it.",
+    "chapterFlat": 16
+  },
+  "142396": {
+    "sentence": "We have already agreed that secrecy may be necessary, and we must acknowledge that it could not be maintained if their correspondence were to pass through Sir John\u2019s hands.\u201d",
     "chapterFlat": 16
   },
   "142503": {
@@ -1773,12 +1818,20 @@
     "sentence": "Marianne severely censured herself for what she had said; but her own forgiveness might have been more speedy, had she known how little offence it had given her sister.",
     "chapterFlat": 18
   },
+  "166287": {
+    "sentence": "Before the middle of the day, they were visited by Sir John and Mrs.",
+    "chapterFlat": 18
+  },
   "166704": {
     "sentence": "With the assistance of his mother-in-law, Sir John was not long in discovering that the name of Ferrars began with an F. and this prepared a future mine of raillery against the devoted Elinor, which nothing but the newness of their acquaintance with Edward could have prevented from being immediately sprung.",
     "chapterFlat": 18
   },
   "166834": {
     "sentence": "But, as it was, she only learned, from some very significant looks, how far their penetration, founded on Margaret\u2019s instructions,",
+    "chapterFlat": 18
+  },
+  "166982": {
+    "sentence": "Sir John never came to the Dashwoods without either inviting them to dine at the park the next day, or to drink tea with them that evening.",
     "chapterFlat": 18
   },
   "167342": {
@@ -1791,6 +1844,10 @@
   },
   "167494": {
     "sentence": "\u201cA dance!\u201d cried Marianne. \u201cImpossible! Who is to dance?\u201d",
+    "chapterFlat": 18
+  },
+  "167731": {
+    "sentence": "\u201cI wish with all my soul,\u201d cried Sir John, \u201cthat Willoughby were among us again.\u201d",
     "chapterFlat": 18
   },
   "167792": {
@@ -1875,6 +1932,10 @@
     "sentence": "Amongst them were Sir John and Lady Middleton and Mrs. Jennings,",
     "chapterFlat": 19
   },
+  "177781": {
+    "sentence": "She was sitting near the window, and as soon as Sir John perceived her, he left the rest of the party to the ceremony of knocking at the door, and stepping across the turf, obliged her to open the casement to speak to him, though the space was so short between the door and the window, as to make it hardly possible to speak at one without being heard at the other.",
+    "chapterFlat": 19
+  },
   "178124": {
     "sentence": "As Elinor was certain of seeing her in a couple of minutes, without taking that liberty, she begged to be excused.",
     "chapterFlat": 19
@@ -1892,10 +1953,7 @@
     "sentence": "Elinor was obliged to turn from her, in the middle of her story, to receive the rest of the party; Lady Middleton introduced the two strangers; Mrs. Dashwood and Margaret came down stairs at the same time, and they all sat down to look at one another, while Mrs. Jennings continued her story as she walked through the passage into the parlour,",
     "chapterFlat": 19
   },
-  "179407": {
-    "sentence": "Mrs. Palmer was several years younger than Lady Middleton, and totally unlike her in every respect.",
-    "chapterFlat": 19
-  },
+  "179308": { "sentence": "attended by Sir John.", "chapterFlat": 19 },
   "180555": {
     "sentence": "I always thought it such a sweet place, ma\u2019am! (turning to Mrs. Dashwood)",
     "chapterFlat": 19
@@ -1916,10 +1974,6 @@
     "sentence": "\u201cShe expects to be confined in February,\u201d continued Mrs. Jennings.",
     "chapterFlat": 19
   },
-  "182298": {
-    "sentence": "Lady Middleton could no longer endure such a conversation, and therefore exerted herself to ask Mr. Palmer if there was any news in the paper.",
-    "chapterFlat": 19
-  },
   "182379": {
     "sentence": "\u201cHere comes Marianne,\u201d cried Sir John.",
     "chapterFlat": 19
@@ -1928,12 +1982,16 @@
     "sentence": "Mrs. Jennings asked her, as soon as she appeared, if she had not been to Allenham; and Mrs. Palmer laughed so heartily at the question, as to show she understood it.",
     "chapterFlat": 19
   },
-  "183276": {
-    "sentence": "When Lady Middleton rose to go away, Mr. Palmer rose also, laid down the newspaper, stretched himself and looked at them all around.",
+  "183597": {
+    "sentence": "Sir John had been very urgent with them all to spend the next day at the park.",
     "chapterFlat": 19
   },
   "183726": {
     "sentence": "Mrs. Dashwood, who did not chuse to dine with them oftener than they dined at the cottage, absolutely refused on her own account;",
+    "chapterFlat": 19
+  },
+  "184102": {
+    "sentence": "But Sir John would not be satisfied\u2014the carriage should be sent for them and they must come.",
     "chapterFlat": 19
   },
   "184197": {
@@ -1964,6 +2022,14 @@
     "sentence": "\u201cOh, my love,\u201d cried Mrs. Palmer to her husband, who just then entered the room\u2014\u201cyou must help me to persuade the Miss Dashwoods to go to town this winter.\u201d",
     "chapterFlat": 20
   },
+  "186675": {
+    "sentence": "What the devil does Sir John mean by not having a billiard room in his house?",
+    "chapterFlat": 20
+  },
+  "186749": {
+    "sentence": "Sir John is as stupid as the weather.\u201d",
+    "chapterFlat": 20
+  },
   "186899": {
     "sentence": "\u201cI am afraid, Miss Marianne,\u201d said Sir John, \u201cyou have not been able to take your usual walk to Allenham today.\u201d",
     "chapterFlat": 20
@@ -1974,6 +2040,14 @@
   },
   "187504": {
     "sentence": "Marianne remained perfectly silent, though her countenance betrayed her interest in what was said.",
+    "chapterFlat": 20
+  },
+  "187719": {
+    "sentence": "When they were seated in the dining room, Sir John observed with regret that they were only eight all together.",
+    "chapterFlat": 20
+  },
+  "187920": {
+    "sentence": "\u201cDid not I tell you, Sir John, when you spoke to me about it before,",
     "chapterFlat": 20
   },
   "188053": {
@@ -2056,6 +2130,10 @@
     "sentence": "\u201cYou have been long acquainted with Colonel Brandon, have not you?\u201d",
     "chapterFlat": 20
   },
+  "196832": {
+    "sentence": "He was a particular friend of Sir John\u2019s.",
+    "chapterFlat": 20
+  },
   "196976": {
     "sentence": "Sir John and Lady Middleton wished it very much.",
     "chapterFlat": 20
@@ -2084,14 +2162,6 @@
     "sentence": "Their being her relations too made it so much the worse; and Mrs. Jennings\u2019s attempts at consolation were therefore unfortunately founded, when she advised her daughter not to care about their being so fashionable; because they were all cousins and must put up with one another.",
     "chapterFlat": 21
   },
-  "199309": {
-    "sentence": "As it was impossible, however, now to prevent their coming, Lady Middleton resigned herself to the idea of it, with all the philosophy of a well-bred woman, contenting herself with merely giving her husband a gentle reprimand on the subject five or six times every day.",
-    "chapterFlat": 21
-  },
-  "199677": {
-    "sentence": "and they happened to be so doatingly fond of children that Lady Middleton\u2019s good opinion was engaged in their favour before they had been an hour at the Park.",
-    "chapterFlat": 21
-  },
   "200018": {
     "sentence": "Sir John\u2019s confidence in his own judgment rose with this animated praise, and he set off directly for the cottage to tell the Miss Dashwoods of the Miss Steeles\u2019 arrival, and to assure them of their being the sweetest girls in the world.",
     "chapterFlat": 21
@@ -2100,24 +2170,24 @@
     "sentence": "From such commendation as this, however, there was not much to be learned; Elinor well knew that the sweetest girls in the world were to be met with in every part of England, under every possible variation of form, face, temper and understanding.",
     "chapterFlat": 21
   },
+  "200349": {
+    "sentence": "Sir John wanted the whole family to walk to the Park directly and look at his guests.",
+    "chapterFlat": 21
+  },
   "200578": {
     "sentence": "\u201cDo come now,\u201d said he\u2014\u201cpray come\u2014you must come\u2014I declare you shall come\u2014You can\u2019t think how you will like them. Lucy is monstrous pretty,",
+    "chapterFlat": 21
+  },
+  "201195": {
+    "sentence": "But Sir John could not prevail.",
     "chapterFlat": 21
   },
   "202171": {
     "sentence": "Their manners were particularly civil, and Elinor soon allowed them credit for some kind of sense, when she saw with what constant and judicious attention they were making themselves agreeable to Lady Middleton.",
     "chapterFlat": 21
   },
-  "203045": {
-    "sentence": "Fortunately for those who pay their court through such foibles, a fond mother, though, in pursuit of praise for her children, the most rapacious of human beings, is likewise the most credulous; her demands are exorbitant; but she will swallow any thing; and the excessive affection and endurance of the Miss Steeles towards her offspring were viewed therefore by Lady Middleton without the smallest surprise or distrust.",
-    "chapterFlat": 21
-  },
   "203444": {
     "sentence": "It suggested no other surprise than that Elinor and Marianne should sit so composedly by,",
-    "chapterFlat": 21
-  },
-  "205290": {
-    "sentence": "She still screamed and sobbed lustily, kicked her two brothers for offering to touch her, and all their united soothings were ineffectual till Lady Middleton luckily remembering that in a scene of similar distress last week, some apricot marmalade had been successfully applied for a bruised temple, the same remedy was eagerly proposed for this unfortunate scratch, and a slight intermission of screams in the young lady on hearing it, gave them reason to hope that it would not be rejected.",
     "chapterFlat": 21
   },
   "205636": {
@@ -2138,6 +2208,10 @@
   },
   "206274": {
     "sentence": "She did her best when thus called on, by speaking of Lady Middleton with more warmth than she felt, though with far less than Miss Lucy.",
+    "chapterFlat": 21
+  },
+  "206346": {
+    "sentence": "\u201cAnd Sir John too,\u201d cried the elder sister, \u201cwhat a charming man he is!\u201d",
     "chapterFlat": 21
   },
   "206782": {
@@ -2198,6 +2272,10 @@
   },
   "210432": {
     "sentence": "And to be better acquainted therefore, Elinor soon found was their inevitable lot, for as Sir John was entirely on the side of the Miss Steeles,",
+    "chapterFlat": 21
+  },
+  "210639": {
+    "sentence": "their party would be too strong for opposition, and that kind of intimacy must be submitted to, which consists of sitting an hour or two together in the same room almost every day. Sir John could do no more;",
     "chapterFlat": 21
   },
   "211263": {
@@ -2512,6 +2590,10 @@
     "sentence": "That Lucy was disposed to be jealous of her appeared very probable: it was plain that Edward had always spoken highly in her praise, not merely from Lucy\u2019s assertion, but from her venturing to trust her on so short a personal acquaintance, with a secret so confessedly and evidently important.",
     "chapterFlat": 23
   },
+  "235771": {
+    "sentence": "And even Sir John\u2019s joking intelligence must have had some weight.",
+    "chapterFlat": 23
+  },
   "236024": {
     "sentence": "But indeed, while Elinor remained so well assured within herself of being really beloved by Edward, it required no other consideration of probabilities to make it natural that Lucy should be jealous; and that she was so, her very confidence was a proof.",
     "chapterFlat": 23
@@ -2540,10 +2622,6 @@
     "sentence": "Elinor, who foresaw a fairer opening for the point she had in view, in such a party as this was likely to be, more at liberty among themselves under the tranquil and well-bred direction of Lady Middleton than when her husband united them together in one noisy purpose, immediately accepted the invitation; Margaret, with her mother\u2019s permission, was equally compliant, and Marianne, though always unwilling to join any of their parties, was persuaded by her mother, who could not bear to have her seclude herself from any chance of amusement, to go likewise.",
     "chapterFlat": 23
   },
-  "238623": {
-    "sentence": "The young ladies went, and Lady Middleton was happily preserved from the frightful solitude which had threatened her.",
-    "chapterFlat": 23
-  },
   "239033": {
     "sentence": "The insipidity of the meeting was exactly such as Elinor had expected; it produced not one novelty of thought or expression, and nothing could be less interesting than the whole of their discourse both in the dining parlour and drawing room: to the latter, the children accompanied them, and while they remained there, she was too well convinced of the impossibility of engaging Lucy\u2019s attention to attempt it.",
     "chapterFlat": 23
@@ -2560,24 +2638,12 @@
     "sentence": "This hint was enough, Lucy recollected herself instantly and replied,",
     "chapterFlat": 23
   },
-  "239836": {
-    "sentence": "\u201cIndeed you are very much mistaken, Lady Middleton; I am only waiting to know whether you can make your party without me, or I should have been at my filigree already.",
-    "chapterFlat": 23
-  },
   "240484": {
     "sentence": "Lucy directly drew her work table near her and reseated herself with an alacrity and cheerfulness which seemed to infer that she could taste no greater delight than in making a filigree basket for a spoilt child.",
     "chapterFlat": 23
   },
-  "240541": {
-    "sentence": "Lady Middleton proposed a rubber of Casino to the others.",
-    "chapterFlat": 23
-  },
   "240734": {
     "sentence": "No one made any objection but Marianne, who with her usual inattention to the forms of general civility, exclaimed, \u201cYour Ladyship will have the goodness to excuse _me_\u2014you know I detest cards.",
-    "chapterFlat": 23
-  },
-  "240972": {
-    "sentence": "Lady Middleton looked as if she thanked heaven that _she_ had never made so rude a speech.",
     "chapterFlat": 23
   },
   "241040": {
@@ -2765,6 +2831,10 @@
     "sentence": "and was particularly careful to inform her confidante, of her happiness whenever she received a letter from Edward, it was treated by the former with calmness and caution, and dismissed as soon as civility would allow; for she felt such conversations to be an indulgence which Lucy did not deserve, and which were dangerous to herself.",
     "chapterFlat": 24
   },
+  "254229": {
+    "sentence": "Their favour increased; they could not be spared; Sir John would not hear of their going; and in spite of their numerous and long arranged engagements in Exeter, in spite of the absolute necessity of returning to fulfill them immediately, which was in full force at the end of every week, they were prevailed on to stay nearly two months at the park, and to assist in the due celebration of that festival which requires a more than ordinary share of private balls and large dinners to proclaim its importance.",
+    "chapterFlat": 24
+  },
   "254419": {
     "sentence": "Though Mrs. Jennings was in the habit of spending a large portion of the year at the houses of her children and friends, she was not without a settled habitation of her own.",
     "chapterFlat": 25
@@ -2841,10 +2911,6 @@
     "sentence": "\u201cMy objection is this; though I think very well of Mrs. Jennings\u2019s heart, she is not a woman whose society can afford us pleasure, or whose protection will give us consequence.\u201d",
     "chapterFlat": 25
   },
-  "261126": {
-    "sentence": "separately from that of other people, you will scarcely have any thing at all, and you will almost always appear in public with Lady Middleton.\u201d",
-    "chapterFlat": 25
-  },
   "261263": {
     "sentence": "\u201cIf Elinor is frightened away by her dislike of Mrs. Jennings,\u201d said Marianne, \u201cat least it need not prevent MY accepting her invitation.",
     "chapterFlat": 25
@@ -2879,6 +2945,10 @@
   },
   "263424": {
     "sentence": "Mrs. Jennings received the information with a great deal of joy, and many assurances of kindness and care; nor was it a matter of pleasure merely to her.",
+    "chapterFlat": 25
+  },
+  "263595": {
+    "sentence": "Sir John was delighted; for to a man, whose prevailing anxiety was the dread of being alone, the acquisition of two, to the number of inhabitants in London, was something.",
     "chapterFlat": 25
   },
   "263822": {
@@ -3093,10 +3163,6 @@
     "sentence": "The Miss Dashwoods had no greater reason to be dissatisfied with Mrs.",
     "chapterFlat": 27
   },
-  "282353": {
-    "sentence": "Every thing in her household arrangements was conducted on the most liberal plan, and excepting a few old city friends, whom, to Lady Middleton\u2019s regret, she had never dropped, she visited no one to whom an introduction could at all discompose the feelings of her young companions.",
-    "chapterFlat": 27
-  },
   "282640": {
     "sentence": "Pleased to find herself more comfortably situated in that particular than she had expected, Elinor was very willing to compound for the want of much real enjoyment from any of their evening parties, which, whether at home or abroad, formed only for cards, could have little to amuse her.",
     "chapterFlat": 27
@@ -3165,8 +3231,8 @@
     "sentence": "Mrs. Jennings soon appeared, and the note being given her, she read it aloud.",
     "chapterFlat": 27
   },
-  "285293": {
-    "sentence": "It was from Lady Middleton, announcing their arrival in Conduit Street the night before, and requesting the company of her mother and cousins the following evening.",
+  "285396": {
+    "sentence": "Business on Sir John\u2019s part, and a violent cold on her own, prevented their calling in Berkeley Street.",
     "chapterFlat": 27
   },
   "285740": {
@@ -3175,14 +3241,6 @@
   },
   "286076": {
     "sentence": "Elinor found, when the evening was over, that disposition is not materially altered by a change of abode, for although scarcely settled in town, Sir John had contrived to collect around him, nearly twenty young people, and to amuse them with a ball. This was an affair,",
-    "chapterFlat": 27
-  },
-  "286125": {
-    "sentence": "however, of which Lady Middleton did not approve.",
-    "chapterFlat": 27
-  },
-  "286476": {
-    "sentence": "In the country, an unpremeditated dance was very allowable; but in London, where the reputation of elegance was more important and less easily attained, it was risking too much for the gratification of a few girls, to have it known that Lady Middleton had given a small dance of eight or nine couple, with two violins, and a mere side-board collation.",
     "chapterFlat": 27
   },
   "286896": {
@@ -3281,10 +3339,6 @@
     "sentence": "Marianne, wholly dispirited, careless of her appearance, and seeming equally indifferent whether she went or staid, prepared, without one look of hope or one expression of pleasure.",
     "chapterFlat": 28
   },
-  "294183": {
-    "sentence": "She sat by the drawing-room fire after tea, till the moment of Lady Middleton\u2019s arrival, without once stirring from her seat, or altering her attitude, lost in her own thoughts, and insensible of her sister\u2019s presence; and when at last they were told that Lady Middleton waited for them at the door, she started as if she had forgotten that any one was expected.",
-    "chapterFlat": 28
-  },
   "294965": {
     "sentence": "After some time spent in saying little or doing less, Lady Middleton sat down to Cassino, and as Marianne was not in spirits for moving about, she and Elinor luckily succeeding to chairs, placed themselves at no great distance from the table.",
     "chapterFlat": 28
@@ -3347,10 +3401,6 @@
   },
   "299198": {
     "sentence": "In a short time Elinor saw Willoughby quit the room by the door towards the staircase, and telling Marianne that he was gone, urged the impossibility of speaking to him again that evening, as a fresh argument for her to be calm.",
-    "chapterFlat": 28
-  },
-  "299327": {
-    "sentence": "She instantly begged her sister would entreat Lady Middleton to take them home, as she was too miserable to stay a minute longer.",
     "chapterFlat": 28
   },
   "299578": {
@@ -3545,10 +3595,6 @@
     "sentence": "An opportunity of coming hither, though with Mrs. Jennings, was a temptation we could not resist.",
     "chapterFlat": 29
   },
-  "315347": {
-    "sentence": "We were last night at Lady Middleton\u2019s, where there was a dance.",
-    "chapterFlat": 29
-  },
   "317200": {
     "sentence": "That such letters, so full of affection and confidence, could have been so answered, Elinor, for Willoughby\u2019s sake, would have been unwilling to believe.",
     "chapterFlat": 29
@@ -3625,10 +3671,6 @@
     "sentence": "We owe Mrs. Jennings much more than civility; and civility of the commonest kind must prevent such a hasty removal as that.\u201d",
     "chapterFlat": 29
   },
-  "321979": {
-    "sentence": "The pity of such a woman as Lady Middleton!",
-    "chapterFlat": 29
-  },
   "322367": {
     "sentence": "Elinor advised her to lie down again, and for a moment she did so; but no attitude could give her ease; and in restless pain of mind and body she moved from one posture to another, till growing more and more hysterical, her sister could with difficulty keep her on the bed at all, and for some time was fearful of being constrained to call for assistance.",
     "chapterFlat": 29
@@ -3701,8 +3743,16 @@
     "sentence": "\u201cDear ma\u2019am, this kindness is quite unnecessary. Marianne, I dare say,",
     "chapterFlat": 30
   },
+  "329436": {
+    "sentence": "how concerned Sir John and my daughters will be when they hear it!",
+    "chapterFlat": 30
+  },
   "329755": {
     "sentence": "\u201cIt would be unnecessary I am sure, for you to caution Mrs. Palmer and Sir John against ever naming Mr. Willoughby, or making the slightest allusion to what has passed, before my sister.",
+    "chapterFlat": 30
+  },
+  "330372": {
+    "sentence": "No more would Sir John, nor my daughters, for they are all very thoughtful and considerate; especially if I give them a hint, as I certainly will.",
     "chapterFlat": 30
   },
   "330856": {
@@ -3999,6 +4049,10 @@
     "sentence": "Elinor wished that the same forbearance could have extended towards herself, but that was impossible, and she was obliged to listen day after day to the indignation of them all.",
     "chapterFlat": 32
   },
+  "365155": {
+    "sentence": "Sir John, could not have thought it possible.",
+    "chapterFlat": 32
+  },
   "366342": {
     "sentence": "The rest of Mrs. Palmer\u2019s sympathy was shown in procuring all the particulars in her power of the approaching marriage, and communicating them to Elinor.",
     "chapterFlat": 32
@@ -4009,10 +4063,6 @@
   },
   "366696": {
     "sentence": "The calm and polite unconcern of Lady Middleton on the occasion was a happy relief to Elinor\u2019s spirits, oppressed as they often were by the clamorous kindness of the others.",
-    "chapterFlat": 32
-  },
-  "367275": {
-    "sentence": "Lady Middleton expressed her sense of the affair about once every day,",
     "chapterFlat": 32
   },
   "367970": {
@@ -4317,10 +4367,6 @@
     "sentence": "\u201cI shall have a charming account to carry to Fanny,\u201d said he, as he walked back with his sister.",
     "chapterFlat": 33
   },
-  "390283": {
-    "sentence": "\u201cLady Middleton is really a most elegant woman!",
-    "chapterFlat": 33
-  },
   "390345": {
     "sentence": "Such a woman as I am sure Fanny will be glad to know. And Mrs.",
     "chapterFlat": 33
@@ -4335,10 +4381,6 @@
   },
   "391104": {
     "sentence": "that she waited the very next day both on Mrs. Jennings and her daughter; and her confidence was rewarded by finding even the former,",
-    "chapterFlat": 34
-  },
-  "391273": {
-    "sentence": "even the woman with whom her sisters were staying, by no means unworthy her notice; and as for Lady Middleton, she found her one of the most charming women in the world!",
     "chapterFlat": 34
   },
   "391327": {
@@ -4443,10 +4485,6 @@
   },
   "399407": {
     "sentence": "John Dashwood had not much to say for himself that was worth hearing, and his wife had still less.",
-    "chapterFlat": 34
-  },
-  "400134": {
-    "sentence": "and breaking horses\u2014but then it was all over; and one subject only engaged the ladies till coffee came in, which was the comparative heights of Harry Dashwood, and Lady Middleton\u2019s second son William, who were nearly of the same age.",
     "chapterFlat": 34
   },
   "400787": {
@@ -4797,10 +4835,6 @@
     "sentence": "For their own comfort they would much rather have remained, at least all the morning, in Mrs. Jennings\u2019s house; but it was not a thing to be urged against the wishes of everybody.",
     "chapterFlat": 36
   },
-  "419926": {
-    "sentence": "Their hours were therefore made over to Lady Middleton and the two Miss Steeles, by whom their company, in fact was as little valued, as it was professedly sought.",
-    "chapterFlat": 36
-  },
   "420268": {
     "sentence": "Though nothing could be more polite than Lady Middleton\u2019s behaviour to Elinor and Marianne, she did not really like them at all.",
     "chapterFlat": 36
@@ -4823,6 +4857,10 @@
   },
   "421557": {
     "sentence": "But this conciliation was not granted; for though she often threw out expressions of pity for her sister to Elinor, and more than once dropt a reflection on the inconstancy of beaux before Marianne, no effect was produced, but a look of indifference from the former, or of disgust in the latter.",
+    "chapterFlat": 36
+  },
+  "421908": {
+    "sentence": "that if Sir John dined from home, she might spend a whole day without hearing any other raillery on the subject, than what she was kind enough to bestow on herself.",
     "chapterFlat": 36
   },
   "422189": {
@@ -4913,18 +4951,6 @@
     "sentence": "Fanny was startled at the proposal.",
     "chapterFlat": 36
   },
-  "432741": {
-    "sentence": "\u201cI do not see how it can be done,\u201d said she, \u201cwithout affronting Lady Middleton, for they spend every day with her; otherwise I should be exceedingly glad to do it.",
-    "chapterFlat": 36
-  },
-  "432887": {
-    "sentence": "But they are Lady Middleton\u2019s visitors.",
-    "chapterFlat": 36
-  },
-  "433170": {
-    "sentence": "\u201cThey had already spent a week in this manner in Conduit Street, and Lady Middleton could not be displeased at their giving the same number of days to such near relations.\u201d",
-    "chapterFlat": 36
-  },
   "433226": {
     "sentence": "Fanny paused a moment, and then, with fresh vigor, said,",
     "chapterFlat": 36
@@ -4953,10 +4979,6 @@
     "sentence": "Such an opportunity of being with Edward and his family was, above all things,",
     "chapterFlat": 36
   },
-  "434941": {
-    "sentence": "It was an advantage that could not be too gratefully acknowledged, nor too speedily made use of; and the visit to Lady Middleton, which had not before had any precise limits, was instantly discovered to have been always meant to end in two days\u2019",
-    "chapterFlat": 36
-  },
   "435369": {
     "sentence": "When the note was shown to Elinor, as it was within ten minutes after its arrival, it gave her, for the first time, some share in the expectations of Lucy; for such a mark of uncommon kindness, vouchsafed on so short an acquaintance, seemed to declare that the good-will towards her arose from something more than merely malice against herself; and might be brought, by time and address, to do every thing that Lucy wished.",
     "chapterFlat": 36
@@ -4967,6 +4989,10 @@
   },
   "435697": {
     "sentence": "The Miss Steeles removed to Harley Street, and all that reached Elinor of their influence there, strengthened her expectation of the event.",
+    "chapterFlat": 36
+  },
+  "435834": {
+    "sentence": "Sir John, who called on them more than once, brought home such accounts of the favour they were in, as must be universally striking. Mrs.",
     "chapterFlat": 36
   },
   "436092": {
@@ -5344,10 +5370,6 @@
     "sentence": "\u201cI am so glad to meet you;\u201d said Miss Steele, taking her familiarly by the arm\u2014\u201cfor I wanted to see you of all things in the world.\u201d And then lowering her voice, \u201cI suppose Mrs. Jennings has heard all about it. Is she angry?\u201d",
     "chapterFlat": 38
   },
-  "464108": {
-    "sentence": "And Lady Middleton, is _she_ angry?\u201d",
-    "chapterFlat": 38
-  },
   "464273": {
     "sentence": "I never saw Lucy in such a rage in my life.",
     "chapterFlat": 38
@@ -5427,10 +5449,6 @@
   },
   "471922": {
     "sentence": "I have not time to speak to Mrs. Jennings about it myself, but pray tell her I am quite happy to hear she is not in anger against us, and Lady Middleton the same; and if anything should happen to take you and your sister away, and Mrs. Jennings should want company, I am sure we should be very glad to come and stay with her for as long a time as she likes.",
-    "chapterFlat": 38
-  },
-  "471979": {
-    "sentence": "I suppose Lady Middleton won\u2019t ask us any more this bout.",
     "chapterFlat": 38
   },
   "472057": {
@@ -6764,6 +6782,10 @@
   },
   "593904": {
     "sentence": "On the contrary, with a mind and body alike strengthened by rest, she looked and spoke with more genuine spirit, anticipating the pleasure of Margaret\u2019s return, and talking of the dear family party which would then be restored, of their mutual pursuits and cheerful society, as the only happiness worth a wish.",
+    "chapterFlat": 46
+  },
+  "594183": {
+    "sentence": "We will walk to the farm at the edge of the down, and see how the children go on; we will walk to Sir John\u2019s new plantations at Barton Cross, and the Abbeyland;",
     "chapterFlat": 46
   },
   "594829": {
@@ -9170,10 +9192,6 @@
     "sentence": "     the Right Honourable Lady Catherine de Bourgh, widow of Sir Lewis",
     "chapterFlat": 63
   },
-  "766460": {
-    "sentence": "     de Bourgh, whose bounty and beneficence has preferred me to the",
-    "chapterFlat": 63
-  },
   "767751": {
     "sentence": "     without any inconvenience, as Lady Catherine is far from objecting",
     "chapterFlat": 63
@@ -9662,10 +9680,6 @@
   },
   "805253": {
     "sentence": "I knew nothing at all of Lady Catherine\u2019s connections.",
-    "chapterFlat": 66
-  },
-  "805449": {
-    "sentence": "\u201cHer daughter, Miss de Bourgh, will have a very large fortune, and it is believed that she and her cousin will unite the two estates.\u201d",
     "chapterFlat": 66
   },
   "805524": {
@@ -11672,10 +11686,6 @@
     "sentence": "When, after examining the mother, in whose countenance and deportment she soon found some resemblance of Mr. Darcy, she turned her eyes on the daughter, she could almost have joined in Maria\u2019s astonishment at her being so thin and so small.",
     "chapterFlat": 79
   },
-  "947667": {
-    "sentence": "Miss de Bourgh was pale and sickly: her features, though not plain, were insignificant; and she spoke very little, except in a low voice, to Mrs. Jenkinson, in whose appearance there was nothing remarkable, and who was entirely engaged in listening to what she said, and placing a screen in the proper direction before her eyes.",
-    "chapterFlat": 79
-  },
   "947810": {
     "sentence": "After sitting a few minutes, they were all sent to one of the windows to admire the view, Mr. Collins attending them to point out its beauties,",
     "chapterFlat": 79
@@ -11698,10 +11708,6 @@
   },
   "948900": {
     "sentence": "Elizabeth was ready to speak whenever there was an opening, but she was seated between Charlotte and Miss de Bourgh--the former of whom was engaged in listening to Lady Catherine, and the latter said not a word to her all the dinnertime.",
-    "chapterFlat": 79
-  },
-  "949046": {
-    "sentence": "Mrs. Jenkinson was chiefly employed in watching how little Miss de Bourgh ate, pressing her to try some other dish and fearing she was indisposed.",
     "chapterFlat": 79
   },
   "949435": {
@@ -11734,10 +11740,6 @@
   },
   "950708": {
     "sentence": "For your sake,\u201d turning to Charlotte, \u201cI am glad of it; but otherwise I see no occasion for entailing estates from the female line.",
-    "chapterFlat": 79
-  },
-  "950769": {
-    "sentence": "It was not thought necessary in Sir Lewis de Bourgh\u2019s family.",
     "chapterFlat": 79
   },
   "951733": {
@@ -12728,10 +12730,6 @@
     "sentence": "When they parted, Lady Catherine, with great condescension, wished them a good journey, and invited them to come to Hunsford again next year;",
     "chapterFlat": 87
   },
-  "1039104": {
-    "sentence": "and Miss de Bourgh exerted herself so far as to courtesy and hold out her hand to both.",
-    "chapterFlat": 87
-  },
   "1039393": {
     "sentence": "On Saturday morning Elizabeth and Mr. Collins met for breakfast a few minutes before the others appeared; and he took the opportunity of paying the parting civilities which he deemed indispensably necessary.",
     "chapterFlat": 88
@@ -13253,10 +13251,6 @@
   },
   "1074472": {
     "sentence": "\u201cYou, who so well know my feelings towards Mr. Darcy, will readily comprehend how sincerely I must rejoice that he is wise enough to assume even the _appearance_ of what is right. His pride, in that direction,",
-    "chapterFlat": 91
-  },
-  "1074991": {
-    "sentence": "His fear of her has always operated, I know, when they were together; and a good deal is to be imputed to his wish of forwarding the match with Miss de Bourgh, which I am certain he has very much at heart.\u201d",
     "chapterFlat": 91
   },
   "1075094": {
@@ -15941,14 +15935,6 @@
     "sentence": "Lady Catherine hesitated for a moment, and then replied,--",
     "chapterFlat": 106
   },
-  "1287929": {
-    "sentence": "Do you pay no regard to the wishes of his friends--to his tacit engagement with Miss de Bourgh?",
-    "chapterFlat": 106
-  },
-  "1288297": {
-    "sentence": "If there is no other objection to my marrying your nephew, I shall certainly not be kept from it by knowing that his mother and aunt wished him to marry Miss de Bourgh.",
-    "chapterFlat": 106
-  },
   "1288501": {
     "sentence": "If Mr. Darcy is neither by honour nor inclination confined to his cousin, why is not he to make another choice?",
     "chapterFlat": 106
@@ -16902,12 +16888,20 @@
     "sentence": "We are sadly off in the country; not but what we have very good shops in Salisbury, but it is so far to go\u2014eight miles is a long way; Mr. Allen says it is nine, measured nine; but I am sure it cannot be more than eight; and it is such a fag\u2014I come back tired to death.",
     "chapterFlat": 114
   },
+  "1375327": {
+    "sentence": "Mr. Tilney was polite enough to seem interested in what she said; and she kept him on the subject of muslins till the dancing recommenced.",
+    "chapterFlat": 114
+  },
   "1375451": {
     "sentence": "Catherine feared, as she listened to their discourse, that he indulged himself a little too much with the foibles of others.",
     "chapterFlat": 114
   },
   "1375701": {
     "sentence": "Catherine coloured, and said, \u201cI was not thinking of anything.\u201d",
+    "chapterFlat": 114
+  },
+  "1377051": {
+    "sentence": "Allen\u2019s head, but that he was not objectionable as a common acquaintance for his young charge he was on inquiry satisfied; for he had early in the evening taken pains to know who her partner was, and had been assured of Mr. Tilney\u2019s being a clergyman, and of a very respectable family in Gloucestershire.",
     "chapterFlat": 114
   },
   "1377380": {
@@ -16976,6 +16970,10 @@
   },
   "1384898": {
     "sentence": "Catherine was not so much engaged at the theatre that evening, in returning the nods and smiles of Miss Thorpe, though they certainly claimed much of her leisure, as to forget to look with an inquiring eye for Mr. Tilney in every box which her eye could reach; but she looked in vain.",
+    "chapterFlat": 117
+  },
+  "1384954": {
+    "sentence": "Mr. Tilney was no fonder of the play than the pump-room.",
     "chapterFlat": 117
   },
   "1385888": {
@@ -17049,6 +17047,10 @@
   },
   "1398259": {
     "sentence": "\u201cVery well, Catherine. That is exactly he.",
+    "chapterFlat": 119
+  },
+  "1398390": {
+    "sentence": "I have not forgot your description of Mr. Tilney\u2014\u2018a brown skin, with dark eyes, and rather dark hair.\u2019 Well, my taste is different.",
     "chapterFlat": 119
   },
   "1398978": {
@@ -17264,8 +17266,16 @@
     "sentence": "He looked as handsome and as lively as ever, and was talking with interest to a fashionable and pleasing-looking young woman, who leant on his arm, and whom Catherine immediately guessed to be his sister; thus unthinkingly throwing away a fair opportunity of considering him lost to her forever, by being married already.",
     "chapterFlat": 121
   },
+  "1419573": {
+    "sentence": "But guided only by what was simple and probable, it had never entered her head that Mr. Tilney could be married; he had not behaved, he had not talked, like the married men to whom she had been used; he had never mentioned a wife, and he had acknowledged a sister.",
+    "chapterFlat": 121
+  },
   "1419872": {
     "sentence": "From these circumstances sprang the instant conclusion of his sister\u2019s now being by his side; and therefore, instead of turning of a deathlike paleness and falling in a fit on Mrs. Allen\u2019s bosom, Catherine sat erect, in the perfect use of her senses, and with cheeks only a little redder than usual.",
+    "chapterFlat": 121
+  },
+  "1420005": {
+    "sentence": "Mr. Tilney and his companion, who continued, though slowly, to approach, were immediately preceded by a lady, an acquaintance of Mrs.",
     "chapterFlat": 121
   },
   "1420139": {
@@ -17298,6 +17308,10 @@
   },
   "1421741": {
     "sentence": "This was accordingly done, Mr. Tilney still continuing standing before them; and after a few minutes\u2019 consideration, he asked Catherine to dance with him.",
+    "chapterFlat": 121
+  },
+  "1422494": {
+    "sentence": "The very easy manner in which he then told her that he had kept her waiting did not by any means reconcile her more to her lot; nor did the particulars which he entered into while they were standing up, of the horses and dogs of the friend whom he had just left, and of a proposed exchange of terriers between them, interest her so much as to prevent her looking very often towards that part of the room where she had left Mr. Tilney.",
     "chapterFlat": 121
   },
   "1422628": {
@@ -17576,6 +17590,10 @@
     "sentence": "yes, I am sure Mrs. Tilney is dead, because Mrs. Hughes told me there was a very beautiful set of pearls that Mr. Drummond gave his daughter on her wedding-day and that Miss Tilney has got now, for they were put by for her when her mother died.\u201d",
     "chapterFlat": 122
   },
+  "1448073": {
+    "sentence": "\u201cAnd is Mr. Tilney, my partner, the only son?\u201d",
+    "chapterFlat": 122
+  },
   "1448304": {
     "sentence": "Catherine inquired no further; she had heard enough to feel that Mrs.",
     "chapterFlat": 122
@@ -17594,6 +17612,10 @@
   },
   "1449462": {
     "sentence": "My sweetest Catherine, how have you been this long age?",
+    "chapterFlat": 123
+  },
+  "1449850": {
+    "sentence": "I assure you, my brother is quite in love with you already; and as for Mr. Tilney\u2014but _that_ is a settled thing\u2014even _your_ modesty cannot doubt his attachment now; his coming back to Bath makes it too plain. Oh!",
     "chapterFlat": 123
   },
   "1450220": {
@@ -17672,6 +17694,10 @@
     "sentence": "But not one of these grave reflections troubled the tranquillity of Catherine.",
     "chapterFlat": 123
   },
+  "1457479": {
+    "sentence": "She had then been exulting in her engagement to Thorpe, and was now chiefly anxious to avoid his sight, lest he should engage her again; for though she could not, dared not expect that Mr. Tilney should ask her a third time to dance, her wishes, hopes, and plans all centred in nothing less.",
+    "chapterFlat": 123
+  },
   "1458047": {
     "sentence": "As soon as they were joined by the Thorpes, Catherine\u2019s agony began; she fidgeted about if John Thorpe came towards her, hid herself as much as possible from his view, and when he spoke to her pretended not to hear him.",
     "chapterFlat": 123
@@ -17696,6 +17722,7 @@
     "sentence": "The others walked away, John Thorpe was still in view, and she gave herself up for lost.",
     "chapterFlat": 123
   },
+  "1459007": { "sentence": "by Mr. Tilney himself.", "chapterFlat": 123 },
   "1459411": {
     "sentence": "To escape, and, as she believed, so narrowly escape John Thorpe, and to be asked, so immediately on his joining her, asked by Mr. Tilney, as if he had sought her on purpose!\u2014it did not appear to her that life could supply any greater felicity.",
     "chapterFlat": 123
@@ -17724,6 +17751,10 @@
     "sentence": "I walk about here, and so I do there; but here I see a variety of people in every street, and there I can only go and call on Mrs. Allen.\u201d",
     "chapterFlat": 123
   },
+  "1466538": {
+    "sentence": "Mr. Tilney was very much amused.",
+    "chapterFlat": 123
+  },
   "1466584": {
     "sentence": "\u201cOnly go and call on Mrs. Allen!\u201d he repeated.",
     "chapterFlat": 123
@@ -17734,6 +17765,10 @@
   },
   "1467850": {
     "sentence": "Soon after their reaching the bottom of the set, Catherine perceived herself to be earnestly regarded by a gentleman who stood among the lookers-on, immediately behind her partner. He was a very handsome man,",
+    "chapterFlat": 123
+  },
+  "1468031": {
+    "sentence": "of a commanding aspect, past the bloom, but not past the vigour of life; and with his eye still directed towards her, she saw him presently address Mr. Tilney in a familiar whisper.",
     "chapterFlat": 123
   },
   "1468399": {
@@ -17992,6 +18027,10 @@
     "sentence": "She was right; in a few minutes he appeared, and, making his way through the then thinning rows, spoke with like calm politeness to Mrs. Allen and her friend.",
     "chapterFlat": 125
   },
+  "1491311": {
+    "sentence": "Did not they tell me that Mr. Tilney and his sister were gone out in a phaeton together? And then what could I do?",
+    "chapterFlat": 125
+  },
   "1491394": {
     "sentence": "But I had ten thousand times rather have been with you; now had not I, Mrs. Allen?\u201d",
     "chapterFlat": 125
@@ -18030,6 +18069,10 @@
   },
   "1493270": {
     "sentence": "Catherine\u2019s mind was greatly eased by this information, yet a something of solicitude remained, from which sprang the following question,",
+    "chapterFlat": 125
+  },
+  "1493408": {
+    "sentence": "thoroughly artless in itself, though rather distressing to the gentleman: \u201cBut, Mr. Tilney, why were _you_ less generous than your sister?",
     "chapterFlat": 125
   },
   "1493944": {
@@ -20373,6 +20416,10 @@
     "sentence": "Catherine was delighted enough even to satisfy the General.",
     "chapterFlat": 139
   },
+  "1704208": {
+    "sentence": "why do not you fit up this room, Mr. Tilney?",
+    "chapterFlat": 139
+  },
   "1704455": {
     "sentence": "\u201cI trust,\u201d said the General, with a most satisfied smile, \u201cthat it will very speedily be furnished: it waits only for a lady\u2019s taste!\u201d",
     "chapterFlat": 139
@@ -20898,6 +20945,10 @@
   },
   "1749870": {
     "sentence": "\u201cYes, but _that_ did not last long,\u201d said Catherine, her eyes brightening at the recollection of what had first given spirit to her existence there.",
+    "chapterFlat": 142
+  },
+  "1750302": {
+    "sentence": "Mr. Tilney drank tea with us, and I always thought him a great addition, he is so very agreeable.",
     "chapterFlat": 142
   },
   "1750471": {

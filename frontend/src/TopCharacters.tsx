@@ -24,7 +24,12 @@ export function TopCharacters() {
     Object.entries(rel).forEach(([toName, r]) => {
       if (fromName === toName) return;
       if (!characters[fromName] || !characters[toName]) return;
-      const key = [fromName, toName].sort().join(" & ");
+      const key = [
+        characters[fromName].shortName || fromName,
+        characters[toName].shortName || toName,
+      ]
+        .sort()
+        .join(" & ");
       relCountDict[key] = {
         name: key,
         count: r.length,
@@ -33,11 +38,14 @@ export function TopCharacters() {
       };
     })
   );
-  const relCounts = Object.values(relCountDict)
-    .sort((a, b) => b.count - a.count)
-    .filter(
-      (d) => !search || d.name.toLowerCase().includes(search.toLowerCase())
+  let relCounts = Object.values(relCountDict);
+  relCounts.sort((a, b) => b.count - a.count);
+  if (search) {
+    relCounts = relCounts.filter(
+      (d) => search === d.fromName || search === d.toName || search === d.name
     );
+  }
+
   const topRels = relCounts.slice(0, 10);
 
   const charterOptions = sortBy(
@@ -45,6 +53,7 @@ export function TopCharacters() {
     (c) => characters[c].count * -1
   );
 
+  const selectedItem = relCountDict[selectedRelationship!];
   return (
     <>
       {selectedRelationship && (
@@ -52,9 +61,7 @@ export function TopCharacters() {
           title={`${selectedRelationship.split(" & ").join(" and ")}`}
           onClose={() => setSelectedRelationship(undefined)}
           relationship={
-            relationships[selectedRelationship.split(" & ")[0]][
-              selectedRelationship.split(" & ")[1]
-            ]
+            relationships[selectedItem.fromName][selectedItem.toName]
           }
         />
       )}

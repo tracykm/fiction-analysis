@@ -1,6 +1,7 @@
 characters = {
     # Sense and Sensibility
     "Elinor Dashwood": {
+        "shortName": "Elinor",
         "name": "Elinor Dashwood",
         "other_names": ["Elinor", "Miss Dashwoods"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -8,6 +9,7 @@ characters = {
         "books": [1],
     },
     "Marianne Dashwood": {
+        "shortName": "Marianne",
         "name": "Marianne Dashwood",
         "other_names": ["Marianne", "Miss Dashwoods"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -22,6 +24,7 @@ characters = {
         "books": [1],
     },
     "Edward Ferrars": {
+        "shortName": "Edward",
         "name": "Edward Ferrars",
         "other_names": ["Edward", "Mr. Ferrars"],
         "category": ["Male", "Unmarried", "Clergy"],
@@ -50,6 +53,7 @@ characters = {
         "books": [1],
     },
     "Margaret Dashwood": {
+        "shortName": "Margaret",
         "name": "Margaret Dashwood",
         "other_names": ["Margaret"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -57,8 +61,9 @@ characters = {
         "books": [1],
     },
     "Sir John Middleton": {
+        "shortName": "Sir John",
         "name": "Sir John Middleton",
-        "other_names": ["Middleton"],
+        "other_names": ["Sir John"],
         "category": ["Male", "Married", "No profession"],
         "disqualifiers": [],
         "books": [1],
@@ -99,6 +104,7 @@ characters = {
         "books": [1],
     },
     "Mr. Willoughby": {
+        "shortName": "Willoughby",
         "name": "Willoughby",
         "other_names": [],
         "category": ["Male", "Unmarried", "No profession"],
@@ -107,6 +113,7 @@ characters = {
     },
     # Pride and Prejudice
     "Lizzie Bennet": {
+        "shortName": "Lizzie",
         "name": "Lizzie Bennet",
         "other_names": ["Elizabeth", "Eliza", "Lizzie"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -114,6 +121,7 @@ characters = {
         "books": [2],
     },
     "Jane Bennet": {
+        "shortName": "Jane",
         "name": "Jane Bennet",
         "other_names": ["eldest Miss Bennet", "Jane"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -121,6 +129,7 @@ characters = {
         "books": [2],
     },
     "Mr. Darcy": {
+        "shortName": "Darcy",
         "name": "Mr. Darcy",
         "other_names": ["Darcy"],
         "category": ["Male", "Unmarried", "No profession"],
@@ -128,6 +137,7 @@ characters = {
         "books": [2],
     },
     "Mr. Bingley": {
+        "shortName": "Bingley",
         "name": "Mr. Bingley",
         "other_names": ["Charles Bingley", "Bingley", "Charles"],
         "category": ["Male", "Unmarried", "No profession"],
@@ -135,6 +145,7 @@ characters = {
         "books": [2],
     },
     "Caroline Bingley": {
+        "shortName": "Caroline",
         "name": "Caroline Bingley",
         "other_names": ["Caroline", "Miss Bingley"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -163,6 +174,7 @@ characters = {
         "books": [2],
     },
     "Charlotte Lucas": {
+        "shortName": "Charlotte",
         "name": "Charlotte Lucas",
         "other_names": ["Miss Lucas", "Charlotte"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -171,12 +183,13 @@ characters = {
     },
     "Lady Catherine": {
         "name": "Lady Catherine",
-        "other_names": ["Lady Catherine de Bourgh", "de Bourgh"],
+        "other_names": ["Lady Catherine de Bourgh"],
         "category": ["Female", "Widowed", "No profession"],
         "disqualifiers": [],
         "books": [2],
     },
     "Mr. Wickham": {
+        "shortName": "Wickham",
         "name": "Mr. Wickham",
         "other_names": ["George Wickham", "Wickham", "George"],
         "category": ["Male", "Unmarried", "Military"],
@@ -184,6 +197,7 @@ characters = {
         "books": [2],
     },
     "Lydia Bennet": {
+        "shortName": "Lydia",
         "name": "Lydia Bennet",
         "other_names": ["Lydia"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -191,6 +205,7 @@ characters = {
         "books": [2],
     },
     "Mary Bennet": {
+        "shortName": "Mary",
         "name": "Mary Bennet",
         "other_names": ["Mary"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -198,6 +213,7 @@ characters = {
         "books": [2],
     },
     "Kitty Bennet": {
+        "shortName": "Kitty",
         "name": "Kitty Bennet",
         "other_names": ["Kitty"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -219,6 +235,7 @@ characters = {
         "books": [2],
     },
     "Colonel Fitzwilliam": {
+        "shortName": "Fitzwilliam",
         "name": "Colonel Fitzwilliam",
         "other_names": ["Colonel", "Fitzwilliam"],
         "category": ["Male", "Unmarried", "Military"],
@@ -227,6 +244,7 @@ characters = {
     },
     ## Northanger Abbey
     "Catherine Morland": {
+        "shortName": "Catherine",
         "name": "Catherine Morland",
         "other_names": ["Catherine", "Miss Morland"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -235,7 +253,7 @@ characters = {
     },
     "Henry Tilney": {
         "name": "Henry Tilney",
-        "other_names": ["Henry"],
+        "other_names": ["Henry", "Mr. Tilney"],
         "category": ["Male", "Unmarried", "Clergy"],
         "disqualifiers": [],
         "books": [3],
@@ -255,6 +273,7 @@ characters = {
         "books": [3],
     },
     "Isabella Thorpe": {
+        "shortName": "Isabella",
         "name": "Isabella Thorpe",
         "other_names": ["Isabella", "Miss Thorpe"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -305,6 +324,7 @@ characters = {
     },
     ## Mansfield Park
     "Fanny Price": {
+        "shortName": "Fanny",
         "name": "Fanny Price",
         "other_names": ["Fanny", "Miss Price"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -312,6 +332,7 @@ characters = {
         "books": [4],
     },
     "Edmund Bertram": {
+        "shortName": "Edmund",
         "name": "Edmund Bertram",
         "other_names": ["Edmund Bertram", "Edmund"],
         "category": ["Male", "Unmarried", "Clergy"],
@@ -319,6 +340,7 @@ characters = {
         "books": [4],
     },
     "Sir Thomas Bertram": {
+        "short Name": "Sir Thomas",
         "name": "Sir Thomas Bertram",
         "other_names": ["Sir Thomas Bertram", "Thomas"],
         "category": ["Male", "Married", "No profession"],
@@ -404,6 +426,7 @@ characters = {
     },
     ## Emma
     "Emma Woodhouse": {
+        "shortName": "Emma",
         "name": "Emma Woodhouse",
         "other_names": ["Emma", "Miss Woodhouse"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -418,6 +441,7 @@ characters = {
         "books": [5],
     },
     "Harriet Smith": {
+        "shortName": "Harriet",
         "name": "Harriet Smith",
         "other_names": ["Harriet", "Smith"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -459,8 +483,8 @@ characters = {
         "disqualifiers": ["Augusta Elton", "Mrs. Elton", "Miss Elton"],
         "books": [5],
     },
-    "Augusta Hawkins": {
-        "name": "Augusta Hawkins",
+    "Mrs. Elton": {
+        "name": "Mrs. Elton",
         "other_names": ["Augusta", "Miss Hawkins", "Mrs. Elton", "Eltons"],
         "category": ["Female", "Married", "No profession"],
         "disqualifiers": [],
@@ -496,6 +520,7 @@ characters = {
     },
     ## Persuasion
     "Anne Elliot": {
+        "shortName": "Anne",
         "name": "Anne Elliot",
         "other_names": ["Anne"],
         "category": ["Female", "Unmarried", "No profession"],
@@ -503,6 +528,7 @@ characters = {
         "books": [6],
     },
     "Captain Wentworth": {
+        "shortName": "Wentworth",
         "name": "Captain Wentworth",
         "other_names": ["Wentworth", "Frederick"],
         "category": ["Male", "Unmarried", "Military"],

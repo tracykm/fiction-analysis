@@ -31,7 +31,7 @@
     "book": 1,
     "letterIndex": 28183,
     "chapterFlat": 4,
-    "characterRefCount": 35,
+    "characterRefCount": 36,
     "title": "4",
     "length": 10910
   },
@@ -49,7 +49,7 @@
     "book": 1,
     "letterIndex": 44872,
     "chapterFlat": 6,
-    "characterRefCount": 8,
+    "characterRefCount": 7,
     "title": "6",
     "length": 7444
   },
@@ -58,7 +58,7 @@
     "book": 1,
     "letterIndex": 52316,
     "chapterFlat": 7,
-    "characterRefCount": 27,
+    "characterRefCount": 26,
     "title": "7",
     "length": 7323
   },
@@ -67,7 +67,7 @@
     "book": 1,
     "letterIndex": 59639,
     "chapterFlat": 8,
-    "characterRefCount": 28,
+    "characterRefCount": 29,
     "title": "8",
     "length": 6937
   },
@@ -76,7 +76,7 @@
     "book": 1,
     "letterIndex": 66576,
     "chapterFlat": 9,
-    "characterRefCount": 32,
+    "characterRefCount": 41,
     "title": "9",
     "length": 10385
   },
@@ -94,7 +94,7 @@
     "book": 1,
     "letterIndex": 88835,
     "chapterFlat": 11,
-    "characterRefCount": 28,
+    "characterRefCount": 27,
     "title": "11",
     "length": 8330
   },
@@ -112,7 +112,7 @@
     "book": 1,
     "letterIndex": 106276,
     "chapterFlat": 13,
-    "characterRefCount": 64,
+    "characterRefCount": 70,
     "title": "13",
     "length": 11322
   },
@@ -130,7 +130,7 @@
     "book": 1,
     "letterIndex": 125890,
     "chapterFlat": 15,
-    "characterRefCount": 31,
+    "characterRefCount": 30,
     "title": "15",
     "length": 14091
   },
@@ -139,7 +139,7 @@
     "book": 1,
     "letterIndex": 139981,
     "chapterFlat": 16,
-    "characterRefCount": 51,
+    "characterRefCount": 54,
     "title": "16",
     "length": 11289
   },
@@ -157,7 +157,7 @@
     "book": 1,
     "letterIndex": 160260,
     "chapterFlat": 18,
-    "characterRefCount": 43,
+    "characterRefCount": 47,
     "title": "18",
     "length": 8570
   },
@@ -166,7 +166,7 @@
     "book": 1,
     "letterIndex": 168830,
     "chapterFlat": 19,
-    "characterRefCount": 41,
+    "characterRefCount": 42,
     "title": "19",
     "length": 15998
   },
@@ -175,7 +175,7 @@
     "book": 1,
     "letterIndex": 184828,
     "chapterFlat": 20,
-    "characterRefCount": 36,
+    "characterRefCount": 45,
     "title": "20",
     "length": 12673
   },
@@ -184,7 +184,7 @@
     "book": 1,
     "letterIndex": 197501,
     "chapterFlat": 21,
-    "characterRefCount": 55,
+    "characterRefCount": 59,
     "title": "21",
     "length": 16429
   },
@@ -193,7 +193,7 @@
     "book": 1,
     "letterIndex": 213930,
     "chapterFlat": 22,
-    "characterRefCount": 70,
+    "characterRefCount": 71,
     "title": "22",
     "length": 15332
   },
@@ -202,7 +202,7 @@
     "book": 1,
     "letterIndex": 229262,
     "chapterFlat": 23,
-    "characterRefCount": 63,
+    "characterRefCount": 56,
     "title": "23",
     "length": 13549
   },
@@ -211,7 +211,7 @@
     "book": 1,
     "letterIndex": 242811,
     "chapterFlat": 24,
-    "characterRefCount": 52,
+    "characterRefCount": 53,
     "title": "24",
     "length": 11418
   },
@@ -238,7 +238,7 @@
     "book": 1,
     "letterIndex": 279231,
     "chapterFlat": 27,
-    "characterRefCount": 75,
+    "characterRefCount": 74,
     "title": "27",
     "length": 14043
   },
@@ -247,7 +247,7 @@
     "book": 1,
     "letterIndex": 293274,
     "chapterFlat": 28,
-    "characterRefCount": 38,
+    "characterRefCount": 33,
     "title": "28",
     "length": 8236
   },
@@ -256,7 +256,7 @@
     "book": 1,
     "letterIndex": 301510,
     "chapterFlat": 29,
-    "characterRefCount": 74,
+    "characterRefCount": 72,
     "title": "29",
     "length": 21037
   },
@@ -265,7 +265,7 @@
     "book": 1,
     "letterIndex": 322547,
     "chapterFlat": 30,
-    "characterRefCount": 49,
+    "characterRefCount": 52,
     "title": "30",
     "length": 16206
   },
@@ -283,7 +283,7 @@
     "book": 1,
     "letterIndex": 359804,
     "chapterFlat": 32,
-    "characterRefCount": 59,
+    "characterRefCount": 60,
     "title": "32",
     "length": 14462
   },
@@ -292,7 +292,7 @@
     "book": 1,
     "letterIndex": 374266,
     "chapterFlat": 33,
-    "characterRefCount": 69,
+    "characterRefCount": 68,
     "title": "33",
     "length": 16618
   },
@@ -301,7 +301,7 @@
     "book": 1,
     "letterIndex": 390884,
     "chapterFlat": 34,
-    "characterRefCount": 86,
+    "characterRefCount": 82,
     "title": "34",
     "length": 15102
   },
@@ -310,7 +310,7 @@
     "book": 1,
     "letterIndex": 405986,
     "chapterFlat": 35,
-    "characterRefCount": 89,
+    "characterRefCount": 87,
     "title": "35",
     "length": 12845
   },
@@ -319,7 +319,7 @@
     "book": 1,
     "letterIndex": 418831,
     "chapterFlat": 36,
-    "characterRefCount": 63,
+    "characterRefCount": 57,
     "title": "36",
     "length": 17285
   },
@@ -337,7 +337,7 @@
     "book": 1,
     "letterIndex": 460396,
     "chapterFlat": 38,
-    "characterRefCount": 74,
+    "characterRefCount": 72,
     "title": "38",
     "length": 16459
   },
@@ -373,7 +373,7 @@
     "book": 1,
     "letterIndex": 516379,
     "chapterFlat": 42,
-    "characterRefCount": 32,
+    "characterRefCount": 31,
     "title": "42",
     "length": 10299
   },
@@ -391,7 +391,7 @@
     "book": 1,
     "letterIndex": 546217,
     "chapterFlat": 44,
-    "characterRefCount": 43,
+    "characterRefCount": 45,
     "title": "44",
     "length": 29697
   },
@@ -409,7 +409,7 @@
     "book": 1,
     "letterIndex": 587932,
     "chapterFlat": 46,
-    "characterRefCount": 52,
+    "characterRefCount": 53,
     "title": "46",
     "length": 16264
   },
@@ -445,7 +445,7 @@
     "book": 1,
     "letterIndex": 648384,
     "chapterFlat": 50,
-    "characterRefCount": 76,
+    "characterRefCount": 77,
     "title": "50",
     "length": 14443
   },
@@ -562,7 +562,7 @@
     "book": 2,
     "letterIndex": 762966,
     "chapterFlat": 63,
-    "characterRefCount": 32,
+    "characterRefCount": 31,
     "title": "13",
     "length": 9381
   },
@@ -589,7 +589,7 @@
     "book": 2,
     "letterIndex": 788595,
     "chapterFlat": 66,
-    "characterRefCount": 82,
+    "characterRefCount": 81,
     "title": "16",
     "length": 19030
   },
@@ -634,7 +634,7 @@
     "book": 2,
     "letterIndex": 863731,
     "chapterFlat": 71,
-    "characterRefCount": 55,
+    "characterRefCount": 54,
     "title": "21",
     "length": 11305
   },
@@ -706,7 +706,7 @@
     "book": 2,
     "letterIndex": 942364,
     "chapterFlat": 79,
-    "characterRefCount": 59,
+    "characterRefCount": 55,
     "title": "29",
     "length": 13564
   },
@@ -778,7 +778,7 @@
     "book": 2,
     "letterIndex": 1031318,
     "chapterFlat": 87,
-    "characterRefCount": 33,
+    "characterRefCount": 32,
     "title": "37",
     "length": 7833
   },
@@ -814,7 +814,7 @@
     "book": 2,
     "letterIndex": 1063164,
     "chapterFlat": 91,
-    "characterRefCount": 55,
+    "characterRefCount": 54,
     "title": "41",
     "length": 13008
   },
@@ -913,7 +913,7 @@
     "book": 2,
     "letterIndex": 1225465,
     "chapterFlat": 102,
-    "characterRefCount": 47,
+    "characterRefCount": 46,
     "title": "52",
     "length": 17080
   },
@@ -949,7 +949,7 @@
     "book": 2,
     "letterIndex": 1280229,
     "chapterFlat": 106,
-    "characterRefCount": 53,
+    "characterRefCount": 51,
     "title": "56",
     "length": 15248
   },
@@ -1021,7 +1021,7 @@
     "book": 3,
     "letterIndex": 1367826,
     "chapterFlat": 114,
-    "characterRefCount": 17,
+    "characterRefCount": 19,
     "title": "3",
     "length": 9290
   },
@@ -1030,7 +1030,7 @@
     "book": 3,
     "letterIndex": 1377116,
     "chapterFlat": 115,
-    "characterRefCount": 26,
+    "characterRefCount": 28,
     "title": "4",
     "length": 7321
   },
@@ -1048,7 +1048,7 @@
     "book": 3,
     "letterIndex": 1384600,
     "chapterFlat": 117,
-    "characterRefCount": 14,
+    "characterRefCount": 16,
     "title": "6",
     "length": 5663
   },
@@ -1066,7 +1066,7 @@
     "book": 3,
     "letterIndex": 1391789,
     "chapterFlat": 119,
-    "characterRefCount": 19,
+    "characterRefCount": 20,
     "title": "8",
     "length": 8869
   },
@@ -1084,7 +1084,7 @@
     "book": 3,
     "letterIndex": 1415987,
     "chapterFlat": 121,
-    "characterRefCount": 70,
+    "characterRefCount": 79,
     "title": "10",
     "length": 14798
   },
@@ -1093,7 +1093,7 @@
     "book": 3,
     "letterIndex": 1430785,
     "chapterFlat": 122,
-    "characterRefCount": 53,
+    "characterRefCount": 54,
     "title": "11",
     "length": 17993
   },
@@ -1102,7 +1102,7 @@
     "book": 3,
     "letterIndex": 1448778,
     "chapterFlat": 123,
-    "characterRefCount": 55,
+    "characterRefCount": 61,
     "title": "12",
     "length": 21183
   },
@@ -1120,7 +1120,7 @@
     "book": 3,
     "letterIndex": 1485909,
     "chapterFlat": 125,
-    "characterRefCount": 47,
+    "characterRefCount": 49,
     "title": "14",
     "length": 11016
   },
@@ -1246,7 +1246,7 @@
     "book": 3,
     "letterIndex": 1692618,
     "chapterFlat": 139,
-    "characterRefCount": 56,
+    "characterRefCount": 57,
     "title": "28",
     "length": 14073
   },
@@ -1273,7 +1273,7 @@
     "book": 3,
     "letterIndex": 1733027,
     "chapterFlat": 142,
-    "characterRefCount": 64,
+    "characterRefCount": 65,
     "title": "31",
     "length": 18737
   },
@@ -1291,7 +1291,7 @@
     "book": 3,
     "letterIndex": 1768233,
     "chapterFlat": 144,
-    "characterRefCount": 25,
+    "characterRefCount": 26,
     "title": "33",
     "length": 7058
   },

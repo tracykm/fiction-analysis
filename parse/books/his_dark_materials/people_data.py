@@ -47,6 +47,7 @@ characters = {
         "books": [3],
     },
     "Serafina Pekkala": {
+        "shortName": "Serafina",
         "other_names": ["Serafina", "Pekkala"],
         "category": ["Witch", "Adult", "Lyra's World", "Adult"],
     },
@@ -76,6 +77,7 @@ characters = {
         "category": ["Bear", "Lyra's World", "Adult"],
     },
     "Mary Malone": {
+        "shortName": "Mary",
         "other_names": ["Mary", "Malone"],
         "category": ["Scholar", "Human", "Adult", "Will's World"],
         "books": [2, 3],
@@ -214,6 +216,7 @@ characters = {
         "books": [2, 3],
     },
     "Pantalaimon": {
+        "shortName": "Pan",
         "other_names": ["Pan"],
         "category": ["Dæmon", "Lyra's World", "Child"],
     },
@@ -254,6 +257,7 @@ characters = {
         "category": ["Lyra's World", "Adult", "Human"],
     },
     "Iorek Byrnison": {
+        "shortName": "Iorek",
         "other_names": ["lorek", "Byrnison", "Iorek"],
         "category": ["Bear", "Lyra's World", "Adult"],
     },
@@ -343,10 +347,15 @@ characters = {
         "category": ["Dæmon", "Lyra's World", "Adult"],
         "other_names": ["Sayan"],
     },
-    "Kulang": {
-        "category": ["Dæmon", "Lyra's World", "Child"],
-        "other_names": [],
-        "books": [1],
+    # "Kulang": {
+    #     "category": ["Dæmon", "Lyra's World", "Child"],
+    #     "other_names": [],
+    #     "books": [1],
+    # },
+    "Elaine Parry": {
+        "category": ["Adult", "Will's World", "Human"],
+        "other_names": ["Mrs. Parry", "Elaine"],
+        "books": [2, 3],
     },
     "Kyrillion": {
         "category": ["Dæmon", "Lyra's World", "Child"],

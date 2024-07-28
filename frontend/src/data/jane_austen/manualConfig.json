@@ -1,5 +1,6 @@
 {
   "defaultSelectedCharacter": "Mrs. Jennings",
+  "sharedCharacters": false,
   "characterCategories": [
     {
       "name": "Status",
@@ -22,7 +23,7 @@
         { "id": "Military", "label": "Military" },
         { "id": "Clergy", "label": "Clergy" },
         { "id": "Law", "label": "Law" },
-        { "id": "No Profession", "label": "No Profession" }
+        { "id": "No profession", "label": "N/A" }
       ]
     }
   ]

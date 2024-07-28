@@ -5,6 +5,7 @@ import nltk
 
 import books.his_dark_materials as his_dark_materials
 import books.jane_austen as jane_austen
+import books.the_expanse as the_expanse
 
 from find_references import find_references
 
@@ -20,6 +21,9 @@ def generate_data(book_title="his_dark_materials"):
         chapter_names = his_dark_materials.chapter_data.chapter_names
     elif book_title == "jane_austen":
         people_data = jane_austen.people_data.characters
+        chapter_names = {}
+    elif book_title == "the_expanse":
+        people_data = the_expanse.people_data.characters
         chapter_names = {}
     with open(f"./books/{book_title}/raw_text.txt", encoding="utf-8") as file:
         (characters, chapters, relationships, relevant_indexed_sentences) = (
@@ -39,5 +43,6 @@ def generate_data(book_title="his_dark_materials"):
         f.write(json.dumps(relevant_indexed_sentences))
 
 
-generate_data("his_dark_materials")
-generate_data("jane_austen")
+# generate_data("his_dark_materials")
+# generate_data("jane_austen")
+generate_data("the_expanse")

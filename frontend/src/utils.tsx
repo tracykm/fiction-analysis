@@ -6,6 +6,8 @@ import relationshipTimelines from "./data/his_dark_materials/relationshipTimelin
 export type ChapterRow = (typeof chaptersJson)[0];
 export type CharactersRow = Omit<(typeof charactersJson)["Hester"], "refs"> & {
   refs: number[];
+  shortName?: string;
+  books?: number[];
 };
 export type CharactersData = { [characterName: string]: CharactersRow };
 

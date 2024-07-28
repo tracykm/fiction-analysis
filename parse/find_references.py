@@ -31,6 +31,8 @@ def combine_short_sentences(sentences_raw: list[str]):
 
 
 def has_character(character: dict, sentence: str, book: int | None = None):
+    if "~~~ CHAPTER " in sentence:
+        return False
     if character.get("books") and book is not None:
         valid_book = book in character.get("books")
         if not valid_book:
@@ -93,13 +95,13 @@ def find_references(
         if "~~~ CHAPTER" in line:
             chapter += 1
             chapter_flat += 1
+            chapter_name = str(chapter)
+            if ": " in line:
+                chapter_name = line.split(": ")[1].strip()
+            if chapter_names:
+                chapter_name = chapter_names.get(str(book), [])[chapter - 1]
             if chapters:
                 chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
-            chapter_name = (
-                chapter_names.get(str(book), [])[chapter - 1]
-                if chapter_names
-                else str(chapter)
-            )
             chapters.append(
                 {
                     "chapter": chapter,
