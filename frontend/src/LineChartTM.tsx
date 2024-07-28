@@ -5,7 +5,8 @@ import {
   XYChart,
 } from "@visx/xychart";
 import { Box, Stack, Typography } from "@mui/material";
-import { books, chaptersFullData } from "./utils";
+import { BookData, ChapterRow } from "./utils";
+import { useDataContext } from "./DataContext";
 
 const tickLabelOffset = 10;
 
@@ -22,21 +23,28 @@ type RowShape = {
 
 export function LineChartTM({
   data,
+  xScale = { type: "point" },
+  width = 700,
+  height = 500,
 }: {
   keyName: "chapterFlat" | "days";
+  xScale?: { type: "point" | "linear" };
+  width?: number;
+  height?: number;
   data: {
     name: string;
     color: string;
     info: RowShape[];
   }[];
 }) {
+  const { books, chapters } = useDataContext();
   return (
     <div>
       <XYChart
-        width={700}
-        height={500}
+        width={width}
+        height={height}
         margin={{ left: 24, top: 35, bottom: 38, right: 27 }}
-        xScale={{ type: "point" }}
+        xScale={xScale}
         yScale={{ type: "linear" }}
       >
         <AnimatedAxis
@@ -68,12 +76,11 @@ export function LineChartTM({
           snapTooltipToDatumY
           showSeriesGlyphs
           glyphStyle={{
-            fill: "#008561",
+            fill: "white",
             strokeWidth: 0,
           }}
           renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
-            const chapter =
-              chaptersFullData[nearestDatum.datum.chapterFlat - 1];
+            const chapter = chapters[nearestDatum.datum.chapterFlat - 1];
             return (
               <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
                 <Box>
@@ -86,7 +93,7 @@ export function LineChartTM({
                     }}
                   >
                     <div>B{chapter?.book}</div>
-                    <div>{books[chapter?.book - 1].title}</div>
+                    <div>{books[chapter?.book - 1]?.title}</div>
                   </Typography>
                   <Typography
                     sx={{
@@ -97,7 +104,9 @@ export function LineChartTM({
                     }}
                   >
                     <div>Ch{chapter?.chapter}</div>
-                    <div>{chapter?.title}</div>
+                    <div>
+                      {chapter?.title} - {chapter?.chapterFlat}
+                    </div>
                   </Typography>
                 </Box>
                 {data.map((d) => {
@@ -112,6 +121,7 @@ export function LineChartTM({
                         <Box sx={{ flexGrow: 1 }} />
                         <div>{value}</div>
                       </Stack>
+                      <Box>{datumByKey[d.name].datum.comment}</Box>
                     </Stack>
                   );
                 })}

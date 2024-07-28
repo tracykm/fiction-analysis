@@ -2,7 +2,7 @@ characters = {
     # Sense and Sensibility
     "Elinor Dashwood": {
         "name": "Elinor Dashwood",
-        "other_names": ["Elinor", "Miss Dashwood", "Miss Dashwoods"],
+        "other_names": ["Elinor", "Miss Dashwoods"],
         "category": ["Female", "Unmarried", "No profession"],
         "disqualifiers": ["Mrs. Dashwood", "Mr. Dashwood"],
         "books": [1],
@@ -30,7 +30,7 @@ characters = {
     },
     "Mrs. Dashwood": {
         "name": "Mrs. Dashwood",
-        "other_names": ["Dashwood"],
+        "other_names": ["Mrs. Dashwood", "Mrs Dashwood"],
         "category": ["Female", "Widowed", "No profession"],
         "disqualifiers": ["Mr. Dashwood", "John Dashwood"],
         "books": [1],
@@ -108,14 +108,14 @@ characters = {
     # Pride and Prejudice
     "Lizzie Bennet": {
         "name": "Lizzie Bennet",
-        "other_names": ["Elizabeth", "Eliza", "Lizzie", "Miss Bennet"],
+        "other_names": ["Elizabeth", "Eliza", "Lizzie"],
         "category": ["Female", "Unmarried", "No profession"],
         "disqualifiers": [],
         "books": [2],
     },
     "Jane Bennet": {
         "name": "Jane Bennet",
-        "other_names": ["Miss Bennet", "Jane"],
+        "other_names": ["eldest Miss Bennet", "Jane"],
         "category": ["Female", "Unmarried", "No profession"],
         "disqualifiers": [],
         "books": [2],
@@ -289,8 +289,8 @@ characters = {
         "disqualifiers": [],
         "books": [3],
     },
-    "Captain Frederick Tilney": {
-        "name": "Captain Frederick Tilney",
+    "Captain Tilney": {
+        "name": "Captain Tilney",
         "other_names": ["Frederick", "Captain Tilney", "Captain"],
         "category": ["Male", "Unmarried", "Military"],
         "disqualifiers": [],
@@ -502,15 +502,15 @@ characters = {
         "disqualifiers": [],
         "books": [6],
     },
-    "Captain Frederick Wentworth": {
-        "name": "Captain Frederick Wentworth",
+    "Captain Wentworth": {
+        "name": "Captain Wentworth",
         "other_names": ["Wentworth", "Frederick"],
         "category": ["Male", "Unmarried", "Military"],
         "disqualifiers": [],
         "books": [6],
     },
-    "Sir Walter Elliot": {
-        "name": "Sir Walter Elliot",
+    "Sir Elliot": {
+        "name": "Sir Elliot",
         "other_names": ["Sir Walter Elliot", "Walter", "Sir Elliot"],
         "category": ["Male", "Married", "No profession"],
         "disqualifiers": ["William Walter Elliot"],
@@ -525,7 +525,7 @@ characters = {
     },
     "Mr. Elliot": {
         "name": "Mr. Elliot",
-        "other_names": ["William"],
+        "other_names": ["William", "Mr Elliot"],
         "category": ["Male", "Unmarried"],
         "disqualifiers": [],
         "books": [6],

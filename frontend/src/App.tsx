@@ -2,14 +2,11 @@ import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
 import { CharacterPieCharts } from "./CharacterPieCharts";
 import { TimeGraphAndExcerpts } from "./TimeGraphAndExcerpts";
 import { ErrorBoundary } from "./ErrorBoundry";
-import {
-  books,
-  chaptersFullData,
-  charactersFullData,
-  flatChapterToBook,
-} from "./utils";
-import { useState } from "react";
-import { mapValues, pickBy } from "lodash-es";
+import { useEffect, useState } from "react";
+import { isEmpty, startCase } from "lodash-es";
+import { TopCharacters } from "./TopCharacters";
+import { RelationshipsOverTime } from "./RelationshipsOverTime";
+import { DataContextProvider, useDataContext } from "./DataContext";
 
 function Section({
   children,
@@ -32,13 +29,18 @@ function Section({
   );
 }
 
-function BookTabs({ selectedBook, setSelectedBook }) {
+function BookTabs({
+  setSelectedBook,
+}: {
+  setSelectedBook: (book: number) => void;
+}) {
+  const { selectedBook, books } = useDataContext();
   return (
     <Tabs
       sx={{
         position: "sticky",
         top: 0,
-        zIndex: 1,
+        zIndex: 10,
         background: "#333",
         width: "100%",
       }}
@@ -56,49 +58,80 @@ function BookTabs({ selectedBook, setSelectedBook }) {
 }
 
 function App() {
-  const [selectedBook, setSelectedBook] = useState(0);
-  let characters = charactersFullData;
-  if (selectedBook != 0) {
-    characters = pickBy(charactersFullData, (d) =>
-      Object.keys(d.refs).some((ch) => flatChapterToBook[ch] === selectedBook)
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlBook = urlParams.get("book") || "0";
+  const series = urlParams.get("series") || "his_dark_materials";
+  const [selectedBook, _setSelectedBook] = useState(Number(urlBook));
+  const setSelectedBook = (book: number) => {
+    window.history.replaceState(
+      null,
+      "",
+      `?book=${book === 0 ? "" : book.toString()}&series=${series}`
     );
-    characters = mapValues(characters, (d) => {
-      const refs = pickBy(
-        d.refs,
-        (v, k) => flatChapterToBook[k] === selectedBook
-      );
-      return {
-        ...d,
-        refs,
-        count: Object.values(refs).reduce((acc, d) => acc + d.length, 0),
-      };
-    });
-  }
-  const chapters = selectedBook
-    ? chaptersFullData.filter((d) => d.book === selectedBook)
-    : chaptersFullData;
+    _setSelectedBook(book);
+    document.title = series;
+  };
+  useEffect(() => {
+    document.title = `${startCase(series)} Data Analysis`;
+  }, [series]);
 
   return (
     <Box sx={{ maxWidth: 900, margin: "auto", p: 1 }}>
       <header>
         <Typography variant="h1" sx={{ fontSize: 34 }}>
-          His Dark Materials
+          {startCase(series)}
         </Typography>
       </header>
-      <BookTabs {...{ selectedBook, setSelectedBook }} />
+
+      <DataContextProvider selectedBook={selectedBook} series={series}>
+        <MainContent setSelectedBook={setSelectedBook} />
+      </DataContextProvider>
+    </Box>
+  );
+}
+
+function MainContent({
+  setSelectedBook,
+}: {
+  setSelectedBook: (book: number) => void;
+}) {
+  const fullContext = useDataContext();
+  if (!Object.keys(fullContext).length) return null;
+
+  const forceRemountKey = fullContext.manualConfig.sharedCharacters
+    ? "shared"
+    : fullContext.selectedBook;
+
+  return (
+    <ErrorBoundary>
+      <BookTabs setSelectedBook={setSelectedBook} />
+
+      {!isEmpty(fullContext.relationshipTimelines) && (
+        <Section title="Relationships Over Time">
+          <ErrorBoundary>
+            <RelationshipsOverTime />
+          </ErrorBoundary>
+        </Section>
+      )}
+
+      <Section title="Top Relationships">
+        <ErrorBoundary>
+          <TopCharacters key={forceRemountKey} />
+        </ErrorBoundary>
+      </Section>
 
       <Section title="Character Categories">
         <ErrorBoundary>
-          <CharacterPieCharts characters={characters} chapters={chapters} />
+          <CharacterPieCharts />
         </ErrorBoundary>
       </Section>
 
       <Section title="Character References Over Time">
         <ErrorBoundary>
-          <TimeGraphAndExcerpts characters={characters} chapters={chapters} />
+          <TimeGraphAndExcerpts />
         </ErrorBoundary>
       </Section>
-    </Box>
+    </ErrorBoundary>
   );
 }
 

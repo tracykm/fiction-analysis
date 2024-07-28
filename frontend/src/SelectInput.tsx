@@ -8,7 +8,7 @@ export function SelectInput({
 }: {
   options: { label: string; id: string }[];
   selected?: string;
-  onChange?: (id: string) => void;
+  onChange: (id: string) => void;
   label?: string;
 }) {
   return (

@@ -51,7 +51,7 @@ characters = {
         "category": ["Witch", "Adult", "Lyra's World", "Adult"],
     },
     "Lee Scoresby": {
-        "other_names": ["Lee", "Scoresby"],
+        "other_names": ["Lee", "Scoresby", "the aeronaut", "the Texan"],
         "category": ["Lyra's World", "Adult", "Human"],
     },
     "Jake Petersen": {
@@ -292,7 +292,7 @@ characters = {
         "category": ["Gyption", "Lyra's World", "Human", "Adult"],
         "other_names": ["Adam", "Stefanski"],
     },
-    "Benjamin de Ruyter,": {
+    "Benjamin de Ruyter": {
         "category": ["Gyption", "Lyra's World", "Human", "Adult"],
         "other_names": ["Benjamin"],
     },

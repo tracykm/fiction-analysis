@@ -94,7 +94,7 @@
     "book": 1,
     "letterIndex": 288938,
     "chapterFlat": 11,
-    "characterRefCount": 143,
+    "characterRefCount": 145,
     "title": "Armour",
     "length": 35418
   },
@@ -103,7 +103,7 @@
     "book": 1,
     "letterIndex": 324356,
     "chapterFlat": 12,
-    "characterRefCount": 86,
+    "characterRefCount": 87,
     "title": "The Lost Boy",
     "length": 16243
   },
@@ -121,7 +121,7 @@
     "book": 1,
     "letterIndex": 367251,
     "chapterFlat": 14,
-    "characterRefCount": 132,
+    "characterRefCount": 133,
     "title": "Bolvangar Lights ",
     "length": 26550
   },
@@ -148,7 +148,7 @@
     "book": 1,
     "letterIndex": 444491,
     "chapterFlat": 17,
-    "characterRefCount": 198,
+    "characterRefCount": 201,
     "title": "The Witches",
     "length": 39434
   },
@@ -157,7 +157,7 @@
     "book": 1,
     "letterIndex": 483925,
     "chapterFlat": 18,
-    "characterRefCount": 118,
+    "characterRefCount": 121,
     "title": "Fog and Ice",
     "length": 29851
   },
@@ -328,7 +328,7 @@
     "book": 2,
     "letterIndex": 1085189,
     "chapterFlat": 37,
-    "characterRefCount": 212,
+    "characterRefCount": 214,
     "title": "Alama Gulch",
     "length": 47264
   },
@@ -364,7 +364,7 @@
     "book": 3,
     "letterIndex": 1223160,
     "chapterFlat": 41,
-    "characterRefCount": 52,
+    "characterRefCount": 53,
     "title": "Scavengers",
     "length": 12303
   },
@@ -571,7 +571,7 @@
     "book": 3,
     "letterIndex": 1738704,
     "chapterFlat": 64,
-    "characterRefCount": 119,
+    "characterRefCount": 120,
     "title": "The Abyss",
     "length": 21293
   },

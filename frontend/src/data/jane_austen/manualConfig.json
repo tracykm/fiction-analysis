@@ -1,0 +1,29 @@
+{
+  "defaultSelectedCharacter": "Mrs. Jennings",
+  "characterCategories": [
+    {
+      "name": "Status",
+      "options": [
+        { "id": "Married", "label": "Married" },
+        { "id": "Unmarried", "label": "Unmarried" },
+        { "id": "Widowed", "label": "Widowed" }
+      ]
+    },
+    {
+      "name": "Genders",
+      "options": [
+        { "id": "Female", "label": "Female" },
+        { "id": "Male", "label": "Male" }
+      ]
+    },
+    {
+      "name": "Professions",
+      "options": [
+        { "id": "Military", "label": "Military" },
+        { "id": "Clergy", "label": "Clergy" },
+        { "id": "Law", "label": "Law" },
+        { "id": "No Profession", "label": "No Profession" }
+      ]
+    }
+  ]
+}

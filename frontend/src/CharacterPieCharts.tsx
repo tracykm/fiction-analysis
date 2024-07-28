@@ -2,7 +2,8 @@ import { Box, Button, ButtonGroup, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
 import { PieChartTM } from "./PieChartTM";
 import { useState } from "react";
-import { ChapterRow, CharactersData } from "./utils";
+import { CharactersData } from "./utils";
+import { useDataContext } from "./DataContext";
 
 const PIE_COLORS = [
   "#25CED1",
@@ -56,13 +57,8 @@ function getPieChartDataRefs(
   });
 }
 
-export function CharacterPieCharts({
-  characters,
-  chapters,
-}: {
-  characters: CharactersData;
-  chapters: ChapterRow[];
-}) {
+export function CharacterPieCharts() {
+  const { manualConfig, characters } = useDataContext();
   const [countType, setCountType] = useState<"individuals" | "refs">(
     "individuals"
   );
@@ -75,42 +71,15 @@ export function CharacterPieCharts({
   return (
     <>
       <Stack direction="row" spacing={3} sx={{ mb: 2 }}>
-        <PieChartTM
-          data={getPieChartData(characters, [
-            { id: "Human", label: "Human" },
-            { id: "Witch", label: "Witch" },
-            { id: "Angel", label: "Angel" },
-            { id: "Dæmon", label: "Dæmon" },
-            { id: "Mulefa", label: "Mulefa" },
-            { id: "Gallivespian", label: "Gallivespian" },
-            { id: "Bear", label: "Bear" },
-          ])}
-          name="Species"
-          subtitle={subtitle}
-          includeDetailPercent={countType === "refs"}
-        />
-        <PieChartTM
-          data={getPieChartData(characters, [
-            { id: "Lyra's World", label: "Lyra's World" },
-            { id: "Will's World", label: "Will's World" },
-            { id: "Angel", label: "Angel Realm" },
-            { id: "Gallivespian", label: "Gallivespian's" },
-            { id: "Citt\u00e0gazze", label: "Citt\u00e0gazze's" },
-            { id: "Mulefa", label: "Mulefa's" },
-          ])}
-          name="Universes"
-          subtitle={subtitle}
-          includeDetailPercent={countType === "refs"}
-        />
-        <PieChartTM
-          data={getPieChartData(characters, [
-            { id: "Adult", label: "Adult" },
-            { id: "Child", label: "Child" },
-          ])}
-          name="Ages"
-          subtitle={subtitle}
-          includeDetailPercent={countType === "refs"}
-        />
+        {manualConfig.characterCategories.map((category) => (
+          <PieChartTM
+            key={category.name}
+            data={getPieChartData(characters, category.options)}
+            name={category.name}
+            subtitle={subtitle}
+            includeDetailPercent={countType === "refs"}
+          />
+        ))}
       </Stack>
 
       <Box sx={{ width: "100%", textAlign: "center" }}>

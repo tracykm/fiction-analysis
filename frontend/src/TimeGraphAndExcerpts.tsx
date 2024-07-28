@@ -1,43 +1,66 @@
 import { Box, Button, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Checkboxes } from "./Checkboxes";
 import { LineChartTM } from "./LineChartTM";
 import { SelectInput } from "./SelectInput";
-import {
-  BOOK_START_LETTER_INDEX,
-  COLORS,
-  ChapterRow,
-  LETTERS_PER_PAGE,
-  chaptersFullData,
-} from "./utils";
+import { COLORS, CharactersData, FullContextProps } from "./utils";
 import { uniq } from "lodash-es";
 import { ErrorBoundary } from "./ErrorBoundry";
+import { RefsModal } from "./RelationshipModal";
+import { useDataContext } from "./DataContext";
 
-export function TimeGraphAndExcerpts({
-  characters,
-  chapters,
-}: {
-  characters: CharacterData;
-  chapters: ChapterRow[];
-}) {
-  const [selected, setSelected] = useState(["Lee Scoresby"]);
+export function TimeGraphAndExcerpts() {
+  const {
+    characters,
+    chapters,
+    books,
+    indexedSentences,
+    manualConfig: { defaultSelectedCharacter, sharedCharacters },
+  } = useDataContext();
+  const [selected, setSelected] = useState([defaultSelectedCharacter]);
   const [category, setCategory] = useState<string>();
+  const [openedCharacter, setOpenedCharacter] = useState<string>();
+
+  useEffect(() => {
+    const availableSelected = selected.filter((d) => characters[d]);
+    if (sharedCharacters) return;
+
+    setSelected(
+      availableSelected.length
+        ? availableSelected
+        : [Object.keys(characters)[0]]
+    );
+  }, [characters]);
 
   const data = selected.map((name, i) => ({
     color: COLORS[i] || "white",
     info: chapters.map((d) => ({
       chapterFlat: d.chapterFlat,
-      value: characters[name]?.refs[d.chapterFlat]?.length || 0,
+      value:
+        characters[name]?.refs.filter(
+          (r) => indexedSentences[r].chapterFlat === d.chapterFlat
+        ).length || 0,
     })),
     name,
   }));
 
   return (
     <>
+      {openedCharacter && (
+        <RefsModal
+          title={openedCharacter}
+          refs={characters[openedCharacter].refs}
+          onClose={() => setOpenedCharacter(undefined)}
+        />
+      )}
       <Stack spacing={2} direction={{ sm: "row" }}>
         <ErrorBoundary>
-          <LineChartTM data={data} keyName="chapterFlat" />
+          <LineChartTM
+            data={data}
+            keyName="chapterFlat"
+            {...{ chapters, books }}
+          />
         </ErrorBoundary>
         <SelectionSidebar
           {...{
@@ -50,13 +73,9 @@ export function TimeGraphAndExcerpts({
           }}
         />
       </Stack>
-      <ErrorBoundary>
-        <TextExcerpts
-          selected={selected}
-          characters={characters}
-          chapters={chapters}
-        />
-      </ErrorBoundary>
+      <TextExcerpts
+        {...{ selected, characters, indexedSentences, setOpenedCharacter }}
+      />
     </>
   );
 }
@@ -72,7 +91,7 @@ function SelectionSidebar({
   setSelected: (arg: string[]) => void;
   category?: string;
   setCategory: (arg: string) => void;
-  characters: CharacterData;
+  characters: CharactersData;
 }) {
   const categories = new Set(
     Object.values(characters).flatMap((d) => (d as any)?.category)
@@ -92,7 +111,6 @@ function SelectionSidebar({
     ),
     count: characters[label].count,
     category: characters[label].category,
-    // tooltip: characters[label].category?.join(", "),
   }));
 
   characterOptions.sort((a, b) => b.count - a.count);
@@ -128,11 +146,12 @@ function SelectionSidebar({
 function TextExcerpts({
   selected,
   characters,
+  indexedSentences,
+  setOpenedCharacter,
 }: {
   selected: string[];
-  characters: CharacterData;
-}) {
-  const character = characters[name];
+  setOpenedCharacter: (arg: string) => void;
+} & Pick<FullContextProps, "indexedSentences" | "characters">) {
   return (
     <Stack
       sx={{ mt: 2, width: `${100 / selected.length}%` }}
@@ -151,6 +170,7 @@ function TextExcerpts({
             </div>
           );
         }
+        const cutoff = 3;
         return (
           <div key={name || i} style={{ width: "100%" }}>
             <Stack sx={{ mb: 2 }}>
@@ -162,9 +182,20 @@ function TextExcerpts({
                 {character.count.toLocaleString()} References
               </Box>
             </Stack>
-            {Object.entries(character.refs).map(([chapterFlat, refs], i) => (
-              <ChapterExcerpt chapterFlat={chapterFlat} refs={refs} />
+            {character.refs.slice(0, cutoff).map((ref, i) => (
+              <ExcerptLine sentence={indexedSentences[ref].sentence} />
             ))}
+            <Button
+              onClick={() => {
+                setOpenedCharacter(name);
+              }}
+            >
+              See{" "}
+              {character.refs.length > cutoff
+                ? character.refs.length - cutoff
+                : ""}{" "}
+              more
+            </Button>
           </div>
         );
       })}
@@ -172,74 +203,21 @@ function TextExcerpts({
   );
 }
 
-function ChapterExcerpt({
-  chapterFlat,
-  refs,
-}: {
-  chapterFlat: string;
-  refs: { sentence: string; letterIndex: number }[];
-}) {
-  const chapter = chaptersFullData[Number(chapterFlat) - 1];
-  const [showMore, setShowMore] = useState(false);
-
-  const cutoffNum = 3;
-
-  const baseRefs = refs.slice(0, cutoffNum);
-  const moreRefs = refs.slice(cutoffNum, -1);
+function ExcerptLine({ sentence }: { sentence: string }) {
   return (
-    <Box key={chapterFlat} sx={{ my: 2 }}>
-      <Box>
-        B{chapter?.book}, Ch{chapter?.chapter}
-      </Box>
-      {baseRefs.map((l) => (
-        <ExcerptLine chapter={chapter} {...l} />
-      ))}
-      {moreRefs.length && !showMore ? (
-        <Button onClick={() => setShowMore(!showMore)} sx={{ my: -1 }}>
-          + {moreRefs.length} More
-        </Button>
-      ) : null}
-      {showMore &&
-        moreRefs.map((l) => <ExcerptLine chapter={chapter} {...l} />)}
-    </Box>
-  );
-}
-
-function ExcerptLine({
-  sentence,
-  letterIndex,
-  chapter,
-}: {
-  sentence: string;
-  letterIndex: number;
-  chapter: ChapterRow;
-}) {
-  const page = Math.floor(
-    (letterIndex - BOOK_START_LETTER_INDEX[chapter?.book]) / LETTERS_PER_PAGE
-  );
-  return (
-    <Tooltip
-      title={sentence}
-      componentsProps={{
-        tooltip: { sx: { fontSize: "16px", maxWidth: 500, lineHeight: 1.5 } },
+    <Box
+      sx={{
+        height: 20,
+        overflow: "hidden",
+        my: 0.5,
+        whiteSpace: "nowrap",
+        width: "100%",
+        textOverflow: "ellipsis",
+        minWidth: 0,
+        color: "#888",
       }}
-      placement="top"
-      disableInteractive
     >
-      <Box
-        sx={{
-          height: 20,
-          overflow: "hidden",
-          my: 0.5,
-          whiteSpace: "nowrap",
-          width: "100%",
-          textOverflow: "ellipsis",
-          minWidth: 0,
-          color: "#888",
-        }}
-      >
-        <span>p.{page}</span> {sentence}
-      </Box>
-    </Tooltip>
+      {sentence}
+    </Box>
   );
 }

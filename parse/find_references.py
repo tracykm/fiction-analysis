@@ -30,8 +30,8 @@ def combine_short_sentences(sentences_raw: list[str]):
     return sentences
 
 
-def has_character(character: dict, sentence: str, book: int):
-    if character.get("books"):
+def has_character(character: dict, sentence: str, book: int | None = None):
+    if character.get("books") and book is not None:
         valid_book = book in character.get("books")
         if not valid_book:
             return False
@@ -49,11 +49,34 @@ def has_character(character: dict, sentence: str, book: int):
     return True
 
 
+def format_relationships(relationships: dict[str, dict[str, dict[str, int]]]):
+    formatted_rels: dict[str, dict[str, list[list[int]]]] = {}
+    for name, val in relationships.items():
+        formatted_rels[name] = {}
+        for secondary_name, refs in val.items():
+            formatted_rels[name][secondary_name] = []
+            for idx_a, idx_b in refs.items():
+                idx_a = int(idx_a)
+                idx_b = int(idx_b)
+                pair = []
+                if idx_a == idx_b:
+                    pair = [idx_a]
+                else:
+                    pair = [idx_a, idx_b]
+                    pair.sort()
+                formatted_rels[name][secondary_name].append(pair)
+    return formatted_rels
+
+
 def find_references(
-    file: list[str], people_data: dict[str, dict], chapter_names: dict[list[str]]
+    file: list[str],
+    people_data: dict[str, dict],
+    chapter_names: dict[list[str]] = None,
+    sentence_window=3,
 ):
     chapters = []
     characters = people_data
+    relationships: dict[str, dict[str, dict[str, int]]] = {}
 
     for name in characters:
         characters[name]["name"] = name
@@ -64,6 +87,8 @@ def find_references(
     chapter = 0
     book = 0
     chapter_flat = 0
+    relevant_indexed_sentences = {}
+    recent_characters = []
     for line in file:
         if "~~~ CHAPTER" in line:
             chapter += 1
@@ -90,20 +115,47 @@ def find_references(
             chapter = 0
 
         sentences = combine_short_sentences(nltk.tokenize.sent_tokenize(line))
-
         for sentence in sentences:
             letter_index += len(sentence)
+            recent_characters.append({"letter_index": letter_index, "characters": []})
+            if len(recent_characters) > sentence_window:
+                recent_characters.pop(0)
             for name, character in characters.items():
                 if has_character(character, sentence, book):
+                    relevant_indexed_sentences[letter_index] = {
+                        "sentence": sentence,
+                        "chapterFlat": chapter_flat,
+                    }
                     if chapters:
                         chapters[-1]["characterRefCount"] += 1
                     character["count"] += 1
-                    character["refs"].append(
-                        {
-                            "letterIndex": letter_index,
-                            "sentence": sentence,
-                            "chapterFlat": chapter_flat,
-                        }
-                    )
-    chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
-    return characters, chapters
+                    character["refs"].append(letter_index)
+                    for i, recent in enumerate(recent_characters):
+                        for recent_name in recent["characters"]:
+                            if recent_name != name:
+                                relationships[name] = relationships.get(name, {})
+                                relationships[name][recent_name] = relationships[
+                                    name
+                                ].get(recent_name, {})
+                                relationships[name][recent_name][letter_index] = recent[
+                                    "letter_index"
+                                ]
+                                relationships[recent_name] = relationships.get(
+                                    recent_name, {}
+                                )
+                                relationships[recent_name][name] = relationships[
+                                    recent_name
+                                ].get(name, {})
+                                relationships[recent_name][name][letter_index] = recent[
+                                    "letter_index"
+                                ]
+                    recent_characters[-1]["characters"].append(name)
+    if chapters:
+        chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
+
+    return (
+        characters,
+        chapters,
+        format_relationships(relationships),
+        relevant_indexed_sentences,
+    )

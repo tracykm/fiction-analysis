@@ -1,66 +1,61 @@
 import charactersJson from "./data/his_dark_materials/characters.json";
 import chaptersJson from "./data/his_dark_materials/chapters.json";
-import bookJson from "./data/his_dark_materials/books.json";
-import dates from "./data/his_dark_materials/dates.json";
+import indexedSentences from "./data/his_dark_materials/indexedSentences.json";
+import relationshipTimelines from "./data/his_dark_materials/relationshipTimelines.json";
 
 export type ChapterRow = (typeof chaptersJson)[0];
-export type CharactersRow = Omit<typeof charactersJson.Lyra, "refs"> & {
-  refs: { [chapter: string]: RefsRow[] };
+export type CharactersRow = Omit<(typeof charactersJson)["Hester"], "refs"> & {
+  refs: number[];
 };
 export type CharactersData = { [characterName: string]: CharactersRow };
 
-export type RefsRow = (typeof charactersJson.Lyra)["refs"]["1"][0];
+export type RelationshipRefs = number[][];
+export type RelationshipData = {
+  [fromCharacter: string]: {
+    [toCharacter: string]: RelationshipRefs;
+  };
+};
+export type RelationshipTimelineData = {
+  [fromCharacter: string]: {
+    [toCharacter: string]: typeof relationshipTimelines.Will.Lyra;
+  };
+};
+export type IndexedSentencesData = {
+  [letterIdx: string]: (typeof indexedSentences)["1066"];
+};
 
-export const charactersFullData: Record<
-  string,
-  {
-    refs: {
-      [chapter: string]: {
-        letterIndex: number;
-        sentence: string;
-        chapterFlat: number;
-      }[];
-    };
-    count: number;
-    category?: string[];
-  }
-> = charactersJson;
+export type BookData = {
+  id: number;
+  title: string;
+  chapters: number;
+  startLetterIndex: number;
+};
 
-export const chaptersFullData: ChapterRow[] = chaptersJson;
+export type FullContextProps = {
+  characters: CharactersData;
+  relationships: RelationshipData;
+  chapters: ChapterRow[];
+  indexedSentences: IndexedSentencesData;
+  selectedBook: number;
+  relationshipTimelines: RelationshipTimelineData;
+  books: BookData[];
+  manualConfig: {
+    defaultSelectedCharacter: string;
+    sharedCharacters: boolean;
+    characterCategories: {
+      name: string;
+      options: { id: string; label: string }[];
+    }[];
+  };
+};
 
 export const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
 
-let daysSum = 0;
-const dayDates = dates.map((d) => {
-  daysSum += d.days;
-
-  return { chapter: d.chapter, days: daysSum };
-});
-
-const CHAPTER_LENGTH = {
-  1: 23,
-  2: 15,
-  3: 38,
-};
-
-export const BOOK_START_LETTER_INDEX = {
-  1: 0,
-  2: chaptersFullData[CHAPTER_LENGTH[1]].letterIndex,
-  3: chaptersFullData[CHAPTER_LENGTH[1] + CHAPTER_LENGTH[2]].letterIndex,
-};
-
-export const books = bookJson;
-
-type DataInfo = {
-  chapterFlat: number;
-  value: number;
-  // days: number;
-};
 /** rough approximation, so many different prints out there people don't depend on it being accurate,
  * gives ballpark idea of how far along in chapter */
 export const LETTERS_PER_PAGE = 1500;
 
-export const flatChapterToBook = chaptersFullData.reduce((acc, d) => {
-  acc[d.chapterFlat] = d.book;
-  return acc;
-}, {} as Record<string, number>);
+export function getPercent(num = 0) {
+  if (num > 0.01) return Math.round(num * 100);
+  return Math.round(num * 10000) / 100;
+}

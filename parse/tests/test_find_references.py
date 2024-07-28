@@ -1,30 +1,47 @@
 from ..find_references import find_references
 
+lizzie_char_def = {
+    "name": "Lizzie",
+    "other_names": [],
+    "category": [],
+    "disqualifiers": [],
+}
+jane_char_def = {
+    "name": "Jane",
+    "other_names": [],
+    "category": [],
+    "disqualifiers": [],
+}
+
+characters = {
+    "Lizzie": lizzie_char_def,
+    "Jane": jane_char_def,
+}
+
 
 class TestFindReferences:
-    def test_empty_sentence(self):
-        """Test that an empty sentence returns an empty list."""
-        assert find_references("", {}) == []
+    def test_simple_sentence(self):
+        sentence = "Lizzie is a central character."
+        assert find_references([sentence], characters)[0]["Lizzie"]["count"] == 1
 
-    def test_no_references(self):
-        """Test that a sentence with no references returns an empty list."""
-        sentence = "This is a simple sentence."
-        assert (
-            find_references(
-                sentence,
-                {"Lyra": {"other_names": [], "category": [], "disqualifiers": []}},
-            )
-            == []
-        )
+    def test_no_relationship_sentence(self):
+        sentence = "Lizzie is a central character. A sister."
+        assert find_references([sentence], characters)[2] == {}
 
-    def test_single_reference(self):
-        """Test that a sentence with a single reference returns a list with that reference."""
-        sentence = "Lyra is a central character."
-        expected_references = ["Lyra"]
-        assert find_references(sentence) == expected_references
+    def test_relationship_sentence(self):
+        sentence = "Lizzie is a central character. Jane is her sister."
+        assert find_references([sentence], characters)[2] == {
+            "Jane": {"Lizzie": 1},
+            "Lizzie": {"Jane": 1},
+        }
 
-    def test_multiple_references(self):
-        """Test that a sentence with multiple references returns a list with all references."""
-        sentence = "Lyra and Will are key characters."
-        expected_references = ["Lyra", "Will"]
-        assert find_references(sentence) == expected_references
+    def test_too_far_relationship_sentence(self):
+        sentence = "Lizzie is a central character. She was very tall and other people like her a lot. Jane was her even taller sister."
+        assert find_references([sentence], characters, sentence_window=1)[2] == {}
+
+    def test_too_far_relationship_big_window_sentence(self):
+        sentence = "Lizzie is a central character. She was very tall and other people like her a lot. Jane was her even taller sister."
+        assert find_references([sentence], characters, sentence_window=4)[2] == {
+            "Jane": {"Lizzie": 1},
+            "Lizzie": {"Jane": 1},
+        }
