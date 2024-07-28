@@ -22,12 +22,14 @@ function getPieChartDataIndividuals(
   characters: CharactersData,
   types: { label: string; id: string }[]
 ) {
-  return types.map(({ label, id }, i) => {
+  let totalAmount = 0;
+  const result = types.map(({ label, id }, i) => {
     const colorIndex = i % types.length ? PIE_COLORS.length - i : i;
     const validChars = Object.values(characters).filter((c) =>
       c.category?.includes(id)
     );
     const amount = validChars.length;
+    totalAmount += amount;
     return {
       label,
       id,
@@ -36,17 +38,32 @@ function getPieChartDataIndividuals(
       detail: validChars,
     };
   });
+  const charactersLength = Object.values(characters).length;
+  if (charactersLength !== totalAmount) {
+    result.push({
+      label: "Other",
+      id: "other",
+      amount: charactersLength - totalAmount,
+      color: PIE_COLORS[types.length],
+      detail: Object.values(characters).filter(
+        (c) => !types.some((t) => c.category?.includes(t.id))
+      ),
+    });
+  }
+  return result;
 }
 function getPieChartDataRefs(
   characters: CharactersData,
   types: { label: string; id: string }[]
 ) {
-  return types.map(({ label, id }, i) => {
+  let totalAmount = 0;
+  const result = types.map(({ label, id }, i) => {
     const colorIndex = i % types.length ? PIE_COLORS.length - i : i;
     const validChars = Object.values(characters).filter((c) =>
       c.category?.includes(id)
     );
     const amount = validChars.reduce((acc, info) => acc + info.count, 0);
+    totalAmount += amount;
     return {
       label,
       id,
@@ -55,6 +72,22 @@ function getPieChartDataRefs(
       detail: validChars,
     };
   });
+  const expectedTotalAmount = Object.values(characters).reduce(
+    (acc, info) => acc + info.count,
+    0
+  );
+  if (expectedTotalAmount !== totalAmount) {
+    result.push({
+      label: "Other",
+      id: "other",
+      amount: expectedTotalAmount - totalAmount,
+      color: PIE_COLORS[types.length],
+      detail: Object.values(characters).filter(
+        (c) => !types.some((t) => c.category?.includes(t.id))
+      ),
+    });
+  }
+  return result;
 }
 
 export function CharacterPieCharts() {

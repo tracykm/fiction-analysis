@@ -1,18 +1,14 @@
 import {
   AnimatedAxis,
   AnimatedLineSeries,
-  Tooltip,
+  Margin,
   XYChart,
 } from "@visx/xychart";
 import { Box, Stack, Typography } from "@mui/material";
 import { useDataContext } from "./DataContext";
+import { AnimatedAxisProps } from "@visx/xychart/lib/components/axis/AnimatedAxis";
 
 const tickLabelOffset = 10;
-
-const accessors = {
-  xAccessor: (d) => d?.chapterFlat,
-  yAccessor: (d) => d.value || 0,
-};
 
 type RowShape = {
   chapterFlat?: number;
@@ -20,15 +16,73 @@ type RowShape = {
   value: number;
 };
 
+export function ToolChapterTitle({ chapterFlat }: { chapterFlat: number }) {
+  const { chapters, books } = useDataContext();
+  const chapter = chapters.find((c) => c.chapterFlat === chapterFlat);
+  return (
+    <Box>
+      <Typography
+        sx={{
+          fontSize: 12,
+          display: "flex",
+          justifyContent: "space-between",
+          gap: 1,
+        }}
+      >
+        <div>B {chapter?.book}</div>
+        <div>{books[chapter?.book - 1]?.title}</div>
+      </Typography>
+      <Typography
+        sx={{
+          fontSize: 12,
+          display: "flex",
+          justifyContent: "space-between",
+          gap: 1,
+        }}
+      >
+        <div>Ch {chapter?.chapter}</div>
+        <div>
+          {String(chapter?.chapter) === chapter?.title ? "" : chapter?.title}
+        </div>
+      </Typography>
+    </Box>
+  );
+}
+
+export function ToolCharacterRow({
+  name,
+  value,
+  line,
+}: {
+  name?: string;
+  value: any;
+  line;
+}) {
+  return (
+    <Stack spacing={1} direction="row">
+      <Box sx={{ width: 12, height: 12, background: line.color }} />
+      <Box sx={{ fontSize: 18 }}>{name || line.name}</Box>
+      <Box sx={{ flexGrow: 1 }} />
+      <div>{value}</div>
+    </Stack>
+  );
+}
+
 export function LineChartTM({
   data,
-  xScale = { type: "point" },
+  xScale,
+  yScale,
   width = 700,
   height = 500,
+  margin,
   onClick,
+  xAxisProps,
+  yAxisProps,
+  children,
 }: {
   keyName: "chapterFlat" | "days";
-  xScale?: { type: "point" | "linear" };
+  xScale?: any;
+  yScale?: any;
   width?: number;
   height?: number;
   data: {
@@ -36,17 +90,45 @@ export function LineChartTM({
     color: string;
     info: RowShape[];
   }[];
+  margin?: Partial<Margin>;
   onClick: (d: { datum: RowShape; key: string; index: number }) => void;
+  xAxisProps?: Partial<AnimatedAxisProps<any>>;
+  yAxisProps?: Partial<AnimatedAxisProps<any>>;
+  children?: React.ReactNode;
 }) {
-  const { books, chapters } = useDataContext();
+  const { chapters, selectedBook } = useDataContext();
+  const yAccessor = (d) => d.value || 0;
+
+  const tickValues = chapters
+    .filter((c, i) => {
+      if (c.book === chapters[i - 1]?.book) return false;
+      return true;
+    })
+    .map((c) => c.chapterFlat);
   return (
     <div>
       <XYChart
         width={width}
         height={height}
-        margin={{ left: 24, top: 35, bottom: 38, right: 27 }}
-        xScale={xScale}
-        yScale={{ type: "linear" }}
+        margin={{ left: 24, top: 35, bottom: 38, right: 24, ...margin }}
+        xScale={
+          xScale
+            ? {
+                type: "point",
+                domain: xScale.domain(),
+                range: xScale.range(),
+              }
+            : { type: "point" }
+        }
+        yScale={
+          yScale
+            ? {
+                type: "linear",
+                domain: yScale.domain(),
+                range: yScale.range(),
+              }
+            : { type: "linear" }
+        }
         onPointerDown={onClick}
       >
         <AnimatedAxis
@@ -54,8 +136,15 @@ export function LineChartTM({
           hideTicks
           orientation="bottom"
           tickLabelProps={() => ({ dy: tickLabelOffset })}
-          left={30}
-          numTicks={4}
+          numTicks={8}
+          tickValues={selectedBook ? undefined : tickValues}
+          tickFormat={(chapterFlat) => {
+            if (!chapterFlat) return "";
+            const chapter = chapters.find((c) => c.chapterFlat === chapterFlat);
+            if (selectedBook) return `Ch ${chapter?.chapter}`;
+            return `B ${chapter?.book}`;
+          }}
+          {...xAxisProps}
         />
         <AnimatedAxis
           hideAxisLine
@@ -63,6 +152,7 @@ export function LineChartTM({
           orientation="left"
           numTicks={4}
           tickLabelProps={() => ({ dx: 0 })}
+          {...yAxisProps}
         />
 
         {data.map((d) => (
@@ -70,69 +160,11 @@ export function LineChartTM({
             stroke={d.color}
             dataKey={d.name}
             data={d.info}
-            {...accessors}
+            xAccessor={(d) => d?.chapterFlat}
+            yAccessor={yAccessor}
           />
         ))}
-        <Tooltip<RowShape>
-          snapTooltipToDatumX
-          snapTooltipToDatumY
-          showSeriesGlyphs
-          glyphStyle={{
-            fill: "white",
-            strokeWidth: 0,
-          }}
-          renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
-            const chapter = chapters[nearestDatum.datum.chapterFlat - 1];
-            return (
-              <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
-                <Box>
-                  <Typography
-                    sx={{
-                      fontSize: 12,
-                      display: "flex",
-                      justifyContent: "space-between",
-                      gap: 1,
-                    }}
-                  >
-                    <div>B {chapter?.book}</div>
-                    <div>{books[chapter?.book - 1]?.title}</div>
-                  </Typography>
-                  <Typography
-                    sx={{
-                      fontSize: 12,
-                      display: "flex",
-                      justifyContent: "space-between",
-                      gap: 1,
-                    }}
-                  >
-                    <div>Ch {chapter?.chapter}</div>
-                    <div>
-                      {String(chapter?.chapter) === chapter?.title
-                        ? ""
-                        : chapter?.title}
-                    </div>
-                  </Typography>
-                </Box>
-                {data.map((d) => {
-                  const value = datumByKey[d.name].datum.value;
-                  return (
-                    <Stack spacing={1}>
-                      <Stack spacing={1} direction="row">
-                        <Box
-                          sx={{ width: 12, height: 12, background: d.color }}
-                        />
-                        <Box sx={{ fontSize: 18 }}>{d.name}</Box>
-                        <Box sx={{ flexGrow: 1 }} />
-                        <div>{value}</div>
-                      </Stack>
-                      <Box>{datumByKey[d.name].datum.comment}</Box>
-                    </Stack>
-                  );
-                })}
-              </Stack>
-            );
-          }}
-        />
+        {children}
       </XYChart>
     </div>
   );

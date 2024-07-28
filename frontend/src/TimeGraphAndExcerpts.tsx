@@ -1,19 +1,95 @@
-import { Box, Button, TextField } from "@mui/material";
+import { Box, Button, TextField, Tooltip } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useEffect, useState } from "react";
 import { Checkboxes } from "./Checkboxes";
-import { LineChartTM } from "./LineChartTM";
-import { COLORS, CharactersData, FullContextProps } from "./utils";
+import { LineChartTM, ToolChapterTitle, ToolCharacterRow } from "./LineChartTM";
+import { COLORS, FullContextProps } from "./utils";
 import { uniq } from "lodash-es";
 import { ErrorBoundary } from "./ErrorBoundry";
 import { RefsModal } from "./RelationshipModal";
 import { useDataContext } from "./DataContext";
+import { Tooltip as VixTooltip } from "@visx/xychart";
+import { Annotation, Connector } from "@visx/annotation";
+import { scaleLinear } from "d3-scale";
+
+function RefCountByCharacterChart({
+  onClick,
+  data,
+}: {
+  onClick: any;
+  data: {
+    color: string;
+    info: {
+      chapterFlat: number;
+      value: number;
+    }[];
+    name: string;
+  }[];
+}) {
+  const { chapters } = useDataContext();
+  const width = 600;
+  const margin = { left: 34, top: 12, bottom: 36, right: 24 };
+  const xScale = scaleLinear()
+    .domain([
+      chapters[0].chapterFlat,
+      chapters[chapters.length - 1].chapterFlat,
+    ])
+    .range([0, width - (margin.left + margin.right)]);
+  // const xPosition = yScale(0);
+  const tickValues = chapters
+    .filter((c, i) => {
+      if (c.book === chapters[i - 1]?.book) return false;
+      return true;
+    })
+    .map((c) => c.chapterFlat);
+
+  return (
+    <LineChartTM
+      data={data}
+      keyName="chapterFlat"
+      width={width}
+      onClick={onClick}
+      margin={margin}
+      // xScale={xScale}
+    >
+      <VixTooltip<any>
+        snapTooltipToDatumX
+        snapTooltipToDatumY
+        showSeriesGlyphs
+        glyphStyle={{
+          fill: "white",
+          strokeWidth: 0,
+        }}
+        renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
+          return (
+            <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
+              <ToolChapterTitle chapterFlat={nearestDatum.datum.chapterFlat} />
+              {data.map((line) => {
+                const value = datumByKey[line.name].datum.value;
+                return (
+                  <ToolCharacterRow key={line.name} line={line} value={value} />
+                );
+              })}
+            </Stack>
+          );
+        }}
+      />
+      {tickValues.map((val) => {
+        const x = xScale(val) + margin.left;
+        return (
+          <Annotation x={x} y={0} dx={0} dy={470}>
+            <Connector stroke="grey" pathProps={{ strokeDasharray: "4 4" }} />
+          </Annotation>
+        );
+      })}
+    </LineChartTM>
+  );
+}
 
 export function TimeGraphAndExcerpts() {
   const {
     characters,
     chapters,
-    books,
     indexedSentences,
     manualConfig: { defaultSelectedCharacter, sharedCharacters },
   } = useDataContext();
@@ -56,15 +132,12 @@ export function TimeGraphAndExcerpts() {
       )}
       <Stack spacing={2} direction={{ sm: "row" }}>
         <ErrorBoundary>
-          <LineChartTM
+          <RefCountByCharacterChart
             data={data}
-            keyName="chapterFlat"
-            width={600}
             onClick={(d) => {
-              setOpenedCharacter(d.key);
               setSelectedChapter(d.datum.chapterFlat);
+              setOpenedCharacter(d.key);
             }}
-            {...{ chapters, books }}
           />
         </ErrorBoundary>
         <SelectionSidebar
@@ -86,19 +159,58 @@ export function TimeGraphAndExcerpts() {
 function SelectionSidebar({
   selected,
   setSelected,
-  characters,
 }: {
   selected: string[];
   setSelected: (arg: string[]) => void;
-  characters: CharactersData;
 }) {
+  const { characters, manualConfig, books, selectedBook } = useDataContext();
   const [search, setSearch] = useState("");
+  const showBook = !selectedBook && !manualConfig.sharedCharacters;
   const characterOptions = Object.keys(characters).map((label, i) => ({
     value: label,
     label: (
-      <div key={label || i}>
-        {label} <span style={{ opacity: 0.4 }}>{characters[label].count}</span>
-      </div>
+      <Box
+        key={label || i}
+        sx={{
+          whiteSpace: "nowrap",
+          textOverflow: "ellipsis",
+          overflow: "hidden",
+          maxWidth: 220,
+          color: "#888",
+        }}
+      >
+        <span style={{ color: "white" }}>{label} </span>
+        <Tooltip
+          title={
+            <div style={{ fontSize: 14, lineHeight: 1.5 }}>
+              <div>{characters[label].count} References</div>
+              <div style={{ opacity: 0.5 }}>
+                {characters[label].category.join(", ")}
+              </div>
+              {characters[label]?.books &&
+                characters[label]?.books.length !== books.length &&
+                (showBook ? (
+                  <div>
+                    Book: {books[characters[label]?.books[0] - 1]?.title}
+                  </div>
+                ) : (
+                  characters[label]?.books.map((b) => (
+                    <div>
+                      Book {b + 1}: {books[b - 1].title}
+                    </div>
+                  ))
+                ))}
+            </div>
+          }
+        >
+          <span>
+            {characters[label].count}{" "}
+            {showBook
+              ? `(${books[characters[label]?.books![0] - 1]?.title})`
+              : ""}
+          </span>
+        </Tooltip>
+      </Box>
     ),
     count: characters[label].count,
     category: characters[label].category,
