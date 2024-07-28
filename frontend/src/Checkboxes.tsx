@@ -1,16 +1,24 @@
-import { Checkbox, FormControlLabel, FormGroup, Tooltip } from "@mui/material";
+import {
+  Checkbox,
+  FormControlLabel,
+  FormGroup,
+  SxProps,
+  Tooltip,
+} from "@mui/material";
 
 export function Checkboxes({
   options,
   onChange,
   selected,
+  sx,
 }: {
   options: { label: JSX.Element; value: string; tooltip?: string }[];
   onChange: (value: string) => void;
   selected: string[];
+  sx?: SxProps;
 }) {
   return (
-    <FormGroup>
+    <FormGroup sx={sx}>
       {options.map((opt, i) => (
         <Tooltip key={i} title={opt.tooltip}>
           <FormControlLabel

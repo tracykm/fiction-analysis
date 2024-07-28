@@ -1,4 +1,4 @@
-import { Box, Button, Tooltip } from "@mui/material";
+import { Box, Button, TextField } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useEffect, useState } from "react";
 import { Checkboxes } from "./Checkboxes";
@@ -19,7 +19,6 @@ export function TimeGraphAndExcerpts() {
     manualConfig: { defaultSelectedCharacter, sharedCharacters },
   } = useDataContext();
   const [selected, setSelected] = useState([defaultSelectedCharacter]);
-  const [category, setCategory] = useState<string>();
   const [openedCharacter, setOpenedCharacter] = useState<string>();
 
   useEffect(() => {
@@ -59,6 +58,7 @@ export function TimeGraphAndExcerpts() {
           <LineChartTM
             data={data}
             keyName="chapterFlat"
+            width={600}
             {...{ chapters, books }}
           />
         </ErrorBoundary>
@@ -66,8 +66,6 @@ export function TimeGraphAndExcerpts() {
           {...{
             selected,
             setSelected,
-            category,
-            setCategory,
             characters,
             chapters,
           }}
@@ -83,25 +81,13 @@ export function TimeGraphAndExcerpts() {
 function SelectionSidebar({
   selected,
   setSelected,
-  category,
-  setCategory,
   characters,
 }: {
   selected: string[];
   setSelected: (arg: string[]) => void;
-  category?: string;
-  setCategory: (arg: string) => void;
   characters: CharactersData;
 }) {
-  const categories = new Set(
-    Object.values(characters).flatMap((d) => (d as any)?.category)
-  );
-
-  const categoryOptions = Array.from(categories).map((d) => ({
-    label: d,
-    id: d,
-  }));
-
+  const [search, setSearch] = useState("");
   const characterOptions = Object.keys(characters).map((label, i) => ({
     value: label,
     label: (
@@ -116,29 +102,45 @@ function SelectionSidebar({
   characterOptions.sort((a, b) => b.count - a.count);
 
   let options = characterOptions;
-
-  if (category) {
-    options = options.filter((d) => (d as any).category?.includes(category));
+  if (search) {
+    options = options.filter(
+      (d) =>
+        d.value.toLowerCase().includes(search) ||
+        d.category.join(" ").toLowerCase().includes(search)
+    );
   }
+
   return (
-    <Box sx={{ height: { xs: 150, sm: 500 }, overflow: "scroll" }}>
-      <SelectInput
-        options={[{ label: "All", id: "" }, ...categoryOptions]}
-        selected={category}
-        onChange={setCategory}
-        label="Category"
+    <Box sx={{ width: "100%" }}>
+      <TextField
+        placeholder="Search by name or category"
+        onChange={(e) => {
+          const val = e.target.value;
+          setSearch(val.toLowerCase());
+        }}
+        fullWidth
       />
-      {selected.length} Selected
-      <Button onClick={() => setSelected([])}>X Clear</Button>
-      <Checkboxes
-        onChange={(val) =>
-          selected.includes(val)
-            ? setSelected(selected.filter((d) => d !== val))
-            : setSelected([...selected, val])
-        }
-        options={options}
-        selected={selected}
-      />
+      <div>
+        {selected.length} Selected
+        <Button onClick={() => setSelected([])}>X Clear</Button>
+      </div>
+      <Box
+        sx={{
+          height: { xs: 150, sm: 400 },
+          overflowY: "scroll",
+          width: "100%",
+        }}
+      >
+        <Checkboxes
+          onChange={(val) =>
+            selected.includes(val)
+              ? setSelected(selected.filter((d) => d !== val))
+              : setSelected([...selected, val])
+          }
+          options={options}
+          selected={selected}
+        />
+      </Box>
     </Box>
   );
 }

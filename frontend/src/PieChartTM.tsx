@@ -17,10 +17,12 @@ function ActiveDetail({
   active,
   width,
   includeDetailPercent,
+  activeDirection,
 }: {
   active: PieData;
   width: number;
   includeDetailPercent?: boolean;
+  activeDirection?: "right" | "left";
 }) {
   const cutoffAt = 12;
   const count = active.detail.length;
@@ -30,16 +32,18 @@ function ActiveDetail({
 
   const totalRefsInCategory = sumBy(details, "count");
 
+  const sx =
+    activeDirection === "left" ? { right: width + 8 } : { left: width + 8 };
   return (
     <Box
       sx={{
         position: "absolute",
-        left: width + 8,
         top: 0,
         background: "black",
         zIndex: 10,
         p: 2,
         opacity: 0.8,
+        ...sx,
       }}
     >
       {details.slice(0, cutoffAt).map((d) => {
@@ -69,12 +73,14 @@ export function PieChartTM({
   subtitle,
   width = 280,
   includeDetailPercent,
+  activeDirection = "right",
 }: {
   data: PieData[];
   name: string;
   subtitle: string;
   width?: number;
   includeDetailPercent?: boolean;
+  activeDirection?: "right" | "left";
 }) {
   const data = _data.filter((d) => d.amount);
   const [active, setActive] = useState<PieData | undefined>();
@@ -91,6 +97,7 @@ export function PieChartTM({
           active={active}
           width={width}
           includeDetailPercent={includeDetailPercent}
+          activeDirection={activeDirection}
         />
       )}
       <svg width={width} height={width}>

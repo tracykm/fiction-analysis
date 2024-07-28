@@ -92,7 +92,7 @@ export function LineChartTM({
                       gap: 1,
                     }}
                   >
-                    <div>B{chapter?.book}</div>
+                    <div>B {chapter?.book}</div>
                     <div>{books[chapter?.book - 1]?.title}</div>
                   </Typography>
                   <Typography
@@ -103,9 +103,11 @@ export function LineChartTM({
                       gap: 1,
                     }}
                   >
-                    <div>Ch{chapter?.chapter}</div>
+                    <div>Ch {chapter?.chapter}</div>
                     <div>
-                      {chapter?.title} - {chapter?.chapterFlat}
+                      {String(chapter?.chapter) === chapter?.title
+                        ? ""
+                        : chapter?.title}
                     </div>
                   </Typography>
                 </Box>

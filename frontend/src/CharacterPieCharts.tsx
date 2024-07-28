@@ -71,13 +71,14 @@ export function CharacterPieCharts() {
   return (
     <>
       <Stack direction="row" spacing={3} sx={{ mb: 2 }}>
-        {manualConfig.characterCategories.map((category) => (
+        {manualConfig.characterCategories.map((category, i) => (
           <PieChartTM
             key={category.name}
             data={getPieChartData(characters, category.options)}
             name={category.name}
             subtitle={subtitle}
             includeDetailPercent={countType === "refs"}
+            activeDirection={i == 2 ? "left" : "right"}
           />
         ))}
       </Stack>

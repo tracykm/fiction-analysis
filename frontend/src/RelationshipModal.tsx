@@ -4,6 +4,7 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  IconButton,
   Typography,
 } from "@mui/material";
 import { sort } from "d3";
@@ -44,11 +45,15 @@ export function RefsModal({
   const sortedSentences = sort(uniq(refs));
   return (
     <Dialog open onClose={onClose} maxWidth="md">
-      <DialogTitle sx={{ display: "flex", justifyContent: "space-between" }}>
+      <DialogTitle sx={{ display: "flex", gap: 1 }}>
         <div>The Story of {title} </div>
-        <div style={{ opacity: 0.5 }}>
+        <div style={{ flexGrow: 1 }} />
+        <div style={{ opacity: 0.5, fontWeight: "lighter" }}>
           {getPercent(totalLength / totalBookLength)}% of total text
         </div>
+        <Button sx={{ minWidth: 10 }} onClick={onClose}>
+          X
+        </Button>
       </DialogTitle>
       <DialogContent sx={{ position: "relative" }}>
         {sortedSentences.map((sentenceId, i) => {

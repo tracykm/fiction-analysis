@@ -1,4 +1,4 @@
-import { Box, Divider, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Divider, Skeleton, Tab, Tabs, Typography } from "@mui/material";
 import { CharacterPieCharts } from "./CharacterPieCharts";
 import { TimeGraphAndExcerpts } from "./TimeGraphAndExcerpts";
 import { ErrorBoundary } from "./ErrorBoundry";
@@ -31,10 +31,13 @@ function Section({
 
 function BookTabs({
   setSelectedBook,
+  selectedBook,
+  books,
 }: {
   setSelectedBook: (book: number) => void;
+  selectedBook: number;
+  books: { id: number; title: string }[];
 }) {
-  const { selectedBook, books } = useDataContext();
   return (
     <Tabs
       sx={{
@@ -96,39 +99,61 @@ function MainContent({
   setSelectedBook: (book: number) => void;
 }) {
   const fullContext = useDataContext();
-  if (!Object.keys(fullContext).length) return null;
 
-  const forceRemountKey = fullContext.manualConfig.sharedCharacters
+  const loading = !Object.keys(fullContext).length;
+
+  const selectedBook = fullContext.selectedBook || 0;
+  const books = fullContext.books || [{ id: 1, title: "Loading..." }];
+
+  const forceRemountKey = fullContext.manualConfig?.sharedCharacters
     ? "shared"
     : fullContext.selectedBook;
 
+  const hasRelationshipTimelines = !isEmpty(fullContext.relationshipTimelines);
+
   return (
     <ErrorBoundary>
-      <BookTabs setSelectedBook={setSelectedBook} />
+      <BookTabs {...{ setSelectedBook, selectedBook, books }} />
 
-      {!isEmpty(fullContext.relationshipTimelines) && (
+      {(hasRelationshipTimelines || loading) && (
         <Section title="Relationships Over Time">
           <ErrorBoundary>
-            <RelationshipsOverTime />
+            {loading ? (
+              <Skeleton variant="rectangular" height={362} />
+            ) : (
+              <RelationshipsOverTime />
+            )}
           </ErrorBoundary>
         </Section>
       )}
 
       <Section title="Top Relationships">
         <ErrorBoundary>
-          <TopCharacters key={forceRemountKey} />
+          {loading ? (
+            <Skeleton variant="rectangular" height={460} />
+          ) : (
+            <TopCharacters key={forceRemountKey} />
+          )}
         </ErrorBoundary>
       </Section>
 
       <Section title="Character Categories">
         <ErrorBoundary>
-          <CharacterPieCharts />
+          {loading ? (
+            <Skeleton variant="rectangular" height={400} />
+          ) : (
+            <CharacterPieCharts />
+          )}
         </ErrorBoundary>
       </Section>
 
       <Section title="Character References Over Time">
         <ErrorBoundary>
-          <TimeGraphAndExcerpts />
+          {loading ? (
+            <Skeleton variant="rectangular" height={400} />
+          ) : (
+            <TimeGraphAndExcerpts />
+          )}
         </ErrorBoundary>
       </Section>
     </ErrorBoundary>
