@@ -34,75 +34,81 @@ characters = {
         "shortName": "Bobbie",
         "other_names": ["Bobbie", "Draper"],
         "category": ["Mars", "Martian Marine", "Military"],
+        "disqualifiers": ["Draper Station"],
         "books": [2, 3, 5, 6, 7, 8, 9],
     },
     "Joe Miller": {
         "shortName": "Miller",
         "other_names": ["Miller"],
         "disqualifiers": ["CHAPTER"],
-        "category": ["Ceres", "Belt", "Dies", "Police"],
+        "category": ["Ceres", "Belt", "Security"],  # "Dies"
         "books": [1, 2, 4, 6, 8],
     },
     "Julie Mao": {
         "shortName": "Julie",
         "other_names": ["Julie", "Jules-Pierre"],
-        "category": ["Earth", "Dies"],
+        "category": ["Earth"],  # "Dies"
         "books": [1],
     },
     "Fred Johnson": {
         "shortName": "Fred",
-        "other_names": ["The Butcher of Anderson Station", "Johnson", "Fred"],
+        "other_names": [
+            "Butcher of Anderson Station",
+            "Johnson",
+            "Fred",
+            "Frederick",
+        ],
         "category": ["Earth", "OPA"],
-        "books": [1, 2, 3, 5, 6],
     },
     "Praxidike Meng": {
         "shortName": "Prax",
         "other_names": ["Prax", "Praxidike", "Meng"],
         "category": ["Ganymede", "Belt", "Scientist"],
-        "books": [2, 3, 8],
     },
     "Clarissa Mao": {
         "shortName": "Clarissa",
         "other_names": ["Melba Koh", "Melba", "Koh", "Clarissa", "Peaches"],
-        "category": ["Earth", "Dies"],
-        "books": [3, 5, 6, 7, 8, 9],
+        "category": ["Earth"],  # "Dies"
+        # "books": [3, 5, 6, 7, 8, 9],
     },
     "Anderson Dawes": {
         "shortName": "Dawes",
         "other_names": ["Dawes", "Anderson"],
         "category": ["Ceres", "Belt", "OPA"],
-        "books": [1, 2, 5, 6, 8],
+        "disqualifiers": ["Anderson Station", "from Anderson"],
+        # "books": [1, 2, 5, 6, 8],
     },
     "Michio Pa": {
         "other_names": ["Pa", "Michio"],
         "category": ["Belt", "OPA"],
-        "books": [5, 6, 7, 8, 9],
+        # "books": [5, 6, 7, 8, 9],
     },
     "Bull": {
         "shortName": "Bull",
         "other_names": ["Bull", "Carlos", "Carlos de Baca"],
         "category": ["Earth", "OPA"],
-        "books": [3],
+        "disqualifiers": ["Carlos Walker", "Carlos Merrian"],
+        # "books": [3],
     },
     "Filip Inaros": {
         "shortName": "Filip",
         "other_names": ["Filip"],
         "category": ["Belt", "Free Navy", "Military"],
         "disqualifiers": ["Marco"],
-        "books": [5, 6, 7, 8],
+        "books": [5, 6, 7, 8, 9],
     },
     "Marco Inaros": {
         "shortName": "Marco",
         "other_names": ["Marco", "Inaros"],
-        "category": ["Belt", "Free Navy", "Military", "Dies"],
+        "category": ["Belt", "Free Navy", "Military"],  # "Dies"
         "disqualifiers": ["Filip"],
-        "books": [5, 6, 7, 8],
+        "books": [5, 6, 7, 8, 9],
     },
     "Elvi Okoye": {
         "shortName": "Elvi",
         "other_names": ["Elvi", "Okoye"],
         "category": ["Earth", "Scientist"],
-        "books": [4, 5, 7, 8, 9],
+        "books": [4, 5, 6, 7, 8, 9],
     },
     "Camina Drummer": {
         "shortName": "Drummer",
@@ -114,13 +120,13 @@ characters = {
         "shortName": "Monica",
         "other_names": ["Monica", "Stuart"],
         "category": ["Earth", "Journalist"],
-        "books": [3, 5, 6, 8, 9],
+        "books": [3, 4, 5, 6, 7, 8, 9],
     },
     "Anna Volovodov": {
         "shortName": "Anna",
         "other_names": ["Anna", "Volovodov"],
         "category": ["Earth", "Pastor"],
-        "books": [3],
+        # "books": [3],
     },
     # "Holden's Parents": {
     #     "other_names": ["Holden Family"],
@@ -130,22 +136,22 @@ characters = {
     "Diogo Harari": {
         "other_names": ["Diogo", "Harari"],
         "category": ["Belt", "Free Navy", "Military"],
-        "books": [5, 6],
+        # "books": [5, 6],
     },
     "Erich": {
         "other_names": [],
         "category": ["Earth", "Crime Boss"],
-        "books": [5],
+        # "books": [5],
     },
     "Ashford": {
         "other_names": ["Klaes", "Ashford"],
-        "category": ["Belt", "OPA", "Dies"],
-        "books": [6, 7],
+        "category": ["Belt", "OPA"],  # "Dies"
+        "books": [3, 4, 5, 6, 7],
     },
     "Sam Rosenberg": {
         "other_names": ["Sam", "Rosenberg"],
-        "category": ["Tycho Station", "Dies", "Tech"],
-        "books": [3],
+        "category": ["Tycho Station", "Tech"],  # "Dies"
+        # "books": [3],
     },
     "Basia Merton": {
         "shortName": "Basia",
@@ -156,129 +162,131 @@ characters = {
     "Cortazar": {
         "other_names": ["Paolo", "Cortazar"],
         "category": ["Earth", "Scientist"],
-        "books": [3, 5, 6, 7, 8],
+        # "books": [3, 5, 6, 7, 8],
     },
     "Sandrine Kirino": {
         "other_names": ["Sandrine", "Kirino"],
         "category": ["Mars", "Martian Marine", "Military"],
-        "books": [3],
+        # "books": [3],
     },
     "Dmitri Havelock": {
         "other_names": ["Dmitri", "Havelock"],
         "category": ["Earth", "Security"],
-        "books": [1, 8],
+        # "books": [1, 8],
     },
     "Michael Souther": {
         "other_names": ["Admiral Souther", "Souther"],
         "category": ["Earth", "UNN", "Military"],
-        "books": [3],
+        # "books": [3],
     },
     "Carol Chiwewe": {
         "other_names": ["Carol", "Chiwewe"],
         "category": ["Belt"],
-        "books": [5, 7, 8],
+        # "books": [5, 7, 8],
     },
     "Gillis": {
-        "other_names": ["Secretary-General Gillis"],
+        "other_names": ["Secretary-General Gillis", "Sorrento-Gillis"],
         "category": ["Earth", "UN", "Politician"],
-        "books": [6],
+        # "books": [6],
     },
     "Esteban Sorrento-Gillis": {
         "other_names": ["Esteban", "Gillis"],
         "category": ["Earth", "UN", "Politician"],
-        "books": [3, 5, 6],
+        "disqualifiers": ["San Esteban"],
+        # "books": [3, 5, 6],
     },
     "Sandra Ip": {
         "other_names": ["Sandra", "Ip"],
         "category": ["Earth", "Scientist"],
-        "books": [6],
+        # "books": [6],
     },
     "Antony Dresden": {
         "other_names": ["Antony", "Dresden"],
-        "category": ["Earth", "Scientist", "Dies"],
-        "books": [1, 2],
+        "category": ["Earth", "Scientist"],  # "Dies"
+        # "books": [1, 2],
     },
     "Richard Travis": {
         "other_names": ["Travis"],
         "category": ["Earth", "UNN", "Military"],
-        "books": [2],
+        # "books": [2],
     },
-    "Fiona": {
-        "other_names": [],
-        "category": ["Belt", "OPA"],
-        "books": [5],
-    },
+    # "Fiona": {
+    #     "other_names": [],
+    #     "category": ["Belt", "OPA"],
+    #     # "books": [5],
+    # },
     "Richard Nguyen": {
         "other_names": ["Nguyen"],
         "category": ["Earth", "UN", "Politician"],
-        "books": [2],
+        # "books": [2],
     },
     "Salis": {
         "other_names": ["Salis"],
         "category": ["Belt", "Free Navy", "Military", "Tech"],
-        "books": [6],
+        # "books": [6],
     },
-    "Temo": {
-        "other_names": [],
-        "category": ["Ganymede", "Belt"],
-        "books": [4],
-    },
+    # "Temo": {
+    #     "other_names": [],
+    #     "category": ["Ganymede", "Belt"],
+    #     # "books": [4],
+    # },
     "Santiago Singh": {
         "other_names": ["Singh"],
         "category": ["Mars", "Laconian Imperial Navy"],
-        "books": [6, 7],
+        "books": [7, 8, 9],
     },
-    "Chandra Lucas": {
-        "other_names": ["Lucas"],
-        "category": ["Mars", "Martian Marine", "Military"],
-        "books": [2],
-    },
-    "Tali": {
-        "other_names": [],
-        "category": ["Belt"],
-        "books": [7],
-    },
+    # "Chandra Lucas": {
+    #     "other_names": ["Lucas"],
+    #     "category": ["Mars", "Martian Marine", "Military"],
+    #     "books": [2],
+    # },
+    # "Tali": {
+    #     "other_names": [],
+    #     "category": ["Belt"],
+    #     "books": [7, 8, 9],
+    # },
     "Michio Pa": {
         "other_names": ["Michio", "Pa"],
         "category": ["Belt", "OPA"],
         "books": [5, 6, 7, 8, 9],
     },
-    "Erinwright": {
+    "Errinwright": {
         "other_names": ["Sadavir"],
         "category": ["Earth", "UN", "Politician"],
-        "books": [3, 4, 5],
+        # "books": [3, 4, 5],
     },
     "Solomon Epstein": {
         "other_names": ["Solomon", "Epstein"],
         "category": ["Mars", "Scientist"],
-        "books": [2],
+        "disqualifiers": ["Epstein drive", "Epstein drives"],
+        # "books": [2],
     },
-    "Janus": {
-        "other_names": [],
-        "category": ["Earth", "Scientist"],
-        "books": [7],
-    },
+    # "Janus": {
+    #     "other_names": [],
+    #     "category": ["Earth", "Scientist"],
+    #     # "books": [7],
+    # },
     "Tilly Fagan": {
         "shortName": "Tilly",
         "other_names": ["Tilly", "Fagan"],
         "category": ["Earth"],
-        "books": [3],
+        # "books": [3],
     },
-    "Hector Cortez": {
-        "other_names": ["Cortez"],
-        "category": ["Earth", "Scientist"],
-        "books": [6],
-    },
+    # "Hector Cortez": {
+    #     "other_names": ["Cortez"],
+    #     "category": ["Earth", "Scientist"],
+    #     "books": [6, 7, 8, 9],
+    # },
     "Soren": {
         "other_names": [],
         "category": ["Ganymede", "Belt"],
-        "books": [6],
+        # "books": [6],
     },
-    "Elena": {
-        "other_names": [],
-        "category": ["Belt"],
-        "books": [7],
-    },
+    # "Elena": {
+    #     "other_names": [],
+    #     "category": ["Belt"],
+    #     # "books": [7],
+    # },
     # "Avasarala's Husband": {
     #     "other_names": [],
     #     "category": ["Earth"],
@@ -287,22 +295,22 @@ characters = {
     "Namono": {
         "other_names": [],
         "category": ["Earth"],
-        "books": [7],
+        # "books": [7],
     },
-    "Isai Martin": {
-        "other_names": ["Isai"],
-        "category": ["Ganymede", "Belt"],
-        "books": [4],
-    },
-    "Leelee": {
-        "other_names": [],
-        "category": ["Earth"],
-        "books": [6],
-    },
+    # "Isai Martin": {
+    #     "other_names": ["Isai"],
+    #     "category": ["Ganymede", "Belt"],
+    #     # "books": [4],
+    # },
+    # "Leelee": {
+    #     "other_names": [],
+    #     "category": ["Earth"],
+    #     # "books": [6],
+    # },
     "Aliana Tanaka": {
         "other_names": ["Aliana", "Tanaka"],
-        "category": ["Mars", "Dies"],  # Laconia
-        "books": [9],
+        "category": ["Mars"],  # Laconia # "Dies"
+        "books": [7, 8, 9],
     },
     "Xan Bisset": {
         "other_names": ["Xan"],
