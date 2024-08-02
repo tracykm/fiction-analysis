@@ -146,7 +146,7 @@ export function RelationshipsOverTime() {
       {open && (
         <RelationshipModal
           onClose={() => setOpen(false)}
-          title={selectedOption.label + " " + selectedChapter}
+          title={selectedOption.label}
           relationship={
             relationships[selectedOption.value[0].from][
               selectedOption.value[0].to
