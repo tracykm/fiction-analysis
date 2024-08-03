@@ -976,7 +976,7 @@
     "book": 2,
     "letterIndex": 1860544,
     "chapterFlat": 109,
-    "characterRefCount": 80,
+    "characterRefCount": 79,
     "title": "Prax",
     "length": 29793
   },
@@ -1453,7 +1453,7 @@
     "book": 3,
     "letterIndex": 2757041,
     "chapterFlat": 162,
-    "characterRefCount": 126,
+    "characterRefCount": 125,
     "title": "Clarissa",
     "length": 75237
   },
@@ -1957,7 +1957,7 @@
     "book": 4,
     "letterIndex": 3736084,
     "chapterFlat": 218,
-    "characterRefCount": 193,
+    "characterRefCount": 191,
     "title": "Holden",
     "length": 49788
   },
@@ -2416,7 +2416,7 @@
     "book": 5,
     "letterIndex": 4622734,
     "chapterFlat": 269,
-    "characterRefCount": 129,
+    "characterRefCount": 128,
     "title": "Naomi",
     "length": 47716
   },
@@ -2893,7 +2893,7 @@
     "book": 6,
     "letterIndex": 5550538,
     "chapterFlat": 322,
-    "characterRefCount": 231,
+    "characterRefCount": 230,
     "title": "Naomi",
     "length": 50680
   },
@@ -3361,7 +3361,7 @@
     "book": 7,
     "letterIndex": 6490135,
     "chapterFlat": 374,
-    "characterRefCount": 180,
+    "characterRefCount": 178,
     "title": "Naomi",
     "length": 49573
   },
@@ -3811,7 +3811,7 @@
     "book": 8,
     "letterIndex": 7404766,
     "chapterFlat": 424,
-    "characterRefCount": 109,
+    "characterRefCount": 108,
     "title": "Elvi",
     "length": 44454
   },

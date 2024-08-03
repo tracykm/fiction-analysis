@@ -128,6 +128,9 @@ def find_references(
                 }
             if len(recent_characters) > sentence_window:
                 recent_characters.pop(0)
+
+            if "~~~ " in sentence:  # don't find names in chapter/book titles
+                continue
             for name, character in characters.items():
                 if has_character(character, sentence, book):
                     relevant_indexed_sentences[letter_index] = {
