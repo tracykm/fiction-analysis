@@ -16,18 +16,25 @@ nltk.download("words")
 
 
 def generate_data(book_title="his_dark_materials"):
+    index_all_sentences = False
     if book_title == "his_dark_materials":
         people_data = his_dark_materials.people_data.characters
         chapter_names = his_dark_materials.chapter_data.chapter_names
     elif book_title == "jane_austen":
         people_data = jane_austen.people_data.characters
+        index_all_sentences = True
         chapter_names = {}
     elif book_title == "the_expanse":
         people_data = the_expanse.people_data.characters
         chapter_names = {}
     with open(f"./books/{book_title}/raw_text.txt", encoding="utf-8") as file:
         (characters, chapters, relationships, relevant_indexed_sentences) = (
-            find_references(file, people_data, chapter_names)
+            find_references(
+                file,
+                people_data,
+                chapter_names,
+                index_all_sentences=index_all_sentences,
+            )
         )
 
     # Ensure the directory exists
@@ -43,6 +50,6 @@ def generate_data(book_title="his_dark_materials"):
         f.write(json.dumps(relevant_indexed_sentences))
 
 
-# generate_data("his_dark_materials")
+generate_data("his_dark_materials")
 generate_data("jane_austen")
-# generate_data("the_expanse")
+generate_data("the_expanse")

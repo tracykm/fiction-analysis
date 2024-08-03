@@ -44,6 +44,7 @@ export type FullContextProps = {
   manualConfig: {
     defaultSelectedCharacter: string;
     sharedCharacters: boolean;
+    publicDomain: boolean;
     characterCategories: {
       name: string;
       options: { id: string; label: string }[];

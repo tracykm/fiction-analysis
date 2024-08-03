@@ -23,6 +23,7 @@ import React, { useEffect, useState } from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import Close from "@mui/icons-material/Close";
+import { ErrorBoundary } from "./ErrorBoundry";
 
 export function RelationshipModal({
   relationship,
@@ -73,6 +74,8 @@ export function RefsModal({
   selectedChapter?: number;
 }) {
   const [chaptersClosed, setChaptersClosed] = useState({});
+  const [sentenceRefs, setSentenceRefs] = useState(refs);
+  const sortedRefs = sort(uniq(sentenceRefs));
   useScrollToChapter({ chapter: selectedChapter });
   const { chapters, indexedSentences, books } = useDataContext();
   const totalLength = refs.reduce(
@@ -82,12 +85,10 @@ export function RefsModal({
 
   const totalBookLength = chapters[chapters.length - 1].letterIndex;
 
-  const sortedSentences = sort(uniq(refs));
-
   const groupedByBookThenChapter = Object.entries(
     groupBy(
       Object.entries(
-        groupBy(sortedSentences, (s) => indexedSentences[s].chapterFlat)
+        groupBy(sortedRefs, (s) => indexedSentences[s].chapterFlat)
       ),
       (d) => chapters.find((c) => String(c.chapterFlat) === d[0])?.book
     )
@@ -111,16 +112,20 @@ export function RefsModal({
         </IconButton>
       </DialogTitle>
       <DialogContent sx={{ position: "relative", p: 0 }}>
-        {groupedByBookThenChapter.map(([bookIdx, chaptersText]) => (
-          <BookText
-            key={bookIdx}
-            bookIdx={bookIdx}
-            chaptersText={chaptersText}
-            books={books}
-            setChaptersClosed={setChaptersClosed}
-            chaptersClosed={chaptersClosed}
-          />
-        ))}
+        <ErrorBoundary>
+          {groupedByBookThenChapter.map(([bookIdx, chaptersText]) => (
+            <BookText
+              key={bookIdx}
+              bookIdx={bookIdx}
+              chaptersText={chaptersText}
+              books={books}
+              setChaptersClosed={setChaptersClosed}
+              chaptersClosed={chaptersClosed}
+              setSentenceRefs={setSentenceRefs}
+              sentenceRefs={sortedRefs}
+            />
+          ))}
+        </ErrorBoundary>
       </DialogContent>
 
       <DialogActions>
@@ -164,12 +169,16 @@ function BookText({
   books,
   setChaptersClosed,
   chaptersClosed,
+  setSentenceRefs,
+  sentenceRefs,
 }: {
   bookIdx: string;
   chaptersText: [string, number[]][];
   books: any[];
   chaptersClosed: Record<string, boolean>;
   setChaptersClosed: SetState<Record<string, boolean>>;
+  setSentenceRefs: SetState<number[]>;
+  sentenceRefs: number[];
 }) {
   const book = books[Number(bookIdx) - 1];
   const [open, setOpen] = useState(true);
@@ -199,6 +208,8 @@ function BookText({
               book={book}
               setChaptersClosed={setChaptersClosed}
               chaptersClosed={chaptersClosed}
+              setSentenceRefs={setSentenceRefs}
+              sentenceRefs={sentenceRefs}
             />
           );
         })}
@@ -213,17 +224,22 @@ function ChapterText({
   book,
   chaptersClosed,
   setChaptersClosed,
+  setSentenceRefs,
+  sentenceRefs,
 }: {
   chapterIdx: string;
   sentences: number[];
   book?: { startLetterIndex: number };
   chaptersClosed: Record<string, boolean>;
   setChaptersClosed: SetState<Record<string, boolean>>;
+  setSentenceRefs: SetState<number[]>;
+  sentenceRefs: number[];
 }) {
-  const { chapters, indexedSentences } = useDataContext();
+  const { chapters, indexedSentences, manualConfig } = useDataContext();
   const chapter = chapters.find((c) => c.chapterFlat === Number(chapterIdx))!;
   const noChapterName = String(chapter?.chapter) === chapter?.title;
   const open = !chaptersClosed[chapter?.chapterFlat];
+
   return (
     <div>
       <ListItemButton
@@ -233,10 +249,13 @@ function ChapterText({
             [chapter?.chapterFlat]: !cs[chapter?.chapterFlat],
           }))
         }
-        sx={{ ...collapseSx, top: 48 }}
+        sx={{ ...collapseSx, top: 46 }}
       >
         <div>
-          <Box id={getChapterId(chapter?.chapterFlat)} sx={{ pt: 7, mt: -7 }} />
+          <Box
+            id={getChapterId(chapter?.chapterFlat)}
+            sx={{ pt: 7, mt: -7, zIndex: -1, position: "relative" }}
+          />
           <span style={{ opacity: 0.5 }}>
             {noChapterName ? "" : `  Chapter ${chapter?.chapter} `}
           </span>
@@ -247,33 +266,97 @@ function ChapterText({
       <Collapse in={open}>
         {sentences.map((sentenceIdx, i) => {
           const sentenceText = indexedSentences[sentenceIdx].sentence;
-          const lastSentenceIdx = sentences[i - 1];
-          const gapLen = sentenceIdx - lastSentenceIdx;
+          if (sentenceText.includes("~~~ ")) return null;
+          const refIdx = sentenceRefs.findIndex((d) => d === sentenceIdx) || 0;
+          const nextSentenceIdx = sentenceRefs[refIdx + 1];
+
+          const gapLen = nextSentenceIdx - sentenceIdx;
           const longGap = gapLen > 500;
+
           const page = book
             ? Math.floor(
                 (sentenceIdx - book.startLetterIndex) / LETTERS_PER_PAGE
               )
             : "";
+
+          let gapNode = null as React.ReactNode;
+          if (
+            gapLen &&
+            gapLen !== indexedSentences[nextSentenceIdx]?.sentence.length
+          ) {
+            const longGapNode = longGap && (
+              <Typography sx={{ mb: 3, opacity: 0.3 }}>p. {page}</Typography>
+            );
+            gapNode = (
+              <div style={{ position: "relative", zIndex: 1 }}>
+                {manualConfig.publicDomain ? (
+                  <Button
+                    color="inherit"
+                    sx={{ minWidth: 10 }}
+                    onClick={() => {
+                      setSentenceRefs((refs) => {
+                        const allKeys = Object.keys(indexedSentences);
+                        const overallIndex = allKeys.findIndex(
+                          (d) => d === String(sentenceIdx)
+                        );
+                        const newRefs = longGap
+                          ? [
+                              Number(allKeys[overallIndex + 1]),
+                              Number(allKeys[overallIndex + 2]),
+                              Number(allKeys[overallIndex + 3]),
+                              Number(allKeys[overallIndex + 4]),
+                              Number(allKeys[overallIndex + 5]),
+                            ]
+                          : [Number(allKeys[overallIndex + 1])];
+
+                        return [...refs, ...newRefs];
+                      });
+                    }}
+                  >
+                    ...
+                  </Button>
+                ) : (
+                  <Typography sx={{ mt: 0, opacity: 0.3 }}>...</Typography>
+                )}
+                {longGapNode}
+              </div>
+            );
+          }
+          let topGapNode = null;
+          if (i === 0 && chapter.letterIndex !== sentenceIdx) {
+            topGapNode = (
+              <div style={{ position: "relative", zIndex: 1 }}>
+                {manualConfig.publicDomain ? (
+                  <Button
+                    color="inherit"
+                    sx={{ minWidth: 10 }}
+                    onClick={() => {
+                      setSentenceRefs((refs) => {
+                        const allKeys = Object.keys(indexedSentences);
+                        const overallIndex = allKeys.findIndex(
+                          (d) => d === String(sentenceIdx)
+                        );
+                        const newRefs = [Number(allKeys[overallIndex - 1])];
+
+                        return [...refs, ...newRefs];
+                      });
+                    }}
+                  >
+                    ...
+                  </Button>
+                ) : (
+                  <Typography sx={{ mt: 0, opacity: 0.3 }}>...</Typography>
+                )}
+              </div>
+            );
+          }
           return (
             <Box sx={{ my: 2, px: 2, color: "#ccc" }}>
-              {gapLen && gapLen !== sentenceText.length ? (
-                <>
-                  <Typography sx={{ mt: longGap ? 3 : 0, opacity: 0.3 }}>
-                    ...
-                  </Typography>
-                  {longGap && (
-                    <Typography sx={{ mb: 3, opacity: 0.3 }}>
-                      p. {page}
-                    </Typography>
-                  )}
-                </>
-              ) : (
-                ""
-              )}
+              {topGapNode}
               <Typography key={sentenceIdx} variant="body1">
                 {sentenceText}
               </Typography>
+              {gapNode}
             </Box>
           );
         })}

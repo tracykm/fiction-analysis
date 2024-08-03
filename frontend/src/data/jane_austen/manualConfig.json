@@ -1,6 +1,7 @@
 {
   "defaultSelectedCharacter": "Mrs. Jennings",
   "sharedCharacters": false,
+  "publicDomain": true,
   "characterCategories": [
     {
       "name": "Status",

@@ -74,6 +74,7 @@ def find_references(
     file: list[str],
     people_data: dict[str, dict],
     chapter_names: dict[list[str]] = None,
+    index_all_sentences: bool = False,
     sentence_window=3,
 ):
     chapters = []
@@ -120,6 +121,11 @@ def find_references(
         for sentence in sentences:
             letter_index += len(sentence)
             recent_characters.append({"letter_index": letter_index, "characters": []})
+            if index_all_sentences:
+                relevant_indexed_sentences[letter_index] = {
+                    "sentence": sentence,
+                    "chapterFlat": chapter_flat,
+                }
             if len(recent_characters) > sentence_window:
                 recent_characters.pop(0)
             for name, character in characters.items():
