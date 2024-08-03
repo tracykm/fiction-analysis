@@ -6,16 +6,23 @@ import {
   DialogActions,
   DialogContent,
   DialogTitle,
+  IconButton,
   ListItemButton,
   Typography,
 } from "@mui/material";
 import { sort } from "d3";
 import { groupBy, uniq } from "lodash-es";
-import { getPercent, LETTERS_PER_PAGE, RelationshipRefs } from "./utils";
+import {
+  getPercent,
+  LETTERS_PER_PAGE,
+  RelationshipRefs,
+  SetState,
+} from "./utils";
 import { useDataContext } from "./DataContext";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
+import Close from "@mui/icons-material/Close";
 
 export function RelationshipModal({
   relationship,
@@ -65,6 +72,7 @@ export function RefsModal({
   refs: number[];
   selectedChapter?: number;
 }) {
+  const [chaptersClosed, setChaptersClosed] = useState({});
   useScrollToChapter({ chapter: selectedChapter });
   const { chapters, indexedSentences, books } = useDataContext();
   const totalLength = refs.reduce(
@@ -86,16 +94,21 @@ export function RefsModal({
   );
 
   return (
-    <Dialog open onClose={onClose} maxWidth="md">
-      <DialogTitle sx={{ display: "flex", gap: 1 }}>
+    <Dialog
+      open
+      onClose={onClose}
+      maxWidth="md"
+      sx={{ ".MuiDialog-paperScrollPaper": { maxWidth: 800 } }}
+    >
+      <DialogTitle sx={{ display: "flex", gap: 1, px: 2 }}>
         <div>The Story of {title} </div>
         <div style={{ flexGrow: 1 }} />
         <div style={{ opacity: 0.5, fontWeight: "lighter" }}>
           {getPercent(totalLength / totalBookLength)}% of total text
         </div>
-        <Button sx={{ minWidth: 10 }} onClick={onClose}>
-          X
-        </Button>
+        <IconButton onClick={onClose} size="small">
+          <Close />
+        </IconButton>
       </DialogTitle>
       <DialogContent sx={{ position: "relative", p: 0 }}>
         {groupedByBookThenChapter.map(([bookIdx, chaptersText]) => (
@@ -104,12 +117,29 @@ export function RefsModal({
             bookIdx={bookIdx}
             chaptersText={chaptersText}
             books={books}
+            setChaptersClosed={setChaptersClosed}
+            chaptersClosed={chaptersClosed}
           />
         ))}
       </DialogContent>
 
       <DialogActions>
         <Button onClick={onClose}>Close</Button>
+        <Button
+          onClick={() =>
+            setChaptersClosed(
+              chapters.reduce(
+                (acc, ch) => ({
+                  ...acc,
+                  [ch.chapterFlat]: !Object.values(chaptersClosed)[0],
+                }),
+                {}
+              )
+            )
+          }
+        >
+          Collapse Chapters
+        </Button>
       </DialogActions>
     </Dialog>
   );
@@ -118,7 +148,6 @@ export function RefsModal({
 const collapseSx = {
   position: "sticky",
   top: 0,
-  my: 1,
   backgroundColor: "#444",
   border: "1px solid #555",
   zIndex: 10,
@@ -133,10 +162,14 @@ function BookText({
   bookIdx,
   chaptersText,
   books,
+  setChaptersClosed,
+  chaptersClosed,
 }: {
   bookIdx: string;
   chaptersText: [string, number[]][];
   books: any[];
+  chaptersClosed: Record<string, boolean>;
+  setChaptersClosed: SetState<Record<string, boolean>>;
 }) {
   const book = books[Number(bookIdx) - 1];
   const [open, setOpen] = useState(true);
@@ -164,6 +197,8 @@ function BookText({
               chapterIdx={chapterIdx}
               sentences={sentences}
               book={book}
+              setChaptersClosed={setChaptersClosed}
+              chaptersClosed={chaptersClosed}
             />
           );
         })}
@@ -176,26 +211,32 @@ function ChapterText({
   chapterIdx,
   sentences,
   book,
+  chaptersClosed,
+  setChaptersClosed,
 }: {
   chapterIdx: string;
   sentences: number[];
   book?: { startLetterIndex: number };
+  chaptersClosed: Record<string, boolean>;
+  setChaptersClosed: SetState<Record<string, boolean>>;
 }) {
   const { chapters, indexedSentences } = useDataContext();
-  const chapter = chapters.find((c) => c.chapterFlat === Number(chapterIdx));
-  const [open, setOpen] = useState(true);
+  const chapter = chapters.find((c) => c.chapterFlat === Number(chapterIdx))!;
   const noChapterName = String(chapter?.chapter) === chapter?.title;
+  const open = !chaptersClosed[chapter?.chapterFlat];
   return (
     <div>
       <ListItemButton
-        onClick={() => setOpen(!open)}
+        onClick={() =>
+          setChaptersClosed((cs) => ({
+            ...cs,
+            [chapter?.chapterFlat]: !cs[chapter?.chapterFlat],
+          }))
+        }
         sx={{ ...collapseSx, top: 48 }}
       >
         <div>
-          <Box
-            id={getChapterId(chapter?.chapterFlat)}
-            sx={{ pt: 5.5, mt: -5.5 }}
-          />
+          <Box id={getChapterId(chapter?.chapterFlat)} sx={{ pt: 7, mt: -7 }} />
           <span style={{ opacity: 0.5 }}>
             {noChapterName ? "" : `  Chapter ${chapter?.chapter} `}
           </span>
@@ -215,7 +256,7 @@ function ChapterText({
               )
             : "";
           return (
-            <Box sx={{ my: 2, px: 2 }}>
+            <Box sx={{ my: 2, px: 2, color: "#ccc" }}>
               {gapLen && gapLen !== sentenceText.length ? (
                 <>
                   <Typography sx={{ mt: longGap ? 3 : 0, opacity: 0.3 }}>

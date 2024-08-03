@@ -61,3 +61,5 @@ export function getPercent(num = 0) {
   if (num > 0.01) return Math.round(num * 100);
   return Math.round(num * 10000) / 100;
 }
+
+export type SetState<T> = React.Dispatch<React.SetStateAction<T>>;
