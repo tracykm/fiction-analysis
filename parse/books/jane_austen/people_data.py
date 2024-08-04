@@ -133,7 +133,7 @@ characters = {
         "name": "Mr. Darcy",
         "other_names": ["Darcy"],
         "category": ["Male", "Unmarried"],
-        "disqualifiers": [],
+        "disqualifiers": ["Miss Darcy"],
         "books": [2],
     },
     "Mr. Bingley": {

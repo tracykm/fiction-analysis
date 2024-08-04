@@ -114,7 +114,7 @@ export function LineChartTM({
         xScale={
           xScale
             ? {
-                type: "point",
+                type: "linear",
                 domain: xScale.domain(),
                 range: xScale.range(),
               }

@@ -23,7 +23,7 @@ export async function getBookData({
     `./data/${series}/relationshipTimelines.json`
   );
   const booksJson = await import(`./data/${series}/books.json`);
-  const manualConfigJson = await import(`./data/${series}/manualConfig.json`);
+  const manualConfigJson = await import(`./data/${series}/manualConfig.js`);
 
   let characters: CharactersData = charactersJson.default;
   let relationships: RelationshipData = relationshipsJson.default;
@@ -33,16 +33,51 @@ export async function getBookData({
     relationshipTimelinesJson.default;
   const manualConfig = manualConfigJson.default;
   let books: BookData[] = booksJson.default;
+  let totalChapterOffset = 0;
   books = books.map((book, idx) => {
     let startLetterIndex = 0;
+    const chapterOffset = totalChapterOffset;
+    totalChapterOffset += book.chapters;
     if (idx > 0) {
       startLetterIndex = chapters[books[idx - 1].chapters].letterIndex;
     }
     return {
       ...book,
+      chapterOffset,
       startLetterIndex,
     };
   });
+
+  manualConfig.relationships?.timelines?.forEach(
+    ({ characters, positivity, book, relationship }) => {
+      let from = characters[0];
+      let to = characters[1];
+      relationshipTimelines[from] = relationshipTimelines[from] || {};
+      relationshipTimelines[from][to] = relationshipTimelines[from][to] || {
+        relationship,
+        positivity: [],
+      };
+      const chapterOffset = books[book - 1]?.chapterOffset;
+      relationshipTimelines[from][to].positivity = positivity.map((p) => ({
+        chapterFlat: p.chapterFlat + chapterOffset,
+        comment: p.comment[0],
+        value: p.value[0],
+      }));
+
+      from = characters[1];
+      to = characters[0];
+      relationshipTimelines[from] = relationshipTimelines[from] || {};
+      relationshipTimelines[from][to] = relationshipTimelines[from][to] || {
+        relationship,
+        positivity: [],
+      };
+      relationshipTimelines[from][to].positivity = positivity.map((p) => ({
+        chapterFlat: p.chapterFlat + chapterOffset,
+        comment: p.comment[1],
+        value: p.value[1],
+      }));
+    }
+  );
 
   const flatChapterToBook = chapters.reduce((acc, d) => {
     acc[d.chapterFlat] = d.book;

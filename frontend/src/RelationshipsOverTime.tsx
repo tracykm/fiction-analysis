@@ -19,9 +19,16 @@ function getFeelingEmoji(value: number) {
 }
 
 function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
+  const { chapters } = useDataContext();
   const height = 300;
   const width = 900;
   const yScale = scaleLinear().domain([-11, 11]).range([height, 0]);
+  const xScale = scaleLinear()
+    .domain([
+      chapters[0].chapterFlat,
+      chapters[chapters.length - 1].chapterFlat,
+    ])
+    .range([0, width]);
   const yPosition = yScale(0);
   const margin = {
     left: 55,
@@ -37,6 +44,7 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
     <>
       <LineChartTM
         yScale={yScale}
+        // xScale={xScale}
         data={data}
         keyName="chapterFlat"
         width={width}
@@ -114,9 +122,9 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
             {!sameReversed && (
               <Button
                 sx={{ whiteSpace: "nowrap" }}
-                onClick={() =>
-                  setSelectedRelationship({ to: line.to, from: line.from })
-                }
+                onClick={() => {
+                  setSelectedRelationship({ to: line.to, from: line.from });
+                }}
               >
                 Their story
               </Button>
@@ -204,6 +212,7 @@ export function RelationshipsOverTime() {
       });
     });
   }
+  debugger;
 
   return (
     <>
@@ -229,7 +238,10 @@ export function RelationshipsOverTime() {
         onClick={({ datum, key }) => {
           setSelectedChapter(datum.chapterFlat);
           const line = selectedOption?.value.find((d) => d.name === key);
-          setSelectedRelationship(line);
+          setSelectedRelationship({
+            to: line?.to || selectedOption.value[0].to,
+            from: line?.from || selectedOption.value[0].from,
+          });
         }}
         data={chartData}
         setSelectedRelationship={setSelectedRelationship}

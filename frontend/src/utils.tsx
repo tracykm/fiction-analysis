@@ -45,6 +45,7 @@ export type FullContextProps = {
     defaultSelectedCharacter: string;
     sharedCharacters: boolean;
     publicDomain: boolean;
+    replaceTextFn?: (text: string) => string;
     characterCategories: {
       name: string;
       options: { id: string; label: string }[];

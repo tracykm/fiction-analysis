@@ -267,7 +267,8 @@ function ChapterText({
         {sentences.map((sentenceIdx, i) => {
           let sentenceText = indexedSentences[sentenceIdx].sentence;
           if (sentenceText.includes("~~~ ")) return null;
-          sentenceText = sentenceText.replace(/_(.*?)_/g, "<em>$1</em>");
+          sentenceText =
+            manualConfig.replaceTextFn?.(sentenceText) || sentenceText;
           const refIdx = sentenceRefs.findIndex((d) => d === sentenceIdx) || 0;
           const nextSentenceIdx = sentenceRefs[refIdx + 1];
 
