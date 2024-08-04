@@ -265,8 +265,9 @@ function ChapterText({
       </ListItemButton>
       <Collapse in={open}>
         {sentences.map((sentenceIdx, i) => {
-          const sentenceText = indexedSentences[sentenceIdx].sentence;
+          let sentenceText = indexedSentences[sentenceIdx].sentence;
           if (sentenceText.includes("~~~ ")) return null;
+          sentenceText = sentenceText.replace(/_(.*?)_/g, "<em>$1</em>");
           const refIdx = sentenceRefs.findIndex((d) => d === sentenceIdx) || 0;
           const nextSentenceIdx = sentenceRefs[refIdx + 1];
 
@@ -299,15 +300,13 @@ function ChapterText({
                         const overallIndex = allKeys.findIndex(
                           (d) => d === String(sentenceIdx)
                         );
-                        const newRefs = longGap
-                          ? [
-                              Number(allKeys[overallIndex + 1]),
-                              Number(allKeys[overallIndex + 2]),
-                              Number(allKeys[overallIndex + 3]),
-                              Number(allKeys[overallIndex + 4]),
-                              Number(allKeys[overallIndex + 5]),
-                            ]
-                          : [Number(allKeys[overallIndex + 1])];
+                        const newRefs = [
+                          Number(allKeys[overallIndex + 1]),
+                          Number(allKeys[overallIndex + 2]),
+                          Number(allKeys[overallIndex + 3]),
+                          Number(allKeys[overallIndex + 4]),
+                          Number(allKeys[overallIndex + 5]),
+                        ];
 
                         return [...refs, ...newRefs];
                       });
@@ -354,7 +353,7 @@ function ChapterText({
             <Box sx={{ my: 2, px: 2, color: "#ccc" }}>
               {topGapNode}
               <Typography key={sentenceIdx} variant="body1">
-                {sentenceText}
+                <div dangerouslySetInnerHTML={{ __html: sentenceText }} />
               </Typography>
               {gapNode}
             </Box>

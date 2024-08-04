@@ -49,6 +49,12 @@ export type FullContextProps = {
       name: string;
       options: { id: string; label: string }[];
     }[];
+    relationships?: {
+      timelineOptions: {
+        label: string;
+        relationships: { from: string; to: string; name: string }[];
+      }[];
+    };
   };
 };
 

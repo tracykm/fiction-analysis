@@ -1,6 +1,33 @@
 {
   "defaultSelectedCharacter": "Lee Scoresby",
   "sharedCharacters": true,
+  "relationships": {
+    "timelineOptions": [
+      {
+        "label": "Lyra's Parents Feelings for her",
+        "relationships": [
+          { "from": "Mrs. Coulter", "to": "Lyra" },
+          { "from": "Lord Asriel", "to": "Lyra" }
+        ]
+      },
+      {
+        "label": "Lyra's Feelings",
+        "relationships": [
+          {
+            "to": "Mrs. Coulter",
+            "from": "Lyra",
+            "name": "for her mom"
+          },
+          {
+            "to": "Lord Asriel",
+            "from": "Lyra",
+            "name": "for her dad"
+          },
+          { "to": "Will", "from": "Lyra", "name": "for Will" }
+        ]
+      }
+    ]
+  },
   "characterCategories": [
     {
       "name": "Species",
