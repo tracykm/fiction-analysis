@@ -30,12 +30,19 @@ def combine_short_sentences(sentences_raw: list[str]):
     return sentences
 
 
-def has_character(character: dict, sentence: str, book: int | None = None):
+def has_character(
+    character: dict, sentence: str, book: int | None = None, chapter: int | None = None
+):
     if "~~~ CHAPTER " in sentence:
         return False
     if character.get("books") and book is not None:
         valid_book = book in character.get("books")
         if not valid_book:
+            return False
+
+    if character.get("chapters") and chapter is not None:
+        valid_chapter = chapter in character.get("chapters")
+        if not valid_chapter:
             return False
 
     all_names = [character["name"]] + character.get("other_names", [])
@@ -132,7 +139,7 @@ def find_references(
             if "~~~ " in sentence:  # don't find names in chapter/book titles
                 continue
             for name, character in characters.items():
-                if has_character(character, sentence, book):
+                if has_character(character, sentence, book, chapter_flat):
                     relevant_indexed_sentences[letter_index] = {
                         "sentence": sentence,
                         "chapterFlat": chapter_flat,
