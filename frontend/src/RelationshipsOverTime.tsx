@@ -121,7 +121,6 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
             <Box sx={{ fontSize: 18 }}>{line.name}</Box>
             {!sameReversed && (
               <Button
-                sx={{ whiteSpace: "nowrap" }}
                 onClick={() => {
                   setSelectedRelationship({ to: line.to, from: line.from });
                 }}
@@ -193,25 +192,25 @@ export function RelationshipsOverTime() {
     from,
   }));
 
-  if (chapters[0].chapterFlat !== chartData[0].info[0].chapterFlat) {
-    chartData.map((d) => {
-      d.info.unshift({
-        chapterFlat: chapters[0].chapterFlat,
-        value: d.info[0].value,
-      });
-    });
-  }
-  if (
-    chapters[chapters.length - 1].chapterFlat !==
-    chartData[0].info[chartData[0].info.length - 1].chapterFlat
-  ) {
-    chartData.map((d) => {
-      d.info.push({
-        chapterFlat: chapters[chapters.length - 1].chapterFlat,
-        value: d.info[d.info.length - 1].value,
-      });
-    });
-  }
+  // if (chapters[0].chapterFlat !== chartData[0].info[0].chapterFlat) {
+  //   chartData.map((d) => {
+  //     d.info.unshift({
+  //       chapterFlat: chapters[0].chapterFlat,
+  //       value: d.info[0].value,
+  //     });
+  //   });
+  // }
+  // if (
+  //   chapters[chapters.length - 1].chapterFlat !==
+  //   chartData[0].info[chartData[0].info.length - 1].chapterFlat
+  // ) {
+  //   chartData.map((d) => {
+  //     d.info.push({
+  //       chapterFlat: chapters[chapters.length - 1].chapterFlat,
+  //       value: d.info[d.info.length - 1].value,
+  //     });
+  //   });
+  // }
   debugger;
 
   return (

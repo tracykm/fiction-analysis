@@ -123,6 +123,7 @@ export function RefsModal({
               chaptersClosed={chaptersClosed}
               setSentenceRefs={setSentenceRefs}
               sentenceRefs={sortedRefs}
+              originalRefs={refs}
             />
           ))}
         </ErrorBoundary>
@@ -171,6 +172,7 @@ function BookText({
   chaptersClosed,
   setSentenceRefs,
   sentenceRefs,
+  originalRefs,
 }: {
   bookIdx: string;
   chaptersText: [string, number[]][];
@@ -179,6 +181,7 @@ function BookText({
   setChaptersClosed: SetState<Record<string, boolean>>;
   setSentenceRefs: SetState<number[]>;
   sentenceRefs: number[];
+  originalRefs: number[];
 }) {
   const book = books[Number(bookIdx) - 1];
   const [open, setOpen] = useState(true);
@@ -210,6 +213,7 @@ function BookText({
               chaptersClosed={chaptersClosed}
               setSentenceRefs={setSentenceRefs}
               sentenceRefs={sentenceRefs}
+              originalRefs={originalRefs}
             />
           );
         })}
@@ -226,6 +230,7 @@ function ChapterText({
   setChaptersClosed,
   setSentenceRefs,
   sentenceRefs,
+  originalRefs,
 }: {
   chapterIdx: string;
   sentences: number[];
@@ -234,6 +239,7 @@ function ChapterText({
   setChaptersClosed: SetState<Record<string, boolean>>;
   setSentenceRefs: SetState<number[]>;
   sentenceRefs: number[];
+  originalRefs: number[];
 }) {
   const { chapters, indexedSentences, manualConfig } = useDataContext();
   const chapter = chapters.find((c) => c.chapterFlat === Number(chapterIdx))!;
@@ -274,6 +280,7 @@ function ChapterText({
 
           const gapLen = nextSentenceIdx - sentenceIdx;
           const longGap = gapLen > 500;
+          const originalRef = originalRefs.includes(sentenceIdx);
 
           const page = book
             ? Math.floor(
@@ -351,7 +358,7 @@ function ChapterText({
             );
           }
           return (
-            <Box sx={{ my: 2, px: 2, color: "#ccc" }}>
+            <Box sx={{ my: 2, px: 2, color: originalRef ? "#ccc" : "#999" }}>
               {topGapNode}
               <Typography key={sentenceIdx} variant="body1">
                 <div dangerouslySetInnerHTML={{ __html: sentenceText }} />

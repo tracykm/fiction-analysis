@@ -314,22 +314,157 @@ export default {
           },
         ],
       },
+      {
+        characters: ["Emma Woodhouse", "Mr. Knightley"],
+        relationship: "Romanic Interest",
+        book: 5,
+        positivity: [
+          {
+            chapterFlat: 1,
+            value: [5, 8],
+            comment: [
+              "Favorite person to banter with",
+              "Exasperating and charming",
+            ],
+          },
+          {
+            chapterFlat: 28,
+            value: [7, 8],
+            comment: ["Jealousy for Jane and Knightley", " "],
+          },
+          {
+            chapterFlat: 50,
+            value: [8, 8],
+            comment: ["Jealousy for Harriet and Knightley", " "], // Till now that she was threatened with its loss, Emma had never known how much of her happiness depended on being first with Mr. Knightley, first in interest and affection.
+          },
+          {
+            chapterFlat: 53,
+            value: [9, 9],
+            comment: ["the Proposal", " "],
+          },
+        ],
+      },
+      {
+        characters: ["Fanny Price", "Edmund Bertram"],
+        relationship: "Romanic Interest",
+        book: 4,
+        positivity: [
+          {
+            chapterFlat: 1,
+            value: [1, 1],
+            comment: ["Never met", "Never met"],
+          },
+          {
+            chapterFlat: 2,
+            value: [4, 2],
+            comment: [
+              "So grateful for a scrap of kindness",
+              "Sympathetic to her plight",
+            ],
+          },
+          {
+            chapterFlat: 4,
+            value: [10, 6],
+            comment: [
+              "Fully in love",
+              "Knowing he's the one looking out for her",
+            ],
+          },
+          {
+            chapterFlat: 18,
+            value: [9, 5],
+            comment: [
+              "Judging him a bit for the play",
+              "Distracted into neglect by Mary",
+            ],
+          },
+          {
+            chapterFlat: 35,
+            value: [8, 5],
+            comment: ["Trying to get her to marry Crawford", " "],
+          },
+          {
+            chapterFlat: 48,
+            value: [10, 8],
+            comment: [
+              "Comforting him over Mary",
+              "Heartbroken over Mary, looking for comfort",
+            ],
+          },
+          {
+            chapterFlat: 49,
+            value: [10, 9],
+            comment: ["Implied they get together", "Implied they get together"], //  it began to strike him whether a very different kind of woman might not do just as well, or a great deal better: whether Fanny herself were not growing as dear
+          },
+        ],
+      },
+      {
+        characters: ["Elinor Dashwood", "Edward Ferrars"],
+        relationship: "Romanic Interest",
+        book: 1,
+        positivity: [
+          {
+            chapterFlat: 1,
+            value: [0, 0],
+            comment: ["Never heard of him", "Never heard of her"],
+          },
+          {
+            chapterFlat: 3,
+            value: [5, 5],
+            comment: ["", ""],
+          },
+          {
+            chapterFlat: 5,
+            value: [7, 7],
+            comment: ["", ""],
+          },
+          {
+            chapterFlat: 19,
+            value: [8, 8],
+            comment: ["Visit to the Cottage", ""],
+          },
+          {
+            chapterFlat: 21,
+            value: [9, 8],
+            comment: ["Finally understands why he kept back", ""],
+          },
+          {
+            chapterFlat: 41,
+            value: [9, 9],
+            comment: [
+              "",
+              "Instrumental in getting him a living, so generous and not bitter",
+            ],
+          },
+          {
+            chapterFlat: 49,
+            value: [10, 10],
+            comment: ["Finally free to marry", "Finally free to marry"],
+          },
+        ],
+      },
     ],
     timelineOptions: [
       {
         label: "Heroine's Feelings",
         relationships: [
+          { from: "Elinor Dashwood", to: "Edward Ferrars" },
           { from: "Lizzie Bennet", to: "Mr. Darcy" },
-          { from: "Anne Elliot", to: "Captain Wentworth" },
           { from: "Catherine Morland", to: "Henry Tilney" },
+          { from: "Fanny Price", to: "Edmund Bertram" },
+          { from: "Emma Woodhouse", to: "Mr. Knightley" },
+          { from: "Anne Elliot", to: "Captain Wentworth" },
         ],
       },
       {
         label: "Hero's Feelings",
         relationships: [
+          { to: "Elinor Dashwood", from: "Edward Ferrars" },
           { to: "Lizzie Bennet", from: "Mr. Darcy" },
-          { to: "Anne Elliot", from: "Captain Wentworth" },
           { to: "Catherine Morland", from: "Henry Tilney" },
+          { to: "Fanny Price", from: "Edmund Bertram" },
+          { to: "Emma Woodhouse", from: "Mr. Knightley" },
+          { to: "Anne Elliot", from: "Captain Wentworth" },
         ],
       },
     ],
