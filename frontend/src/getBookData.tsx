@@ -19,9 +19,6 @@ export async function getBookData({
   const indexedSentencesJson = await import(
     `./data/${series}/indexedSentences.json`
   );
-  const relationshipTimelinesJson = await import(
-    `./data/${series}/relationshipTimelines.json`
-  );
   const booksJson = await import(`./data/${series}/books.json`);
   const manualConfigJson = await import(`./data/${series}/manualConfig.js`);
 
@@ -29,8 +26,7 @@ export async function getBookData({
   let relationships: RelationshipData = relationshipsJson.default;
   let chapters: ChapterRow[] = chaptersJson.default;
   let indexedSentences: IndexedSentencesData = indexedSentencesJson.default;
-  let relationshipTimelines: RelationshipTimelineData =
-    relationshipTimelinesJson.default;
+  let relationshipTimelines: RelationshipTimelineData = {};
   const manualConfig = manualConfigJson.default;
   let books: BookData[] = booksJson.default;
   let totalChapterOffset = 0;
@@ -57,10 +53,10 @@ export async function getBookData({
         relationship,
         positivity: [],
       };
-      const chapterOffset = books[book - 1]?.chapterOffset;
+      const chapterOffset = books[book - 1]?.chapterOffset || 0;
       relationshipTimelines[from][to].positivity = positivity.map((p) => ({
         chapterFlat: p.chapterFlat + chapterOffset,
-        comment: p.comment[0],
+        comment: p.comment?.[0],
         value: p.value[0],
       }));
 
@@ -73,7 +69,7 @@ export async function getBookData({
       };
       relationshipTimelines[from][to].positivity = positivity.map((p) => ({
         chapterFlat: p.chapterFlat + chapterOffset,
-        comment: p.comment[1],
+        comment: p.comment?.[1],
         value: p.value[1],
       }));
     }
