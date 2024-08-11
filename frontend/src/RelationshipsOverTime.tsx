@@ -23,19 +23,19 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
   const height = 300;
   const width = 900;
   const yScale = scaleLinear().domain([-11, 11]).range([height, 0]);
-  const xScale = scaleLinear()
-    .domain([
-      chapters[0].chapterFlat,
-      chapters[chapters.length - 1].chapterFlat,
-    ])
-    .range([0, width]);
-  const yPosition = yScale(0);
   const margin = {
     left: 55,
     top: 12,
     bottom: 36,
     right: 24,
   };
+  const xScale = scaleLinear()
+    .domain([
+      chapters[0].chapterFlat,
+      chapters[chapters.length - 1].chapterFlat,
+    ])
+    .range([margin.left, width - (margin.left + margin.right)]);
+  const yPosition = yScale(0);
   const sameReversed =
     data.length === 2 &&
     data[0].from === data[1].to &&
@@ -44,7 +44,7 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
     <>
       <LineChartTM
         yScale={yScale}
-        // xScale={xScale}
+        xScale={xScale}
         data={data}
         keyName="chapterFlat"
         width={width}
@@ -109,13 +109,13 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
           />
         </ErrorBoundary>
       </LineChartTM>
-      <Stack direction="row" spacing={3} sx={{ mt: 2 }}>
+      <Stack direction="row" sx={{ mt: 2, flexWrap: "wrap" }}>
         {data.map((line) => (
           <Stack
             direction="row"
             spacing={1}
             key={line.name}
-            sx={{ alignItems: "center" }}
+            sx={{ alignItems: "center", mr: 3 }}
           >
             <Box sx={{ width: 12, height: 12, background: line.color }} />
             <Box sx={{ fontSize: 18 }}>{line.name}</Box>

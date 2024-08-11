@@ -105,6 +105,7 @@ export function LineChartTM({
       return true;
     })
     .map((c) => c.chapterFlat);
+
   return (
     <div>
       <XYChart
@@ -117,6 +118,7 @@ export function LineChartTM({
                 type: "linear",
                 domain: xScale.domain(),
                 range: xScale.range(),
+                zero: false,
               }
             : { type: "linear" }
         }

@@ -34,7 +34,7 @@ function RefCountByCharacterChart({
       chapters[0].chapterFlat,
       chapters[chapters.length - 1].chapterFlat,
     ])
-    .range([0, width - (margin.left + margin.right)]);
+    .range([margin.left, width - (margin.left + margin.right)]);
   // const xPosition = yScale(0);
   const tickValues = chapters
     .filter((c, i) => {
@@ -50,7 +50,7 @@ function RefCountByCharacterChart({
       width={width}
       onClick={onClick}
       margin={margin}
-      // xScale={xScale}
+      xScale={xScale}
     >
       <VixTooltip<any>
         snapTooltipToDatumX
@@ -75,7 +75,7 @@ function RefCountByCharacterChart({
         }}
       />
       {tickValues.map((val) => {
-        const x = xScale(val) + margin.left;
+        const x = xScale(val);
         return (
           <Annotation x={x} y={0} dx={0} dy={470}>
             <Connector stroke="grey" pathProps={{ strokeDasharray: "4 4" }} />
