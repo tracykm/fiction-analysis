@@ -211,7 +211,14 @@ characters = {
     },
     "Will": {
         "other_names": ["William", "Mark"],
-        "disqualifiers": ["Will you", "Will I", "Will he", "Will she", "Will Serafina"],
+        "disqualifiers": [
+            "Will you",
+            "Will I",
+            "Will he",
+            "Will she",
+            "Will Serafina",
+            "William Blake",
+        ],
         "category": ["Child", "Will's World", "Human"],
         "books": [2, 3],
     },
@@ -280,6 +287,7 @@ characters = {
             "growed up, John",
             "Farder Coram",
             "treat with him, John",
+            "Ashbery",
         ],
         "category": ["Will's World", "Human", "Adult"],
     },

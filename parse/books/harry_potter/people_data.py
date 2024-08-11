@@ -47,6 +47,7 @@ characters = {
             "He-Who-Must-Not-Be-Named",
             "The Dark Lord",
             "Tom Riddle",
+            "Tom",
             "You-Know-Who",
             "You-Know-’Oo",
         ],
@@ -115,7 +116,12 @@ characters = {
         "shortName": "Arthur",
         "other_names": ["Mr. Weasley", "Arthur"],
         "category": ["Male", "Adult", "Wizard", "Gryffindor"],
-        "disqualifiers": [],
+        "disqualifiers": [
+            "enough, Mr. Weasley",
+            "Miss Granger",
+            "Mr. Potter",
+            "Mr. Weasley,”",
+        ],
     },
     "Fred Weasley": {
         "shortName": "Fred",
@@ -192,14 +198,14 @@ characters = {
         "category": ["Male", "Adult", "Wizard", "Villain"],
         "disqualifiers": [],
     },
-    "Nymphadora Tonks": {
+    "Tonks": {
         "shortName": "Tonks",
         "other_names": ["Dora", "Tonks"],
         "category": ["Female", "Adult", "Wizard", "Hufflepuff", "Auror"],
         "disqualifiers": [],
         "books": [5, 6, 7],
     },
-    "Alastor Moody": {
+    "Moody": {
         "shortName": "Moody",
         "other_names": ["Mad-Eye Moody", "Alastor", "Moody"],
         "category": ["Male", "Adult", "Wizard", "Auror"],

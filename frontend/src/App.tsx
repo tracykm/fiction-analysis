@@ -7,6 +7,7 @@ import { isEmpty, startCase } from "lodash-es";
 import { TopCharacters } from "./TopCharacters";
 import { RelationshipsOverTime } from "./RelationshipsOverTime";
 import { DataContextProvider, useDataContext } from "./DataContext";
+import { FirstAndLastRefs } from "./FirstAndLastRefs";
 
 function Section({
   children,
@@ -144,6 +145,16 @@ function MainContent({
             <Skeleton variant="rectangular" height={400} />
           ) : (
             <CharacterPieCharts />
+          )}
+        </ErrorBoundary>
+      </Section>
+
+      <Section title="First and Last References">
+        <ErrorBoundary>
+          {loading ? (
+            <Skeleton variant="rectangular" height={400} />
+          ) : (
+            <FirstAndLastRefs />
           )}
         </ErrorBoundary>
       </Section>

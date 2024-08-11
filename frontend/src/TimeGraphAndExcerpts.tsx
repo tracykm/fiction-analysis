@@ -223,7 +223,7 @@ function SelectionSidebar({
     options = options.filter(
       (d) =>
         d.value.toLowerCase().includes(search) ||
-        d.category.join(" ").toLowerCase().includes(search)
+        d.category.some((c) => c.toLowerCase().startsWith(search))
     );
   }
 

@@ -4,7 +4,7 @@
     "book": 1,
     "letterIndex": 50,
     "chapterFlat": 1,
-    "characterRefCount": 158,
+    "characterRefCount": 159,
     "title": "The Boy Who Lived",
     "length": 25501
   },
@@ -40,7 +40,7 @@
     "book": 1,
     "letterIndex": 85660,
     "chapterFlat": 5,
-    "characterRefCount": 267,
+    "characterRefCount": 269,
     "title": "Diagon Alley",
     "length": 36902
   },
@@ -58,7 +58,7 @@
     "book": 1,
     "letterIndex": 156854,
     "chapterFlat": 7,
-    "characterRefCount": 158,
+    "characterRefCount": 159,
     "title": "The Sorting Hat",
     "length": 24861
   },
@@ -76,7 +76,7 @@
     "book": 1,
     "letterIndex": 198647,
     "chapterFlat": 9,
-    "characterRefCount": 293,
+    "characterRefCount": 292,
     "title": "The Midnight Duel",
     "length": 27715
   },
@@ -220,7 +220,7 @@
     "book": 2,
     "letterIndex": 601326,
     "chapterFlat": 25,
-    "characterRefCount": 184,
+    "characterRefCount": 183,
     "title": "The Deathday Party",
     "length": 25515
   },
@@ -229,7 +229,7 @@
     "book": 2,
     "letterIndex": 626841,
     "chapterFlat": 26,
-    "characterRefCount": 282,
+    "characterRefCount": 281,
     "title": "The Writing on the Wall",
     "length": 29437
   },
@@ -238,7 +238,7 @@
     "book": 2,
     "letterIndex": 656278,
     "chapterFlat": 27,
-    "characterRefCount": 318,
+    "characterRefCount": 317,
     "title": "The Rogue Bludger",
     "length": 29830
   },
@@ -265,7 +265,7 @@
     "book": 2,
     "letterIndex": 751283,
     "chapterFlat": 30,
-    "characterRefCount": 245,
+    "characterRefCount": 250,
     "title": "The Very Secret Diary",
     "length": 30985
   },
@@ -292,7 +292,7 @@
     "book": 2,
     "letterIndex": 831307,
     "chapterFlat": 33,
-    "characterRefCount": 306,
+    "characterRefCount": 305,
     "title": "The Chamber of Secrets",
     "length": 31647
   },
@@ -301,7 +301,7 @@
     "book": 2,
     "letterIndex": 862954,
     "chapterFlat": 34,
-    "characterRefCount": 238,
+    "characterRefCount": 245,
     "title": "The Heir of Slytherin",
     "length": 30224
   },
@@ -337,7 +337,7 @@
     "book": 3,
     "letterIndex": 957162,
     "chapterFlat": 38,
-    "characterRefCount": 195,
+    "characterRefCount": 208,
     "title": "The Knight Bus",
     "length": 24592
   },
@@ -346,7 +346,7 @@
     "book": 3,
     "letterIndex": 981754,
     "chapterFlat": 39,
-    "characterRefCount": 279,
+    "characterRefCount": 280,
     "title": "The Leaky Cauldron",
     "length": 29059
   },
@@ -355,7 +355,7 @@
     "book": 3,
     "letterIndex": 1010813,
     "chapterFlat": 40,
-    "characterRefCount": 468,
+    "characterRefCount": 469,
     "title": "The Dementor",
     "length": 37774
   },
@@ -508,7 +508,7 @@
     "book": 4,
     "letterIndex": 1528977,
     "chapterFlat": 57,
-    "characterRefCount": 47,
+    "characterRefCount": 48,
     "title": "The Riddle House",
     "length": 22931
   },
@@ -1003,7 +1003,7 @@
     "book": 5,
     "letterIndex": 3274049,
     "chapterFlat": 112,
-    "characterRefCount": 306,
+    "characterRefCount": 305,
     "title": "The Lion and The Serpent",
     "length": 38364
   },
@@ -1066,7 +1066,7 @@
     "book": 5,
     "letterIndex": 3569161,
     "chapterFlat": 119,
-    "characterRefCount": 424,
+    "characterRefCount": 423,
     "title": "Seen and Unforeseen",
     "length": 48549
   },
@@ -1156,7 +1156,7 @@
     "book": 5,
     "letterIndex": 3973369,
     "chapterFlat": 129,
-    "characterRefCount": 182,
+    "characterRefCount": 184,
     "title": "The Only One He Ever Feared",
     "length": 21704
   },
@@ -1228,7 +1228,7 @@
     "book": 6,
     "letterIndex": 4235352,
     "chapterFlat": 137,
-    "characterRefCount": 359,
+    "characterRefCount": 362,
     "title": "Draco\u2019s Detour",
     "length": 34018
   },
@@ -1264,7 +1264,7 @@
     "book": 6,
     "letterIndex": 4366412,
     "chapterFlat": 141,
-    "characterRefCount": 156,
+    "characterRefCount": 157,
     "title": "The House of Gaunt",
     "length": 34245
   },
@@ -1291,7 +1291,7 @@
     "book": 6,
     "letterIndex": 4461022,
     "chapterFlat": 144,
-    "characterRefCount": 171,
+    "characterRefCount": 182,
     "title": "The Secret Riddle",
     "length": 30766
   },
@@ -1327,7 +1327,7 @@
     "book": 6,
     "letterIndex": 4597481,
     "chapterFlat": 148,
-    "characterRefCount": 309,
+    "characterRefCount": 311,
     "title": "A Sluggish Memory",
     "length": 36505
   },
@@ -1354,7 +1354,7 @@
     "book": 6,
     "letterIndex": 4707747,
     "chapterFlat": 151,
-    "characterRefCount": 266,
+    "characterRefCount": 282,
     "title": "Lord Voldemort\u2019s Request",
     "length": 37398
   },
@@ -1381,7 +1381,7 @@
     "book": 6,
     "letterIndex": 4810766,
     "chapterFlat": 154,
-    "characterRefCount": 218,
+    "characterRefCount": 225,
     "title": "Horcruxes",
     "length": 32863
   },
@@ -1444,7 +1444,7 @@
     "book": 6,
     "letterIndex": 5019932,
     "chapterFlat": 161,
-    "characterRefCount": 311,
+    "characterRefCount": 312,
     "title": "The White Tomb",
     "length": 30728
   },
@@ -1678,7 +1678,7 @@
     "book": 7,
     "letterIndex": 5817850,
     "chapterFlat": 187,
-    "characterRefCount": 319,
+    "characterRefCount": 322,
     "title": "Gringotts",
     "length": 38885
   },
@@ -1768,8 +1768,17 @@
     "book": 7,
     "letterIndex": 6120892,
     "chapterFlat": 197,
-    "characterRefCount": 439,
+    "characterRefCount": 354,
     "title": "The Flaw in the Plan",
-    "length": 49962
+    "length": 40628
+  },
+  {
+    "chapter": 37,
+    "book": 7,
+    "letterIndex": 6161520,
+    "chapterFlat": 198,
+    "characterRefCount": 85,
+    "title": "Epilogue",
+    "length": 9348
   }
 ]

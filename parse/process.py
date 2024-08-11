@@ -54,7 +54,7 @@ def generate_data(book_title="his_dark_materials"):
         f.write(json.dumps(relevant_indexed_sentences))
 
 
-# generate_data("his_dark_materials")
-# generate_data("jane_austen")
-# generate_data("the_expanse")
+generate_data("his_dark_materials")
+generate_data("jane_austen")
+generate_data("the_expanse")
 generate_data("harry_potter")
