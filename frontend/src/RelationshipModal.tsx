@@ -22,6 +22,7 @@ import { useDataContext } from "./DataContext";
 import React, { useEffect, useState } from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Close from "@mui/icons-material/Close";
 import { ErrorBoundary } from "./ErrorBoundry";
 
@@ -249,14 +250,43 @@ function ChapterText({
   return (
     <div>
       <ListItemButton
-        onClick={() =>
+        onClick={() => {
           setChaptersClosed((cs) => ({
             ...cs,
             [chapter?.chapterFlat]: !cs[chapter?.chapterFlat],
-          }))
-        }
-        sx={{ ...collapseSx, top: 46 }}
+          }));
+          const chapterEl = document.getElementById(
+            getChapterId(chapter.chapterFlat)
+          );
+          if (chapterEl) {
+            setTimeout(() => {
+              const rect = chapterEl.getBoundingClientRect();
+              const isVisible =
+                rect.top >= 120 && // Adjusted top padding
+                rect.left >= 0 &&
+                rect.bottom <=
+                  (window.innerHeight ||
+                    document.documentElement.clientHeight) &&
+                rect.right <=
+                  (window.innerWidth || document.documentElement.clientWidth);
+              if (!isVisible) {
+                chapterEl.scrollIntoView({
+                  block: "start",
+                  behavior: "smooth",
+                });
+              }
+            }, 400);
+          }
+        }}
+        sx={{ ...collapseSx, top: 46, justifyContent: "flex-start" }}
       >
+        <Box>
+          {open ? (
+            <ExpandMore sx={{ mt: 0.5 }} />
+          ) : (
+            <KeyboardArrowRightIcon sx={{ mt: 0.5 }} />
+          )}
+        </Box>
         <div>
           <Box
             id={getChapterId(chapter?.chapterFlat)}
@@ -267,7 +297,6 @@ function ChapterText({
           </span>
           {noChapterName ? ` Chapter ${chapter?.chapter} ` : chapter?.title}
         </div>
-        <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box>
       </ListItemButton>
       <Collapse in={open}>
         {sentences.map((sentenceIdx, i) => {
