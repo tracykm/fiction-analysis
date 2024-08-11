@@ -1,7 +1,6 @@
 import charactersJson from "./data/his_dark_materials/characters.json";
 import chaptersJson from "./data/his_dark_materials/chapters.json";
 import indexedSentences from "./data/his_dark_materials/indexedSentences.json";
-import relationshipTimelines from "./data/his_dark_materials/relationshipTimelines.json";
 
 export type ChapterRow = (typeof chaptersJson)[0];
 export type CharactersRow = Omit<(typeof charactersJson)["Hester"], "refs"> & {
@@ -19,11 +18,14 @@ export type RelationshipData = {
 };
 export type RelationshipTimelineData = {
   [fromCharacter: string]: {
-    [toCharacter: string]: typeof relationshipTimelines.Will.Lyra;
+    [toCharacter: string]: {
+      relationship: string;
+      positivity: { chapterFlat: number; value: number; comment?: string }[];
+    };
   };
 };
 export type IndexedSentencesData = {
-  [letterIdx: string]: (typeof indexedSentences)["1066"];
+  [letterIdx: string]: (typeof indexedSentences)["451"];
 };
 
 export type BookData = {
@@ -59,7 +61,14 @@ export type FullContextProps = {
   };
 };
 
-export const COLORS = ["#25CED1", "#FF8A5B", "#EA526F", "#FCEADE"];
+export const COLORS = [
+  "#25CED1",
+  "#FF8A5B",
+  "#EA526F",
+  "#FCEADE",
+  "#198e90",
+  "#ff530f",
+];
 
 /** rough approximation, so many different prints out there people don't depend on it being accurate,
  * gives ballpark idea of how far along in chapter */

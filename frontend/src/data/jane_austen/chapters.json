@@ -2272,7 +2272,7 @@
     "book": 6,
     "letterIndex": 3541432,
     "chapterFlat": 253,
-    "characterRefCount": 51,
+    "characterRefCount": 53,
     "title": "3",
     "length": 15515
   },
@@ -2281,7 +2281,7 @@
     "book": 6,
     "letterIndex": 3556947,
     "chapterFlat": 254,
-    "characterRefCount": 31,
+    "characterRefCount": 32,
     "title": "4",
     "length": 10478
   },
@@ -2290,7 +2290,7 @@
     "book": 6,
     "letterIndex": 3567425,
     "chapterFlat": 255,
-    "characterRefCount": 77,
+    "characterRefCount": 79,
     "title": "5",
     "length": 18132
   },
@@ -2299,7 +2299,7 @@
     "book": 6,
     "letterIndex": 3585557,
     "chapterFlat": 256,
-    "characterRefCount": 59,
+    "characterRefCount": 67,
     "title": "6",
     "length": 21002
   },
@@ -2317,7 +2317,7 @@
     "book": 6,
     "letterIndex": 3624849,
     "chapterFlat": 258,
-    "characterRefCount": 45,
+    "characterRefCount": 49,
     "title": "8",
     "length": 18204
   },
@@ -2326,7 +2326,7 @@
     "book": 6,
     "letterIndex": 3643053,
     "chapterFlat": 259,
-    "characterRefCount": 102,
+    "characterRefCount": 103,
     "title": "9",
     "length": 15935
   },
@@ -2335,7 +2335,7 @@
     "book": 6,
     "letterIndex": 3658988,
     "chapterFlat": 260,
-    "characterRefCount": 102,
+    "characterRefCount": 105,
     "title": "10",
     "length": 21309
   },
@@ -2362,7 +2362,7 @@
     "book": 6,
     "letterIndex": 3728018,
     "chapterFlat": 263,
-    "characterRefCount": 70,
+    "characterRefCount": 74,
     "title": "13",
     "length": 15141
   },
@@ -2407,7 +2407,7 @@
     "book": 6,
     "letterIndex": 3805623,
     "chapterFlat": 268,
-    "characterRefCount": 114,
+    "characterRefCount": 120,
     "title": "18",
     "length": 22048
   },
@@ -2416,7 +2416,7 @@
     "book": 6,
     "letterIndex": 3827671,
     "chapterFlat": 269,
-    "characterRefCount": 73,
+    "characterRefCount": 74,
     "title": "19",
     "length": 13196
   },
@@ -2452,7 +2452,7 @@
     "book": 6,
     "letterIndex": 3930222,
     "chapterFlat": 273,
-    "characterRefCount": 90,
+    "characterRefCount": 99,
     "title": "23",
     "length": 36050
   },

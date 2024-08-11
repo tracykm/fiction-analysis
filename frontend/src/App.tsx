@@ -39,6 +39,7 @@ function BookTabs({
   selectedBook: number;
   books: { id: number; title: string }[];
 }) {
+  const manyBooks = books.length > 3;
   return (
     <Tabs
       sx={{
@@ -47,8 +48,9 @@ function BookTabs({
         zIndex: 10,
         background: "#333",
         width: "100%",
+        ml: manyBooks ? -5 : 0,
       }}
-      variant={books.length > 3 ? "scrollable" : "standard"}
+      variant={manyBooks ? "scrollable" : "standard"}
       onChange={(e, opt) => {
         setSelectedBook(opt);
       }}

@@ -4,7 +4,7 @@
     "book": 1,
     "letterIndex": 50,
     "chapterFlat": 1,
-    "characterRefCount": 159,
+    "characterRefCount": 158,
     "title": "The Boy Who Lived",
     "length": 25501
   },
@@ -40,7 +40,7 @@
     "book": 1,
     "letterIndex": 85660,
     "chapterFlat": 5,
-    "characterRefCount": 269,
+    "characterRefCount": 268,
     "title": "Diagon Alley",
     "length": 36902
   },
@@ -58,7 +58,7 @@
     "book": 1,
     "letterIndex": 156854,
     "chapterFlat": 7,
-    "characterRefCount": 159,
+    "characterRefCount": 158,
     "title": "The Sorting Hat",
     "length": 24861
   },

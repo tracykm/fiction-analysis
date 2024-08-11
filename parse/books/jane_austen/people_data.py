@@ -49,7 +49,7 @@ characters = {
         "name": "Fanny Dashwood",
         "other_names": ["Fanny"],
         "category": ["Female", "Married"],
-        "disqualifiers": [],
+        "disqualifiers": ["Fanny had got another child", "angry letter to Fanny"],
         "books": [1],
     },
     "Margaret Dashwood": {
@@ -614,7 +614,7 @@ characters = {
         "name": "Mrs. Croft",
         "other_names": ["Mrs. Croft", "Mrs Croft"],
         "category": ["Female", "Married"],
-        "disqualifiers": ["Admiral Croft", "Mr. Croft"],
+        "disqualifiers": [],
         "books": [6],
     },
     "Admiral Croft": {

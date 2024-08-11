@@ -270,7 +270,7 @@
     "name": "Fanny Dashwood",
     "other_names": ["Fanny"],
     "category": ["Female", "Married"],
-    "disqualifiers": [],
+    "disqualifiers": ["Fanny had got another child", "angry letter to Fanny"],
     "books": [1],
     "count": 47,
     "refs": [
@@ -2815,10 +2815,17 @@
     "name": "Mrs. Croft",
     "other_names": ["Mrs. Croft", "Mrs Croft"],
     "category": ["Female", "Married"],
-    "disqualifiers": ["Admiral Croft", "Mr. Croft"],
+    "disqualifiers": [],
     "books": [6],
-    "count": 0,
-    "refs": []
+    "count": 41,
+    "refs": [
+      3552518, 3553322, 3567184, 3567730, 3575951, 3598697, 3598824, 3599657,
+      3599799, 3600092, 3600293, 3600553, 3600737, 3626676, 3638840, 3639545,
+      3640660, 3644170, 3676637, 3679131, 3679789, 3736493, 3738117, 3742190,
+      3742936, 3806210, 3810113, 3817673, 3818360, 3822143, 3825645, 3827951,
+      3931449, 3932243, 3933118, 3933708, 3934049, 3934377, 3943621, 3944530,
+      3963684
+    ]
   },
   "Admiral Croft": {
     "name": "Admiral Croft",

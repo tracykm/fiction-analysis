@@ -1,5 +1,5 @@
 export default {
-  defaultSelectedCharacter: "Mrs. Jennings",
+  defaultSelectedCharacter: "Lydia Bennet",
   sharedCharacters: false,
   publicDomain: true,
   replaceTextFn: (text) => text.replace(/_(.*?)_/g, "<em>$1</em>"),

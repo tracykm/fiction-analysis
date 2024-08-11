@@ -45,9 +45,10 @@ export async function getBookData({
   });
 
   manualConfig.relationships?.timelines?.forEach(
-    ({ characters, positivity, book, relationship }) => {
-      let from = characters[0];
-      let to = characters[1];
+    ({ characters: _characters, positivity, book, relationship }) => {
+      let from = _characters[0];
+      let to = _characters[1];
+      if (!characters[from] || !characters[to]) return;
       relationshipTimelines[from] = relationshipTimelines[from] || {};
       relationshipTimelines[from][to] = relationshipTimelines[from][to] || {
         relationship,
@@ -60,8 +61,8 @@ export async function getBookData({
         value: p.value[0],
       }));
 
-      from = characters[1];
-      to = characters[0];
+      from = _characters[1];
+      to = _characters[0];
       relationshipTimelines[from] = relationshipTimelines[from] || {};
       relationshipTimelines[from][to] = relationshipTimelines[from][to] || {
         relationship,

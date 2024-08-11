@@ -1,6 +1,6 @@
 import { Annotation, Connector } from "@visx/annotation";
 import { scaleLinear } from "d3-scale";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LineChartTM, ToolChapterTitle, ToolCharacterRow } from "./LineChartTM";
 import { SelectInput } from "./SelectInput";
 import { Box, Button, Stack } from "@mui/material";
@@ -81,13 +81,19 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
               strokeWidth: 0,
             }}
             renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
+              const linesToShow = data.filter(
+                (d) =>
+                  nearestDatum.datum.chapterFlat > d.info[0].chapterFlat &&
+                  nearestDatum.datum.chapterFlat <
+                    d.info[d.info.length - 1].chapterFlat
+              );
               return (
                 <ErrorBoundary>
                   <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
                     <ToolChapterTitle
                       chapterFlat={nearestDatum.datum.chapterFlat}
                     />
-                    {data.map((line) => {
+                    {linesToShow.map((line) => {
                       const value = datumByKey[line.name]?.datum.value;
                       if (!value) return null;
                       return (
@@ -148,9 +154,16 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
   );
 }
 
+const FROM_FEELINGS = "s Feelings";
+
 export function RelationshipsOverTime() {
-  const { relationships, relationshipTimelines, chapters, manualConfig } =
-    useDataContext();
+  const {
+    relationships,
+    relationshipTimelines,
+    chapters,
+    manualConfig,
+    characters,
+  } = useDataContext();
 
   const [selectedRelationship, setSelectedRelationship] = useState<{
     to: string;
@@ -170,7 +183,11 @@ export function RelationshipsOverTime() {
 
   manualConfig.relationships?.timelineOptions?.forEach(
     ({ label, relationships }) => {
-      pairs[label] = relationships;
+      const filteredRels = relationships.filter(
+        (r) => characters[r.from] && characters[r.to]
+      );
+      if (filteredRels.length === 0) return;
+      pairs[label] = filteredRels;
     }
   );
 
@@ -183,35 +200,42 @@ export function RelationshipsOverTime() {
   const [selectedChapter, setSelectedChapter] = useState<number>();
 
   const selectedOption = options.find((d) => d.id === selected) || options[0];
+  useEffect(() => {
+    if (selectedOption?.id === selected) return;
+    setSelected(selectedOption?.id);
+  }, [selectedOption?.id]);
 
   const chartData = selectedOption?.value.map(({ from, to, name }, i) => ({
     color: COLORS[i] || "white",
     info: relationshipTimelines[from][to].positivity,
-    name: name || `${from}'s Feelings`,
+    name: name || `${from}${FROM_FEELINGS}`,
     to,
     from,
   }));
 
-  // if (chapters[0].chapterFlat !== chartData[0].info[0].chapterFlat) {
-  //   chartData.map((d) => {
-  //     d.info.unshift({
-  //       chapterFlat: chapters[0].chapterFlat,
-  //       value: d.info[0].value,
-  //     });
-  //   });
-  // }
-  // if (
-  //   chapters[chapters.length - 1].chapterFlat !==
-  //   chartData[0].info[chartData[0].info.length - 1].chapterFlat
-  // ) {
-  //   chartData.map((d) => {
-  //     d.info.push({
-  //       chapterFlat: chapters[chapters.length - 1].chapterFlat,
-  //       value: d.info[d.info.length - 1].value,
-  //     });
-  //   });
-  // }
-  debugger;
+  if (
+    manualConfig.sharedCharacters &&
+    chapters[0].chapterFlat !== chartData[0].info[0].chapterFlat
+  ) {
+    chartData.map((d) => {
+      d.info.unshift({
+        chapterFlat: chapters[0].chapterFlat,
+        value: d.info[0].value,
+      });
+    });
+  }
+  if (
+    manualConfig.sharedCharacters &&
+    chapters[chapters.length - 1].chapterFlat !==
+      chartData[0].info[chartData[0].info.length - 1].chapterFlat
+  ) {
+    chartData.map((d) => {
+      d.info.push({
+        chapterFlat: chapters[chapters.length - 1].chapterFlat,
+        value: d.info[d.info.length - 1].value,
+      });
+    });
+  }
 
   return (
     <>
@@ -236,7 +260,11 @@ export function RelationshipsOverTime() {
       <RelationshipTimeChart
         onClick={({ datum, key }) => {
           setSelectedChapter(datum.chapterFlat);
-          const line = selectedOption?.value.find((d) => d.name === key);
+          const line =
+            selectedOption?.value.find((d) => d.name === key) ||
+            selectedOption?.value.find(
+              (d) => d.from === key.replace(FROM_FEELINGS, "")
+            );
           setSelectedRelationship({
             to: line?.to || selectedOption.value[0].to,
             from: line?.from || selectedOption.value[0].from,
