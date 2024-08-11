@@ -1,0 +1,1 @@
+const e=[{id:1,title:"The Sorcerer’s Stone",chapters:17},{id:2,title:"The Chamber of Secrets",chapters:18},{id:3,title:"The Prisoner of Azkaban",chapters:21},{id:4,title:"The Goblet Of Fire",chapters:37},{id:5,title:"The Order of the Phoenix",chapters:38},{id:6,title:"The Half-Blood Prince",chapters:30},{id:7,title:"The Deathly Hallows",chapters:36}];export{e as default};
