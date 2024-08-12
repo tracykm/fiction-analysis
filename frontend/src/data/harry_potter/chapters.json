@@ -6,1779 +6,1779 @@
     "chapterFlat": 1,
     "characterRefCount": 158,
     "title": "The Boy Who Lived",
-    "length": 25501
+    "length": 25586
   },
   {
     "chapter": 2,
     "book": 1,
-    "letterIndex": 25551,
+    "letterIndex": 25636,
     "chapterFlat": 2,
-    "characterRefCount": 160,
+    "characterRefCount": 161,
     "title": "The Vanishing Glass",
-    "length": 18876
+    "length": 18907
   },
   {
     "chapter": 3,
     "book": 1,
-    "letterIndex": 44427,
+    "letterIndex": 44543,
     "chapterFlat": 3,
-    "characterRefCount": 184,
+    "characterRefCount": 185,
     "title": "The Letters From No One",
-    "length": 21233
+    "length": 21287
   },
   {
     "chapter": 4,
     "book": 1,
-    "letterIndex": 65660,
+    "letterIndex": 65830,
     "chapterFlat": 4,
-    "characterRefCount": 133,
+    "characterRefCount": 132,
     "title": "The Keeper Of The Keys",
-    "length": 20000
+    "length": 20085
   },
   {
     "chapter": 5,
     "book": 1,
-    "letterIndex": 85660,
+    "letterIndex": 85915,
     "chapterFlat": 5,
-    "characterRefCount": 268,
+    "characterRefCount": 271,
     "title": "Diagon Alley",
-    "length": 36902
+    "length": 37061
   },
   {
     "chapter": 6,
     "book": 1,
-    "letterIndex": 122562,
+    "letterIndex": 122976,
     "chapterFlat": 6,
-    "characterRefCount": 303,
+    "characterRefCount": 300,
     "title": "The Journey from Platform Nine and Three-Quarters",
-    "length": 34292
+    "length": 34445
   },
   {
     "chapter": 7,
     "book": 1,
-    "letterIndex": 156854,
+    "letterIndex": 157421,
     "chapterFlat": 7,
-    "characterRefCount": 158,
+    "characterRefCount": 157,
     "title": "The Sorting Hat",
-    "length": 24861
+    "length": 24942
   },
   {
     "chapter": 8,
     "book": 1,
-    "letterIndex": 181715,
+    "letterIndex": 182363,
     "chapterFlat": 8,
-    "characterRefCount": 167,
+    "characterRefCount": 168,
     "title": "The Potions Master",
-    "length": 16932
+    "length": 16964
   },
   {
     "chapter": 9,
     "book": 1,
-    "letterIndex": 198647,
+    "letterIndex": 199327,
     "chapterFlat": 9,
-    "characterRefCount": 292,
+    "characterRefCount": 291,
     "title": "The Midnight Duel",
-    "length": 27715
+    "length": 27799
   },
   {
     "chapter": 10,
     "book": 1,
-    "letterIndex": 226362,
+    "letterIndex": 227126,
     "chapterFlat": 10,
-    "characterRefCount": 224,
+    "characterRefCount": 225,
     "title": "Halloween",
-    "length": 23781
+    "length": 23854
   },
   {
     "chapter": 11,
     "book": 1,
-    "letterIndex": 250143,
+    "letterIndex": 250980,
     "chapterFlat": 11,
     "characterRefCount": 200,
     "title": "Quidditch",
-    "length": 18836
+    "length": 18891
   },
   {
     "chapter": 12,
     "book": 1,
-    "letterIndex": 268979,
+    "letterIndex": 269871,
     "chapterFlat": 12,
     "characterRefCount": 250,
     "title": "The Mirror Of Erised",
-    "length": 30195
+    "length": 30275
   },
   {
     "chapter": 13,
     "book": 1,
-    "letterIndex": 299174,
+    "letterIndex": 300146,
     "chapterFlat": 13,
-    "characterRefCount": 236,
+    "characterRefCount": 237,
     "title": "Nicholas Flamel",
-    "length": 18010
+    "length": 18066
   },
   {
     "chapter": 14,
     "book": 1,
-    "letterIndex": 317184,
+    "letterIndex": 318212,
     "chapterFlat": 14,
-    "characterRefCount": 197,
+    "characterRefCount": 195,
     "title": "Norbert the Norwegian Ridgeback",
-    "length": 19196
+    "length": 19280
   },
   {
     "chapter": 15,
     "book": 1,
-    "letterIndex": 336380,
+    "letterIndex": 337492,
     "chapterFlat": 15,
-    "characterRefCount": 287,
+    "characterRefCount": 282,
     "title": "The Forbidden Forest",
-    "length": 28438
+    "length": 28573
   },
   {
     "chapter": 16,
     "book": 1,
-    "letterIndex": 364818,
+    "letterIndex": 366065,
     "chapterFlat": 16,
-    "characterRefCount": 340,
+    "characterRefCount": 337,
     "title": "Through the Trapdoor",
-    "length": 35609
+    "length": 35776
   },
   {
     "chapter": 17,
     "book": 1,
-    "letterIndex": 400427,
+    "letterIndex": 401841,
     "chapterFlat": 17,
     "characterRefCount": 232,
     "title": "The Man With Two Faces",
-    "length": 30456
+    "length": 30605
   },
   {
     "chapter": 1,
     "book": 2,
-    "letterIndex": 430883,
+    "letterIndex": 432446,
     "chapterFlat": 18,
     "characterRefCount": 143,
     "title": "The Worst Birthday",
-    "length": 14465
+    "length": 14504
   },
   {
     "chapter": 2,
     "book": 2,
-    "letterIndex": 445348,
+    "letterIndex": 446950,
     "chapterFlat": 19,
-    "characterRefCount": 186,
+    "characterRefCount": 175,
     "title": "Dobby's Warning",
-    "length": 16101
+    "length": 16158
   },
   {
     "chapter": 3,
     "book": 2,
-    "letterIndex": 461449,
+    "letterIndex": 463108,
     "chapterFlat": 20,
     "characterRefCount": 277,
     "title": "The Burrow",
-    "length": 24740
+    "length": 24856
   },
   {
     "chapter": 4,
     "book": 2,
-    "letterIndex": 486189,
+    "letterIndex": 487964,
     "chapterFlat": 21,
     "characterRefCount": 354,
     "title": "At Flourish and Blotts",
-    "length": 32632
+    "length": 32724
   },
   {
     "chapter": 5,
     "book": 2,
-    "letterIndex": 518821,
+    "letterIndex": 520688,
     "chapterFlat": 22,
-    "characterRefCount": 278,
+    "characterRefCount": 280,
     "title": "The Whomping Willow",
-    "length": 30515
+    "length": 30598
   },
   {
     "chapter": 6,
     "book": 2,
-    "letterIndex": 549336,
+    "letterIndex": 551286,
     "chapterFlat": 23,
-    "characterRefCount": 236,
+    "characterRefCount": 239,
     "title": "Gilderoy Lockhart",
-    "length": 25903
+    "length": 25985
   },
   {
     "chapter": 7,
     "book": 2,
-    "letterIndex": 575239,
+    "letterIndex": 577271,
     "chapterFlat": 24,
-    "characterRefCount": 284,
+    "characterRefCount": 288,
     "title": "Mudbloods and Murmurs",
-    "length": 26087
+    "length": 26205
   },
   {
     "chapter": 8,
     "book": 2,
-    "letterIndex": 601326,
+    "letterIndex": 603476,
     "chapterFlat": 25,
-    "characterRefCount": 183,
+    "characterRefCount": 182,
     "title": "The Deathday Party",
-    "length": 25515
+    "length": 25591
   },
   {
     "chapter": 9,
     "book": 2,
-    "letterIndex": 626841,
+    "letterIndex": 629067,
     "chapterFlat": 26,
-    "characterRefCount": 281,
+    "characterRefCount": 279,
     "title": "The Writing on the Wall",
-    "length": 29437
+    "length": 29581
   },
   {
     "chapter": 10,
     "book": 2,
-    "letterIndex": 656278,
+    "letterIndex": 658648,
     "chapterFlat": 27,
-    "characterRefCount": 317,
+    "characterRefCount": 309,
     "title": "The Rogue Bludger",
-    "length": 29830
+    "length": 29946
   },
   {
     "chapter": 11,
     "book": 2,
-    "letterIndex": 686108,
+    "letterIndex": 688594,
     "chapterFlat": 28,
-    "characterRefCount": 328,
+    "characterRefCount": 330,
     "title": "The Dueling Club",
-    "length": 34324
+    "length": 34419
   },
   {
     "chapter": 12,
     "book": 2,
-    "letterIndex": 720432,
+    "letterIndex": 723013,
     "chapterFlat": 29,
     "characterRefCount": 369,
     "title": "The Polyjuice Potion",
-    "length": 30851
+    "length": 30969
   },
   {
     "chapter": 13,
     "book": 2,
-    "letterIndex": 751283,
+    "letterIndex": 753982,
     "chapterFlat": 30,
     "characterRefCount": 250,
     "title": "The Very Secret Diary",
-    "length": 30985
+    "length": 31110
   },
   {
     "chapter": 14,
     "book": 2,
-    "letterIndex": 782268,
+    "letterIndex": 785092,
     "chapterFlat": 31,
-    "characterRefCount": 256,
+    "characterRefCount": 255,
     "title": "Cornelius Fudge",
-    "length": 22746
+    "length": 22836
   },
   {
     "chapter": 15,
     "book": 2,
-    "letterIndex": 805014,
+    "letterIndex": 807928,
     "chapterFlat": 32,
-    "characterRefCount": 282,
+    "characterRefCount": 277,
     "title": "Aragog",
-    "length": 26293
+    "length": 26368
   },
   {
     "chapter": 16,
     "book": 2,
-    "letterIndex": 831307,
+    "letterIndex": 834296,
     "chapterFlat": 33,
     "characterRefCount": 305,
     "title": "The Chamber of Secrets",
-    "length": 31647
+    "length": 31802
   },
   {
     "chapter": 17,
     "book": 2,
-    "letterIndex": 862954,
+    "letterIndex": 866098,
     "chapterFlat": 34,
-    "characterRefCount": 245,
+    "characterRefCount": 238,
     "title": "The Heir of Slytherin",
-    "length": 30224
+    "length": 30355
   },
   {
     "chapter": 18,
     "book": 2,
-    "letterIndex": 893178,
+    "letterIndex": 896453,
     "chapterFlat": 35,
-    "characterRefCount": 283,
+    "characterRefCount": 281,
     "title": "Dobby's Reward",
-    "length": 21658
+    "length": 21770
   },
   {
     "chapter": 1,
     "book": 3,
-    "letterIndex": 914836,
+    "letterIndex": 918223,
     "chapterFlat": 36,
-    "characterRefCount": 167,
+    "characterRefCount": 166,
     "title": "Owl Post",
-    "length": 20653
+    "length": 20662
   },
   {
     "chapter": 2,
     "book": 3,
-    "letterIndex": 935489,
+    "letterIndex": 938885,
     "chapterFlat": 37,
-    "characterRefCount": 194,
+    "characterRefCount": 193,
     "title": "Aunt Marge\u2019s Big Mistake",
-    "length": 21673
+    "length": 21748
   },
   {
     "chapter": 3,
     "book": 3,
-    "letterIndex": 957162,
+    "letterIndex": 960633,
     "chapterFlat": 38,
-    "characterRefCount": 208,
+    "characterRefCount": 205,
     "title": "The Knight Bus",
-    "length": 24592
+    "length": 24694
   },
   {
     "chapter": 4,
     "book": 3,
-    "letterIndex": 981754,
+    "letterIndex": 985327,
     "chapterFlat": 39,
-    "characterRefCount": 280,
+    "characterRefCount": 268,
     "title": "The Leaky Cauldron",
-    "length": 29059
+    "length": 29182
   },
   {
     "chapter": 5,
     "book": 3,
-    "letterIndex": 1010813,
+    "letterIndex": 1014509,
     "chapterFlat": 40,
-    "characterRefCount": 469,
+    "characterRefCount": 471,
     "title": "The Dementor",
-    "length": 37774
+    "length": 37898
   },
   {
     "chapter": 6,
     "book": 3,
-    "letterIndex": 1048587,
+    "letterIndex": 1052407,
     "chapterFlat": 41,
     "characterRefCount": 403,
     "title": "Talons and Tea Leaves",
-    "length": 38272
+    "length": 38419
   },
   {
     "chapter": 7,
     "book": 3,
-    "letterIndex": 1086859,
+    "letterIndex": 1090826,
     "chapterFlat": 42,
-    "characterRefCount": 293,
+    "characterRefCount": 295,
     "title": "The Boggart in the Wardrobe",
-    "length": 24557
+    "length": 24658
   },
   {
     "chapter": 8,
     "book": 3,
-    "letterIndex": 1111416,
+    "letterIndex": 1115484,
     "chapterFlat": 43,
-    "characterRefCount": 330,
+    "characterRefCount": 332,
     "title": "Flight of the Fat Lady",
-    "length": 29250
+    "length": 29371
   },
   {
     "chapter": 9,
     "book": 3,
-    "letterIndex": 1140666,
+    "letterIndex": 1144855,
     "chapterFlat": 44,
-    "characterRefCount": 280,
+    "characterRefCount": 282,
     "title": "Grim Defeat",
-    "length": 30051
+    "length": 30180
   },
   {
     "chapter": 10,
     "book": 3,
-    "letterIndex": 1170717,
+    "letterIndex": 1175035,
     "chapterFlat": 45,
-    "characterRefCount": 393,
+    "characterRefCount": 382,
     "title": "The Marauder\u2019s Map",
-    "length": 40626
+    "length": 40828
   },
   {
     "chapter": 11,
     "book": 3,
-    "letterIndex": 1211343,
+    "letterIndex": 1215863,
     "chapterFlat": 46,
-    "characterRefCount": 646,
+    "characterRefCount": 644,
     "title": "The Firebolt",
-    "length": 59569
+    "length": 59841
   },
   {
     "chapter": 12,
     "book": 3,
-    "letterIndex": 1270912,
+    "letterIndex": 1275704,
     "chapterFlat": 47,
-    "characterRefCount": 241,
+    "characterRefCount": 243,
     "title": "Gryffindor versus Ravenclaw",
-    "length": 24327
+    "length": 24396
   },
   {
     "chapter": 13,
     "book": 3,
-    "letterIndex": 1295239,
+    "letterIndex": 1300100,
     "chapterFlat": 48,
     "characterRefCount": 379,
     "title": "Snape\u2019s Grudge",
-    "length": 31159
+    "length": 31298
   },
   {
     "chapter": 14,
     "book": 3,
-    "letterIndex": 1326398,
+    "letterIndex": 1331398,
     "chapterFlat": 49,
-    "characterRefCount": 326,
+    "characterRefCount": 327,
     "title": "The Quidditch Final",
-    "length": 32215
+    "length": 32303
   },
   {
     "chapter": 15,
     "book": 3,
-    "letterIndex": 1358613,
+    "letterIndex": 1363701,
     "chapterFlat": 50,
     "characterRefCount": 277,
     "title": "Professor Trelawney\u2019s Prediction",
-    "length": 25270
+    "length": 25357
   },
   {
     "chapter": 16,
     "book": 3,
-    "letterIndex": 1383883,
+    "letterIndex": 1389058,
     "chapterFlat": 51,
-    "characterRefCount": 281,
+    "characterRefCount": 280,
     "title": "Cat, Rat, and Dog",
-    "length": 23523
+    "length": 23606
   },
   {
     "chapter": 17,
     "book": 3,
-    "letterIndex": 1407406,
+    "letterIndex": 1412664,
     "chapterFlat": 52,
-    "characterRefCount": 132,
+    "characterRefCount": 123,
     "title": "Mooney, Wormtail, Padfoot, and Prongs",
-    "length": 12892
+    "length": 12960
   },
   {
     "chapter": 18,
     "book": 3,
-    "letterIndex": 1420298,
+    "letterIndex": 1425624,
     "chapterFlat": 53,
     "characterRefCount": 289,
     "title": "The Servant of Lord Voldemort",
-    "length": 28799
+    "length": 28977
   },
   {
     "chapter": 19,
     "book": 3,
-    "letterIndex": 1449097,
+    "letterIndex": 1454601,
     "chapterFlat": 54,
     "characterRefCount": 123,
     "title": "The Dementor\u2019s Kiss",
-    "length": 11128
+    "length": 11160
   },
   {
     "chapter": 20,
     "book": 3,
-    "letterIndex": 1460225,
+    "letterIndex": 1465761,
     "chapterFlat": 55,
-    "characterRefCount": 517,
+    "characterRefCount": 506,
     "title": "Hermione\u2019s Secret",
-    "length": 41455
+    "length": 41662
   },
   {
     "chapter": 21,
     "book": 3,
-    "letterIndex": 1501680,
+    "letterIndex": 1507423,
     "chapterFlat": 56,
     "characterRefCount": 332,
     "title": "Owl Post Again",
-    "length": 27297
+    "length": 27450
   },
   {
     "chapter": 1,
     "book": 4,
-    "letterIndex": 1528977,
+    "letterIndex": 1534873,
     "chapterFlat": 57,
-    "characterRefCount": 48,
+    "characterRefCount": 47,
     "title": "The Riddle House",
-    "length": 22931
+    "length": 23015
   },
   {
     "chapter": 2,
     "book": 4,
-    "letterIndex": 1551908,
+    "letterIndex": 1557888,
     "chapterFlat": 58,
-    "characterRefCount": 138,
+    "characterRefCount": 137,
     "title": "The Scar",
-    "length": 15918
+    "length": 15931
   },
   {
     "chapter": 3,
     "book": 4,
-    "letterIndex": 1567826,
+    "letterIndex": 1573819,
     "chapterFlat": 59,
-    "characterRefCount": 177,
+    "characterRefCount": 179,
     "title": "The Invitation",
-    "length": 17676
+    "length": 17714
   },
   {
     "chapter": 4,
     "book": 4,
-    "letterIndex": 1585502,
+    "letterIndex": 1591533,
     "chapterFlat": 60,
-    "characterRefCount": 207,
+    "characterRefCount": 205,
     "title": "Back to the Burrow",
-    "length": 17272
+    "length": 17330
   },
   {
     "chapter": 5,
     "book": 4,
-    "letterIndex": 1602774,
+    "letterIndex": 1608863,
     "chapterFlat": 61,
-    "characterRefCount": 251,
+    "characterRefCount": 249,
     "title": "Weasleys\u2019 Wizard Wheezes",
-    "length": 21400
+    "length": 21498
   },
   {
     "chapter": 6,
     "book": 4,
-    "letterIndex": 1624174,
+    "letterIndex": 1630361,
     "chapterFlat": 62,
     "characterRefCount": 130,
     "title": "The Portkey",
-    "length": 13557
+    "length": 13624
   },
   {
     "chapter": 7,
     "book": 4,
-    "letterIndex": 1637731,
+    "letterIndex": 1643985,
     "chapterFlat": 63,
-    "characterRefCount": 215,
+    "characterRefCount": 214,
     "title": "Bagman and Crouch",
-    "length": 30085
+    "length": 30199
   },
   {
     "chapter": 8,
     "book": 4,
-    "letterIndex": 1667816,
+    "letterIndex": 1674184,
     "chapterFlat": 64,
-    "characterRefCount": 223,
+    "characterRefCount": 222,
     "title": "The Quidditch World Cup",
-    "length": 33844
+    "length": 33911
   },
   {
     "chapter": 9,
     "book": 4,
-    "letterIndex": 1701660,
+    "letterIndex": 1708095,
     "chapterFlat": 65,
-    "characterRefCount": 431,
+    "characterRefCount": 433,
     "title": "The Dark Mark",
-    "length": 40953
+    "length": 41127
   },
   {
     "chapter": 10,
     "book": 4,
-    "letterIndex": 1742613,
+    "letterIndex": 1749222,
     "chapterFlat": 66,
-    "characterRefCount": 199,
+    "characterRefCount": 198,
     "title": "Mayhem at the Ministry",
-    "length": 18281
+    "length": 18363
   },
   {
     "chapter": 11,
     "book": 4,
-    "letterIndex": 1760894,
+    "letterIndex": 1767585,
     "chapterFlat": 67,
-    "characterRefCount": 219,
+    "characterRefCount": 221,
     "title": "Aboard the Hogwarts Express",
-    "length": 18861
+    "length": 18939
   },
   {
     "chapter": 12,
     "book": 4,
-    "letterIndex": 1779755,
+    "letterIndex": 1786524,
     "chapterFlat": 68,
-    "characterRefCount": 214,
+    "characterRefCount": 213,
     "title": "The Triwizard Tournament",
-    "length": 31856
+    "length": 31944
   },
   {
     "chapter": 13,
     "book": 4,
-    "letterIndex": 1811611,
+    "letterIndex": 1818468,
     "chapterFlat": 69,
     "characterRefCount": 242,
     "title": "Mad-Eye Moody",
-    "length": 22923
+    "length": 23010
   },
   {
     "chapter": 14,
     "book": 4,
-    "letterIndex": 1834534,
+    "letterIndex": 1841478,
     "chapterFlat": 70,
     "characterRefCount": 291,
     "title": "The Unforgivable Curses",
-    "length": 27676
+    "length": 27778
   },
   {
     "chapter": 15,
     "book": 4,
-    "letterIndex": 1862210,
+    "letterIndex": 1869256,
     "chapterFlat": 71,
-    "characterRefCount": 233,
+    "characterRefCount": 232,
     "title": "Beauxbatons and Durmstrang",
-    "length": 30429
+    "length": 30498
   },
   {
     "chapter": 16,
     "book": 4,
-    "letterIndex": 1892639,
+    "letterIndex": 1899754,
     "chapterFlat": 72,
     "characterRefCount": 317,
     "title": "The Goblet of Fire",
-    "length": 35324
+    "length": 35436
   },
   {
     "chapter": 17,
     "book": 4,
-    "letterIndex": 1927963,
+    "letterIndex": 1935190,
     "chapterFlat": 73,
     "characterRefCount": 194,
     "title": "The Four Champions",
-    "length": 23537
+    "length": 23628
   },
   {
     "chapter": 18,
     "book": 4,
-    "letterIndex": 1951500,
+    "letterIndex": 1958818,
     "chapterFlat": 74,
-    "characterRefCount": 348,
+    "characterRefCount": 349,
     "title": "The Weighing of the Wands",
-    "length": 37882
+    "length": 38001
   },
   {
     "chapter": 19,
     "book": 4,
-    "letterIndex": 1989382,
+    "letterIndex": 1996819,
     "chapterFlat": 75,
-    "characterRefCount": 325,
+    "characterRefCount": 327,
     "title": "The Hungarian Horntail",
-    "length": 35954
+    "length": 36063
   },
   {
     "chapter": 20,
     "book": 4,
-    "letterIndex": 2025336,
+    "letterIndex": 2032882,
     "chapterFlat": 76,
-    "characterRefCount": 327,
+    "characterRefCount": 328,
     "title": "The First Task",
-    "length": 39582
+    "length": 39700
   },
   {
     "chapter": 21,
     "book": 4,
-    "letterIndex": 2064918,
+    "letterIndex": 2072582,
     "chapterFlat": 77,
-    "characterRefCount": 417,
+    "characterRefCount": 409,
     "title": "The House-Elf Liberation Front",
-    "length": 31826
+    "length": 31942
   },
   {
     "chapter": 22,
     "book": 4,
-    "letterIndex": 2096744,
+    "letterIndex": 2104524,
     "chapterFlat": 78,
-    "characterRefCount": 274,
+    "characterRefCount": 277,
     "title": "The Unexpected Task",
-    "length": 25049
+    "length": 25164
   },
   {
     "chapter": 23,
     "book": 4,
-    "letterIndex": 2121793,
+    "letterIndex": 2129688,
     "chapterFlat": 79,
-    "characterRefCount": 494,
+    "characterRefCount": 492,
     "title": "The Yule Ball",
-    "length": 46564
+    "length": 46722
   },
   {
     "chapter": 24,
     "book": 4,
-    "letterIndex": 2168357,
+    "letterIndex": 2176410,
     "chapterFlat": 80,
-    "characterRefCount": 347,
+    "characterRefCount": 349,
     "title": "Rita Skeeter\u2019s Scoop",
-    "length": 36012
+    "length": 36154
   },
   {
     "chapter": 25,
     "book": 4,
-    "letterIndex": 2204369,
+    "letterIndex": 2212564,
     "chapterFlat": 81,
     "characterRefCount": 321,
     "title": "The Egg and the Eye",
-    "length": 31416
+    "length": 31511
   },
   {
     "chapter": 26,
     "book": 4,
-    "letterIndex": 2235785,
+    "letterIndex": 2244075,
     "chapterFlat": 82,
-    "characterRefCount": 412,
+    "characterRefCount": 416,
     "title": "The Second Task",
-    "length": 45267
+    "length": 45348
   },
   {
     "chapter": 27,
     "book": 4,
-    "letterIndex": 2281052,
+    "letterIndex": 2289423,
     "chapterFlat": 83,
-    "characterRefCount": 444,
+    "characterRefCount": 431,
     "title": "Padfoot Returns",
-    "length": 39701
+    "length": 39882
   },
   {
     "chapter": 28,
     "book": 4,
-    "letterIndex": 2320753,
+    "letterIndex": 2329305,
     "chapterFlat": 84,
-    "characterRefCount": 546,
+    "characterRefCount": 545,
     "title": "The Madness of Mr. Crouch",
-    "length": 42315
+    "length": 42494
   },
   {
     "chapter": 29,
     "book": 4,
-    "letterIndex": 2363068,
+    "letterIndex": 2371799,
     "chapterFlat": 85,
-    "characterRefCount": 279,
+    "characterRefCount": 275,
     "title": "The Dream",
-    "length": 24513
+    "length": 24642
   },
   {
     "chapter": 30,
     "book": 4,
-    "letterIndex": 2387581,
+    "letterIndex": 2396441,
     "chapterFlat": 86,
-    "characterRefCount": 307,
+    "characterRefCount": 305,
     "title": "The Pensieve",
-    "length": 36311
+    "length": 36456
   },
   {
     "chapter": 31,
     "book": 4,
-    "letterIndex": 2423892,
+    "letterIndex": 2432897,
     "chapterFlat": 87,
-    "characterRefCount": 431,
+    "characterRefCount": 429,
     "title": "The Third Task",
-    "length": 44453
+    "length": 44595
   },
   {
     "chapter": 32,
     "book": 4,
-    "letterIndex": 2468345,
+    "letterIndex": 2477492,
     "chapterFlat": 88,
     "characterRefCount": 80,
     "title": "Flesh, Blood, and Bone",
-    "length": 11285
+    "length": 11299
   },
   {
     "chapter": 33,
     "book": 4,
-    "letterIndex": 2479630,
+    "letterIndex": 2488791,
     "chapterFlat": 89,
     "characterRefCount": 133,
     "title": "The Death Eaters",
-    "length": 22553
+    "length": 22618
   },
   {
     "chapter": 34,
     "book": 4,
-    "letterIndex": 2502183,
+    "letterIndex": 2511409,
     "chapterFlat": 90,
-    "characterRefCount": 129,
+    "characterRefCount": 128,
     "title": "Priori Incantatem",
-    "length": 16322
+    "length": 16340
   },
   {
     "chapter": 35,
     "book": 4,
-    "letterIndex": 2518505,
+    "letterIndex": 2527749,
     "chapterFlat": 91,
-    "characterRefCount": 311,
+    "characterRefCount": 304,
     "title": "Veritaserum",
-    "length": 32816
+    "length": 33001
   },
   {
     "chapter": 36,
     "book": 4,
-    "letterIndex": 2551321,
+    "letterIndex": 2560750,
     "chapterFlat": 92,
     "characterRefCount": 467,
     "title": "The Parting of the Ways",
-    "length": 35072
+    "length": 35238
   },
   {
     "chapter": 37,
     "book": 4,
-    "letterIndex": 2586393,
+    "letterIndex": 2595988,
     "chapterFlat": 93,
-    "characterRefCount": 341,
+    "characterRefCount": 343,
     "title": "The Beginning",
-    "length": 27726
+    "length": 27863
   },
   {
     "chapter": 1,
     "book": 5,
-    "letterIndex": 2614119,
+    "letterIndex": 2623851,
     "chapterFlat": 94,
-    "characterRefCount": 220,
+    "characterRefCount": 219,
     "title": "Dudley Demented",
-    "length": 32924
+    "length": 32992
   },
   {
     "chapter": 2,
     "book": 5,
-    "letterIndex": 2647043,
+    "letterIndex": 2656843,
     "chapterFlat": 95,
-    "characterRefCount": 312,
+    "characterRefCount": 310,
     "title": "A Peck of Owls",
-    "length": 34705
+    "length": 34831
   },
   {
     "chapter": 3,
     "book": 5,
-    "letterIndex": 2681748,
+    "letterIndex": 2691674,
     "chapterFlat": 96,
     "characterRefCount": 225,
     "title": "The Advanced Guard",
-    "length": 29647
+    "length": 29733
   },
   {
     "chapter": 4,
     "book": 5,
-    "letterIndex": 2711395,
+    "letterIndex": 2721407,
     "chapterFlat": 97,
-    "characterRefCount": 352,
+    "characterRefCount": 349,
     "title": "Number Twelve, Grimmauld Place",
-    "length": 32199
+    "length": 32350
   },
   {
     "chapter": 5,
     "book": 5,
-    "letterIndex": 2743594,
+    "letterIndex": 2753757,
     "chapterFlat": 98,
-    "characterRefCount": 418,
+    "characterRefCount": 419,
     "title": "The Order of the Phoenix",
-    "length": 30900
+    "length": 31056
   },
   {
     "chapter": 6,
     "book": 5,
-    "letterIndex": 2774494,
+    "letterIndex": 2784813,
     "chapterFlat": 99,
-    "characterRefCount": 382,
+    "characterRefCount": 381,
     "title": "The Noble and Most Ancient House of Black",
-    "length": 38765
+    "length": 38886
   },
   {
     "chapter": 7,
     "book": 5,
-    "letterIndex": 2813259,
+    "letterIndex": 2823699,
     "chapterFlat": 100,
-    "characterRefCount": 191,
+    "characterRefCount": 194,
     "title": "The Ministry of Magic",
-    "length": 26500
+    "length": 26551
   },
   {
     "chapter": 8,
     "book": 5,
-    "letterIndex": 2839759,
+    "letterIndex": 2850250,
     "chapterFlat": 101,
-    "characterRefCount": 164,
+    "characterRefCount": 166,
     "title": "The Hearing",
-    "length": 24452
+    "length": 24535
   },
   {
     "chapter": 9,
     "book": 5,
-    "letterIndex": 2864211,
+    "letterIndex": 2874785,
     "chapterFlat": 102,
     "characterRefCount": 577,
     "title": "The Woes of Mrs. Weasley",
-    "length": 45674
+    "length": 45833
   },
   {
     "chapter": 10,
     "book": 5,
-    "letterIndex": 2909885,
+    "letterIndex": 2920618,
     "chapterFlat": 103,
-    "characterRefCount": 420,
+    "characterRefCount": 416,
     "title": "Luna Lovegood",
-    "length": 33598
+    "length": 33708
   },
   {
     "chapter": 11,
     "book": 5,
-    "letterIndex": 2943483,
+    "letterIndex": 2954326,
     "chapterFlat": 104,
     "characterRefCount": 264,
     "title": "The Sorting Hat\u2019s New Song",
-    "length": 34343
+    "length": 34430
   },
   {
     "chapter": 12,
     "book": 5,
-    "letterIndex": 2977826,
+    "letterIndex": 2988756,
     "chapterFlat": 105,
-    "characterRefCount": 473,
+    "characterRefCount": 475,
     "title": "Professor Umbridge",
-    "length": 48501
+    "length": 48669
   },
   {
     "chapter": 13,
     "book": 5,
-    "letterIndex": 3026327,
+    "letterIndex": 3037425,
     "chapterFlat": 106,
     "characterRefCount": 419,
     "title": "Detention with Dolores",
-    "length": 50104
+    "length": 50256
   },
   {
     "chapter": 14,
     "book": 5,
-    "letterIndex": 3076431,
+    "letterIndex": 3087681,
     "chapterFlat": 107,
-    "characterRefCount": 426,
+    "characterRefCount": 423,
     "title": "Percy and Padfoot",
-    "length": 45813
+    "length": 45944
   },
   {
     "chapter": 15,
     "book": 5,
-    "letterIndex": 3122244,
+    "letterIndex": 3133625,
     "chapterFlat": 108,
-    "characterRefCount": 378,
+    "characterRefCount": 377,
     "title": "The Hogwarts High Inquisitor",
-    "length": 40166
+    "length": 40287
   },
   {
     "chapter": 16,
     "book": 5,
-    "letterIndex": 3162410,
+    "letterIndex": 3173912,
     "chapterFlat": 109,
     "characterRefCount": 322,
     "title": "In the Hog\u2019s Head",
-    "length": 33599
+    "length": 33706
   },
   {
     "chapter": 17,
     "book": 5,
-    "letterIndex": 3196009,
+    "letterIndex": 3207618,
     "chapterFlat": 110,
-    "characterRefCount": 403,
+    "characterRefCount": 405,
     "title": "Educational Decree Number Twenty-four",
-    "length": 38704
+    "length": 38845
   },
   {
     "chapter": 18,
     "book": 5,
-    "letterIndex": 3234713,
+    "letterIndex": 3246463,
     "chapterFlat": 111,
-    "characterRefCount": 345,
+    "characterRefCount": 352,
     "title": "Dumbledore\u2019s Army",
-    "length": 39336
+    "length": 39462
   },
   {
     "chapter": 19,
     "book": 5,
-    "letterIndex": 3274049,
+    "letterIndex": 3285925,
     "chapterFlat": 112,
-    "characterRefCount": 305,
+    "characterRefCount": 308,
     "title": "The Lion and The Serpent",
-    "length": 38364
+    "length": 38440
   },
   {
     "chapter": 20,
     "book": 5,
-    "letterIndex": 3312413,
+    "letterIndex": 3324365,
     "chapterFlat": 113,
     "characterRefCount": 311,
     "title": "Hagrid\u2019s Tale",
-    "length": 34086
+    "length": 34292
   },
   {
     "chapter": 21,
     "book": 5,
-    "letterIndex": 3346499,
+    "letterIndex": 3358657,
     "chapterFlat": 114,
-    "characterRefCount": 399,
+    "characterRefCount": 395,
     "title": "The Eye of the Snake",
-    "length": 41849
+    "length": 41972
   },
   {
     "chapter": 22,
     "book": 5,
-    "letterIndex": 3388348,
+    "letterIndex": 3400629,
     "chapterFlat": 115,
     "characterRefCount": 385,
     "title": "St. Mungo\u2019s Hospital for Magical Maladies and Injuries",
-    "length": 46315
+    "length": 46432
   },
   {
     "chapter": 23,
     "book": 5,
-    "letterIndex": 3434663,
+    "letterIndex": 3447061,
     "chapterFlat": 116,
-    "characterRefCount": 367,
+    "characterRefCount": 368,
     "title": "Christmas on the Closed Ward",
-    "length": 42465
+    "length": 42596
   },
   {
     "chapter": 24,
     "book": 5,
-    "letterIndex": 3477128,
+    "letterIndex": 3489657,
     "chapterFlat": 117,
-    "characterRefCount": 450,
+    "characterRefCount": 451,
     "title": "Occlumency",
-    "length": 45846
+    "length": 45991
   },
   {
     "chapter": 25,
     "book": 5,
-    "letterIndex": 3522974,
+    "letterIndex": 3535648,
     "chapterFlat": 118,
-    "characterRefCount": 396,
+    "characterRefCount": 397,
     "title": "The Beetle at Bay",
-    "length": 46187
+    "length": 46341
   },
   {
     "chapter": 26,
     "book": 5,
-    "letterIndex": 3569161,
+    "letterIndex": 3581989,
     "chapterFlat": 119,
-    "characterRefCount": 423,
+    "characterRefCount": 424,
     "title": "Seen and Unforeseen",
-    "length": 48549
+    "length": 48689
   },
   {
     "chapter": 27,
     "book": 5,
-    "letterIndex": 3617710,
+    "letterIndex": 3630678,
     "chapterFlat": 120,
-    "characterRefCount": 422,
+    "characterRefCount": 425,
     "title": "The Centaur and The Sneak",
-    "length": 43400
+    "length": 43547
   },
   {
     "chapter": 28,
     "book": 5,
-    "letterIndex": 3661110,
+    "letterIndex": 3674225,
     "chapterFlat": 121,
-    "characterRefCount": 419,
+    "characterRefCount": 415,
     "title": "Snape\u2019s Worst Memory",
-    "length": 45920
+    "length": 46070
   },
   {
     "chapter": 29,
     "book": 5,
-    "letterIndex": 3707030,
+    "letterIndex": 3720295,
     "chapterFlat": 122,
     "characterRefCount": 418,
     "title": "Career Advice",
-    "length": 42808
+    "length": 42943
   },
   {
     "chapter": 30,
     "book": 5,
-    "letterIndex": 3749838,
+    "letterIndex": 3763238,
     "chapterFlat": 123,
-    "characterRefCount": 452,
+    "characterRefCount": 454,
     "title": "Grawp",
-    "length": 46870
+    "length": 47029
   },
   {
     "chapter": 31,
     "book": 5,
-    "letterIndex": 3796708,
+    "letterIndex": 3810267,
     "chapterFlat": 124,
-    "characterRefCount": 333,
+    "characterRefCount": 332,
     "title": "O.W.L.S",
-    "length": 45846
+    "length": 45941
   },
   {
     "chapter": 32,
     "book": 5,
-    "letterIndex": 3842554,
+    "letterIndex": 3856208,
     "chapterFlat": 125,
-    "characterRefCount": 410,
+    "characterRefCount": 412,
     "title": "Out of the Fire",
-    "length": 35674
+    "length": 35831
   },
   {
     "chapter": 33,
     "book": 5,
-    "letterIndex": 3878228,
+    "letterIndex": 3892039,
     "chapterFlat": 126,
     "characterRefCount": 218,
     "title": "Fight and Flight",
-    "length": 22110
+    "length": 22179
   },
   {
     "chapter": 34,
     "book": 5,
-    "letterIndex": 3900338,
+    "letterIndex": 3914218,
     "chapterFlat": 127,
-    "characterRefCount": 205,
+    "characterRefCount": 206,
     "title": "The Department of Mysteries",
-    "length": 29317
+    "length": 29387
   },
   {
     "chapter": 35,
     "book": 5,
-    "letterIndex": 3929655,
+    "letterIndex": 3943605,
     "chapterFlat": 128,
-    "characterRefCount": 422,
+    "characterRefCount": 427,
     "title": "Beyond the Veil",
-    "length": 43714
+    "length": 43806
   },
   {
     "chapter": 36,
     "book": 5,
-    "letterIndex": 3973369,
+    "letterIndex": 3987411,
     "chapterFlat": 129,
-    "characterRefCount": 184,
+    "characterRefCount": 186,
     "title": "The Only One He Ever Feared",
-    "length": 21704
+    "length": 21756
   },
   {
     "chapter": 37,
     "book": 5,
-    "letterIndex": 3995073,
+    "letterIndex": 4009167,
     "chapterFlat": 130,
-    "characterRefCount": 377,
+    "characterRefCount": 360,
     "title": "The Lost Prophecy",
-    "length": 44838
+    "length": 45043
   },
   {
     "chapter": 38,
     "book": 5,
-    "letterIndex": 4039911,
+    "letterIndex": 4054210,
     "chapterFlat": 131,
-    "characterRefCount": 410,
+    "characterRefCount": 413,
     "title": "The Second War Begins",
-    "length": 43007
+    "length": 43134
   },
   {
     "chapter": 1,
     "book": 6,
-    "letterIndex": 4082918,
+    "letterIndex": 4097344,
     "chapterFlat": 132,
-    "characterRefCount": 112,
+    "characterRefCount": 111,
     "title": "The Other Minister",
-    "length": 29307
+    "length": 29407
   },
   {
     "chapter": 2,
     "book": 6,
-    "letterIndex": 4112225,
+    "letterIndex": 4126751,
     "chapterFlat": 133,
-    "characterRefCount": 178,
+    "characterRefCount": 176,
     "title": "Spinner\u2019s End",
-    "length": 27224
+    "length": 27350
   },
   {
     "chapter": 3,
     "book": 6,
-    "letterIndex": 4139449,
+    "letterIndex": 4154101,
     "chapterFlat": 134,
-    "characterRefCount": 217,
+    "characterRefCount": 215,
     "title": "Will and Won\u2019t",
-    "length": 27536
+    "length": 27598
   },
   {
     "chapter": 4,
     "book": 6,
-    "letterIndex": 4166985,
+    "letterIndex": 4181699,
     "chapterFlat": 135,
     "characterRefCount": 295,
     "title": "Horace Slughorn",
-    "length": 34534
+    "length": 34682
   },
   {
     "chapter": 5,
     "book": 6,
-    "letterIndex": 4201519,
+    "letterIndex": 4216381,
     "chapterFlat": 136,
-    "characterRefCount": 375,
+    "characterRefCount": 372,
     "title": "An Excess of Phlegm",
-    "length": 33833
+    "length": 33984
   },
   {
     "chapter": 6,
     "book": 6,
-    "letterIndex": 4235352,
+    "letterIndex": 4250365,
     "chapterFlat": 137,
-    "characterRefCount": 362,
+    "characterRefCount": 361,
     "title": "Draco\u2019s Detour",
-    "length": 34018
+    "length": 34125
   },
   {
     "chapter": 7,
     "book": 6,
-    "letterIndex": 4269370,
+    "letterIndex": 4284490,
     "chapterFlat": 138,
-    "characterRefCount": 422,
+    "characterRefCount": 418,
     "title": "The Slug Club",
-    "length": 37770
+    "length": 37909
   },
   {
     "chapter": 8,
     "book": 6,
-    "letterIndex": 4307140,
+    "letterIndex": 4322399,
     "chapterFlat": 139,
     "characterRefCount": 238,
     "title": "Snape Victorious",
-    "length": 24534
+    "length": 24605
   },
   {
     "chapter": 9,
     "book": 6,
-    "letterIndex": 4331674,
+    "letterIndex": 4347004,
     "chapterFlat": 140,
-    "characterRefCount": 297,
+    "characterRefCount": 298,
     "title": "The Half-Blood Prince",
-    "length": 34738
+    "length": 34857
   },
   {
     "chapter": 10,
     "book": 6,
-    "letterIndex": 4366412,
+    "letterIndex": 4381861,
     "chapterFlat": 141,
-    "characterRefCount": 157,
+    "characterRefCount": 155,
     "title": "The House of Gaunt",
-    "length": 34245
+    "length": 34353
   },
   {
     "chapter": 11,
     "book": 6,
-    "letterIndex": 4400657,
+    "letterIndex": 4416214,
     "chapterFlat": 142,
     "characterRefCount": 291,
     "title": "Hermione\u2019s Helping Hand",
-    "length": 29372
+    "length": 29481
   },
   {
     "chapter": 12,
     "book": 6,
-    "letterIndex": 4430029,
+    "letterIndex": 4445695,
     "chapterFlat": 143,
-    "characterRefCount": 319,
+    "characterRefCount": 320,
     "title": "Silver and Opals",
-    "length": 30993
+    "length": 31087
   },
   {
     "chapter": 13,
     "book": 6,
-    "letterIndex": 4461022,
+    "letterIndex": 4476782,
     "chapterFlat": 144,
-    "characterRefCount": 182,
+    "characterRefCount": 183,
     "title": "The Secret Riddle",
-    "length": 30766
+    "length": 30894
   },
   {
     "chapter": 14,
     "book": 6,
-    "letterIndex": 4491788,
+    "letterIndex": 4507676,
     "chapterFlat": 145,
-    "characterRefCount": 385,
+    "characterRefCount": 390,
     "title": "Felix Felicis",
-    "length": 37001
+    "length": 37080
   },
   {
     "chapter": 15,
     "book": 6,
-    "letterIndex": 4528789,
+    "letterIndex": 4544756,
     "chapterFlat": 146,
     "characterRefCount": 338,
     "title": "The Unbreakable Vow",
-    "length": 33763
+    "length": 33896
   },
   {
     "chapter": 16,
     "book": 6,
-    "letterIndex": 4562552,
+    "letterIndex": 4578652,
     "chapterFlat": 147,
-    "characterRefCount": 401,
+    "characterRefCount": 399,
     "title": "A Very Frosty Christmas",
-    "length": 34929
+    "length": 35094
   },
   {
     "chapter": 17,
     "book": 6,
-    "letterIndex": 4597481,
+    "letterIndex": 4613746,
     "chapterFlat": 148,
-    "characterRefCount": 311,
+    "characterRefCount": 315,
     "title": "A Sluggish Memory",
-    "length": 36505
+    "length": 36630
   },
   {
     "chapter": 18,
     "book": 6,
-    "letterIndex": 4633986,
+    "letterIndex": 4650376,
     "chapterFlat": 149,
-    "characterRefCount": 374,
+    "characterRefCount": 376,
     "title": "Birthday Surprises",
-    "length": 38039
+    "length": 38138
   },
   {
     "chapter": 19,
     "book": 6,
-    "letterIndex": 4672025,
+    "letterIndex": 4688514,
     "chapterFlat": 150,
-    "characterRefCount": 376,
+    "characterRefCount": 379,
     "title": "Elf Tails",
-    "length": 35722
+    "length": 35849
   },
   {
     "chapter": 20,
     "book": 6,
-    "letterIndex": 4707747,
+    "letterIndex": 4724363,
     "chapterFlat": 151,
-    "characterRefCount": 282,
+    "characterRefCount": 276,
     "title": "Lord Voldemort\u2019s Request",
-    "length": 37398
+    "length": 37550
   },
   {
     "chapter": 21,
     "book": 6,
-    "letterIndex": 4745145,
+    "letterIndex": 4761913,
     "chapterFlat": 152,
-    "characterRefCount": 348,
+    "characterRefCount": 352,
     "title": "The Unknowable Room",
-    "length": 32518
+    "length": 32632
   },
   {
     "chapter": 22,
     "book": 6,
-    "letterIndex": 4777663,
+    "letterIndex": 4794545,
     "chapterFlat": 153,
-    "characterRefCount": 387,
+    "characterRefCount": 389,
     "title": "After the Burial",
-    "length": 33103
+    "length": 33243
   },
   {
     "chapter": 23,
     "book": 6,
-    "letterIndex": 4810766,
+    "letterIndex": 4827788,
     "chapterFlat": 154,
-    "characterRefCount": 225,
+    "characterRefCount": 207,
     "title": "Horcruxes",
-    "length": 32863
+    "length": 33012
   },
   {
     "chapter": 24,
     "book": 6,
-    "letterIndex": 4843629,
+    "letterIndex": 4860800,
     "chapterFlat": 155,
     "characterRefCount": 308,
     "title": "Sectumsempra",
-    "length": 33627
+    "length": 33706
   },
   {
     "chapter": 25,
     "book": 6,
-    "letterIndex": 4877256,
+    "letterIndex": 4894506,
     "chapterFlat": 156,
-    "characterRefCount": 279,
+    "characterRefCount": 275,
     "title": "The Seer Overheard",
-    "length": 29011
+    "length": 29128
   },
   {
     "chapter": 26,
     "book": 6,
-    "letterIndex": 4906267,
+    "letterIndex": 4923634,
     "chapterFlat": 157,
-    "characterRefCount": 287,
+    "characterRefCount": 290,
     "title": "The Cave",
-    "length": 36023
+    "length": 36103
   },
   {
     "chapter": 27,
     "book": 6,
-    "letterIndex": 4942290,
+    "letterIndex": 4959737,
     "chapterFlat": 158,
-    "characterRefCount": 228,
+    "characterRefCount": 226,
     "title": "The Lightning-Struck Tower",
-    "length": 25482
+    "length": 25584
   },
   {
     "chapter": 28,
     "book": 6,
-    "letterIndex": 4967772,
+    "letterIndex": 4985321,
     "chapterFlat": 159,
-    "characterRefCount": 182,
+    "characterRefCount": 184,
     "title": "Flight of The Prince",
-    "length": 20432
+    "length": 20456
   },
   {
     "chapter": 29,
     "book": 6,
-    "letterIndex": 4988204,
+    "letterIndex": 5005777,
     "chapterFlat": 160,
-    "characterRefCount": 386,
+    "characterRefCount": 382,
     "title": "The Phoenix Lament",
-    "length": 31728
+    "length": 31846
   },
   {
     "chapter": 30,
     "book": 6,
-    "letterIndex": 5019932,
+    "letterIndex": 5037623,
     "chapterFlat": 161,
-    "characterRefCount": 312,
+    "characterRefCount": 307,
     "title": "The White Tomb",
-    "length": 30728
+    "length": 30814
   },
   {
     "chapter": 1,
     "book": 7,
-    "letterIndex": 5050660,
+    "letterIndex": 5068437,
     "chapterFlat": 162,
-    "characterRefCount": 104,
+    "characterRefCount": 103,
     "title": "The Dark Lord Ascending",
-    "length": 17920
+    "length": 17973
   },
   {
     "chapter": 2,
     "book": 7,
-    "letterIndex": 5068580,
+    "letterIndex": 5086410,
     "chapterFlat": 163,
-    "characterRefCount": 131,
+    "characterRefCount": 127,
     "title": "In Memoriam",
-    "length": 23491
+    "length": 23521
   },
   {
     "chapter": 3,
     "book": 7,
-    "letterIndex": 5092071,
+    "letterIndex": 5109931,
     "chapterFlat": 164,
-    "characterRefCount": 204,
+    "characterRefCount": 203,
     "title": "The Dursleys Departing",
-    "length": 19016
+    "length": 19090
   },
   {
     "chapter": 4,
     "book": 7,
-    "letterIndex": 5111087,
+    "letterIndex": 5129021,
     "chapterFlat": 165,
-    "characterRefCount": 295,
+    "characterRefCount": 300,
     "title": "The Seven Potters",
-    "length": 30212
+    "length": 30272
   },
   {
     "chapter": 5,
     "book": 7,
-    "letterIndex": 5141299,
+    "letterIndex": 5159293,
     "chapterFlat": 166,
-    "characterRefCount": 441,
+    "characterRefCount": 438,
     "title": "Fallen Warrior",
-    "length": 33034
+    "length": 33191
   },
   {
     "chapter": 6,
     "book": 7,
-    "letterIndex": 5174333,
+    "letterIndex": 5192484,
     "chapterFlat": 167,
-    "characterRefCount": 390,
+    "characterRefCount": 391,
     "title": "The Ghoul in Pajamas",
-    "length": 37068
+    "length": 37249
   },
   {
     "chapter": 7,
     "book": 7,
-    "letterIndex": 5211401,
+    "letterIndex": 5229733,
     "chapterFlat": 168,
-    "characterRefCount": 454,
+    "characterRefCount": 455,
     "title": "The Will of Albus Dumbledore",
-    "length": 37481
+    "length": 37637
   },
   {
     "chapter": 8,
     "book": 7,
-    "letterIndex": 5248882,
+    "letterIndex": 5267370,
     "chapterFlat": 169,
-    "characterRefCount": 322,
+    "characterRefCount": 319,
     "title": "The Wedding",
-    "length": 35585
+    "length": 35708
   },
   {
     "chapter": 9,
     "book": 7,
-    "letterIndex": 5284467,
+    "letterIndex": 5303078,
     "chapterFlat": 170,
-    "characterRefCount": 228,
+    "characterRefCount": 226,
     "title": "A Place to Hide",
-    "length": 22999
+    "length": 23065
   },
   {
     "chapter": 10,
     "book": 7,
-    "letterIndex": 5307466,
+    "letterIndex": 5326143,
     "chapterFlat": 171,
-    "characterRefCount": 353,
+    "characterRefCount": 337,
     "title": "Kreacher\u2019s Tale",
-    "length": 37678
+    "length": 37769
   },
   {
     "chapter": 11,
     "book": 7,
-    "letterIndex": 5345144,
+    "letterIndex": 5363912,
     "chapterFlat": 172,
     "characterRefCount": 333,
     "title": "The Bribe",
-    "length": 31834
+    "length": 31958
   },
   {
     "chapter": 12,
     "book": 7,
-    "letterIndex": 5376978,
+    "letterIndex": 5395870,
     "chapterFlat": 173,
-    "characterRefCount": 280,
+    "characterRefCount": 279,
     "title": "Magic is Might",
-    "length": 35171
+    "length": 35272
   },
   {
     "chapter": 13,
     "book": 7,
-    "letterIndex": 5412149,
+    "letterIndex": 5431142,
     "chapterFlat": 174,
-    "characterRefCount": 220,
+    "characterRefCount": 222,
     "title": "The Muggle-Born Registration Commission",
-    "length": 33704
+    "length": 33765
   },
   {
     "chapter": 14,
     "book": 7,
-    "letterIndex": 5445853,
+    "letterIndex": 5464907,
     "chapterFlat": 175,
-    "characterRefCount": 204,
+    "characterRefCount": 202,
     "title": "The Thief",
-    "length": 23570
+    "length": 23619
   },
   {
     "chapter": 15,
     "book": 7,
-    "letterIndex": 5469423,
+    "letterIndex": 5488526,
     "chapterFlat": 176,
-    "characterRefCount": 334,
+    "characterRefCount": 332,
     "title": "The Goblin\u2019s Revenge",
-    "length": 39786
+    "length": 39963
   },
   {
     "chapter": 16,
     "book": 7,
-    "letterIndex": 5509209,
+    "letterIndex": 5528489,
     "chapterFlat": 177,
-    "characterRefCount": 187,
+    "characterRefCount": 188,
     "title": "Godric\u2019s Hollow",
-    "length": 29432
+    "length": 29478
   },
   {
     "chapter": 17,
     "book": 7,
-    "letterIndex": 5538641,
+    "letterIndex": 5557967,
     "chapterFlat": 178,
-    "characterRefCount": 164,
+    "characterRefCount": 163,
     "title": "Bathilda\u2019s Secret",
-    "length": 29814
+    "length": 29873
   },
   {
     "chapter": 18,
     "book": 7,
-    "letterIndex": 5568455,
+    "letterIndex": 5587840,
     "chapterFlat": 179,
-    "characterRefCount": 137,
+    "characterRefCount": 132,
     "title": "The Life and Lies of Albus Dumbledore",
-    "length": 19827
+    "length": 19880
   },
   {
     "chapter": 19,
     "book": 7,
-    "letterIndex": 5588282,
+    "letterIndex": 5607720,
     "chapterFlat": 180,
-    "characterRefCount": 271,
+    "characterRefCount": 273,
     "title": "The Silver Doe",
-    "length": 36954
+    "length": 37045
   },
   {
     "chapter": 20,
     "book": 7,
-    "letterIndex": 5625236,
+    "letterIndex": 5644765,
     "chapterFlat": 181,
-    "characterRefCount": 244,
+    "characterRefCount": 241,
     "title": "Xenophilius Lovegood",
-    "length": 25526
+    "length": 25628
   },
   {
     "chapter": 21,
     "book": 7,
-    "letterIndex": 5650762,
+    "letterIndex": 5670393,
     "chapterFlat": 182,
-    "characterRefCount": 184,
+    "characterRefCount": 181,
     "title": "The Tale of The Three Brothers",
-    "length": 27418
+    "length": 27546
   },
   {
     "chapter": 22,
     "book": 7,
-    "letterIndex": 5678180,
+    "letterIndex": 5697939,
     "chapterFlat": 183,
-    "characterRefCount": 276,
+    "characterRefCount": 274,
     "title": "The Deathly Hallows",
-    "length": 33177
+    "length": 33317
   },
   {
     "chapter": 23,
     "book": 7,
-    "letterIndex": 5711357,
+    "letterIndex": 5731256,
     "chapterFlat": 184,
-    "characterRefCount": 477,
+    "characterRefCount": 479,
     "title": "Malfoy Manor",
-    "length": 44540
+    "length": 44701
   },
   {
     "chapter": 24,
     "book": 7,
-    "letterIndex": 5755897,
+    "letterIndex": 5775957,
     "chapterFlat": 185,
-    "characterRefCount": 357,
+    "characterRefCount": 352,
     "title": "The Wandmaker",
-    "length": 37407
+    "length": 37584
   },
   {
     "chapter": 25,
     "book": 7,
-    "letterIndex": 5793304,
+    "letterIndex": 5813541,
     "chapterFlat": 186,
-    "characterRefCount": 255,
+    "characterRefCount": 256,
     "title": "Shell Cottage",
-    "length": 24546
+    "length": 24647
   },
   {
     "chapter": 26,
     "book": 7,
-    "letterIndex": 5817850,
+    "letterIndex": 5838188,
     "chapterFlat": 187,
-    "characterRefCount": 322,
+    "characterRefCount": 323,
     "title": "Gringotts",
-    "length": 38885
+    "length": 38947
   },
   {
     "chapter": 27,
     "book": 7,
-    "letterIndex": 5856735,
+    "letterIndex": 5877135,
     "chapterFlat": 188,
     "characterRefCount": 80,
     "title": "The Final Hiding Place",
-    "length": 14607
+    "length": 14628
   },
   {
     "chapter": 28,
     "book": 7,
-    "letterIndex": 5871342,
+    "letterIndex": 5891763,
     "chapterFlat": 189,
     "characterRefCount": 175,
     "title": "The Missing Mirror",
-    "length": 24852
+    "length": 24962
   },
   {
     "chapter": 29,
     "book": 7,
-    "letterIndex": 5896194,
+    "letterIndex": 5916725,
     "chapterFlat": 190,
     "characterRefCount": 255,
     "title": "The Lost Diadem",
-    "length": 25448
+    "length": 25549
   },
   {
     "chapter": 30,
     "book": 7,
-    "letterIndex": 5921642,
+    "letterIndex": 5942274,
     "chapterFlat": 191,
-    "characterRefCount": 277,
+    "characterRefCount": 276,
     "title": "The Sacking of Severus Snape",
-    "length": 28119
+    "length": 28217
   },
   {
     "chapter": 31,
     "book": 7,
-    "letterIndex": 5949761,
+    "letterIndex": 5970491,
     "chapterFlat": 192,
-    "characterRefCount": 421,
+    "characterRefCount": 423,
     "title": "The Battle Of Hogwarts",
-    "length": 45302
+    "length": 45418
   },
   {
     "chapter": 32,
     "book": 7,
-    "letterIndex": 5995063,
+    "letterIndex": 6015909,
     "chapterFlat": 193,
-    "characterRefCount": 275,
+    "characterRefCount": 277,
     "title": "The Elder Wand",
-    "length": 30985
+    "length": 31052
   },
   {
     "chapter": 33,
     "book": 7,
-    "letterIndex": 6026048,
+    "letterIndex": 6046961,
     "chapterFlat": 194,
-    "characterRefCount": 397,
+    "characterRefCount": 388,
     "title": "The Prince\u2019s Tale",
-    "length": 46116
+    "length": 46307
   },
   {
     "chapter": 34,
     "book": 7,
-    "letterIndex": 6072164,
+    "letterIndex": 6093268,
     "chapterFlat": 195,
     "characterRefCount": 158,
     "title": "The Forest Again",
-    "length": 21163
+    "length": 21204
   },
   {
     "chapter": 35,
     "book": 7,
-    "letterIndex": 6093327,
+    "letterIndex": 6114472,
     "chapterFlat": 196,
-    "characterRefCount": 188,
+    "characterRefCount": 184,
     "title": "King\u2019s Cross",
-    "length": 27565
+    "length": 27681
   },
   {
     "chapter": 36,
     "book": 7,
-    "letterIndex": 6120892,
+    "letterIndex": 6142153,
     "chapterFlat": 197,
-    "characterRefCount": 354,
+    "characterRefCount": 349,
     "title": "The Flaw in the Plan",
-    "length": 40628
+    "length": 40728
   },
   {
     "chapter": 37,
     "book": 7,
-    "letterIndex": 6161520,
+    "letterIndex": 6182881,
     "chapterFlat": 198,
     "characterRefCount": 85,
     "title": "Epilogue",
-    "length": 9348
+    "length": 9388
   }
 ]

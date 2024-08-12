@@ -150,7 +150,8 @@ characters = {
     },
     "Sam Rosenberg": {
         "other_names": ["Sam", "Rosenberg"],
-        "category": ["Tycho Station", "Tech"],  # "Dies"
+        "category": ["Tycho Station", "Tech", "Belt"],  # "Dies"
+        "disqualifiers": ["Sam Snelling "],
         # "books": [3],
     },
     "Basia Merton": {
@@ -183,11 +184,6 @@ characters = {
         "other_names": ["Carol", "Chiwewe"],
         "category": ["Belt"],
         # "books": [5, 7, 8],
-    },
-    "Gillis": {
-        "other_names": ["Secretary-General Gillis", "Sorrento-Gillis"],
-        "category": ["Earth", "UN", "Politician"],
-        # "books": [6],
     },
     "Esteban Sorrento-Gillis": {
         "other_names": ["Esteban", "Gillis"],

@@ -1,33 +1,8 @@
 import re
 
-import nltk
-
-
-nltk.download("punkt")
-nltk.download("averaged_perceptron_tagger")
-nltk.download("maxent_ne_chunker")
-nltk.download("words")
-
 
 def has_word(text: str, word: str):
     return re.search(rf"\b{word}\b", text)
-
-
-def combine_short_sentences(sentences_raw: list[str]):
-    sentences = []
-    for sentence in sentences_raw:
-
-        if sentences and (
-            sentences[-1].endswith("Mr.")
-            or sentences[-1].endswith("Mrs.")
-            or sentences[-1].endswith("Ms.")
-            or sentences[-1].endswith("Dr.")
-            or len(sentence) < 30
-        ):
-            sentences[-1] += " " + sentence
-        else:
-            sentences.append(sentence)
-    return sentences
 
 
 def has_character(
@@ -123,51 +98,49 @@ def find_references(
         if "~~~ BOOK" in line:
             book += 1
             chapter = 0
+        sentence = line
+        letter_index += len(sentence)
+        recent_characters.append({"letter_index": letter_index, "characters": []})
+        if index_all_sentences:
+            relevant_indexed_sentences[letter_index] = {
+                "sentence": sentence,
+                "chapterFlat": chapter_flat,
+            }
+        if len(recent_characters) > sentence_window:
+            recent_characters.pop(0)
 
-        sentences = combine_short_sentences(nltk.tokenize.sent_tokenize(line))
-        for sentence in sentences:
-            letter_index += len(sentence)
-            recent_characters.append({"letter_index": letter_index, "characters": []})
-            if index_all_sentences:
+        if "~~~ " in sentence:  # don't find names in chapter/book titles
+            continue
+        for name, character in characters.items():
+            if has_character(character, sentence, book, chapter_flat):
                 relevant_indexed_sentences[letter_index] = {
                     "sentence": sentence,
                     "chapterFlat": chapter_flat,
                 }
-            if len(recent_characters) > sentence_window:
-                recent_characters.pop(0)
-
-            if "~~~ " in sentence:  # don't find names in chapter/book titles
-                continue
-            for name, character in characters.items():
-                if has_character(character, sentence, book, chapter_flat):
-                    relevant_indexed_sentences[letter_index] = {
-                        "sentence": sentence,
-                        "chapterFlat": chapter_flat,
-                    }
-                    if chapters:
-                        chapters[-1]["characterRefCount"] += 1
-                    character["count"] += 1
-                    character["refs"].append(letter_index)
-                    for i, recent in enumerate(recent_characters):
-                        for recent_name in recent["characters"]:
-                            if recent_name != name:
-                                relationships[name] = relationships.get(name, {})
-                                relationships[name][recent_name] = relationships[
-                                    name
-                                ].get(recent_name, {})
-                                relationships[name][recent_name][letter_index] = recent[
-                                    "letter_index"
-                                ]
-                                relationships[recent_name] = relationships.get(
-                                    recent_name, {}
-                                )
-                                relationships[recent_name][name] = relationships[
-                                    recent_name
-                                ].get(name, {})
-                                relationships[recent_name][name][letter_index] = recent[
-                                    "letter_index"
-                                ]
-                    recent_characters[-1]["characters"].append(name)
+                if chapters:
+                    chapters[-1]["characterRefCount"] += 1
+                character["count"] += 1
+                character["refs"].append(letter_index)
+                for i, recent in enumerate(recent_characters):
+                    for recent_name in recent["characters"]:
+                        if recent_name != name:
+                            relationships[name] = relationships.get(name, {})
+                            relationships[name][recent_name] = relationships[name].get(
+                                recent_name, {}
+                            )
+                            relationships[name][recent_name][letter_index] = recent[
+                                "letter_index"
+                            ]
+                            relationships[recent_name] = relationships.get(
+                                recent_name, {}
+                            )
+                            relationships[recent_name][name] = relationships[
+                                recent_name
+                            ].get(name, {})
+                            relationships[recent_name][name][letter_index] = recent[
+                                "letter_index"
+                            ]
+                recent_characters[-1]["characters"].append(name)
     if chapters:
         chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
 
