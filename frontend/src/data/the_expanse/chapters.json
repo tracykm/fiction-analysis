@@ -544,7 +544,7 @@
     "book": 2,
     "letterIndex": 1021239,
     "chapterFlat": 61,
-    "characterRefCount": 95,
+    "characterRefCount": 94,
     "title": "Holden",
     "length": 18071
   },
@@ -652,7 +652,7 @@
     "book": 2,
     "letterIndex": 1231700,
     "chapterFlat": 73,
-    "characterRefCount": 75,
+    "characterRefCount": 74,
     "title": "Avasarala",
     "length": 18067
   },
@@ -895,7 +895,7 @@
     "book": 2,
     "letterIndex": 1708348,
     "chapterFlat": 100,
-    "characterRefCount": 54,
+    "characterRefCount": 52,
     "title": "Avasarala",
     "length": 16230
   },
@@ -913,7 +913,7 @@
     "book": 2,
     "letterIndex": 1743518,
     "chapterFlat": 102,
-    "characterRefCount": 112,
+    "characterRefCount": 111,
     "title": "Holden",
     "length": 17267
   },
@@ -2569,7 +2569,7 @@
     "book": 6,
     "letterIndex": 4964689,
     "chapterFlat": 286,
-    "characterRefCount": 73,
+    "characterRefCount": 72,
     "title": "Holden",
     "length": 16705
   },

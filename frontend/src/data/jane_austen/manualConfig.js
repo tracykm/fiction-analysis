@@ -486,13 +486,29 @@ export default {
       ],
     },
     {
-      name: "Professions",
+      name: "Types",
       options: [
-        { id: "Military", label: "Military" },
-        { id: "Clergy", label: "Clergy" },
-        { id: "Law", label: "Law" },
-        { id: "No profession", label: "N/A" },
+        { id: "Main Character", label: "Main Character" },
+        { id: "Family", label: "Family" },
+        { id: "Romantic Interest", label: "Romantic Interest" },
+        { id: "Extended Family", label: "Extended Family" },
+        { id: "Romantic Rival", label: "Romantic Rival" },
+        { id: "Friend", label: "Friend" },
+        { id: "In-Law", label: "In-Law" },
+        {
+          id: "Family of Romantic Interest",
+          label: "Family of Romantic Interest",
+        },
       ],
     },
+    // {
+    //   name: "Professions",
+    //   options: [
+    //     { id: "Military", label: "Military" },
+    //     { id: "Clergy", label: "Clergy" },
+    //     { id: "Law", label: "Law" },
+    //     { id: "No profession", label: "N/A" },
+    //   ],
+    // },
   ],
 };
