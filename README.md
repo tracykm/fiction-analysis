@@ -1,25 +1,36 @@
-# his-dark-materials-analysis
+# fiction analysis
 
-[see analysis](https://tracykm.github.io/his-dark-materials-analysis/)
+[see analysis](https://tracykm.github.io/fiction-analysis/)
 
-## to re-deploy
+## to re-generate data
 
-- add a file parse/raw_text.full_text.txt
+- ensure there is a file at `parse/books/MY_BOOK_NAME/raw_text.txt` (copyrighted works are not checked into git)
 - install
 
 `python -m venv env`
+
 `source env/bin/activate`
+
 `pip install -r parse/requirements.txt`
 
 - make updates to `parser/people_data.py`
 - run parser
 
 `cd parse`
+
 `python process.py && npx prettier -w ../frontend/src/data`
 
-re-deploy frontend
+## run frontend locally
+`cd ../frontend`
+
+`yarn && yarn start`
+
+open http://localhost:5173/fiction-analysis/
+
+## re-deploy frontend
 
 `cd ../frontend`
+
 `yarn && yarn deploy`
 
 ## to set up a new book series
