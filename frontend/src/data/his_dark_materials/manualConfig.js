@@ -4,7 +4,7 @@ export default {
   relationships: {
     timelines: [
       {
-        characters: ["Lyra", "Mrs. Coulter"],
+        characters: ["Lyra Silvertounge", "Mrs. Coulter"],
         relationship: "Parent/Child",
         positivity: [
           {
@@ -89,7 +89,7 @@ export default {
         ],
       },
       {
-        characters: ["Lyra", "Lord Asriel"],
+        characters: ["Lyra Silvertounge", "Lord Asriel"],
         relationship: "Parent/Child",
         positivity: [
           {
@@ -135,7 +135,7 @@ export default {
         ],
       },
       {
-        characters: ["Lyra", "Will"],
+        characters: ["Lyra Silvertounge", "Will Perry"],
         relationship: "Romanic Interest",
         positivity: [
           { chapterFlat: 26, value: [1, 1], comment: ["New guy"] },
@@ -186,8 +186,8 @@ export default {
       {
         label: "Lyra's Parents Feelings for her",
         relationships: [
-          { from: "Mrs. Coulter", to: "Lyra" },
-          { from: "Lord Asriel", to: "Lyra" },
+          { from: "Mrs. Coulter", to: "Lyra Silvertounge" },
+          { from: "Lord Asriel", to: "Lyra Silvertounge" },
         ],
       },
       {
@@ -195,15 +195,15 @@ export default {
         relationships: [
           {
             to: "Mrs. Coulter",
-            from: "Lyra",
+            from: "Lyra Silvertounge",
             name: "for her mom",
           },
           {
             to: "Lord Asriel",
-            from: "Lyra",
+            from: "Lyra Silvertounge",
             name: "for her dad",
           },
-          { to: "Will", from: "Lyra", name: "for Will" },
+          { to: "Will Perry", from: "Lyra Silvertounge", name: "for Will" },
         ],
       },
     ],

@@ -125,7 +125,7 @@ export function TimeGraphAndExcerpts() {
       {openedCharacter && (
         <RefsModal
           title={openedCharacter}
-          refs={characters[openedCharacter].refs}
+          refs={characters[openedCharacter]?.refs}
           onClose={() => setOpenedCharacter(undefined)}
           selectedChapter={selectedChapter}
         />

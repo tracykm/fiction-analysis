@@ -19,5 +19,12 @@ export default {
         { id: "Scientist", label: "Scientist" },
       ],
     },
+    {
+      name: "Genders",
+      options: [
+        { id: "Female", label: "Female" },
+        { id: "Male", label: "Male" },
+      ],
+    },
   ],
 };

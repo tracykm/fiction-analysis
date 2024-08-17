@@ -143,7 +143,12 @@ export function PieChartTM({
 
           {active ? (
             <>
-              <Text textAnchor="middle" fill="#ccc" fontSize={28} dy={0}>
+              <Text
+                textAnchor="middle"
+                fill="#ccc"
+                fontSize={active.label.length > 10 ? 22 : 28}
+                dy={0}
+              >
                 {active.label}
               </Text>
 

@@ -2,4267 +2,4267 @@
   {
     "chapter": 1,
     "book": 1,
-    "letterIndex": 10044,
+    "letterIndex": 10043,
     "chapterFlat": 1,
-    "characterRefCount": 60,
+    "characterRefCount": 59,
     "title": "Holden",
-    "length": 15956
+    "length": 15898
   },
   {
     "chapter": 2,
     "book": 1,
-    "letterIndex": 26000,
+    "letterIndex": 25941,
     "chapterFlat": 2,
-    "characterRefCount": 75,
+    "characterRefCount": 89,
     "title": "Miller",
-    "length": 17371
+    "length": 17308
   },
   {
     "chapter": 3,
     "book": 1,
-    "letterIndex": 43371,
+    "letterIndex": 43249,
     "chapterFlat": 3,
-    "characterRefCount": 119,
+    "characterRefCount": 120,
     "title": "Holden",
-    "length": 17365
+    "length": 17308
   },
   {
     "chapter": 4,
     "book": 1,
-    "letterIndex": 60736,
+    "letterIndex": 60557,
     "chapterFlat": 4,
-    "characterRefCount": 88,
+    "characterRefCount": 89,
     "title": "Miller",
-    "length": 15833
+    "length": 15780
   },
   {
     "chapter": 5,
     "book": 1,
-    "letterIndex": 76569,
+    "letterIndex": 76337,
     "chapterFlat": 5,
-    "characterRefCount": 139,
+    "characterRefCount": 137,
     "title": "Holden",
-    "length": 22189
+    "length": 22072
   },
   {
     "chapter": 6,
     "book": 1,
-    "letterIndex": 98758,
+    "letterIndex": 98409,
     "chapterFlat": 6,
-    "characterRefCount": 84,
+    "characterRefCount": 86,
     "title": "Miller",
-    "length": 18506
+    "length": 18423
   },
   {
     "chapter": 7,
     "book": 1,
-    "letterIndex": 117264,
+    "letterIndex": 116832,
     "chapterFlat": 7,
-    "characterRefCount": 81,
+    "characterRefCount": 82,
     "title": "Holden",
-    "length": 14677
+    "length": 14621
   },
   {
     "chapter": 8,
     "book": 1,
-    "letterIndex": 131941,
+    "letterIndex": 131453,
     "chapterFlat": 8,
     "characterRefCount": 67,
     "title": "Miller",
-    "length": 15947
+    "length": 15926
   },
   {
     "chapter": 9,
     "book": 1,
-    "letterIndex": 147888,
+    "letterIndex": 147379,
     "chapterFlat": 9,
     "characterRefCount": 95,
     "title": "Holden",
-    "length": 18038
+    "length": 17962
   },
   {
     "chapter": 10,
     "book": 1,
-    "letterIndex": 165926,
+    "letterIndex": 165341,
     "chapterFlat": 10,
-    "characterRefCount": 85,
+    "characterRefCount": 86,
     "title": "Miller",
-    "length": 16640
+    "length": 16571
   },
   {
     "chapter": 11,
     "book": 1,
-    "letterIndex": 182566,
+    "letterIndex": 181912,
     "chapterFlat": 11,
-    "characterRefCount": 98,
+    "characterRefCount": 107,
     "title": "Holden",
-    "length": 18910
+    "length": 18837
   },
   {
     "chapter": 12,
     "book": 1,
-    "letterIndex": 201476,
+    "letterIndex": 200749,
     "chapterFlat": 12,
     "characterRefCount": 95,
     "title": "Miller",
-    "length": 17771
+    "length": 17695
   },
   {
     "chapter": 13,
     "book": 1,
-    "letterIndex": 219247,
+    "letterIndex": 218444,
     "chapterFlat": 13,
-    "characterRefCount": 99,
+    "characterRefCount": 126,
     "title": "Holden",
-    "length": 16150
+    "length": 16098
   },
   {
     "chapter": 14,
     "book": 1,
-    "letterIndex": 235397,
+    "letterIndex": 234542,
     "chapterFlat": 14,
-    "characterRefCount": 67,
+    "characterRefCount": 78,
     "title": "Miller",
-    "length": 16225
+    "length": 16165
   },
   {
     "chapter": 15,
     "book": 1,
-    "letterIndex": 251622,
+    "letterIndex": 250707,
     "chapterFlat": 15,
-    "characterRefCount": 143,
+    "characterRefCount": 158,
     "title": "Holden",
-    "length": 15792
+    "length": 15734
   },
   {
     "chapter": 16,
     "book": 1,
-    "letterIndex": 267414,
+    "letterIndex": 266441,
     "chapterFlat": 16,
-    "characterRefCount": 77,
+    "characterRefCount": 90,
     "title": "Miller",
-    "length": 16876
+    "length": 16783
   },
   {
     "chapter": 17,
     "book": 1,
-    "letterIndex": 284290,
+    "letterIndex": 283224,
     "chapterFlat": 17,
-    "characterRefCount": 91,
+    "characterRefCount": 92,
     "title": "Holden",
-    "length": 15811
+    "length": 15757
   },
   {
     "chapter": 18,
     "book": 1,
-    "letterIndex": 300101,
+    "letterIndex": 298981,
     "chapterFlat": 18,
-    "characterRefCount": 47,
+    "characterRefCount": 55,
     "title": "Miller",
-    "length": 16622
+    "length": 16585
   },
   {
     "chapter": 19,
     "book": 1,
-    "letterIndex": 316723,
+    "letterIndex": 315566,
     "chapterFlat": 19,
-    "characterRefCount": 93,
+    "characterRefCount": 94,
     "title": "Holden",
-    "length": 17081
+    "length": 17020
   },
   {
     "chapter": 20,
     "book": 1,
-    "letterIndex": 333804,
+    "letterIndex": 332586,
     "chapterFlat": 20,
-    "characterRefCount": 41,
+    "characterRefCount": 42,
     "title": "Miller",
-    "length": 16024
+    "length": 15997
   },
   {
     "chapter": 21,
     "book": 1,
-    "letterIndex": 349828,
+    "letterIndex": 348583,
     "chapterFlat": 21,
-    "characterRefCount": 132,
+    "characterRefCount": 134,
     "title": "Holden",
-    "length": 17851
+    "length": 17761
   },
   {
     "chapter": 22,
     "book": 1,
-    "letterIndex": 367679,
+    "letterIndex": 366344,
     "chapterFlat": 22,
-    "characterRefCount": 48,
+    "characterRefCount": 64,
     "title": "Miller",
-    "length": 13745
+    "length": 13697
   },
   {
     "chapter": 23,
     "book": 1,
-    "letterIndex": 381424,
+    "letterIndex": 380041,
     "chapterFlat": 23,
     "characterRefCount": 86,
     "title": "Holden",
-    "length": 10841
+    "length": 10811
   },
   {
     "chapter": 24,
     "book": 1,
-    "letterIndex": 392265,
+    "letterIndex": 390852,
     "chapterFlat": 24,
-    "characterRefCount": 125,
+    "characterRefCount": 140,
     "title": "Miller",
-    "length": 16930
+    "length": 16864
   },
   {
     "chapter": 25,
     "book": 1,
-    "letterIndex": 409195,
+    "letterIndex": 407716,
     "chapterFlat": 25,
     "characterRefCount": 143,
     "title": "Holden",
-    "length": 14598
+    "length": 14531
   },
   {
     "chapter": 26,
     "book": 1,
-    "letterIndex": 423793,
+    "letterIndex": 422247,
     "chapterFlat": 26,
-    "characterRefCount": 111,
+    "characterRefCount": 112,
     "title": "Miller",
-    "length": 14856
+    "length": 14782
   },
   {
     "chapter": 27,
     "book": 1,
-    "letterIndex": 438649,
+    "letterIndex": 437029,
     "chapterFlat": 27,
     "characterRefCount": 125,
     "title": "Holden",
-    "length": 16501
+    "length": 16423
   },
   {
     "chapter": 28,
     "book": 1,
-    "letterIndex": 455150,
+    "letterIndex": 453452,
     "chapterFlat": 28,
-    "characterRefCount": 108,
+    "characterRefCount": 110,
     "title": "Miller",
-    "length": 15955
+    "length": 15892
   },
   {
     "chapter": 29,
     "book": 1,
-    "letterIndex": 471105,
+    "letterIndex": 469344,
     "chapterFlat": 29,
     "characterRefCount": 61,
     "title": "Holden",
-    "length": 9209
+    "length": 9190
   },
   {
     "chapter": 30,
     "book": 1,
-    "letterIndex": 480314,
+    "letterIndex": 478534,
     "chapterFlat": 30,
     "characterRefCount": 89,
     "title": "Miller",
-    "length": 15393
+    "length": 15351
   },
   {
     "chapter": 31,
     "book": 1,
-    "letterIndex": 495707,
+    "letterIndex": 493885,
     "chapterFlat": 31,
     "characterRefCount": 101,
     "title": "Holden",
-    "length": 15176
+    "length": 15153
   },
   {
     "chapter": 32,
     "book": 1,
-    "letterIndex": 510883,
+    "letterIndex": 509038,
     "chapterFlat": 32,
-    "characterRefCount": 83,
+    "characterRefCount": 84,
     "title": "Miller",
-    "length": 16173
+    "length": 16109
   },
   {
     "chapter": 33,
     "book": 1,
-    "letterIndex": 527056,
+    "letterIndex": 525147,
     "chapterFlat": 33,
-    "characterRefCount": 115,
+    "characterRefCount": 119,
     "title": "Holden",
-    "length": 15979
+    "length": 15901
   },
   {
     "chapter": 34,
     "book": 1,
-    "letterIndex": 543035,
+    "letterIndex": 541048,
     "chapterFlat": 34,
     "characterRefCount": 174,
     "title": "Miller",
-    "length": 26968
+    "length": 26856
   },
   {
     "chapter": 35,
     "book": 1,
-    "letterIndex": 570003,
+    "letterIndex": 567904,
     "chapterFlat": 35,
     "characterRefCount": 114,
     "title": "Holden",
-    "length": 15736
+    "length": 15665
   },
   {
     "chapter": 36,
     "book": 1,
-    "letterIndex": 585739,
+    "letterIndex": 583569,
     "chapterFlat": 36,
-    "characterRefCount": 87,
+    "characterRefCount": 88,
     "title": "Miller",
-    "length": 14803
+    "length": 14732
   },
   {
     "chapter": 37,
     "book": 1,
-    "letterIndex": 600542,
+    "letterIndex": 598301,
     "chapterFlat": 37,
     "characterRefCount": 151,
     "title": "Holden",
-    "length": 18171
+    "length": 18097
   },
   {
     "chapter": 38,
     "book": 1,
-    "letterIndex": 618713,
+    "letterIndex": 616398,
     "chapterFlat": 38,
     "characterRefCount": 128,
     "title": "Miller",
-    "length": 16090
+    "length": 16028
   },
   {
     "chapter": 39,
     "book": 1,
-    "letterIndex": 634803,
+    "letterIndex": 632426,
     "chapterFlat": 39,
     "characterRefCount": 181,
     "title": "Holden",
-    "length": 23214
+    "length": 23149
   },
   {
     "chapter": 40,
     "book": 1,
-    "letterIndex": 658017,
+    "letterIndex": 655575,
     "chapterFlat": 40,
     "characterRefCount": 95,
     "title": "Miller",
-    "length": 17240
+    "length": 17207
   },
   {
     "chapter": 41,
     "book": 1,
-    "letterIndex": 675257,
+    "letterIndex": 672782,
     "chapterFlat": 41,
-    "characterRefCount": 126,
+    "characterRefCount": 123,
     "title": "Holden",
-    "length": 16954
+    "length": 16894
   },
   {
     "chapter": 42,
     "book": 1,
-    "letterIndex": 692211,
+    "letterIndex": 689676,
     "chapterFlat": 42,
-    "characterRefCount": 139,
+    "characterRefCount": 140,
     "title": "Miller",
-    "length": 18984
+    "length": 18935
   },
   {
     "chapter": 43,
     "book": 1,
-    "letterIndex": 711195,
+    "letterIndex": 708611,
     "chapterFlat": 43,
-    "characterRefCount": 109,
+    "characterRefCount": 110,
     "title": "Holden",
-    "length": 15281
+    "length": 15223
   },
   {
     "chapter": 44,
     "book": 1,
-    "letterIndex": 726476,
+    "letterIndex": 723834,
     "chapterFlat": 44,
     "characterRefCount": 95,
     "title": "Miller",
-    "length": 17021
+    "length": 16966
   },
   {
     "chapter": 45,
     "book": 1,
-    "letterIndex": 743497,
+    "letterIndex": 740800,
     "chapterFlat": 45,
     "characterRefCount": 151,
     "title": "Holden",
-    "length": 16862
+    "length": 16779
   },
   {
     "chapter": 46,
     "book": 1,
-    "letterIndex": 760359,
+    "letterIndex": 757579,
     "chapterFlat": 46,
     "characterRefCount": 82,
     "title": "Miller",
-    "length": 16875
+    "length": 16857
   },
   {
     "chapter": 47,
     "book": 1,
-    "letterIndex": 777234,
+    "letterIndex": 774436,
     "chapterFlat": 47,
-    "characterRefCount": 106,
+    "characterRefCount": 107,
     "title": "Holden",
-    "length": 14866
+    "length": 14810
   },
   {
     "chapter": 48,
     "book": 1,
-    "letterIndex": 792100,
+    "letterIndex": 789246,
     "chapterFlat": 48,
     "characterRefCount": 50,
     "title": "Miller",
-    "length": 15402
+    "length": 15387
   },
   {
     "chapter": 49,
     "book": 1,
-    "letterIndex": 807502,
+    "letterIndex": 804633,
     "chapterFlat": 49,
-    "characterRefCount": 105,
+    "characterRefCount": 104,
     "title": "Holden",
-    "length": 14026
+    "length": 13962
   },
   {
     "chapter": 50,
     "book": 1,
-    "letterIndex": 821528,
+    "letterIndex": 818595,
     "chapterFlat": 50,
-    "characterRefCount": 49,
+    "characterRefCount": 50,
     "title": "Miller",
-    "length": 13501
+    "length": 13457
   },
   {
     "chapter": 51,
     "book": 1,
-    "letterIndex": 835029,
+    "letterIndex": 832052,
     "chapterFlat": 51,
     "characterRefCount": 86,
     "title": "Holden",
-    "length": 17394
+    "length": 17360
   },
   {
     "chapter": 52,
     "book": 1,
-    "letterIndex": 852423,
+    "letterIndex": 849412,
     "chapterFlat": 52,
     "characterRefCount": 34,
     "title": "Miller",
-    "length": 17016
+    "length": 17006
   },
   {
     "chapter": 53,
     "book": 1,
-    "letterIndex": 869439,
+    "letterIndex": 866418,
     "chapterFlat": 53,
     "characterRefCount": 121,
     "title": "Holden",
-    "length": 17128
+    "length": 17025
   },
   {
     "chapter": 54,
     "book": 1,
-    "letterIndex": 886567,
+    "letterIndex": 883443,
     "chapterFlat": 54,
-    "characterRefCount": 49,
+    "characterRefCount": 54,
     "title": "Miller",
-    "length": 17403
+    "length": 17368
   },
   {
     "chapter": 55,
     "book": 1,
-    "letterIndex": 903970,
+    "letterIndex": 900811,
     "chapterFlat": 55,
-    "characterRefCount": 138,
+    "characterRefCount": 139,
     "title": "Holden",
-    "length": 33525
+    "length": 33430
   },
   {
     "chapter": 1,
     "book": 2,
-    "letterIndex": 937495,
+    "letterIndex": 934241,
     "chapterFlat": 56,
-    "characterRefCount": 30,
+    "characterRefCount": 27,
     "title": "Bobbie",
-    "length": 18216
+    "length": 18203
   },
   {
     "chapter": 2,
     "book": 2,
-    "letterIndex": 955711,
+    "letterIndex": 952444,
     "chapterFlat": 57,
     "characterRefCount": 77,
     "title": "Holden",
-    "length": 13458
+    "length": 13426
   },
   {
     "chapter": 3,
     "book": 2,
-    "letterIndex": 969169,
+    "letterIndex": 965870,
     "chapterFlat": 58,
     "characterRefCount": 33,
     "title": "Prax",
-    "length": 17377
+    "length": 17343
   },
   {
     "chapter": 4,
     "book": 2,
-    "letterIndex": 986546,
+    "letterIndex": 983213,
     "chapterFlat": 59,
-    "characterRefCount": 43,
+    "characterRefCount": 42,
     "title": "Bobbie",
-    "length": 16572
+    "length": 16532
   },
   {
     "chapter": 5,
     "book": 2,
-    "letterIndex": 1003118,
+    "letterIndex": 999745,
     "chapterFlat": 60,
-    "characterRefCount": 45,
+    "characterRefCount": 48,
     "title": "Avasarala",
-    "length": 18121
+    "length": 18052
   },
   {
     "chapter": 6,
     "book": 2,
-    "letterIndex": 1021239,
+    "letterIndex": 1017797,
     "chapterFlat": 61,
     "characterRefCount": 94,
     "title": "Holden",
-    "length": 18071
+    "length": 18025
   },
   {
     "chapter": 7,
     "book": 2,
-    "letterIndex": 1039310,
+    "letterIndex": 1035822,
     "chapterFlat": 62,
     "characterRefCount": 26,
     "title": "Prax",
-    "length": 16904
+    "length": 16884
   },
   {
     "chapter": 8,
     "book": 2,
-    "letterIndex": 1056214,
+    "letterIndex": 1052706,
     "chapterFlat": 63,
     "characterRefCount": 36,
     "title": "Bobbie",
-    "length": 16831
+    "length": 16785
   },
   {
     "chapter": 9,
     "book": 2,
-    "letterIndex": 1073045,
+    "letterIndex": 1069491,
     "chapterFlat": 64,
-    "characterRefCount": 52,
+    "characterRefCount": 53,
     "title": "Avasarala",
-    "length": 19325
+    "length": 19238
   },
   {
     "chapter": 10,
     "book": 2,
-    "letterIndex": 1092370,
+    "letterIndex": 1088729,
     "chapterFlat": 65,
     "characterRefCount": 40,
     "title": "Prax",
-    "length": 16795
+    "length": 16767
   },
   {
     "chapter": 11,
     "book": 2,
-    "letterIndex": 1109165,
+    "letterIndex": 1105496,
     "chapterFlat": 66,
-    "characterRefCount": 94,
+    "characterRefCount": 96,
     "title": "Holden",
-    "length": 17734
+    "length": 17682
   },
   {
     "chapter": 12,
     "book": 2,
-    "letterIndex": 1126899,
+    "letterIndex": 1123178,
     "chapterFlat": 67,
-    "characterRefCount": 47,
+    "characterRefCount": 56,
     "title": "Avasarala",
-    "length": 17171
+    "length": 17113
   },
   {
     "chapter": 13,
     "book": 2,
-    "letterIndex": 1144070,
+    "letterIndex": 1140291,
     "chapterFlat": 68,
     "characterRefCount": 146,
     "title": "Holden",
-    "length": 15514
+    "length": 15471
   },
   {
     "chapter": 14,
     "book": 2,
-    "letterIndex": 1159584,
+    "letterIndex": 1155762,
     "chapterFlat": 69,
-    "characterRefCount": 119,
+    "characterRefCount": 118,
     "title": "Prax",
-    "length": 17826
+    "length": 17737
   },
   {
     "chapter": 15,
     "book": 2,
-    "letterIndex": 1177410,
+    "letterIndex": 1173499,
     "chapterFlat": 70,
     "characterRefCount": 43,
     "title": "Bobbie",
-    "length": 19690
+    "length": 19660
   },
   {
     "chapter": 16,
     "book": 2,
-    "letterIndex": 1197100,
+    "letterIndex": 1193159,
     "chapterFlat": 71,
     "characterRefCount": 125,
     "title": "Holden",
-    "length": 16841
+    "length": 16800
   },
   {
     "chapter": 17,
     "book": 2,
-    "letterIndex": 1213941,
+    "letterIndex": 1209959,
     "chapterFlat": 72,
     "characterRefCount": 121,
     "title": "Prax",
-    "length": 17759
+    "length": 17696
   },
   {
     "chapter": 18,
     "book": 2,
-    "letterIndex": 1231700,
+    "letterIndex": 1227655,
     "chapterFlat": 73,
-    "characterRefCount": 74,
+    "characterRefCount": 76,
     "title": "Avasarala",
-    "length": 18067
+    "length": 18002
   },
   {
     "chapter": 19,
     "book": 2,
-    "letterIndex": 1249767,
+    "letterIndex": 1245657,
     "chapterFlat": 74,
-    "characterRefCount": 132,
+    "characterRefCount": 130,
     "title": "Holden",
-    "length": 17013
+    "length": 16983
   },
   {
     "chapter": 20,
     "book": 2,
-    "letterIndex": 1266780,
+    "letterIndex": 1262640,
     "chapterFlat": 75,
     "characterRefCount": 94,
     "title": "Bobbie",
-    "length": 18413
+    "length": 18377
   },
   {
     "chapter": 21,
     "book": 2,
-    "letterIndex": 1285193,
+    "letterIndex": 1281017,
     "chapterFlat": 76,
     "characterRefCount": 113,
     "title": "Prax",
-    "length": 20089
+    "length": 20027
   },
   {
     "chapter": 22,
     "book": 2,
-    "letterIndex": 1305282,
+    "letterIndex": 1301044,
     "chapterFlat": 77,
-    "characterRefCount": 139,
+    "characterRefCount": 141,
     "title": "Holden",
-    "length": 17251
+    "length": 17182
   },
   {
     "chapter": 23,
     "book": 2,
-    "letterIndex": 1322533,
+    "letterIndex": 1318226,
     "chapterFlat": 78,
-    "characterRefCount": 65,
+    "characterRefCount": 69,
     "title": "Avasarala",
-    "length": 18279
+    "length": 18210
   },
   {
     "chapter": 24,
     "book": 2,
-    "letterIndex": 1340812,
+    "letterIndex": 1336436,
     "chapterFlat": 79,
     "characterRefCount": 94,
     "title": "Prax",
-    "length": 16878
+    "length": 16811
   },
   {
     "chapter": 25,
     "book": 2,
-    "letterIndex": 1357690,
+    "letterIndex": 1353247,
     "chapterFlat": 80,
-    "characterRefCount": 121,
+    "characterRefCount": 122,
     "title": "Bobbie",
-    "length": 21899
+    "length": 21842
   },
   {
     "chapter": 26,
     "book": 2,
-    "letterIndex": 1379589,
+    "letterIndex": 1375089,
     "chapterFlat": 81,
     "characterRefCount": 124,
     "title": "Holden",
-    "length": 18373
+    "length": 18316
   },
   {
     "chapter": 27,
     "book": 2,
-    "letterIndex": 1397962,
+    "letterIndex": 1393405,
     "chapterFlat": 82,
     "characterRefCount": 111,
     "title": "Prax",
-    "length": 19115
+    "length": 19055
   },
   {
     "chapter": 28,
     "book": 2,
-    "letterIndex": 1417077,
+    "letterIndex": 1412460,
     "chapterFlat": 83,
     "characterRefCount": 106,
     "title": "Avasarala",
-    "length": 17833
+    "length": 17753
   },
   {
     "chapter": 29,
     "book": 2,
-    "letterIndex": 1434910,
+    "letterIndex": 1430213,
     "chapterFlat": 84,
     "characterRefCount": 120,
     "title": "Holden",
-    "length": 17670
+    "length": 17610
   },
   {
     "chapter": 30,
     "book": 2,
-    "letterIndex": 1452580,
+    "letterIndex": 1447823,
     "chapterFlat": 85,
     "characterRefCount": 102,
     "title": "Bobbie",
-    "length": 17835
+    "length": 17778
   },
   {
     "chapter": 31,
     "book": 2,
-    "letterIndex": 1470415,
+    "letterIndex": 1465601,
     "chapterFlat": 86,
     "characterRefCount": 78,
     "title": "Prax",
-    "length": 17742
+    "length": 17689
   },
   {
     "chapter": 32,
     "book": 2,
-    "letterIndex": 1488157,
+    "letterIndex": 1483290,
     "chapterFlat": 87,
     "characterRefCount": 119,
     "title": "Holden",
-    "length": 16115
+    "length": 16057
   },
   {
     "chapter": 33,
     "book": 2,
-    "letterIndex": 1504272,
+    "letterIndex": 1499347,
     "chapterFlat": 88,
     "characterRefCount": 105,
     "title": "Prax",
-    "length": 16307
+    "length": 16238
   },
   {
     "chapter": 34,
     "book": 2,
-    "letterIndex": 1520579,
+    "letterIndex": 1515585,
     "chapterFlat": 89,
-    "characterRefCount": 83,
+    "characterRefCount": 82,
     "title": "Holden",
-    "length": 16296
+    "length": 16248
   },
   {
     "chapter": 35,
     "book": 2,
-    "letterIndex": 1536875,
+    "letterIndex": 1531833,
     "chapterFlat": 90,
-    "characterRefCount": 83,
+    "characterRefCount": 88,
     "title": "Avasarala",
-    "length": 17227
+    "length": 17170
   },
   {
     "chapter": 36,
     "book": 2,
-    "letterIndex": 1554102,
+    "letterIndex": 1549003,
     "chapterFlat": 91,
     "characterRefCount": 69,
     "title": "Prax",
-    "length": 17221
+    "length": 17157
   },
   {
     "chapter": 37,
     "book": 2,
-    "letterIndex": 1571323,
+    "letterIndex": 1566160,
     "chapterFlat": 92,
-    "characterRefCount": 64,
+    "characterRefCount": 66,
     "title": "Avasarala",
-    "length": 17112
+    "length": 17062
   },
   {
     "chapter": 38,
     "book": 2,
-    "letterIndex": 1588435,
+    "letterIndex": 1583222,
     "chapterFlat": 93,
     "characterRefCount": 57,
     "title": "Bobbie",
-    "length": 20030
+    "length": 20004
   },
   {
     "chapter": 39,
     "book": 2,
-    "letterIndex": 1608465,
+    "letterIndex": 1603226,
     "chapterFlat": 94,
     "characterRefCount": 106,
     "title": "Holden",
-    "length": 16221
+    "length": 16145
   },
   {
     "chapter": 40,
     "book": 2,
-    "letterIndex": 1624686,
+    "letterIndex": 1619371,
     "chapterFlat": 95,
     "characterRefCount": 115,
     "title": "Prax",
-    "length": 18319
+    "length": 18254
   },
   {
     "chapter": 41,
     "book": 2,
-    "letterIndex": 1643005,
+    "letterIndex": 1637625,
     "chapterFlat": 96,
-    "characterRefCount": 119,
+    "characterRefCount": 121,
     "title": "Avasarala",
-    "length": 18084
+    "length": 18008
   },
   {
     "chapter": 42,
     "book": 2,
-    "letterIndex": 1661089,
+    "letterIndex": 1655633,
     "chapterFlat": 97,
-    "characterRefCount": 90,
+    "characterRefCount": 88,
     "title": "Holden",
-    "length": 15588
+    "length": 15520
   },
   {
     "chapter": 43,
     "book": 2,
-    "letterIndex": 1676677,
+    "letterIndex": 1671153,
     "chapterFlat": 98,
     "characterRefCount": 120,
     "title": "Bobbie",
-    "length": 18069
+    "length": 18003
   },
   {
     "chapter": 44,
     "book": 2,
-    "letterIndex": 1694746,
+    "letterIndex": 1689156,
     "chapterFlat": 99,
     "characterRefCount": 78,
     "title": "Holden",
-    "length": 13602
+    "length": 13568
   },
   {
     "chapter": 45,
     "book": 2,
-    "letterIndex": 1708348,
+    "letterIndex": 1702724,
     "chapterFlat": 100,
-    "characterRefCount": 52,
+    "characterRefCount": 58,
     "title": "Avasarala",
-    "length": 16230
+    "length": 16167
   },
   {
     "chapter": 46,
     "book": 2,
-    "letterIndex": 1724578,
+    "letterIndex": 1718891,
     "chapterFlat": 101,
     "characterRefCount": 38,
     "title": "Bobbie",
-    "length": 18940
+    "length": 18913
   },
   {
     "chapter": 47,
     "book": 2,
-    "letterIndex": 1743518,
+    "letterIndex": 1737804,
     "chapterFlat": 102,
-    "characterRefCount": 111,
+    "characterRefCount": 113,
     "title": "Holden",
-    "length": 17267
+    "length": 17212
   },
   {
     "chapter": 48,
     "book": 2,
-    "letterIndex": 1760785,
+    "letterIndex": 1755016,
     "chapterFlat": 103,
-    "characterRefCount": 134,
+    "characterRefCount": 135,
     "title": "Avasarala",
-    "length": 17748
+    "length": 17668
   },
   {
     "chapter": 49,
     "book": 2,
-    "letterIndex": 1778533,
+    "letterIndex": 1772684,
     "chapterFlat": 104,
-    "characterRefCount": 120,
+    "characterRefCount": 119,
     "title": "Holden",
-    "length": 25973
+    "length": 25902
   },
   {
     "chapter": 50,
     "book": 2,
-    "letterIndex": 1804506,
+    "letterIndex": 1798586,
     "chapterFlat": 105,
-    "characterRefCount": 91,
+    "characterRefCount": 92,
     "title": "Bobbie",
-    "length": 18607
+    "length": 18573
   },
   {
     "chapter": 51,
     "book": 2,
-    "letterIndex": 1823113,
+    "letterIndex": 1817159,
     "chapterFlat": 106,
-    "characterRefCount": 88,
+    "characterRefCount": 87,
     "title": "Prax",
-    "length": 16812
+    "length": 16750
   },
   {
     "chapter": 52,
     "book": 2,
-    "letterIndex": 1839925,
+    "letterIndex": 1833909,
     "chapterFlat": 107,
-    "characterRefCount": 96,
+    "characterRefCount": 100,
     "title": "Avasarala",
-    "length": 15291
+    "length": 15221
   },
   {
     "chapter": 53,
     "book": 2,
-    "letterIndex": 1855216,
+    "letterIndex": 1849130,
     "chapterFlat": 108,
-    "characterRefCount": 61,
+    "characterRefCount": 62,
     "title": "Holden",
-    "length": 12918
+    "length": 12865
   },
   {
     "chapter": 54,
     "book": 2,
-    "letterIndex": 1868134,
+    "letterIndex": 1861995,
     "chapterFlat": 109,
     "characterRefCount": 78,
     "title": "Prax",
-    "length": 29877
+    "length": 29807
   },
   {
     "chapter": 1,
     "book": 3,
-    "letterIndex": 1898011,
+    "letterIndex": 1891802,
     "chapterFlat": 110,
-    "characterRefCount": 87,
+    "characterRefCount": 85,
     "title": "Holden",
-    "length": 17374
+    "length": 17338
   },
   {
     "chapter": 2,
     "book": 3,
-    "letterIndex": 1915385,
+    "letterIndex": 1909140,
     "chapterFlat": 111,
-    "characterRefCount": 89,
+    "characterRefCount": 91,
     "title": "Bull",
-    "length": 17019
+    "length": 16951
   },
   {
     "chapter": 3,
     "book": 3,
-    "letterIndex": 1932404,
+    "letterIndex": 1926091,
     "chapterFlat": 112,
-    "characterRefCount": 19,
+    "characterRefCount": 18,
     "title": "Melba",
-    "length": 17247
+    "length": 17210
   },
   {
     "chapter": 4,
     "book": 3,
-    "letterIndex": 1949651,
+    "letterIndex": 1943301,
     "chapterFlat": 113,
-    "characterRefCount": 55,
+    "characterRefCount": 82,
     "title": "Anna",
-    "length": 15214
+    "length": 15156
   },
   {
     "chapter": 5,
     "book": 3,
-    "letterIndex": 1964865,
+    "letterIndex": 1958457,
     "chapterFlat": 114,
-    "characterRefCount": 64,
+    "characterRefCount": 73,
     "title": "Bull",
-    "length": 17641
+    "length": 17605
   },
   {
     "chapter": 6,
     "book": 3,
-    "letterIndex": 1982506,
+    "letterIndex": 1976062,
     "chapterFlat": 115,
-    "characterRefCount": 110,
+    "characterRefCount": 111,
     "title": "Holden",
-    "length": 17430
+    "length": 17361
   },
   {
     "chapter": 7,
     "book": 3,
-    "letterIndex": 1999936,
+    "letterIndex": 1993423,
     "chapterFlat": 116,
     "characterRefCount": 18,
     "title": "Melba",
-    "length": 18681
+    "length": 18638
   },
   {
     "chapter": 8,
     "book": 3,
-    "letterIndex": 2018617,
+    "letterIndex": 2012061,
     "chapterFlat": 117,
-    "characterRefCount": 70,
+    "characterRefCount": 72,
     "title": "Anna",
-    "length": 18382
+    "length": 18334
   },
   {
     "chapter": 9,
     "book": 3,
-    "letterIndex": 2036999,
+    "letterIndex": 2030395,
     "chapterFlat": 118,
-    "characterRefCount": 71,
+    "characterRefCount": 77,
     "title": "Bull",
-    "length": 17604
+    "length": 17548
   },
   {
     "chapter": 10,
     "book": 3,
-    "letterIndex": 2054603,
+    "letterIndex": 2047943,
     "chapterFlat": 119,
-    "characterRefCount": 138,
+    "characterRefCount": 144,
     "title": "Holden",
-    "length": 21677
+    "length": 21620
   },
   {
     "chapter": 11,
     "book": 3,
-    "letterIndex": 2076280,
+    "letterIndex": 2069563,
     "chapterFlat": 120,
-    "characterRefCount": 41,
+    "characterRefCount": 42,
     "title": "Melba",
-    "length": 17949
+    "length": 17907
   },
   {
     "chapter": 12,
     "book": 3,
-    "letterIndex": 2094229,
+    "letterIndex": 2087470,
     "chapterFlat": 121,
-    "characterRefCount": 86,
+    "characterRefCount": 88,
     "title": "Anna",
-    "length": 18590
+    "length": 18535
   },
   {
     "chapter": 13,
     "book": 3,
-    "letterIndex": 2112819,
+    "letterIndex": 2106005,
     "chapterFlat": 122,
-    "characterRefCount": 96,
+    "characterRefCount": 111,
     "title": "Bull",
-    "length": 18949
+    "length": 18881
   },
   {
     "chapter": 14,
     "book": 3,
-    "letterIndex": 2131768,
+    "letterIndex": 2124886,
     "chapterFlat": 123,
     "characterRefCount": 31,
     "title": "Melba",
-    "length": 17927
+    "length": 17895
   },
   {
     "chapter": 15,
     "book": 3,
-    "letterIndex": 2149695,
+    "letterIndex": 2142781,
     "chapterFlat": 124,
-    "characterRefCount": 96,
+    "characterRefCount": 111,
     "title": "Bull",
-    "length": 17955
+    "length": 17900
   },
   {
     "chapter": 16,
     "book": 3,
-    "letterIndex": 2167650,
+    "letterIndex": 2160681,
     "chapterFlat": 125,
-    "characterRefCount": 90,
+    "characterRefCount": 94,
     "title": "Holden",
-    "length": 13322
+    "length": 13280
   },
   {
     "chapter": 17,
     "book": 3,
-    "letterIndex": 2180972,
+    "letterIndex": 2173961,
     "chapterFlat": 126,
-    "characterRefCount": 86,
+    "characterRefCount": 97,
     "title": "Bull",
-    "length": 17550
+    "length": 17496
   },
   {
     "chapter": 18,
     "book": 3,
-    "letterIndex": 2198522,
+    "letterIndex": 2191457,
     "chapterFlat": 127,
-    "characterRefCount": 63,
+    "characterRefCount": 64,
     "title": "Anna",
-    "length": 16539
+    "length": 16496
   },
   {
     "chapter": 19,
     "book": 3,
-    "letterIndex": 2215061,
+    "letterIndex": 2207953,
     "chapterFlat": 128,
-    "characterRefCount": 39,
+    "characterRefCount": 37,
     "title": "Melba",
-    "length": 16578
+    "length": 16568
   },
   {
     "chapter": 20,
     "book": 3,
-    "letterIndex": 2231639,
+    "letterIndex": 2224521,
     "chapterFlat": 129,
-    "characterRefCount": 99,
+    "characterRefCount": 115,
     "title": "Holden",
-    "length": 17346
+    "length": 17285
   },
   {
     "chapter": 21,
     "book": 3,
-    "letterIndex": 2248985,
+    "letterIndex": 2241806,
     "chapterFlat": 130,
-    "characterRefCount": 67,
+    "characterRefCount": 71,
     "title": "Bull",
-    "length": 17015
+    "length": 16968
   },
   {
     "chapter": 22,
     "book": 3,
-    "letterIndex": 2266000,
+    "letterIndex": 2258774,
     "chapterFlat": 131,
     "characterRefCount": 79,
     "title": "Holden",
-    "length": 25185
+    "length": 25126
   },
   {
     "chapter": 23,
     "book": 3,
-    "letterIndex": 2291185,
+    "letterIndex": 2283900,
     "chapterFlat": 132,
-    "characterRefCount": 26,
+    "characterRefCount": 25,
     "title": "Melba",
-    "length": 15278
+    "length": 15253
   },
   {
     "chapter": 24,
     "book": 3,
-    "letterIndex": 2306463,
+    "letterIndex": 2299153,
     "chapterFlat": 133,
-    "characterRefCount": 95,
+    "characterRefCount": 97,
     "title": "Anna",
-    "length": 19652
+    "length": 19592
   },
   {
     "chapter": 25,
     "book": 3,
-    "letterIndex": 2326115,
+    "letterIndex": 2318745,
     "chapterFlat": 134,
     "characterRefCount": 47,
     "title": "Holden",
-    "length": 17556
+    "length": 17499
   },
   {
     "chapter": 26,
     "book": 3,
-    "letterIndex": 2343671,
+    "letterIndex": 2336244,
     "chapterFlat": 135,
-    "characterRefCount": 67,
+    "characterRefCount": 78,
     "title": "Bull",
-    "length": 18897
+    "length": 18837
   },
   {
     "chapter": 27,
     "book": 3,
-    "letterIndex": 2362568,
+    "letterIndex": 2355081,
     "chapterFlat": 136,
-    "characterRefCount": 53,
+    "characterRefCount": 52,
     "title": "Melba",
-    "length": 17637
+    "length": 17630
   },
   {
     "chapter": 28,
     "book": 3,
-    "letterIndex": 2380205,
+    "letterIndex": 2372711,
     "chapterFlat": 137,
-    "characterRefCount": 117,
+    "characterRefCount": 119,
     "title": "Anna",
-    "length": 19118
+    "length": 19096
   },
   {
     "chapter": 29,
     "book": 3,
-    "letterIndex": 2399323,
+    "letterIndex": 2391807,
     "chapterFlat": 138,
-    "characterRefCount": 82,
+    "characterRefCount": 98,
     "title": "Bull",
-    "length": 20293
+    "length": 20233
   },
   {
     "chapter": 30,
     "book": 3,
-    "letterIndex": 2419616,
+    "letterIndex": 2412040,
     "chapterFlat": 139,
     "characterRefCount": 33,
     "title": "Holden",
-    "length": 14041
+    "length": 13994
   },
   {
     "chapter": 31,
     "book": 3,
-    "letterIndex": 2433657,
+    "letterIndex": 2426034,
     "chapterFlat": 140,
-    "characterRefCount": 33,
+    "characterRefCount": 34,
     "title": "Melba",
-    "length": 16415
+    "length": 16376
   },
   {
     "chapter": 32,
     "book": 3,
-    "letterIndex": 2450072,
+    "letterIndex": 2442410,
     "chapterFlat": 141,
     "characterRefCount": 57,
     "title": "Anna",
-    "length": 15206
+    "length": 15153
   },
   {
     "chapter": 33,
     "book": 3,
-    "letterIndex": 2465278,
+    "letterIndex": 2457563,
     "chapterFlat": 142,
-    "characterRefCount": 92,
+    "characterRefCount": 97,
     "title": "Bull",
-    "length": 16530
+    "length": 16462
   },
   {
     "chapter": 34,
     "book": 3,
-    "letterIndex": 2481808,
+    "letterIndex": 2474025,
     "chapterFlat": 143,
     "characterRefCount": 73,
     "title": "Clarissa",
-    "length": 10425
+    "length": 10378
   },
   {
     "chapter": 35,
     "book": 3,
-    "letterIndex": 2492233,
+    "letterIndex": 2484403,
     "chapterFlat": 144,
-    "characterRefCount": 54,
+    "characterRefCount": 55,
     "title": "Anna",
-    "length": 11091
+    "length": 11059
   },
   {
     "chapter": 36,
     "book": 3,
-    "letterIndex": 2503324,
+    "letterIndex": 2495462,
     "chapterFlat": 145,
-    "characterRefCount": 119,
+    "characterRefCount": 127,
     "title": "Holden",
-    "length": 18495
+    "length": 18424
   },
   {
     "chapter": 37,
     "book": 3,
-    "letterIndex": 2521819,
+    "letterIndex": 2513886,
     "chapterFlat": 146,
-    "characterRefCount": 40,
+    "characterRefCount": 41,
     "title": "Clarissa",
-    "length": 14710
+    "length": 14655
   },
   {
     "chapter": 38,
     "book": 3,
-    "letterIndex": 2536529,
+    "letterIndex": 2528541,
     "chapterFlat": 147,
-    "characterRefCount": 53,
+    "characterRefCount": 64,
     "title": "Bull",
-    "length": 16663
+    "length": 16600
   },
   {
     "chapter": 39,
     "book": 3,
-    "letterIndex": 2553192,
+    "letterIndex": 2545141,
     "chapterFlat": 148,
     "characterRefCount": 91,
     "title": "Anna",
-    "length": 17339
+    "length": 17299
   },
   {
     "chapter": 40,
     "book": 3,
-    "letterIndex": 2570531,
+    "letterIndex": 2562440,
     "chapterFlat": 149,
-    "characterRefCount": 139,
+    "characterRefCount": 140,
     "title": "Holden",
-    "length": 16471
+    "length": 16413
   },
   {
     "chapter": 41,
     "book": 3,
-    "letterIndex": 2587002,
+    "letterIndex": 2578853,
     "chapterFlat": 150,
-    "characterRefCount": 97,
+    "characterRefCount": 100,
     "title": "Bull",
-    "length": 14673
+    "length": 14617
   },
   {
     "chapter": 42,
     "book": 3,
-    "letterIndex": 2601675,
+    "letterIndex": 2593470,
     "chapterFlat": 151,
     "characterRefCount": 59,
     "title": "Clarissa",
-    "length": 16450
+    "length": 16408
   },
   {
     "chapter": 43,
     "book": 3,
-    "letterIndex": 2618125,
+    "letterIndex": 2609878,
     "chapterFlat": 152,
     "characterRefCount": 148,
     "title": "Holden",
-    "length": 14764
+    "length": 14707
   },
   {
     "chapter": 44,
     "book": 3,
-    "letterIndex": 2632889,
+    "letterIndex": 2624585,
     "chapterFlat": 153,
-    "characterRefCount": 124,
+    "characterRefCount": 125,
     "title": "Anna",
-    "length": 15073
+    "length": 15020
   },
   {
     "chapter": 45,
     "book": 3,
-    "letterIndex": 2647962,
+    "letterIndex": 2639605,
     "chapterFlat": 154,
-    "characterRefCount": 92,
+    "characterRefCount": 94,
     "title": "Bull",
-    "length": 17862
+    "length": 17823
   },
   {
     "chapter": 46,
     "book": 3,
-    "letterIndex": 2665824,
+    "letterIndex": 2657428,
     "chapterFlat": 155,
-    "characterRefCount": 88,
+    "characterRefCount": 89,
     "title": "Clarissa",
-    "length": 17913
+    "length": 17849
   },
   {
     "chapter": 47,
     "book": 3,
-    "letterIndex": 2683737,
+    "letterIndex": 2675277,
     "chapterFlat": 156,
     "characterRefCount": 77,
     "title": "Holden",
-    "length": 13849
+    "length": 13810
   },
   {
     "chapter": 48,
     "book": 3,
-    "letterIndex": 2697586,
+    "letterIndex": 2689087,
     "chapterFlat": 157,
-    "characterRefCount": 76,
+    "characterRefCount": 77,
     "title": "Bull",
-    "length": 16820
+    "length": 16773
   },
   {
     "chapter": 49,
     "book": 3,
-    "letterIndex": 2714406,
+    "letterIndex": 2705860,
     "chapterFlat": 158,
     "characterRefCount": 109,
     "title": "Anna",
-    "length": 14296
+    "length": 14247
   },
   {
     "chapter": 50,
     "book": 3,
-    "letterIndex": 2728702,
+    "letterIndex": 2720107,
     "chapterFlat": 159,
     "characterRefCount": 76,
     "title": "Holden",
-    "length": 15657
+    "length": 15613
   },
   {
     "chapter": 51,
     "book": 3,
-    "letterIndex": 2744359,
+    "letterIndex": 2735720,
     "chapterFlat": 160,
     "characterRefCount": 41,
     "title": "Clarissa",
-    "length": 11883
+    "length": 11863
   },
   {
     "chapter": 52,
     "book": 3,
-    "letterIndex": 2756242,
+    "letterIndex": 2747583,
     "chapterFlat": 161,
     "characterRefCount": 48,
     "title": "Holden",
-    "length": 11624
+    "length": 11581
   },
   {
     "chapter": 53,
     "book": 3,
-    "letterIndex": 2767866,
+    "letterIndex": 2759164,
     "chapterFlat": 162,
-    "characterRefCount": 124,
+    "characterRefCount": 128,
     "title": "Clarissa",
-    "length": 75486
+    "length": 75276
   },
   {
     "chapter": 1,
     "book": 4,
-    "letterIndex": 2843352,
+    "letterIndex": 2834440,
     "chapterFlat": 163,
-    "characterRefCount": 40,
+    "characterRefCount": 43,
     "title": "Basia",
-    "length": 16472
+    "length": 16420
   },
   {
     "chapter": 2,
     "book": 4,
-    "letterIndex": 2859824,
+    "letterIndex": 2850860,
     "chapterFlat": 164,
-    "characterRefCount": 37,
+    "characterRefCount": 57,
     "title": "Elvi",
-    "length": 18235
+    "length": 18185
   },
   {
     "chapter": 3,
     "book": 4,
-    "letterIndex": 2878059,
+    "letterIndex": 2869045,
     "chapterFlat": 165,
-    "characterRefCount": 33,
+    "characterRefCount": 61,
     "title": "Havelock",
-    "length": 17512
+    "length": 17444
   },
   {
     "chapter": 4,
     "book": 4,
-    "letterIndex": 2895571,
+    "letterIndex": 2886489,
     "chapterFlat": 166,
-    "characterRefCount": 113,
+    "characterRefCount": 112,
     "title": "Holden",
-    "length": 18268
+    "length": 18200
   },
   {
     "chapter": 5,
     "book": 4,
-    "letterIndex": 2913839,
+    "letterIndex": 2904689,
     "chapterFlat": 167,
-    "characterRefCount": 38,
+    "characterRefCount": 42,
     "title": "Basia",
-    "length": 16029
+    "length": 15953
   },
   {
     "chapter": 6,
     "book": 4,
-    "letterIndex": 2929868,
+    "letterIndex": 2920642,
     "chapterFlat": 168,
-    "characterRefCount": 44,
+    "characterRefCount": 55,
     "title": "Elvi",
-    "length": 16568
+    "length": 16543
   },
   {
     "chapter": 7,
     "book": 4,
-    "letterIndex": 2946436,
+    "letterIndex": 2937185,
     "chapterFlat": 169,
     "characterRefCount": 82,
     "title": "Holden",
-    "length": 15136
+    "length": 15085
   },
   {
     "chapter": 8,
     "book": 4,
-    "letterIndex": 2961572,
+    "letterIndex": 2952270,
     "chapterFlat": 170,
-    "characterRefCount": 31,
+    "characterRefCount": 57,
     "title": "Elvi",
-    "length": 12913
+    "length": 12876
   },
   {
     "chapter": 9,
     "book": 4,
-    "letterIndex": 2974485,
+    "letterIndex": 2965146,
     "chapterFlat": 171,
     "characterRefCount": 53,
     "title": "Basia",
-    "length": 15715
+    "length": 15696
   },
   {
     "chapter": 10,
     "book": 4,
-    "letterIndex": 2990200,
+    "letterIndex": 2980842,
     "chapterFlat": 172,
-    "characterRefCount": 33,
+    "characterRefCount": 57,
     "title": "Havelock",
-    "length": 14577
+    "length": 14516
   },
   {
     "chapter": 11,
     "book": 4,
-    "letterIndex": 3004777,
+    "letterIndex": 2995358,
     "chapterFlat": 173,
-    "characterRefCount": 96,
+    "characterRefCount": 125,
     "title": "Holden",
-    "length": 19778
+    "length": 19718
   },
   {
     "chapter": 12,
     "book": 4,
-    "letterIndex": 3024555,
+    "letterIndex": 3015076,
     "chapterFlat": 174,
-    "characterRefCount": 64,
+    "characterRefCount": 81,
     "title": "Basia",
-    "length": 15309
+    "length": 15264
   },
   {
     "chapter": 13,
     "book": 4,
-    "letterIndex": 3039864,
+    "letterIndex": 3030340,
     "chapterFlat": 175,
-    "characterRefCount": 66,
+    "characterRefCount": 94,
     "title": "Elvi",
-    "length": 16490
+    "length": 16415
   },
   {
     "chapter": 14,
     "book": 4,
-    "letterIndex": 3056354,
+    "letterIndex": 3046755,
     "chapterFlat": 176,
-    "characterRefCount": 97,
+    "characterRefCount": 116,
     "title": "Holden",
-    "length": 15935
+    "length": 15844
   },
   {
     "chapter": 15,
     "book": 4,
-    "letterIndex": 3072289,
+    "letterIndex": 3062599,
     "chapterFlat": 177,
-    "characterRefCount": 44,
+    "characterRefCount": 58,
     "title": "Havelock",
-    "length": 14956
+    "length": 14896
   },
   {
     "chapter": 16,
     "book": 4,
-    "letterIndex": 3087245,
+    "letterIndex": 3077495,
     "chapterFlat": 178,
-    "characterRefCount": 53,
+    "characterRefCount": 67,
     "title": "Elvi",
-    "length": 17106
+    "length": 17031
   },
   {
     "chapter": 17,
     "book": 4,
-    "letterIndex": 3104351,
+    "letterIndex": 3094526,
     "chapterFlat": 179,
-    "characterRefCount": 78,
+    "characterRefCount": 85,
     "title": "Basia",
-    "length": 15980
+    "length": 15917
   },
   {
     "chapter": 18,
     "book": 4,
-    "letterIndex": 3120331,
+    "letterIndex": 3110443,
     "chapterFlat": 180,
-    "characterRefCount": 89,
+    "characterRefCount": 132,
     "title": "Holden",
-    "length": 18547
+    "length": 18469
   },
   {
     "chapter": 19,
     "book": 4,
-    "letterIndex": 3138878,
+    "letterIndex": 3128912,
     "chapterFlat": 181,
-    "characterRefCount": 44,
-    "title": "Havelock",
-    "length": 16563
-  },
-  {
-    "chapter": 20,
-    "book": 4,
-    "letterIndex": 3155441,
-    "chapterFlat": 182,
-    "characterRefCount": 42,
-    "title": "Elvi",
-    "length": 11608
-  },
-  {
-    "chapter": 21,
-    "book": 4,
-    "letterIndex": 3167049,
-    "chapterFlat": 183,
-    "characterRefCount": 116,
-    "title": "Basia",
-    "length": 17207
-  },
-  {
-    "chapter": 22,
-    "book": 4,
-    "letterIndex": 3184256,
-    "chapterFlat": 184,
     "characterRefCount": 45,
-    "title": "Havelock",
-    "length": 20873
-  },
-  {
-    "chapter": 23,
-    "book": 4,
-    "letterIndex": 3205129,
-    "chapterFlat": 185,
-    "characterRefCount": 104,
-    "title": "Holden",
-    "length": 15703
-  },
-  {
-    "chapter": 24,
-    "book": 4,
-    "letterIndex": 3220832,
-    "chapterFlat": 186,
-    "characterRefCount": 60,
-    "title": "Elvi",
-    "length": 17005
-  },
-  {
-    "chapter": 25,
-    "book": 4,
-    "letterIndex": 3237837,
-    "chapterFlat": 187,
-    "characterRefCount": 102,
-    "title": "Basia",
-    "length": 17126
-  },
-  {
-    "chapter": 26,
-    "book": 4,
-    "letterIndex": 3254963,
-    "chapterFlat": 188,
-    "characterRefCount": 59,
-    "title": "Havelock",
-    "length": 15754
-  },
-  {
-    "chapter": 27,
-    "book": 4,
-    "letterIndex": 3270717,
-    "chapterFlat": 189,
-    "characterRefCount": 47,
-    "title": "Elvi",
-    "length": 16798
-  },
-  {
-    "chapter": 28,
-    "book": 4,
-    "letterIndex": 3287515,
-    "chapterFlat": 190,
-    "characterRefCount": 59,
-    "title": "Basia",
-    "length": 15254
-  },
-  {
-    "chapter": 29,
-    "book": 4,
-    "letterIndex": 3302769,
-    "chapterFlat": 191,
-    "characterRefCount": 112,
-    "title": "Holden",
-    "length": 17105
-  },
-  {
-    "chapter": 30,
-    "book": 4,
-    "letterIndex": 3319874,
-    "chapterFlat": 192,
-    "characterRefCount": 38,
-    "title": "Elvi",
-    "length": 16941
-  },
-  {
-    "chapter": 31,
-    "book": 4,
-    "letterIndex": 3336815,
-    "chapterFlat": 193,
-    "characterRefCount": 82,
-    "title": "Holden",
-    "length": 15523
-  },
-  {
-    "chapter": 32,
-    "book": 4,
-    "letterIndex": 3352338,
-    "chapterFlat": 194,
-    "characterRefCount": 66,
-    "title": "Havelock",
-    "length": 17260
-  },
-  {
-    "chapter": 33,
-    "book": 4,
-    "letterIndex": 3369598,
-    "chapterFlat": 195,
-    "characterRefCount": 87,
-    "title": "Basia",
-    "length": 16289
-  },
-  {
-    "chapter": 34,
-    "book": 4,
-    "letterIndex": 3385887,
-    "chapterFlat": 196,
-    "characterRefCount": 92,
-    "title": "Holden",
-    "length": 15110
-  },
-  {
-    "chapter": 35,
-    "book": 4,
-    "letterIndex": 3400997,
-    "chapterFlat": 197,
-    "characterRefCount": 39,
-    "title": "Elvi",
-    "length": 15724
-  },
-  {
-    "chapter": 36,
-    "book": 4,
-    "letterIndex": 3416721,
-    "chapterFlat": 198,
-    "characterRefCount": 55,
-    "title": "Havelock",
-    "length": 16390
-  },
-  {
-    "chapter": 37,
-    "book": 4,
-    "letterIndex": 3433111,
-    "chapterFlat": 199,
-    "characterRefCount": 52,
-    "title": "Elvi",
-    "length": 17729
-  },
-  {
-    "chapter": 38,
-    "book": 4,
-    "letterIndex": 3450840,
-    "chapterFlat": 200,
-    "characterRefCount": 81,
-    "title": "Holden",
-    "length": 16980
-  },
-  {
-    "chapter": 39,
-    "book": 4,
-    "letterIndex": 3467820,
-    "chapterFlat": 201,
-    "characterRefCount": 88,
-    "title": "Basia",
-    "length": 16214
-  },
-  {
-    "chapter": 40,
-    "book": 4,
-    "letterIndex": 3484034,
-    "chapterFlat": 202,
-    "characterRefCount": 51,
     "title": "Havelock",
     "length": 16527
   },
   {
+    "chapter": 20,
+    "book": 4,
+    "letterIndex": 3145439,
+    "chapterFlat": 182,
+    "characterRefCount": 61,
+    "title": "Elvi",
+    "length": 11580
+  },
+  {
+    "chapter": 21,
+    "book": 4,
+    "letterIndex": 3157019,
+    "chapterFlat": 183,
+    "characterRefCount": 123,
+    "title": "Basia",
+    "length": 17141
+  },
+  {
+    "chapter": 22,
+    "book": 4,
+    "letterIndex": 3174160,
+    "chapterFlat": 184,
+    "characterRefCount": 45,
+    "title": "Havelock",
+    "length": 20838
+  },
+  {
+    "chapter": 23,
+    "book": 4,
+    "letterIndex": 3194998,
+    "chapterFlat": 185,
+    "characterRefCount": 125,
+    "title": "Holden",
+    "length": 15644
+  },
+  {
+    "chapter": 24,
+    "book": 4,
+    "letterIndex": 3210642,
+    "chapterFlat": 186,
+    "characterRefCount": 78,
+    "title": "Elvi",
+    "length": 16957
+  },
+  {
+    "chapter": 25,
+    "book": 4,
+    "letterIndex": 3227599,
+    "chapterFlat": 187,
+    "characterRefCount": 102,
+    "title": "Basia",
+    "length": 17040
+  },
+  {
+    "chapter": 26,
+    "book": 4,
+    "letterIndex": 3244639,
+    "chapterFlat": 188,
+    "characterRefCount": 67,
+    "title": "Havelock",
+    "length": 15676
+  },
+  {
+    "chapter": 27,
+    "book": 4,
+    "letterIndex": 3260315,
+    "chapterFlat": 189,
+    "characterRefCount": 56,
+    "title": "Elvi",
+    "length": 16728
+  },
+  {
+    "chapter": 28,
+    "book": 4,
+    "letterIndex": 3277043,
+    "chapterFlat": 190,
+    "characterRefCount": 67,
+    "title": "Basia",
+    "length": 15220
+  },
+  {
+    "chapter": 29,
+    "book": 4,
+    "letterIndex": 3292263,
+    "chapterFlat": 191,
+    "characterRefCount": 127,
+    "title": "Holden",
+    "length": 17037
+  },
+  {
+    "chapter": 30,
+    "book": 4,
+    "letterIndex": 3309300,
+    "chapterFlat": 192,
+    "characterRefCount": 52,
+    "title": "Elvi",
+    "length": 16902
+  },
+  {
+    "chapter": 31,
+    "book": 4,
+    "letterIndex": 3326202,
+    "chapterFlat": 193,
+    "characterRefCount": 102,
+    "title": "Holden",
+    "length": 15471
+  },
+  {
+    "chapter": 32,
+    "book": 4,
+    "letterIndex": 3341673,
+    "chapterFlat": 194,
+    "characterRefCount": 81,
+    "title": "Havelock",
+    "length": 17198
+  },
+  {
+    "chapter": 33,
+    "book": 4,
+    "letterIndex": 3358871,
+    "chapterFlat": 195,
+    "characterRefCount": 89,
+    "title": "Basia",
+    "length": 16239
+  },
+  {
+    "chapter": 34,
+    "book": 4,
+    "letterIndex": 3375110,
+    "chapterFlat": 196,
+    "characterRefCount": 106,
+    "title": "Holden",
+    "length": 15046
+  },
+  {
+    "chapter": 35,
+    "book": 4,
+    "letterIndex": 3390156,
+    "chapterFlat": 197,
+    "characterRefCount": 61,
+    "title": "Elvi",
+    "length": 15674
+  },
+  {
+    "chapter": 36,
+    "book": 4,
+    "letterIndex": 3405830,
+    "chapterFlat": 198,
+    "characterRefCount": 66,
+    "title": "Havelock",
+    "length": 16338
+  },
+  {
+    "chapter": 37,
+    "book": 4,
+    "letterIndex": 3422168,
+    "chapterFlat": 199,
+    "characterRefCount": 66,
+    "title": "Elvi",
+    "length": 17673
+  },
+  {
+    "chapter": 38,
+    "book": 4,
+    "letterIndex": 3439841,
+    "chapterFlat": 200,
+    "characterRefCount": 98,
+    "title": "Holden",
+    "length": 16910
+  },
+  {
+    "chapter": 39,
+    "book": 4,
+    "letterIndex": 3456751,
+    "chapterFlat": 201,
+    "characterRefCount": 95,
+    "title": "Basia",
+    "length": 16157
+  },
+  {
+    "chapter": 40,
+    "book": 4,
+    "letterIndex": 3472908,
+    "chapterFlat": 202,
+    "characterRefCount": 67,
+    "title": "Havelock",
+    "length": 16475
+  },
+  {
     "chapter": 41,
     "book": 4,
-    "letterIndex": 3500561,
+    "letterIndex": 3489383,
     "chapterFlat": 203,
-    "characterRefCount": 36,
+    "characterRefCount": 53,
     "title": "Elvi",
-    "length": 16074
+    "length": 16000
   },
   {
     "chapter": 42,
     "book": 4,
-    "letterIndex": 3516635,
+    "letterIndex": 3505383,
     "chapterFlat": 204,
-    "characterRefCount": 69,
+    "characterRefCount": 71,
     "title": "Havelock",
-    "length": 16874
+    "length": 16829
   },
   {
     "chapter": 43,
     "book": 4,
-    "letterIndex": 3533509,
+    "letterIndex": 3522212,
     "chapterFlat": 205,
-    "characterRefCount": 127,
+    "characterRefCount": 128,
     "title": "Basia",
-    "length": 16735
+    "length": 16658
   },
   {
     "chapter": 44,
     "book": 4,
-    "letterIndex": 3550244,
+    "letterIndex": 3538870,
     "chapterFlat": 206,
-    "characterRefCount": 115,
+    "characterRefCount": 134,
     "title": "Holden",
-    "length": 20078
+    "length": 20025
   },
   {
     "chapter": 45,
     "book": 4,
-    "letterIndex": 3570322,
+    "letterIndex": 3558895,
     "chapterFlat": 207,
-    "characterRefCount": 121,
+    "characterRefCount": 125,
     "title": "Havelock",
-    "length": 17491
+    "length": 17428
   },
   {
     "chapter": 46,
     "book": 4,
-    "letterIndex": 3587813,
+    "letterIndex": 3576323,
     "chapterFlat": 208,
-    "characterRefCount": 75,
+    "characterRefCount": 100,
     "title": "Elvi",
-    "length": 16716
+    "length": 16649
   },
   {
     "chapter": 47,
     "book": 4,
-    "letterIndex": 3604529,
+    "letterIndex": 3592972,
     "chapterFlat": 209,
     "characterRefCount": 109,
     "title": "Basia",
-    "length": 16876
+    "length": 16800
   },
   {
     "chapter": 48,
     "book": 4,
-    "letterIndex": 3621405,
+    "letterIndex": 3609772,
     "chapterFlat": 210,
     "characterRefCount": 79,
     "title": "Holden",
-    "length": 16955
+    "length": 16914
   },
   {
     "chapter": 49,
     "book": 4,
-    "letterIndex": 3638360,
+    "letterIndex": 3626686,
     "chapterFlat": 211,
-    "characterRefCount": 66,
+    "characterRefCount": 69,
     "title": "Havelock",
-    "length": 16941
+    "length": 16885
   },
   {
     "chapter": 50,
     "book": 4,
-    "letterIndex": 3655301,
+    "letterIndex": 3643571,
     "chapterFlat": 212,
-    "characterRefCount": 64,
+    "characterRefCount": 103,
     "title": "Elvi",
-    "length": 16011
+    "length": 15970
   },
   {
     "chapter": 51,
     "book": 4,
-    "letterIndex": 3671312,
+    "letterIndex": 3659541,
     "chapterFlat": 213,
-    "characterRefCount": 87,
+    "characterRefCount": 96,
     "title": "Basia",
-    "length": 17295
+    "length": 17257
   },
   {
     "chapter": 52,
     "book": 4,
-    "letterIndex": 3688607,
+    "letterIndex": 3676798,
     "chapterFlat": 214,
-    "characterRefCount": 53,
+    "characterRefCount": 82,
     "title": "Elvi",
-    "length": 16564
+    "length": 16534
   },
   {
     "chapter": 53,
     "book": 4,
-    "letterIndex": 3705171,
+    "letterIndex": 3693332,
     "chapterFlat": 215,
-    "characterRefCount": 49,
+    "characterRefCount": 95,
     "title": "Holden",
-    "length": 11929
+    "length": 11884
   },
   {
     "chapter": 54,
     "book": 4,
-    "letterIndex": 3717100,
+    "letterIndex": 3705216,
     "chapterFlat": 216,
     "characterRefCount": 50,
     "title": "Elvi",
-    "length": 16679
+    "length": 16650
   },
   {
     "chapter": 55,
     "book": 4,
-    "letterIndex": 3733779,
+    "letterIndex": 3721866,
     "chapterFlat": 217,
-    "characterRefCount": 58,
+    "characterRefCount": 60,
     "title": "Havelock",
-    "length": 17130
+    "length": 17068
   },
   {
     "chapter": 56,
     "book": 4,
-    "letterIndex": 3750909,
+    "letterIndex": 3738934,
     "chapterFlat": 218,
-    "characterRefCount": 191,
+    "characterRefCount": 202,
     "title": "Holden",
-    "length": 49963
+    "length": 49819
   },
   {
     "chapter": 1,
     "book": 5,
-    "letterIndex": 3800872,
+    "letterIndex": 3788753,
     "chapterFlat": 219,
-    "characterRefCount": 99,
+    "characterRefCount": 100,
     "title": "Holden",
-    "length": 17045
+    "length": 16986
   },
   {
     "chapter": 2,
     "book": 5,
-    "letterIndex": 3817917,
+    "letterIndex": 3805739,
     "chapterFlat": 220,
     "characterRefCount": 106,
     "title": "Alex",
-    "length": 16297
+    "length": 16259
   },
   {
     "chapter": 3,
     "book": 5,
-    "letterIndex": 3834214,
+    "letterIndex": 3821998,
     "chapterFlat": 221,
     "characterRefCount": 74,
     "title": "Naomi",
-    "length": 16296
+    "length": 16243
   },
   {
     "chapter": 4,
     "book": 5,
-    "letterIndex": 3850510,
+    "letterIndex": 3838241,
     "chapterFlat": 222,
-    "characterRefCount": 59,
+    "characterRefCount": 64,
     "title": "Amos",
-    "length": 17134
+    "length": 17104
   },
   {
     "chapter": 5,
     "book": 5,
-    "letterIndex": 3867644,
+    "letterIndex": 3855345,
     "chapterFlat": 223,
     "characterRefCount": 107,
     "title": "Holden",
-    "length": 18523
+    "length": 18467
   },
   {
     "chapter": 6,
     "book": 5,
-    "letterIndex": 3886167,
+    "letterIndex": 3873812,
     "chapterFlat": 224,
     "characterRefCount": 29,
     "title": "Alex",
-    "length": 16918
+    "length": 16890
   },
   {
     "chapter": 7,
     "book": 5,
-    "letterIndex": 3903085,
+    "letterIndex": 3890702,
     "chapterFlat": 225,
-    "characterRefCount": 55,
+    "characterRefCount": 64,
     "title": "Amos",
-    "length": 16476
+    "length": 16447
   },
   {
     "chapter": 8,
     "book": 5,
-    "letterIndex": 3919561,
+    "letterIndex": 3907149,
     "chapterFlat": 226,
-    "characterRefCount": 87,
+    "characterRefCount": 86,
     "title": "Holden",
-    "length": 17218
+    "length": 17145
   },
   {
     "chapter": 9,
     "book": 5,
-    "letterIndex": 3936779,
+    "letterIndex": 3924294,
     "chapterFlat": 227,
     "characterRefCount": 33,
     "title": "Naomi",
-    "length": 16674
+    "length": 16654
   },
   {
     "chapter": 10,
     "book": 5,
-    "letterIndex": 3953453,
+    "letterIndex": 3940948,
     "chapterFlat": 228,
-    "characterRefCount": 62,
+    "characterRefCount": 75,
     "title": "Amos",
-    "length": 16963
+    "length": 16919
   },
   {
     "chapter": 11,
     "book": 5,
-    "letterIndex": 3970416,
+    "letterIndex": 3957867,
     "chapterFlat": 229,
     "characterRefCount": 77,
     "title": "Alex",
-    "length": 16498
+    "length": 16464
   },
   {
     "chapter": 12,
     "book": 5,
-    "letterIndex": 3986914,
+    "letterIndex": 3974331,
     "chapterFlat": 230,
-    "characterRefCount": 103,
+    "characterRefCount": 108,
     "title": "Amos",
-    "length": 17286
+    "length": 17237
   },
   {
     "chapter": 13,
     "book": 5,
-    "letterIndex": 4004200,
+    "letterIndex": 3991568,
     "chapterFlat": 231,
-    "characterRefCount": 62,
+    "characterRefCount": 60,
     "title": "Holden",
-    "length": 17469
+    "length": 17424
   },
   {
     "chapter": 14,
     "book": 5,
-    "letterIndex": 4021669,
+    "letterIndex": 4008992,
     "chapterFlat": 232,
     "characterRefCount": 68,
     "title": "Naomi",
-    "length": 20255
+    "length": 20229
   },
   {
     "chapter": 15,
     "book": 5,
-    "letterIndex": 4041924,
+    "letterIndex": 4029221,
     "chapterFlat": 233,
     "characterRefCount": 85,
     "title": "Alex",
-    "length": 16943
+    "length": 16898
   },
   {
     "chapter": 16,
     "book": 5,
-    "letterIndex": 4058867,
+    "letterIndex": 4046119,
     "chapterFlat": 234,
     "characterRefCount": 97,
     "title": "Holden",
-    "length": 17057
+    "length": 17003
   },
   {
     "chapter": 17,
     "book": 5,
-    "letterIndex": 4075924,
+    "letterIndex": 4063122,
     "chapterFlat": 235,
-    "characterRefCount": 60,
+    "characterRefCount": 61,
     "title": "Alex",
-    "length": 17299
+    "length": 17226
   },
   {
     "chapter": 18,
     "book": 5,
-    "letterIndex": 4093223,
+    "letterIndex": 4080348,
     "chapterFlat": 236,
     "characterRefCount": 123,
     "title": "Holden",
-    "length": 17138
+    "length": 17091
   },
   {
     "chapter": 19,
     "book": 5,
-    "letterIndex": 4110361,
+    "letterIndex": 4097439,
     "chapterFlat": 237,
     "characterRefCount": 49,
     "title": "Naomi",
-    "length": 16962
+    "length": 16909
   },
   {
     "chapter": 20,
     "book": 5,
-    "letterIndex": 4127323,
+    "letterIndex": 4114348,
     "chapterFlat": 238,
     "characterRefCount": 54,
     "title": "Alex",
-    "length": 17237
+    "length": 17207
   },
   {
     "chapter": 21,
     "book": 5,
-    "letterIndex": 4144560,
+    "letterIndex": 4131555,
     "chapterFlat": 239,
     "characterRefCount": 59,
     "title": "Naomi",
-    "length": 16367
+    "length": 16323
   },
   {
     "chapter": 22,
     "book": 5,
-    "letterIndex": 4160927,
+    "letterIndex": 4147878,
     "chapterFlat": 240,
     "characterRefCount": 54,
     "title": "Amos",
-    "length": 17909
+    "length": 17851
   },
   {
     "chapter": 23,
     "book": 5,
-    "letterIndex": 4178836,
+    "letterIndex": 4165729,
     "chapterFlat": 241,
     "characterRefCount": 116,
     "title": "Holden",
-    "length": 17850
+    "length": 17794
   },
   {
     "chapter": 24,
     "book": 5,
-    "letterIndex": 4196686,
+    "letterIndex": 4183523,
     "chapterFlat": 242,
     "characterRefCount": 64,
     "title": "Amos",
-    "length": 18219
+    "length": 18164
   },
   {
     "chapter": 25,
     "book": 5,
-    "letterIndex": 4214905,
+    "letterIndex": 4201687,
     "chapterFlat": 243,
     "characterRefCount": 54,
     "title": "Naomi",
-    "length": 18673
+    "length": 18603
   },
   {
     "chapter": 26,
     "book": 5,
-    "letterIndex": 4233578,
+    "letterIndex": 4220290,
     "chapterFlat": 244,
-    "characterRefCount": 67,
+    "characterRefCount": 68,
     "title": "Amos",
-    "length": 17171
+    "length": 17139
   },
   {
     "chapter": 27,
     "book": 5,
-    "letterIndex": 4250749,
+    "letterIndex": 4237429,
     "chapterFlat": 245,
-    "characterRefCount": 69,
+    "characterRefCount": 72,
     "title": "Alex",
-    "length": 17527
+    "length": 17458
   },
   {
     "chapter": 28,
     "book": 5,
-    "letterIndex": 4268276,
+    "letterIndex": 4254887,
     "chapterFlat": 246,
     "characterRefCount": 99,
     "title": "Holden",
-    "length": 17502
+    "length": 17435
   },
   {
     "chapter": 29,
     "book": 5,
-    "letterIndex": 4285778,
+    "letterIndex": 4272322,
     "chapterFlat": 247,
     "characterRefCount": 46,
     "title": "Naomi",
-    "length": 16398
+    "length": 16355
   },
   {
     "chapter": 30,
     "book": 5,
-    "letterIndex": 4302176,
+    "letterIndex": 4288677,
     "chapterFlat": 248,
-    "characterRefCount": 51,
+    "characterRefCount": 52,
     "title": "Amos",
-    "length": 17730
+    "length": 17683
   },
   {
     "chapter": 31,
     "book": 5,
-    "letterIndex": 4319906,
+    "letterIndex": 4306360,
     "chapterFlat": 249,
-    "characterRefCount": 80,
+    "characterRefCount": 81,
     "title": "Alex",
-    "length": 16628
+    "length": 16565
   },
   {
     "chapter": 32,
     "book": 5,
-    "letterIndex": 4336534,
+    "letterIndex": 4322925,
     "chapterFlat": 250,
     "characterRefCount": 19,
     "title": "Naomi",
-    "length": 16634
+    "length": 16616
   },
   {
     "chapter": 33,
     "book": 5,
-    "letterIndex": 4353168,
+    "letterIndex": 4339541,
     "chapterFlat": 251,
-    "characterRefCount": 102,
+    "characterRefCount": 103,
     "title": "Holden",
-    "length": 16531
+    "length": 16475
   },
   {
     "chapter": 34,
     "book": 5,
-    "letterIndex": 4369699,
+    "letterIndex": 4356016,
     "chapterFlat": 252,
-    "characterRefCount": 77,
+    "characterRefCount": 82,
     "title": "Alex",
-    "length": 17191
+    "length": 17144
   },
   {
     "chapter": 35,
     "book": 5,
-    "letterIndex": 4386890,
+    "letterIndex": 4373160,
     "chapterFlat": 253,
-    "characterRefCount": 54,
+    "characterRefCount": 55,
     "title": "Naomi",
-    "length": 16493
+    "length": 16438
   },
   {
     "chapter": 36,
     "book": 5,
-    "letterIndex": 4403383,
+    "letterIndex": 4389598,
     "chapterFlat": 254,
-    "characterRefCount": 68,
+    "characterRefCount": 69,
     "title": "Holden",
-    "length": 16946
+    "length": 16879
   },
   {
     "chapter": 37,
     "book": 5,
-    "letterIndex": 4420329,
+    "letterIndex": 4406477,
     "chapterFlat": 255,
-    "characterRefCount": 71,
+    "characterRefCount": 85,
     "title": "Alex",
-    "length": 16380
+    "length": 16324
   },
   {
     "chapter": 38,
     "book": 5,
-    "letterIndex": 4436709,
+    "letterIndex": 4422801,
     "chapterFlat": 256,
     "characterRefCount": 92,
     "title": "Amos",
-    "length": 17225
+    "length": 17166
   },
   {
     "chapter": 39,
     "book": 5,
-    "letterIndex": 4453934,
+    "letterIndex": 4439967,
     "chapterFlat": 257,
     "characterRefCount": 32,
     "title": "Naomi",
-    "length": 16381
+    "length": 16330
   },
   {
     "chapter": 40,
     "book": 5,
-    "letterIndex": 4470315,
+    "letterIndex": 4456297,
     "chapterFlat": 258,
-    "characterRefCount": 96,
+    "characterRefCount": 97,
     "title": "Amos",
-    "length": 16407
+    "length": 16337
   },
   {
     "chapter": 41,
     "book": 5,
-    "letterIndex": 4486722,
+    "letterIndex": 4472634,
     "chapterFlat": 259,
     "characterRefCount": 24,
     "title": "Naomi",
-    "length": 17034
+    "length": 17023
   },
   {
     "chapter": 42,
     "book": 5,
-    "letterIndex": 4503756,
+    "letterIndex": 4489657,
     "chapterFlat": 260,
-    "characterRefCount": 91,
+    "characterRefCount": 92,
     "title": "Holden",
-    "length": 16851
+    "length": 16759
   },
   {
     "chapter": 43,
     "book": 5,
-    "letterIndex": 4520607,
+    "letterIndex": 4506416,
     "chapterFlat": 261,
-    "characterRefCount": 59,
+    "characterRefCount": 63,
     "title": "Alex",
-    "length": 12405
+    "length": 12361
   },
   {
     "chapter": 44,
     "book": 5,
-    "letterIndex": 4533012,
+    "letterIndex": 4518777,
     "chapterFlat": 262,
-    "characterRefCount": 19,
+    "characterRefCount": 20,
     "title": "Naomi",
-    "length": 17210
+    "length": 17197
   },
   {
     "chapter": 45,
     "book": 5,
-    "letterIndex": 4550222,
+    "letterIndex": 4535974,
     "chapterFlat": 263,
-    "characterRefCount": 93,
+    "characterRefCount": 96,
     "title": "Amos",
-    "length": 16853
+    "length": 16804
   },
   {
     "chapter": 46,
     "book": 5,
-    "letterIndex": 4567075,
+    "letterIndex": 4552778,
     "chapterFlat": 264,
-    "characterRefCount": 69,
+    "characterRefCount": 71,
     "title": "Alex",
-    "length": 10977
+    "length": 10936
   },
   {
     "chapter": 47,
     "book": 5,
-    "letterIndex": 4578052,
+    "letterIndex": 4563714,
     "chapterFlat": 265,
     "characterRefCount": 54,
     "title": "Naomi",
-    "length": 11542
+    "length": 11527
   },
   {
     "chapter": 48,
     "book": 5,
-    "letterIndex": 4589594,
+    "letterIndex": 4575241,
     "chapterFlat": 266,
-    "characterRefCount": 105,
+    "characterRefCount": 113,
     "title": "Holden",
-    "length": 16710
+    "length": 16652
   },
   {
     "chapter": 49,
     "book": 5,
-    "letterIndex": 4606304,
+    "letterIndex": 4591893,
     "chapterFlat": 267,
-    "characterRefCount": 82,
+    "characterRefCount": 85,
     "title": "Amos",
-    "length": 17783
+    "length": 17702
   },
   {
     "chapter": 50,
     "book": 5,
-    "letterIndex": 4624087,
+    "letterIndex": 4609595,
     "chapterFlat": 268,
-    "characterRefCount": 122,
+    "characterRefCount": 124,
     "title": "Alex",
-    "length": 16723
+    "length": 16654
   },
   {
     "chapter": 51,
     "book": 5,
-    "letterIndex": 4640810,
+    "letterIndex": 4626249,
     "chapterFlat": 269,
-    "characterRefCount": 127,
+    "characterRefCount": 145,
     "title": "Naomi",
-    "length": 47851
+    "length": 47737
   },
   {
     "chapter": 1,
     "book": 6,
-    "letterIndex": 4688661,
+    "letterIndex": 4673986,
     "chapterFlat": 270,
     "characterRefCount": 56,
     "title": "Pa",
-    "length": 17763
+    "length": 17719
   },
   {
     "chapter": 2,
     "book": 6,
-    "letterIndex": 4706424,
+    "letterIndex": 4691705,
     "chapterFlat": 271,
     "characterRefCount": 60,
     "title": "Filip",
-    "length": 17076
+    "length": 17043
   },
   {
     "chapter": 3,
     "book": 6,
-    "letterIndex": 4723500,
+    "letterIndex": 4708748,
     "chapterFlat": 272,
-    "characterRefCount": 108,
+    "characterRefCount": 109,
     "title": "Holden",
-    "length": 17667
+    "length": 17615
   },
   {
     "chapter": 4,
     "book": 6,
-    "letterIndex": 4741167,
+    "letterIndex": 4726363,
     "chapterFlat": 273,
-    "characterRefCount": 38,
+    "characterRefCount": 88,
     "title": "Salis",
-    "length": 16950
+    "length": 16903
   },
   {
     "chapter": 5,
     "book": 6,
-    "letterIndex": 4758117,
+    "letterIndex": 4743266,
     "chapterFlat": 274,
     "characterRefCount": 55,
     "title": "Pa",
-    "length": 17177
+    "length": 17133
   },
   {
     "chapter": 6,
     "book": 6,
-    "letterIndex": 4775294,
+    "letterIndex": 4760399,
     "chapterFlat": 275,
     "characterRefCount": 133,
     "title": "Holden",
-    "length": 16873
+    "length": 16820
   },
   {
     "chapter": 7,
     "book": 6,
-    "letterIndex": 4792167,
+    "letterIndex": 4777219,
     "chapterFlat": 276,
-    "characterRefCount": 56,
+    "characterRefCount": 55,
     "title": "Clarissa",
-    "length": 17290
+    "length": 17253
   },
   {
     "chapter": 8,
     "book": 6,
-    "letterIndex": 4809457,
+    "letterIndex": 4794472,
     "chapterFlat": 277,
-    "characterRefCount": 86,
+    "characterRefCount": 92,
     "title": "Dawes",
-    "length": 16996
+    "length": 16942
   },
   {
     "chapter": 9,
     "book": 6,
-    "letterIndex": 4826453,
+    "letterIndex": 4811414,
     "chapterFlat": 278,
     "characterRefCount": 73,
     "title": "Holden",
-    "length": 15883
+    "length": 15822
   },
   {
     "chapter": 10,
     "book": 6,
-    "letterIndex": 4842336,
+    "letterIndex": 4827236,
     "chapterFlat": 279,
-    "characterRefCount": 22,
+    "characterRefCount": 25,
     "title": "Avasarala",
-    "length": 17071
+    "length": 16996
   },
   {
     "chapter": 11,
     "book": 6,
-    "letterIndex": 4859407,
+    "letterIndex": 4844232,
     "chapterFlat": 280,
-    "characterRefCount": 75,
+    "characterRefCount": 73,
     "title": "Pa",
-    "length": 18857
+    "length": 18788
   },
   {
     "chapter": 12,
     "book": 6,
-    "letterIndex": 4878264,
+    "letterIndex": 4863020,
     "chapterFlat": 281,
     "characterRefCount": 97,
     "title": "Holden",
-    "length": 16721
+    "length": 16661
   },
   {
     "chapter": 13,
     "book": 6,
-    "letterIndex": 4894985,
+    "letterIndex": 4879681,
     "chapterFlat": 282,
     "characterRefCount": 37,
     "title": "Prax",
-    "length": 17012
+    "length": 16975
   },
   {
     "chapter": 14,
     "book": 6,
-    "letterIndex": 4911997,
+    "letterIndex": 4896656,
     "chapterFlat": 283,
     "characterRefCount": 55,
     "title": "Filip",
-    "length": 17264
+    "length": 17232
   },
   {
     "chapter": 15,
     "book": 6,
-    "letterIndex": 4929261,
+    "letterIndex": 4913888,
     "chapterFlat": 284,
     "characterRefCount": 56,
     "title": "Pa",
-    "length": 17823
+    "length": 17765
   },
   {
     "chapter": 16,
     "book": 6,
-    "letterIndex": 4947084,
+    "letterIndex": 4931653,
     "chapterFlat": 285,
     "characterRefCount": 105,
     "title": "Alex",
-    "length": 17605
+    "length": 17559
   },
   {
     "chapter": 17,
     "book": 6,
-    "letterIndex": 4964689,
+    "letterIndex": 4949212,
     "chapterFlat": 286,
     "characterRefCount": 72,
     "title": "Holden",
-    "length": 16705
+    "length": 16624
   },
   {
     "chapter": 18,
     "book": 6,
-    "letterIndex": 4981394,
+    "letterIndex": 4965836,
     "chapterFlat": 287,
     "characterRefCount": 64,
     "title": "Filip",
-    "length": 16857
+    "length": 16818
   },
   {
     "chapter": 19,
     "book": 6,
-    "letterIndex": 4998251,
+    "letterIndex": 4982654,
     "chapterFlat": 288,
-    "characterRefCount": 54,
+    "characterRefCount": 56,
     "title": "Pa",
-    "length": 17049
+    "length": 16993
   },
   {
     "chapter": 20,
     "book": 6,
-    "letterIndex": 5015300,
+    "letterIndex": 4999647,
     "chapterFlat": 289,
-    "characterRefCount": 126,
+    "characterRefCount": 129,
     "title": "Naomi",
-    "length": 17352
+    "length": 17277
   },
   {
     "chapter": 21,
     "book": 6,
-    "letterIndex": 5032652,
+    "letterIndex": 5016924,
     "chapterFlat": 290,
-    "characterRefCount": 25,
+    "characterRefCount": 74,
     "title": "Jakulski",
-    "length": 16628
+    "length": 16596
   },
   {
     "chapter": 22,
     "book": 6,
-    "letterIndex": 5049280,
+    "letterIndex": 5033520,
     "chapterFlat": 291,
-    "characterRefCount": 106,
+    "characterRefCount": 105,
     "title": "Holden",
-    "length": 17049
+    "length": 17001
   },
   {
     "chapter": 23,
     "book": 6,
-    "letterIndex": 5066329,
+    "letterIndex": 5050521,
     "chapterFlat": 292,
-    "characterRefCount": 73,
+    "characterRefCount": 72,
     "title": "Pa",
-    "length": 16983
+    "length": 16947
   },
   {
     "chapter": 24,
     "book": 6,
-    "letterIndex": 5083312,
+    "letterIndex": 5067468,
     "chapterFlat": 293,
     "characterRefCount": 37,
     "title": "Prax",
-    "length": 16754
+    "length": 16725
   },
   {
     "chapter": 25,
     "book": 6,
-    "letterIndex": 5100066,
+    "letterIndex": 5084193,
     "chapterFlat": 294,
-    "characterRefCount": 75,
+    "characterRefCount": 76,
     "title": "Fred",
-    "length": 16940
+    "length": 16882
   },
   {
     "chapter": 26,
     "book": 6,
-    "letterIndex": 5117006,
+    "letterIndex": 5101075,
     "chapterFlat": 295,
-    "characterRefCount": 72,
+    "characterRefCount": 70,
     "title": "Filip",
-    "length": 17007
+    "length": 16971
   },
   {
     "chapter": 27,
     "book": 6,
-    "letterIndex": 5134013,
+    "letterIndex": 5118046,
     "chapterFlat": 296,
-    "characterRefCount": 49,
+    "characterRefCount": 48,
     "title": "Bobbie",
-    "length": 17709
+    "length": 17695
   },
   {
     "chapter": 28,
     "book": 6,
-    "letterIndex": 5151722,
+    "letterIndex": 5135741,
     "chapterFlat": 297,
     "characterRefCount": 103,
     "title": "Holden",
-    "length": 16494
+    "length": 16477
   },
   {
     "chapter": 29,
     "book": 6,
-    "letterIndex": 5168216,
+    "letterIndex": 5152218,
     "chapterFlat": 298,
-    "characterRefCount": 30,
+    "characterRefCount": 32,
     "title": "Avasarala",
-    "length": 17172
+    "length": 17138
   },
   {
     "chapter": 30,
     "book": 6,
-    "letterIndex": 5185388,
+    "letterIndex": 5169356,
     "chapterFlat": 299,
-    "characterRefCount": 61,
+    "characterRefCount": 59,
     "title": "Filip",
-    "length": 16434
+    "length": 16403
   },
   {
     "chapter": 31,
     "book": 6,
-    "letterIndex": 5201822,
+    "letterIndex": 5185759,
     "chapterFlat": 300,
-    "characterRefCount": 37,
+    "characterRefCount": 36,
     "title": "Pa",
-    "length": 16999
+    "length": 16948
   },
   {
     "chapter": 32,
     "book": 6,
-    "letterIndex": 5218821,
+    "letterIndex": 5202707,
     "chapterFlat": 301,
-    "characterRefCount": 17,
+    "characterRefCount": 67,
     "title": "Vandercaust",
-    "length": 16640
+    "length": 16611
   },
   {
     "chapter": 33,
     "book": 6,
-    "letterIndex": 5235461,
+    "letterIndex": 5219318,
     "chapterFlat": 302,
-    "characterRefCount": 109,
+    "characterRefCount": 110,
     "title": "Holden",
-    "length": 17248
+    "length": 17182
   },
   {
     "chapter": 34,
     "book": 6,
-    "letterIndex": 5252709,
+    "letterIndex": 5236500,
     "chapterFlat": 303,
-    "characterRefCount": 88,
+    "characterRefCount": 91,
     "title": "Dawes",
-    "length": 17000
+    "length": 16939
   },
   {
     "chapter": 35,
     "book": 6,
-    "letterIndex": 5269709,
+    "letterIndex": 5253439,
     "chapterFlat": 304,
-    "characterRefCount": 95,
+    "characterRefCount": 96,
     "title": "Amos",
-    "length": 16290
+    "length": 16239
   },
   {
     "chapter": 36,
     "book": 6,
-    "letterIndex": 5285999,
+    "letterIndex": 5269678,
     "chapterFlat": 305,
     "characterRefCount": 44,
     "title": "Filip",
-    "length": 16665
+    "length": 16645
   },
   {
     "chapter": 37,
     "book": 6,
-    "letterIndex": 5302664,
+    "letterIndex": 5286323,
     "chapterFlat": 306,
     "characterRefCount": 87,
     "title": "Alex",
-    "length": 16073
+    "length": 16043
   },
   {
     "chapter": 38,
     "book": 6,
-    "letterIndex": 5318737,
+    "letterIndex": 5302366,
     "chapterFlat": 307,
-    "characterRefCount": 48,
+    "characterRefCount": 52,
     "title": "Avasarala",
-    "length": 17638
+    "length": 17559
   },
   {
     "chapter": 39,
     "book": 6,
-    "letterIndex": 5336375,
+    "letterIndex": 5319925,
     "chapterFlat": 308,
-    "characterRefCount": 117,
+    "characterRefCount": 118,
     "title": "Naomi",
-    "length": 16929
+    "length": 16881
   },
   {
     "chapter": 40,
     "book": 6,
-    "letterIndex": 5353304,
+    "letterIndex": 5336806,
     "chapterFlat": 309,
     "characterRefCount": 28,
     "title": "Prax",
-    "length": 17018
+    "length": 16970
   },
   {
     "chapter": 41,
     "book": 6,
-    "letterIndex": 5370322,
+    "letterIndex": 5353776,
     "chapterFlat": 310,
-    "characterRefCount": 40,
+    "characterRefCount": 39,
     "title": "Pa",
-    "length": 16761
+    "length": 16696
   },
   {
     "chapter": 42,
     "book": 6,
-    "letterIndex": 5387083,
+    "letterIndex": 5370472,
     "chapterFlat": 311,
     "characterRefCount": 60,
     "title": "Marco",
-    "length": 17107
+    "length": 17055
   },
   {
     "chapter": 43,
     "book": 6,
-    "letterIndex": 5404190,
+    "letterIndex": 5387527,
     "chapterFlat": 312,
-    "characterRefCount": 77,
+    "characterRefCount": 78,
     "title": "Holden",
-    "length": 16733
+    "length": 16666
   },
   {
     "chapter": 44,
     "book": 6,
-    "letterIndex": 5420923,
+    "letterIndex": 5404193,
     "chapterFlat": 313,
-    "characterRefCount": 13,
+    "characterRefCount": 60,
     "title": "Roberts",
-    "length": 17172
+    "length": 17147
   },
   {
     "chapter": 45,
     "book": 6,
-    "letterIndex": 5438095,
+    "letterIndex": 5421340,
     "chapterFlat": 314,
     "characterRefCount": 39,
     "title": "Bobbie",
-    "length": 18487
+    "length": 18448
   },
   {
     "chapter": 46,
     "book": 6,
-    "letterIndex": 5456582,
+    "letterIndex": 5439788,
     "chapterFlat": 315,
-    "characterRefCount": 83,
+    "characterRefCount": 84,
     "title": "Holden",
-    "length": 17333
+    "length": 17273
   },
   {
     "chapter": 47,
     "book": 6,
-    "letterIndex": 5473915,
+    "letterIndex": 5457061,
     "chapterFlat": 316,
-    "characterRefCount": 47,
+    "characterRefCount": 48,
     "title": "Filip",
-    "length": 16425
+    "length": 16373
   },
   {
     "chapter": 48,
     "book": 6,
-    "letterIndex": 5490340,
+    "letterIndex": 5473434,
     "chapterFlat": 317,
-    "characterRefCount": 38,
+    "characterRefCount": 41,
     "title": "Pa",
-    "length": 16826
+    "length": 16793
   },
   {
     "chapter": 49,
     "book": 6,
-    "letterIndex": 5507166,
+    "letterIndex": 5490227,
     "chapterFlat": 318,
     "characterRefCount": 57,
     "title": "Naomi",
-    "length": 16792
+    "length": 16739
   },
   {
     "chapter": 50,
     "book": 6,
-    "letterIndex": 5523958,
+    "letterIndex": 5506966,
     "chapterFlat": 319,
     "characterRefCount": 93,
     "title": "Holden",
-    "length": 16746
+    "length": 16697
   },
   {
     "chapter": 51,
     "book": 6,
-    "letterIndex": 5540704,
+    "letterIndex": 5523663,
     "chapterFlat": 320,
-    "characterRefCount": 27,
+    "characterRefCount": 29,
     "title": "Marco",
-    "length": 12975
+    "length": 12974
   },
   {
     "chapter": 52,
     "book": 6,
-    "letterIndex": 5553679,
+    "letterIndex": 5536637,
     "chapterFlat": 321,
-    "characterRefCount": 83,
+    "characterRefCount": 84,
     "title": "Pa",
-    "length": 18123
+    "length": 18069
   },
   {
     "chapter": 53,
     "book": 6,
-    "letterIndex": 5571802,
+    "letterIndex": 5554706,
     "chapterFlat": 322,
-    "characterRefCount": 229,
+    "characterRefCount": 298,
     "title": "Naomi",
-    "length": 50863
+    "length": 50714
   },
   {
     "chapter": 1,
     "book": 7,
-    "letterIndex": 5622665,
+    "letterIndex": 5605420,
     "chapterFlat": 323,
     "characterRefCount": 15,
     "title": "Drummer",
-    "length": 17166
+    "length": 17139
   },
   {
     "chapter": 2,
     "book": 7,
-    "letterIndex": 5639831,
+    "letterIndex": 5622559,
     "chapterFlat": 324,
-    "characterRefCount": 101,
+    "characterRefCount": 106,
     "title": "Bobbie",
-    "length": 16664
+    "length": 16615
   },
   {
     "chapter": 3,
     "book": 7,
-    "letterIndex": 5656495,
+    "letterIndex": 5639174,
     "chapterFlat": 325,
-    "characterRefCount": 58,
+    "characterRefCount": 62,
     "title": "Santiago Jilie Singh",
-    "length": 16643
+    "length": 16598
   },
   {
     "chapter": 4,
     "book": 7,
-    "letterIndex": 5673138,
+    "letterIndex": 5655772,
     "chapterFlat": 326,
-    "characterRefCount": 95,
+    "characterRefCount": 94,
     "title": "Holden",
-    "length": 17527
+    "length": 17466
   },
   {
     "chapter": 5,
     "book": 7,
-    "letterIndex": 5690665,
+    "letterIndex": 5673238,
     "chapterFlat": 327,
     "characterRefCount": 37,
     "title": "Drummer",
-    "length": 18200
+    "length": 18151
   },
   {
     "chapter": 6,
     "book": 7,
-    "letterIndex": 5708865,
+    "letterIndex": 5691389,
     "chapterFlat": 328,
     "characterRefCount": 86,
     "title": "Holden",
-    "length": 16817
+    "length": 16742
   },
   {
     "chapter": 7,
     "book": 7,
-    "letterIndex": 5725682,
+    "letterIndex": 5708131,
     "chapterFlat": 329,
     "characterRefCount": 97,
     "title": "Bobbie",
-    "length": 16813
+    "length": 16760
   },
   {
     "chapter": 8,
     "book": 7,
-    "letterIndex": 5742495,
+    "letterIndex": 5724891,
     "chapterFlat": 330,
     "characterRefCount": 40,
     "title": "Singh",
-    "length": 23324
+    "length": 23236
   },
   {
     "chapter": 9,
     "book": 7,
-    "letterIndex": 5765819,
+    "letterIndex": 5748127,
     "chapterFlat": 331,
     "characterRefCount": 145,
     "title": "Bobbie",
-    "length": 16916
+    "length": 16861
   },
   {
     "chapter": 10,
     "book": 7,
-    "letterIndex": 5782735,
+    "letterIndex": 5764988,
     "chapterFlat": 332,
     "characterRefCount": 36,
     "title": "Drummer",
-    "length": 16421
+    "length": 16385
   },
   {
     "chapter": 11,
     "book": 7,
-    "letterIndex": 5799156,
+    "letterIndex": 5781373,
     "chapterFlat": 333,
     "characterRefCount": 70,
     "title": "Bobbie",
-    "length": 17686
+    "length": 17645
   },
   {
     "chapter": 12,
     "book": 7,
-    "letterIndex": 5816842,
+    "letterIndex": 5799018,
     "chapterFlat": 334,
     "characterRefCount": 87,
     "title": "Holden",
-    "length": 19899
+    "length": 19841
   },
   {
     "chapter": 13,
     "book": 7,
-    "letterIndex": 5836741,
+    "letterIndex": 5818859,
     "chapterFlat": 335,
     "characterRefCount": 71,
     "title": "Drummer",
-    "length": 17435
+    "length": 17361
   },
   {
     "chapter": 14,
     "book": 7,
-    "letterIndex": 5854176,
+    "letterIndex": 5836220,
     "chapterFlat": 336,
     "characterRefCount": 68,
     "title": "Singh",
-    "length": 21482
+    "length": 21403
   },
   {
     "chapter": 15,
     "book": 7,
-    "letterIndex": 5875658,
+    "letterIndex": 5857623,
     "chapterFlat": 337,
     "characterRefCount": 96,
     "title": "Bobbie",
-    "length": 17614
+    "length": 17533
   },
   {
     "chapter": 16,
     "book": 7,
-    "letterIndex": 5893272,
+    "letterIndex": 5875156,
     "chapterFlat": 338,
     "characterRefCount": 44,
     "title": "Singh",
-    "length": 17736
+    "length": 17682
   },
   {
     "chapter": 17,
     "book": 7,
-    "letterIndex": 5911008,
+    "letterIndex": 5892838,
     "chapterFlat": 339,
     "characterRefCount": 53,
     "title": "Holden",
-    "length": 16932
+    "length": 16890
   },
   {
     "chapter": 18,
     "book": 7,
-    "letterIndex": 5927940,
+    "letterIndex": 5909728,
     "chapterFlat": 340,
-    "characterRefCount": 97,
+    "characterRefCount": 98,
     "title": "Bobbie",
-    "length": 17860
+    "length": 17807
   },
   {
     "chapter": 19,
     "book": 7,
-    "letterIndex": 5945800,
+    "letterIndex": 5927535,
     "chapterFlat": 341,
     "characterRefCount": 30,
     "title": "Drummer",
-    "length": 18032
+    "length": 17996
   },
   {
     "chapter": 20,
     "book": 7,
-    "letterIndex": 5963832,
+    "letterIndex": 5945531,
     "chapterFlat": 342,
-    "characterRefCount": 50,
+    "characterRefCount": 52,
     "title": "Singh",
-    "length": 19902
+    "length": 19828
   },
   {
     "chapter": 21,
     "book": 7,
-    "letterIndex": 5983734,
+    "letterIndex": 5965359,
     "chapterFlat": 343,
     "characterRefCount": 85,
     "title": "Holden",
-    "length": 16045
+    "length": 15980
   },
   {
     "chapter": 22,
     "book": 7,
-    "letterIndex": 5999779,
+    "letterIndex": 5981339,
     "chapterFlat": 344,
     "characterRefCount": 93,
     "title": "Bobbie",
-    "length": 18653
+    "length": 18620
   },
   {
     "chapter": 23,
     "book": 7,
-    "letterIndex": 6018432,
+    "letterIndex": 5999959,
     "chapterFlat": 345,
     "characterRefCount": 35,
     "title": "Drummer",
-    "length": 15949
+    "length": 15916
   },
   {
     "chapter": 24,
     "book": 7,
-    "letterIndex": 6034381,
+    "letterIndex": 6015875,
     "chapterFlat": 346,
     "characterRefCount": 46,
     "title": "Singh",
-    "length": 19272
+    "length": 19199
   },
   {
     "chapter": 25,
     "book": 7,
-    "letterIndex": 6053653,
+    "letterIndex": 6035074,
     "chapterFlat": 347,
     "characterRefCount": 45,
     "title": "Holden",
-    "length": 13838
+    "length": 13799
   },
   {
     "chapter": 26,
     "book": 7,
-    "letterIndex": 6067491,
+    "letterIndex": 6048873,
     "chapterFlat": 348,
-    "characterRefCount": 80,
+    "characterRefCount": 81,
     "title": "Bobbie",
-    "length": 17117
+    "length": 17067
   },
   {
     "chapter": 27,
     "book": 7,
-    "letterIndex": 6084608,
+    "letterIndex": 6065940,
     "chapterFlat": 349,
     "characterRefCount": 51,
     "title": "Drummer",
-    "length": 18128
+    "length": 18076
   },
   {
     "chapter": 28,
     "book": 7,
-    "letterIndex": 6102736,
+    "letterIndex": 6084016,
     "chapterFlat": 350,
     "characterRefCount": 81,
     "title": "Holden",
-    "length": 12186
+    "length": 12123
   },
   {
     "chapter": 29,
     "book": 7,
-    "letterIndex": 6114922,
+    "letterIndex": 6096139,
     "chapterFlat": 351,
     "characterRefCount": 80,
     "title": "Bobbie",
-    "length": 17970
+    "length": 17903
   },
   {
     "chapter": 30,
     "book": 7,
-    "letterIndex": 6132892,
+    "letterIndex": 6114042,
     "chapterFlat": 352,
     "characterRefCount": 35,
     "title": "Singh",
-    "length": 16770
+    "length": 16709
   },
   {
     "chapter": 31,
     "book": 7,
-    "letterIndex": 6149662,
+    "letterIndex": 6130751,
     "chapterFlat": 353,
     "characterRefCount": 12,
     "title": "Drummer",
-    "length": 17029
+    "length": 17012
   },
   {
     "chapter": 32,
     "book": 7,
-    "letterIndex": 6166691,
+    "letterIndex": 6147763,
     "chapterFlat": 354,
     "characterRefCount": 80,
     "title": "Holden",
-    "length": 16959
+    "length": 16918
   },
   {
     "chapter": 33,
     "book": 7,
-    "letterIndex": 6183650,
+    "letterIndex": 6164681,
     "chapterFlat": 355,
     "characterRefCount": 103,
     "title": "Bobbie",
-    "length": 16389
+    "length": 16346
   },
   {
     "chapter": 34,
     "book": 7,
-    "letterIndex": 6200039,
+    "letterIndex": 6181027,
     "chapterFlat": 356,
     "characterRefCount": 24,
     "title": "Drummer",
-    "length": 17954
+    "length": 17901
   },
   {
     "chapter": 35,
     "book": 7,
-    "letterIndex": 6217993,
+    "letterIndex": 6198928,
     "chapterFlat": 357,
     "characterRefCount": 40,
     "title": "Singh",
-    "length": 17273
+    "length": 17216
   },
   {
     "chapter": 36,
     "book": 7,
-    "letterIndex": 6235266,
+    "letterIndex": 6216144,
     "chapterFlat": 358,
     "characterRefCount": 70,
     "title": "Bobbie",
-    "length": 17643
+    "length": 17572
   },
   {
     "chapter": 37,
     "book": 7,
-    "letterIndex": 6252909,
+    "letterIndex": 6233716,
     "chapterFlat": 359,
     "characterRefCount": 101,
     "title": "Alex",
-    "length": 17911
+    "length": 17842
   },
   {
     "chapter": 38,
     "book": 7,
-    "letterIndex": 6270820,
+    "letterIndex": 6251558,
     "chapterFlat": 360,
     "characterRefCount": 74,
     "title": "Singh",
-    "length": 16795
+    "length": 16736
   },
   {
     "chapter": 39,
     "book": 7,
-    "letterIndex": 6287615,
+    "letterIndex": 6268294,
     "chapterFlat": 361,
     "characterRefCount": 33,
     "title": "Amos",
-    "length": 16477
+    "length": 16438
   },
   {
     "chapter": 40,
     "book": 7,
-    "letterIndex": 6304092,
+    "letterIndex": 6284732,
     "chapterFlat": 362,
     "characterRefCount": 95,
     "title": "Naomi",
-    "length": 17753
+    "length": 17697
   },
   {
     "chapter": 41,
     "book": 7,
-    "letterIndex": 6321845,
+    "letterIndex": 6302429,
     "chapterFlat": 363,
     "characterRefCount": 44,
     "title": "Singh",
-    "length": 17526
+    "length": 17489
   },
   {
     "chapter": 42,
     "book": 7,
-    "letterIndex": 6339371,
+    "letterIndex": 6319918,
     "chapterFlat": 364,
     "characterRefCount": 36,
     "title": "Drummer",
-    "length": 17143
+    "length": 17105
   },
   {
     "chapter": 43,
     "book": 7,
-    "letterIndex": 6356514,
+    "letterIndex": 6337023,
     "chapterFlat": 365,
     "characterRefCount": 87,
     "title": "Naomi",
-    "length": 16959
+    "length": 16895
   },
   {
     "chapter": 44,
     "book": 7,
-    "letterIndex": 6373473,
+    "letterIndex": 6353918,
     "chapterFlat": 366,
     "characterRefCount": 42,
     "title": "Bobbie",
-    "length": 16738
+    "length": 16712
   },
   {
     "chapter": 45,
     "book": 7,
-    "letterIndex": 6390211,
+    "letterIndex": 6370630,
     "chapterFlat": 367,
     "characterRefCount": 19,
     "title": "Drummer",
-    "length": 16577
+    "length": 16527
   },
   {
     "chapter": 46,
     "book": 7,
-    "letterIndex": 6406788,
+    "letterIndex": 6387157,
     "chapterFlat": 368,
     "characterRefCount": 43,
     "title": "Singh",
-    "length": 16904
+    "length": 16860
   },
   {
     "chapter": 47,
     "book": 7,
-    "letterIndex": 6423692,
+    "letterIndex": 6404017,
     "chapterFlat": 369,
     "characterRefCount": 61,
     "title": "Bobbie",
-    "length": 17538
+    "length": 17505
   },
   {
     "chapter": 48,
     "book": 7,
-    "letterIndex": 6441230,
+    "letterIndex": 6421522,
     "chapterFlat": 370,
     "characterRefCount": 76,
     "title": "Clarissa",
-    "length": 18185
+    "length": 18164
   },
   {
     "chapter": 49,
     "book": 7,
-    "letterIndex": 6459415,
+    "letterIndex": 6439686,
     "chapterFlat": 371,
-    "characterRefCount": 70,
+    "characterRefCount": 69,
     "title": "Bobbie",
-    "length": 20410
+    "length": 20344
   },
   {
     "chapter": 50,
     "book": 7,
-    "letterIndex": 6479825,
+    "letterIndex": 6460030,
     "chapterFlat": 372,
     "characterRefCount": 32,
     "title": "Singh",
-    "length": 17710
+    "length": 17644
   },
   {
     "chapter": 51,
     "book": 7,
-    "letterIndex": 6497535,
+    "letterIndex": 6477674,
     "chapterFlat": 373,
     "characterRefCount": 47,
     "title": "Drummer",
-    "length": 17369
+    "length": 17328
   },
   {
     "chapter": 52,
     "book": 7,
-    "letterIndex": 6514904,
+    "letterIndex": 6495002,
     "chapterFlat": 374,
-    "characterRefCount": 179,
+    "characterRefCount": 189,
     "title": "Naomi",
-    "length": 49769
+    "length": 49623
   },
   {
     "chapter": 1,
     "book": 8,
-    "letterIndex": 6564673,
+    "letterIndex": 6544625,
     "chapterFlat": 375,
-    "characterRefCount": 30,
+    "characterRefCount": 48,
     "title": "Elvi",
-    "length": 19173
+    "length": 19146
   },
   {
     "chapter": 2,
     "book": 8,
-    "letterIndex": 6583846,
+    "letterIndex": 6563771,
     "chapterFlat": 376,
     "characterRefCount": 98,
     "title": "Naomi",
-    "length": 19062
+    "length": 19019
   },
   {
     "chapter": 3,
     "book": 8,
-    "letterIndex": 6602908,
+    "letterIndex": 6582790,
     "chapterFlat": 377,
     "characterRefCount": 104,
     "title": "Alex",
-    "length": 15348
+    "length": 15320
   },
   {
     "chapter": 4,
     "book": 8,
-    "letterIndex": 6618256,
+    "letterIndex": 6598110,
     "chapterFlat": 378,
     "characterRefCount": 8,
     "title": "Teresa",
-    "length": 16884
+    "length": 16809
   },
   {
     "chapter": 5,
     "book": 8,
-    "letterIndex": 6635140,
+    "letterIndex": 6614919,
     "chapterFlat": 379,
-    "characterRefCount": 37,
+    "characterRefCount": 56,
     "title": "Elvi",
-    "length": 18801
+    "length": 18738
   },
   {
     "chapter": 6,
     "book": 8,
-    "letterIndex": 6653941,
+    "letterIndex": 6633657,
     "chapterFlat": 380,
     "characterRefCount": 57,
     "title": "Alex",
-    "length": 16214
+    "length": 16190
   },
   {
     "chapter": 7,
     "book": 8,
-    "letterIndex": 6670155,
+    "letterIndex": 6649847,
     "chapterFlat": 381,
     "characterRefCount": 52,
     "title": "Bobbie",
-    "length": 16382
+    "length": 16353
   },
   {
     "chapter": 8,
     "book": 8,
-    "letterIndex": 6686537,
+    "letterIndex": 6666200,
     "chapterFlat": 382,
     "characterRefCount": 23,
     "title": "Naomi",
-    "length": 15888
+    "length": 15887
   },
   {
     "chapter": 9,
     "book": 8,
-    "letterIndex": 6702425,
+    "letterIndex": 6682087,
     "chapterFlat": 383,
-    "characterRefCount": 14,
+    "characterRefCount": 16,
     "title": "Teresa",
-    "length": 18757
+    "length": 18690
   },
   {
     "chapter": 10,
     "book": 8,
-    "letterIndex": 6721182,
+    "letterIndex": 6700777,
     "chapterFlat": 384,
-    "characterRefCount": 34,
+    "characterRefCount": 56,
     "title": "Elvi",
-    "length": 18616
+    "length": 18522
   },
   {
     "chapter": 11,
     "book": 8,
-    "letterIndex": 6739798,
+    "letterIndex": 6719299,
     "chapterFlat": 385,
-    "characterRefCount": 52,
+    "characterRefCount": 55,
     "title": "Alex",
-    "length": 17371
+    "length": 17320
   },
   {
     "chapter": 12,
     "book": 8,
-    "letterIndex": 6757169,
+    "letterIndex": 6736619,
     "chapterFlat": 386,
     "characterRefCount": 32,
     "title": "Bobbie",
-    "length": 14259
+    "length": 14242
   },
   {
     "chapter": 13,
     "book": 8,
-    "letterIndex": 6771428,
+    "letterIndex": 6750861,
     "chapterFlat": 387,
-    "characterRefCount": 61,
+    "characterRefCount": 63,
     "title": "Naomi",
-    "length": 16972
+    "length": 16926
   },
   {
     "chapter": 14,
     "book": 8,
-    "letterIndex": 6788400,
+    "letterIndex": 6767787,
     "chapterFlat": 388,
-    "characterRefCount": 46,
+    "characterRefCount": 56,
     "title": "Teresa",
-    "length": 20004
+    "length": 19951
   },
   {
     "chapter": 15,
     "book": 8,
-    "letterIndex": 6808404,
+    "letterIndex": 6787738,
     "chapterFlat": 389,
     "characterRefCount": 50,
     "title": "Naomi",
-    "length": 17130
+    "length": 17093
   },
   {
     "chapter": 16,
     "book": 8,
-    "letterIndex": 6825534,
+    "letterIndex": 6804831,
     "chapterFlat": 390,
-    "characterRefCount": 23,
+    "characterRefCount": 36,
     "title": "Elvi",
-    "length": 14670
+    "length": 14604
   },
   {
     "chapter": 17,
     "book": 8,
-    "letterIndex": 6840204,
+    "letterIndex": 6819435,
     "chapterFlat": 391,
     "characterRefCount": 66,
     "title": "Alex",
-    "length": 20286
+    "length": 20220
   },
   {
     "chapter": 18,
     "book": 8,
-    "letterIndex": 6860490,
+    "letterIndex": 6839655,
     "chapterFlat": 392,
     "characterRefCount": 38,
     "title": "Naomi",
-    "length": 16583
+    "length": 16523
   },
   {
     "chapter": 19,
     "book": 8,
-    "letterIndex": 6877073,
+    "letterIndex": 6856178,
     "chapterFlat": 393,
-    "characterRefCount": 20,
+    "characterRefCount": 38,
     "title": "Elvi",
-    "length": 17160
+    "length": 17094
   },
   {
     "chapter": 20,
     "book": 8,
-    "letterIndex": 6894233,
+    "letterIndex": 6873272,
     "chapterFlat": 394,
-    "characterRefCount": 4,
+    "characterRefCount": 5,
     "title": "Teresa",
-    "length": 15472
+    "length": 15408
   },
   {
     "chapter": 21,
     "book": 8,
-    "letterIndex": 6909705,
+    "letterIndex": 6888680,
     "chapterFlat": 395,
-    "characterRefCount": 28,
+    "characterRefCount": 37,
     "title": "Elvi",
-    "length": 18299
+    "length": 18222
   },
   {
     "chapter": 22,
     "book": 8,
-    "letterIndex": 6928004,
+    "letterIndex": 6906902,
     "chapterFlat": 396,
-    "characterRefCount": 26,
-    "title": "Teresa",
-    "length": 17188
-  },
-  {
-    "chapter": 23,
-    "book": 8,
-    "letterIndex": 6945192,
-    "chapterFlat": 397,
-    "characterRefCount": 40,
-    "title": "Naomi",
-    "length": 17395
-  },
-  {
-    "chapter": 24,
-    "book": 8,
-    "letterIndex": 6962587,
-    "chapterFlat": 398,
-    "characterRefCount": 87,
-    "title": "Bobbie",
-    "length": 33665
-  },
-  {
-    "chapter": 25,
-    "book": 8,
-    "letterIndex": 6996252,
-    "chapterFlat": 399,
-    "characterRefCount": 36,
-    "title": "Naomi",
-    "length": 17562
-  },
-  {
-    "chapter": 26,
-    "book": 8,
-    "letterIndex": 7013814,
-    "chapterFlat": 400,
-    "characterRefCount": 31,
-    "title": "Elvi",
-    "length": 17283
-  },
-  {
-    "chapter": 27,
-    "book": 8,
-    "letterIndex": 7031097,
-    "chapterFlat": 401,
-    "characterRefCount": 29,
-    "title": "Teresa",
-    "length": 17786
-  },
-  {
-    "chapter": 28,
-    "book": 8,
-    "letterIndex": 7048883,
-    "chapterFlat": 402,
-    "characterRefCount": 39,
-    "title": "Naomi",
-    "length": 16837
-  },
-  {
-    "chapter": 29,
-    "book": 8,
-    "letterIndex": 7065720,
-    "chapterFlat": 403,
-    "characterRefCount": 41,
-    "title": "Elvi",
-    "length": 18341
-  },
-  {
-    "chapter": 30,
-    "book": 8,
-    "letterIndex": 7084061,
-    "chapterFlat": 404,
-    "characterRefCount": 46,
-    "title": "Bobbie",
-    "length": 17003
-  },
-  {
-    "chapter": 31,
-    "book": 8,
-    "letterIndex": 7101064,
-    "chapterFlat": 405,
-    "characterRefCount": 31,
-    "title": "Teresa",
-    "length": 17196
-  },
-  {
-    "chapter": 32,
-    "book": 8,
-    "letterIndex": 7118260,
-    "chapterFlat": 406,
-    "characterRefCount": 35,
-    "title": "Bobbie",
-    "length": 17096
-  },
-  {
-    "chapter": 33,
-    "book": 8,
-    "letterIndex": 7135356,
-    "chapterFlat": 407,
-    "characterRefCount": 88,
-    "title": "Alex",
-    "length": 17978
-  },
-  {
-    "chapter": 34,
-    "book": 8,
-    "letterIndex": 7153334,
-    "chapterFlat": 408,
-    "characterRefCount": 23,
-    "title": "Elvi",
-    "length": 17415
-  },
-  {
-    "chapter": 35,
-    "book": 8,
-    "letterIndex": 7170749,
-    "chapterFlat": 409,
-    "characterRefCount": 32,
-    "title": "Naomi",
-    "length": 17748
-  },
-  {
-    "chapter": 36,
-    "book": 8,
-    "letterIndex": 7188497,
-    "chapterFlat": 410,
-    "characterRefCount": 23,
-    "title": "Teresa",
-    "length": 16830
-  },
-  {
-    "chapter": 37,
-    "book": 8,
-    "letterIndex": 7205327,
-    "chapterFlat": 411,
-    "characterRefCount": 52,
-    "title": "Alex",
-    "length": 16226
-  },
-  {
-    "chapter": 38,
-    "book": 8,
-    "letterIndex": 7221553,
-    "chapterFlat": 412,
-    "characterRefCount": 70,
-    "title": "Naomi",
-    "length": 17416
-  },
-  {
-    "chapter": 39,
-    "book": 8,
-    "letterIndex": 7238969,
-    "chapterFlat": 413,
-    "characterRefCount": 28,
-    "title": "Elvi",
-    "length": 17579
-  },
-  {
-    "chapter": 40,
-    "book": 8,
-    "letterIndex": 7256548,
-    "chapterFlat": 414,
-    "characterRefCount": 14,
-    "title": "Teresa",
-    "length": 16507
-  },
-  {
-    "chapter": 41,
-    "book": 8,
-    "letterIndex": 7273055,
-    "chapterFlat": 415,
-    "characterRefCount": 66,
-    "title": "Naomi",
-    "length": 16844
-  },
-  {
-    "chapter": 42,
-    "book": 8,
-    "letterIndex": 7289899,
-    "chapterFlat": 416,
-    "characterRefCount": 57,
-    "title": "Alex",
-    "length": 17490
-  },
-  {
-    "chapter": 43,
-    "book": 8,
-    "letterIndex": 7307389,
-    "chapterFlat": 417,
-    "characterRefCount": 46,
-    "title": "Elvi",
-    "length": 17371
-  },
-  {
-    "chapter": 44,
-    "book": 8,
-    "letterIndex": 7324760,
-    "chapterFlat": 418,
-    "characterRefCount": 38,
-    "title": "Naomi",
-    "length": 17008
-  },
-  {
-    "chapter": 45,
-    "book": 8,
-    "letterIndex": 7341768,
-    "chapterFlat": 419,
-    "characterRefCount": 33,
-    "title": "Teresa",
-    "length": 17249
-  },
-  {
-    "chapter": 46,
-    "book": 8,
-    "letterIndex": 7359017,
-    "chapterFlat": 420,
-    "characterRefCount": 80,
-    "title": "Elvi",
-    "length": 18557
-  },
-  {
-    "chapter": 47,
-    "book": 8,
-    "letterIndex": 7377574,
-    "chapterFlat": 421,
-    "characterRefCount": 62,
-    "title": "Naomi",
-    "length": 15861
-  },
-  {
-    "chapter": 48,
-    "book": 8,
-    "letterIndex": 7393435,
-    "chapterFlat": 422,
-    "characterRefCount": 67,
-    "title": "Teresa",
-    "length": 17826
-  },
-  {
-    "chapter": 49,
-    "book": 8,
-    "letterIndex": 7411261,
-    "chapterFlat": 423,
-    "characterRefCount": 95,
-    "title": "Naomi",
-    "length": 21402
-  },
-  {
-    "chapter": 50,
-    "book": 8,
-    "letterIndex": 7432663,
-    "chapterFlat": 424,
-    "characterRefCount": 107,
-    "title": "Elvi",
-    "length": 44592
-  },
-  {
-    "chapter": 1,
-    "book": 9,
-    "letterIndex": 7477255,
-    "chapterFlat": 425,
-    "characterRefCount": 79,
-    "title": "Jim",
-    "length": 17264
-  },
-  {
-    "chapter": 2,
-    "book": 9,
-    "letterIndex": 7494519,
-    "chapterFlat": 426,
-    "characterRefCount": 35,
-    "title": "Tanaka",
-    "length": 17682
-  },
-  {
-    "chapter": 3,
-    "book": 9,
-    "letterIndex": 7512201,
-    "chapterFlat": 427,
-    "characterRefCount": 72,
-    "title": "Naomi",
-    "length": 16629
-  },
-  {
-    "chapter": 4,
-    "book": 9,
-    "letterIndex": 7528830,
-    "chapterFlat": 428,
-    "characterRefCount": 79,
-    "title": "Elvi",
-    "length": 18116
-  },
-  {
-    "chapter": 5,
-    "book": 9,
-    "letterIndex": 7546946,
-    "chapterFlat": 429,
-    "characterRefCount": 38,
-    "title": "Tanaka",
-    "length": 19755
-  },
-  {
-    "chapter": 6,
-    "book": 9,
-    "letterIndex": 7566701,
-    "chapterFlat": 430,
-    "characterRefCount": 38,
-    "title": "Naomi",
-    "length": 15390
-  },
-  {
-    "chapter": 7,
-    "book": 9,
-    "letterIndex": 7582091,
-    "chapterFlat": 431,
-    "characterRefCount": 81,
-    "title": "Jim",
-    "length": 20220
-  },
-  {
-    "chapter": 8,
-    "book": 9,
-    "letterIndex": 7602311,
-    "chapterFlat": 432,
-    "characterRefCount": 54,
-    "title": "Elvi",
-    "length": 16844
-  },
-  {
-    "chapter": 9,
-    "book": 9,
-    "letterIndex": 7619155,
-    "chapterFlat": 433,
-    "characterRefCount": 5,
-    "title": "Kit",
-    "length": 13045
-  },
-  {
-    "chapter": 10,
-    "book": 9,
-    "letterIndex": 7632200,
-    "chapterFlat": 434,
-    "characterRefCount": 66,
-    "title": "Fayez",
-    "length": 17165
-  },
-  {
-    "chapter": 11,
-    "book": 9,
-    "letterIndex": 7649365,
-    "chapterFlat": 435,
-    "characterRefCount": 70,
-    "title": "Teresa",
-    "length": 18072
-  },
-  {
-    "chapter": 12,
-    "book": 9,
-    "letterIndex": 7667437,
-    "chapterFlat": 436,
-    "characterRefCount": 94,
-    "title": "Tanaka",
-    "length": 19894
-  },
-  {
-    "chapter": 13,
-    "book": 9,
-    "letterIndex": 7687331,
-    "chapterFlat": 437,
-    "characterRefCount": 104,
-    "title": "Jim",
-    "length": 16684
-  },
-  {
-    "chapter": 14,
-    "book": 9,
-    "letterIndex": 7704015,
-    "chapterFlat": 438,
-    "characterRefCount": 64,
-    "title": "Elvi",
-    "length": 17718
-  },
-  {
-    "chapter": 15,
-    "book": 9,
-    "letterIndex": 7721733,
-    "chapterFlat": 439,
-    "characterRefCount": 50,
+    "characterRefCount": 45,
     "title": "Teresa",
     "length": 17117
   },
   {
+    "chapter": 23,
+    "book": 8,
+    "letterIndex": 6924019,
+    "chapterFlat": 397,
+    "characterRefCount": 40,
+    "title": "Naomi",
+    "length": 17357
+  },
+  {
+    "chapter": 24,
+    "book": 8,
+    "letterIndex": 6941376,
+    "chapterFlat": 398,
+    "characterRefCount": 103,
+    "title": "Bobbie",
+    "length": 33578
+  },
+  {
+    "chapter": 25,
+    "book": 8,
+    "letterIndex": 6974954,
+    "chapterFlat": 399,
+    "characterRefCount": 36,
+    "title": "Naomi",
+    "length": 17522
+  },
+  {
+    "chapter": 26,
+    "book": 8,
+    "letterIndex": 6992476,
+    "chapterFlat": 400,
+    "characterRefCount": 56,
+    "title": "Elvi",
+    "length": 17226
+  },
+  {
+    "chapter": 27,
+    "book": 8,
+    "letterIndex": 7009702,
+    "chapterFlat": 401,
+    "characterRefCount": 33,
+    "title": "Teresa",
+    "length": 17746
+  },
+  {
+    "chapter": 28,
+    "book": 8,
+    "letterIndex": 7027448,
+    "chapterFlat": 402,
+    "characterRefCount": 39,
+    "title": "Naomi",
+    "length": 16813
+  },
+  {
+    "chapter": 29,
+    "book": 8,
+    "letterIndex": 7044261,
+    "chapterFlat": 403,
+    "characterRefCount": 74,
+    "title": "Elvi",
+    "length": 18274
+  },
+  {
+    "chapter": 30,
+    "book": 8,
+    "letterIndex": 7062535,
+    "chapterFlat": 404,
+    "characterRefCount": 47,
+    "title": "Bobbie",
+    "length": 16953
+  },
+  {
+    "chapter": 31,
+    "book": 8,
+    "letterIndex": 7079488,
+    "chapterFlat": 405,
+    "characterRefCount": 48,
+    "title": "Teresa",
+    "length": 17134
+  },
+  {
+    "chapter": 32,
+    "book": 8,
+    "letterIndex": 7096622,
+    "chapterFlat": 406,
+    "characterRefCount": 35,
+    "title": "Bobbie",
+    "length": 17080
+  },
+  {
+    "chapter": 33,
+    "book": 8,
+    "letterIndex": 7113702,
+    "chapterFlat": 407,
+    "characterRefCount": 86,
+    "title": "Alex",
+    "length": 17931
+  },
+  {
+    "chapter": 34,
+    "book": 8,
+    "letterIndex": 7131633,
+    "chapterFlat": 408,
+    "characterRefCount": 39,
+    "title": "Elvi",
+    "length": 17360
+  },
+  {
+    "chapter": 35,
+    "book": 8,
+    "letterIndex": 7148993,
+    "chapterFlat": 409,
+    "characterRefCount": 32,
+    "title": "Naomi",
+    "length": 17716
+  },
+  {
+    "chapter": 36,
+    "book": 8,
+    "letterIndex": 7166709,
+    "chapterFlat": 410,
+    "characterRefCount": 27,
+    "title": "Teresa",
+    "length": 16782
+  },
+  {
+    "chapter": 37,
+    "book": 8,
+    "letterIndex": 7183491,
+    "chapterFlat": 411,
+    "characterRefCount": 53,
+    "title": "Alex",
+    "length": 16192
+  },
+  {
+    "chapter": 38,
+    "book": 8,
+    "letterIndex": 7199683,
+    "chapterFlat": 412,
+    "characterRefCount": 70,
+    "title": "Naomi",
+    "length": 17363
+  },
+  {
+    "chapter": 39,
+    "book": 8,
+    "letterIndex": 7217046,
+    "chapterFlat": 413,
+    "characterRefCount": 50,
+    "title": "Elvi",
+    "length": 17509
+  },
+  {
+    "chapter": 40,
+    "book": 8,
+    "letterIndex": 7234555,
+    "chapterFlat": 414,
+    "characterRefCount": 26,
+    "title": "Teresa",
+    "length": 16473
+  },
+  {
+    "chapter": 41,
+    "book": 8,
+    "letterIndex": 7251028,
+    "chapterFlat": 415,
+    "characterRefCount": 65,
+    "title": "Naomi",
+    "length": 16796
+  },
+  {
+    "chapter": 42,
+    "book": 8,
+    "letterIndex": 7267824,
+    "chapterFlat": 416,
+    "characterRefCount": 60,
+    "title": "Alex",
+    "length": 17461
+  },
+  {
+    "chapter": 43,
+    "book": 8,
+    "letterIndex": 7285285,
+    "chapterFlat": 417,
+    "characterRefCount": 81,
+    "title": "Elvi",
+    "length": 17306
+  },
+  {
+    "chapter": 44,
+    "book": 8,
+    "letterIndex": 7302591,
+    "chapterFlat": 418,
+    "characterRefCount": 37,
+    "title": "Naomi",
+    "length": 16991
+  },
+  {
+    "chapter": 45,
+    "book": 8,
+    "letterIndex": 7319582,
+    "chapterFlat": 419,
+    "characterRefCount": 34,
+    "title": "Teresa",
+    "length": 17202
+  },
+  {
+    "chapter": 46,
+    "book": 8,
+    "letterIndex": 7336784,
+    "chapterFlat": 420,
+    "characterRefCount": 123,
+    "title": "Elvi",
+    "length": 18491
+  },
+  {
+    "chapter": 47,
+    "book": 8,
+    "letterIndex": 7355275,
+    "chapterFlat": 421,
+    "characterRefCount": 62,
+    "title": "Naomi",
+    "length": 15804
+  },
+  {
+    "chapter": 48,
+    "book": 8,
+    "letterIndex": 7371079,
+    "chapterFlat": 422,
+    "characterRefCount": 69,
+    "title": "Teresa",
+    "length": 17779
+  },
+  {
+    "chapter": 49,
+    "book": 8,
+    "letterIndex": 7388858,
+    "chapterFlat": 423,
+    "characterRefCount": 94,
+    "title": "Naomi",
+    "length": 21347
+  },
+  {
+    "chapter": 50,
+    "book": 8,
+    "letterIndex": 7410205,
+    "chapterFlat": 424,
+    "characterRefCount": 121,
+    "title": "Elvi",
+    "length": 44473
+  },
+  {
+    "chapter": 1,
+    "book": 9,
+    "letterIndex": 7454678,
+    "chapterFlat": 425,
+    "characterRefCount": 78,
+    "title": "Jim",
+    "length": 17218
+  },
+  {
+    "chapter": 2,
+    "book": 9,
+    "letterIndex": 7471896,
+    "chapterFlat": 426,
+    "characterRefCount": 37,
+    "title": "Tanaka",
+    "length": 17628
+  },
+  {
+    "chapter": 3,
+    "book": 9,
+    "letterIndex": 7489524,
+    "chapterFlat": 427,
+    "characterRefCount": 72,
+    "title": "Naomi",
+    "length": 16593
+  },
+  {
+    "chapter": 4,
+    "book": 9,
+    "letterIndex": 7506117,
+    "chapterFlat": 428,
+    "characterRefCount": 94,
+    "title": "Elvi",
+    "length": 18077
+  },
+  {
+    "chapter": 5,
+    "book": 9,
+    "letterIndex": 7524194,
+    "chapterFlat": 429,
+    "characterRefCount": 39,
+    "title": "Tanaka",
+    "length": 19737
+  },
+  {
+    "chapter": 6,
+    "book": 9,
+    "letterIndex": 7543931,
+    "chapterFlat": 430,
+    "characterRefCount": 47,
+    "title": "Naomi",
+    "length": 15358
+  },
+  {
+    "chapter": 7,
+    "book": 9,
+    "letterIndex": 7559289,
+    "chapterFlat": 431,
+    "characterRefCount": 85,
+    "title": "Jim",
+    "length": 20157
+  },
+  {
+    "chapter": 8,
+    "book": 9,
+    "letterIndex": 7579446,
+    "chapterFlat": 432,
+    "characterRefCount": 63,
+    "title": "Elvi",
+    "length": 16794
+  },
+  {
+    "chapter": 9,
+    "book": 9,
+    "letterIndex": 7596240,
+    "chapterFlat": 433,
+    "characterRefCount": 32,
+    "title": "Kit",
+    "length": 12985
+  },
+  {
+    "chapter": 10,
+    "book": 9,
+    "letterIndex": 7609225,
+    "chapterFlat": 434,
+    "characterRefCount": 99,
+    "title": "Fayez",
+    "length": 17100
+  },
+  {
+    "chapter": 11,
+    "book": 9,
+    "letterIndex": 7626325,
+    "chapterFlat": 435,
+    "characterRefCount": 70,
+    "title": "Teresa",
+    "length": 18016
+  },
+  {
+    "chapter": 12,
+    "book": 9,
+    "letterIndex": 7644341,
+    "chapterFlat": 436,
+    "characterRefCount": 94,
+    "title": "Tanaka",
+    "length": 19868
+  },
+  {
+    "chapter": 13,
+    "book": 9,
+    "letterIndex": 7664209,
+    "chapterFlat": 437,
+    "characterRefCount": 104,
+    "title": "Jim",
+    "length": 16633
+  },
+  {
+    "chapter": 14,
+    "book": 9,
+    "letterIndex": 7680842,
+    "chapterFlat": 438,
+    "characterRefCount": 74,
+    "title": "Elvi",
+    "length": 17643
+  },
+  {
+    "chapter": 15,
+    "book": 9,
+    "letterIndex": 7698485,
+    "chapterFlat": 439,
+    "characterRefCount": 51,
+    "title": "Teresa",
+    "length": 17077
+  },
+  {
     "chapter": 16,
     "book": 9,
-    "letterIndex": 7738850,
+    "letterIndex": 7715562,
     "chapterFlat": 440,
     "characterRefCount": 40,
     "title": "Tanaka",
-    "length": 17269
+    "length": 17227
   },
   {
     "chapter": 17,
     "book": 9,
-    "letterIndex": 7756119,
+    "letterIndex": 7732789,
     "chapterFlat": 441,
-    "characterRefCount": 61,
+    "characterRefCount": 62,
     "title": "Naomi",
-    "length": 16906
+    "length": 16854
   },
   {
     "chapter": 18,
     "book": 9,
-    "letterIndex": 7773025,
+    "letterIndex": 7749643,
     "chapterFlat": 442,
-    "characterRefCount": 85,
+    "characterRefCount": 86,
     "title": "Jim",
-    "length": 16587
+    "length": 16512
   },
   {
     "chapter": 19,
     "book": 9,
-    "letterIndex": 7789612,
+    "letterIndex": 7766155,
     "chapterFlat": 443,
-    "characterRefCount": 3,
+    "characterRefCount": 21,
     "title": "Kit",
-    "length": 7763
+    "length": 7750
   },
   {
     "chapter": 20,
     "book": 9,
-    "letterIndex": 7797375,
+    "letterIndex": 7773905,
     "chapterFlat": 444,
-    "characterRefCount": 51,
+    "characterRefCount": 61,
     "title": "Elvi",
-    "length": 20631
+    "length": 20560
   },
   {
     "chapter": 21,
     "book": 9,
-    "letterIndex": 7818006,
+    "letterIndex": 7794465,
     "chapterFlat": 445,
-    "characterRefCount": 58,
+    "characterRefCount": 57,
     "title": "Tanaka",
-    "length": 18277
+    "length": 18255
   },
   {
     "chapter": 22,
     "book": 9,
-    "letterIndex": 7836283,
+    "letterIndex": 7812720,
     "chapterFlat": 446,
     "characterRefCount": 28,
     "title": "Jillian",
-    "length": 17690
+    "length": 17658
   },
   {
     "chapter": 23,
     "book": 9,
-    "letterIndex": 7853973,
+    "letterIndex": 7830378,
     "chapterFlat": 447,
     "characterRefCount": 86,
     "title": "Jim",
-    "length": 17221
+    "length": 17158
   },
   {
     "chapter": 24,
     "book": 9,
-    "letterIndex": 7871194,
+    "letterIndex": 7847536,
     "chapterFlat": 448,
-    "characterRefCount": 68,
+    "characterRefCount": 91,
     "title": "The Lighthouse and the Keeper",
-    "length": 36328
+    "length": 36264
   },
   {
     "chapter": 25,
     "book": 9,
-    "letterIndex": 7907522,
+    "letterIndex": 7883800,
     "chapterFlat": 449,
     "characterRefCount": 33,
     "title": "Tanaka",
-    "length": 19719
+    "length": 19680
   },
   {
     "chapter": 26,
     "book": 9,
-    "letterIndex": 7927241,
+    "letterIndex": 7903480,
     "chapterFlat": 450,
-    "characterRefCount": 83,
+    "characterRefCount": 84,
     "title": "Jim",
-    "length": 13871
+    "length": 13822
   },
   {
     "chapter": 27,
     "book": 9,
-    "letterIndex": 7941112,
+    "letterIndex": 7917302,
     "chapterFlat": 451,
-    "characterRefCount": 113,
+    "characterRefCount": 119,
     "title": "Elvi",
-    "length": 17889
+    "length": 17806
   },
   {
     "chapter": 28,
     "book": 9,
-    "letterIndex": 7959001,
+    "letterIndex": 7935108,
     "chapterFlat": 452,
     "characterRefCount": 47,
     "title": "Tanaka",
-    "length": 23862
+    "length": 23797
   },
   {
     "chapter": 29,
     "book": 9,
-    "letterIndex": 7982863,
+    "letterIndex": 7958905,
     "chapterFlat": 453,
-    "characterRefCount": 88,
+    "characterRefCount": 107,
     "title": "Jim",
-    "length": 19558
+    "length": 19509
   },
   {
     "chapter": 30,
     "book": 9,
-    "letterIndex": 8002421,
+    "letterIndex": 7978414,
     "chapterFlat": 454,
-    "characterRefCount": 91,
+    "characterRefCount": 98,
     "title": "Elvi",
-    "length": 16744
+    "length": 16677
   },
   {
     "chapter": 31,
     "book": 9,
-    "letterIndex": 8019165,
+    "letterIndex": 7995091,
     "chapterFlat": 455,
     "characterRefCount": 43,
     "title": "Tanaka",
-    "length": 16742
+    "length": 16697
   },
   {
     "chapter": 32,
     "book": 9,
-    "letterIndex": 8035907,
+    "letterIndex": 8011788,
     "chapterFlat": 456,
-    "characterRefCount": 3,
+    "characterRefCount": 38,
     "title": "Kit",
-    "length": 16775
+    "length": 16733
   },
   {
     "chapter": 33,
     "book": 9,
-    "letterIndex": 8052682,
+    "letterIndex": 8028521,
     "chapterFlat": 457,
     "characterRefCount": 94,
     "title": "Naomi",
-    "length": 17130
+    "length": 17067
   },
   {
     "chapter": 34,
     "book": 9,
-    "letterIndex": 8069812,
+    "letterIndex": 8045588,
     "chapterFlat": 458,
-    "characterRefCount": 49,
+    "characterRefCount": 50,
     "title": "Tanaka",
-    "length": 16699
+    "length": 16643
   },
   {
     "chapter": 35,
     "book": 9,
-    "letterIndex": 8086511,
+    "letterIndex": 8062231,
     "chapterFlat": 459,
-    "characterRefCount": 94,
+    "characterRefCount": 99,
     "title": "Alex",
-    "length": 16281
+    "length": 16231
   },
   {
     "chapter": 36,
     "book": 9,
-    "letterIndex": 8102792,
+    "letterIndex": 8078462,
     "chapterFlat": 460,
-    "characterRefCount": 81,
+    "characterRefCount": 80,
     "title": "Jim",
-    "length": 16186
+    "length": 16126
   },
   {
     "chapter": 37,
     "book": 9,
-    "letterIndex": 8118978,
+    "letterIndex": 8094588,
     "chapterFlat": 461,
-    "characterRefCount": 89,
+    "characterRefCount": 93,
     "title": "Tanaka",
-    "length": 18699
+    "length": 18641
   },
   {
     "chapter": 38,
     "book": 9,
-    "letterIndex": 8137677,
+    "letterIndex": 8113229,
     "chapterFlat": 462,
-    "characterRefCount": 94,
+    "characterRefCount": 108,
     "title": "Elvi",
-    "length": 22295
+    "length": 22257
   },
   {
     "chapter": 39,
     "book": 9,
-    "letterIndex": 8159972,
+    "letterIndex": 8135486,
     "chapterFlat": 463,
-    "characterRefCount": 73,
+    "characterRefCount": 78,
     "title": "Jim",
-    "length": 16749
+    "length": 16709
   },
   {
     "chapter": 40,
     "book": 9,
-    "letterIndex": 8176721,
+    "letterIndex": 8152195,
     "chapterFlat": 464,
-    "characterRefCount": 86,
+    "characterRefCount": 85,
     "title": "Naomi",
-    "length": 17135
+    "length": 17078
   },
   {
     "chapter": 41,
     "book": 9,
-    "letterIndex": 8193856,
+    "letterIndex": 8169273,
     "chapterFlat": 465,
     "characterRefCount": 73,
     "title": "Jim",
-    "length": 17271
+    "length": 17213
   },
   {
     "chapter": 42,
     "book": 9,
-    "letterIndex": 8211127,
+    "letterIndex": 8186486,
     "chapterFlat": 466,
     "characterRefCount": 93,
     "title": "Alex",
-    "length": 16694
+    "length": 16661
   },
   {
     "chapter": 43,
     "book": 9,
-    "letterIndex": 8227821,
+    "letterIndex": 8203147,
     "chapterFlat": 467,
-    "characterRefCount": 79,
+    "characterRefCount": 80,
     "title": "Jim",
-    "length": 16539
+    "length": 16490
   },
   {
     "chapter": 44,
     "book": 9,
-    "letterIndex": 8244360,
+    "letterIndex": 8219637,
     "chapterFlat": 468,
-    "characterRefCount": 45,
+    "characterRefCount": 46,
     "title": "Teresa",
-    "length": 13756
+    "length": 13721
   },
   {
     "chapter": 45,
     "book": 9,
-    "letterIndex": 8258116,
+    "letterIndex": 8233358,
     "chapterFlat": 469,
-    "characterRefCount": 64,
+    "characterRefCount": 63,
     "title": "Naomi",
-    "length": 15326
+    "length": 15294
   },
   {
     "chapter": 46,
     "book": 9,
-    "letterIndex": 8273442,
+    "letterIndex": 8248652,
     "chapterFlat": 470,
     "characterRefCount": 59,
     "title": "Tanaka",
-    "length": 14180
+    "length": 14175
   },
   {
     "chapter": 47,
     "book": 9,
-    "letterIndex": 8287622,
+    "letterIndex": 8262827,
     "chapterFlat": 471,
     "characterRefCount": 57,
     "title": "Jim",
-    "length": 17155
+    "length": 17106
   },
   {
     "chapter": 48,
     "book": 9,
-    "letterIndex": 8304777,
+    "letterIndex": 8279933,
     "chapterFlat": 472,
-    "characterRefCount": 67,
+    "characterRefCount": 70,
     "title": "Alex",
-    "length": 14776
+    "length": 14728
   },
   {
     "chapter": 49,
     "book": 9,
-    "letterIndex": 8319553,
+    "letterIndex": 8294661,
     "chapterFlat": 473,
-    "characterRefCount": 68,
+    "characterRefCount": 72,
     "title": "Naomi and Jim",
-    "length": 22135
+    "length": 22068
   },
   {
     "chapter": 50,
     "book": 9,
-    "letterIndex": 8341688,
+    "letterIndex": 8316729,
     "chapterFlat": 474,
     "characterRefCount": 0,
     "title": "50",
-    "length": 13245
+    "length": 13207
   }
 ]

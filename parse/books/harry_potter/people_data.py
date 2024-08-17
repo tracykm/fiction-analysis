@@ -3,7 +3,7 @@ characters = {
         "shortName": "Harry",
         "other_names": ["Mr. Potter", "Harry"],
         "category": ["Male", "Child", "Wizard", "Gryffindor", "Student"],
-        "disqualifiers": [],
+        "disqualifiers": ["James Potter", "Lily Potter"],
     },
     "Hermione Granger": {
         "shortName": "Hermione",
@@ -27,7 +27,7 @@ characters = {
         "shortName": "Dumbledore",
         "other_names": ["Dumbledore", "Headmaster", "Albus"],
         "category": ["Male", "Adult", "Wizard", "Headmaster", "Gryffindor"],
-        "disqualifiers": [],
+        "disqualifiers": ["Aberforth Dumbledore"],
     },
     "Severus Snape": {
         "shortName": "Snape",
@@ -39,7 +39,7 @@ characters = {
         "shortName": "Draco",
         "other_names": ["Draco", "Malfoy"],
         "category": ["Male", "Student", "Child", "Wizard", "Slytherin"],
-        "disqualifiers": [],
+        "disqualifiers": ["Lucius Malfoy", "Narcissa Malfoy"],
     },
     "Voldemort": {
         "shortName": "Voldemort",
@@ -90,10 +90,10 @@ characters = {
         "shortName": "Luna",
         "other_names": ["Lovegood", "Luna"],
         "category": ["Female", "Child", "Wizard", "Ravenclaw", "Student"],
-        "disqualifiers": [],
+        "disqualifiers": ["Xenophilius Lovegood", "Mr. Lovegood"],
         "books": [5, 6, 7],
     },
-    "Minerva McGonagall": {
+    "Professor McGonagall": {
         "shortName": "McGonagall",
         "other_names": ["McGonagall", "Minerva"],
         "category": ["Female", "Adult", "Wizard", "Gryffindor", "Professor"],
@@ -205,7 +205,7 @@ characters = {
         "disqualifiers": [],
         "books": [5, 6, 7],
     },
-    "Moody": {
+    "Mad-Eye Moody": {
         "shortName": "Moody",
         "other_names": ["Mad-Eye Moody", "Alastor", "Moody"],
         "category": ["Male", "Adult", "Wizard", "Auror"],
@@ -259,13 +259,13 @@ characters = {
         "disqualifiers": [],
         "books": [6, 7],
     },
-    "Pomona Sprout": {
+    "Professor Sprout": {
         "shortName": "Sprout",
         "other_names": ["Sprout"],
         "category": ["Female", "Adult", "Wizard", "Hufflepuff", "Professor"],
         "disqualifiers": [],
     },
-    "Filius Flitwick": {
+    "Professor Flitwick": {
         "shortName": "Flitwick",
         "other_names": ["Flitwick", "Filius"],
         "category": ["Male", "Adult", "Wizard", "Ravenclaw", "Professor"],
@@ -291,13 +291,13 @@ characters = {
         "category": ["Female", "Adult", "Wizard", "Healer"],
         "disqualifiers": [],
     },
-    "Barty Crouch Jr.": {
-        "shortName": "Barty Jr.",
-        "other_names": ["Crouch", "Barty"],
-        "category": ["Male", "Adult", "Wizard", "Villain", "Death Eater"],
-        "disqualifiers": [],
-        "chapters": [91, 92],
-    },
+    # "Barty Crouch Jr.": {
+    #     "shortName": "Barty Jr.",
+    #     "other_names": ["Crouch", "Barty"],
+    #     "category": ["Male", "Adult", "Wizard", "Villain", "Death Eater"],
+    #     "disqualifiers": [],
+    #     "chapters": [91, 92],
+    # },
     "Barty Crouch Sr.": {
         "shortName": "Crouch",
         "other_names": ["Bartemius", "Crouch", "Barty"],
@@ -505,5 +505,32 @@ characters = {
         "other_names": ["Harry's Owl"],
         "category": ["Female", "Creature", "Owl", "Adult"],
         "disqualifiers": [],
+    },
+    "Crookshanks": {
+        "shortName": "Crookshanks",
+        "other_names": [],
+        "category": ["Female", "Creature", "Owl", "Adult"],
+        "disqualifiers": [],
+    },
+    "James Potter": {
+        "shortName": "James",
+        "other_names": ["James"],
+        "category": ["Male", "Adult", "Wizard", "Gryffindor"],
+    },
+    "Lily Potter": {
+        "shortName": "Lily",
+        "other_names": ["Lily", "Evans"],
+        "category": ["Female", "Adult", "Wizard", "Gryffindor"],
+        "disqualifiers": ["Mark Evans"],
+    },
+    "Colin Creevey": {
+        "shortName": "Colin",
+        "other_names": ["Colin"],
+        "category": ["Male", "Child", "Wizard", "Gryffindor"],
+    },
+    "Professor Quirrell": {
+        "shortName": "Quirrell",
+        "other_names": ["Quirrell", "Quirinus"],
+        "category": ["Male", "Adult", "Wizard", "Ravenclaw", "Villain"],
     },
 }

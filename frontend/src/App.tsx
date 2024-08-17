@@ -48,7 +48,6 @@ function BookTabs({
         zIndex: 10,
         background: "#333",
         width: "100%",
-        ml: manyBooks ? -5 : 0,
       }}
       variant={manyBooks ? "scrollable" : "standard"}
       onChange={(e, opt) => {

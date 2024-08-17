@@ -247,12 +247,14 @@ function BookText({
 
   return (
     <div key={bookIdx}>
-      <ListItemButton
+      <Box
         sx={{
           ...collapseSx,
           textTransform: "uppercase",
           zIndex: 11,
-          height: 47,
+          // height: 47,
+          px: 2,
+          py: 1.5,
         }}
         id={`book-${bookIdx}`}
       >
@@ -261,7 +263,7 @@ function BookText({
           <span style={{ opacity: 0.5 }}> Book {Number(bookIdx)}</span>
         </div>
         {/* <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box> */}
-      </ListItemButton>
+      </Box>
       <Collapse in={open}>
         {chaptersText.map(([chapterIdx, sentences]) => {
           return (
@@ -296,9 +298,15 @@ function ChapterTitle({
   const noChapterName = String(chapter?.chapter) === chapter?.title;
 
   return (
-    <ListItemButton
+    <Box
       onClick={onClick}
-      sx={{ ...collapseSx, top: 46, justifyContent: "flex-start" }}
+      sx={{
+        ...collapseSx,
+        top: 46,
+        justifyContent: "flex-start",
+        px: 2,
+        py: 1,
+      }}
     >
       {/* <Box>
         {open ? (
@@ -317,7 +325,7 @@ function ChapterTitle({
         </span>
         {noChapterName ? ` Chapter ${chapter?.chapter} ` : chapter?.title}
       </div>
-    </ListItemButton>
+    </Box>
   );
 }
 

@@ -1,6 +1,7 @@
 characters = {
-    "Lyra": {
-        "other_names": ["Lizzie", "Silvertounge", "Ransom"],
+    "Lyra Silvertounge": {
+        "shortName": "Lyra",
+        "other_names": ["Lizzie", "Silvertounge", "Ransom", "Lyra"],
         "category": ["Child", "Lyra's World", "Human"],
         "disqualifiers": ["Lyra’s Jordan FOUR"],
     },
@@ -186,11 +187,14 @@ characters = {
         "category": ["Scholar", "Human", "Adult", "Lyra's World"],
     },
     "The Chaplain": {"category": ["Cleric", "Human", "Adult", "Lyra's World"]},
-    "The Sub-Rector": {
+    # "The Sub-Rector": {
+    #     "category": ["Scholar", "Human", "Adult", "Lyra's World"],
+    #     "other_names": ["Sub-Rector"],
+    # },
+    "The Librarian": {
+        "other_names": ["Librarian"],
         "category": ["Scholar", "Human", "Adult", "Lyra's World"],
-        "other_names": ["Sub-Rector"],
     },
-    "The Librarian": {"category": ["Scholar", "Human", "Adult", "Lyra's World"]},
     "The Intercessor": {
         "category": ["Cleric", "Human", "Adult", "Lyra's World"],
         "other_names": ["Heyst"],
@@ -209,8 +213,9 @@ characters = {
     "Yambe-Akka": {
         "category": ["Witch", "Adult", "Lyra's World"],
     },
-    "Will": {
-        "other_names": ["William", "Mark"],
+    "Will Perry": {
+        "shortName": "Will",
+        "other_names": ["William", "Mark", "Will"],
         "disqualifiers": [
             "Will you",
             "Will I",
@@ -272,10 +277,10 @@ characters = {
         "other_names": ["Søren", "Soren", "Eisarson"],
         "category": ["Bear", "Lyra's World", "Adult"],
     },
-    "Hjalmur Hjalmurson": {
-        "other_names": ["Hjalmur", "Hjalmurson"],
-        "category": ["Bear", "Lyra's World", "Adult"],
-    },
+    # "Hjalmur Hjalmurson": {
+    #     "other_names": ["Hjalmur", "Hjalmurson"],
+    #     "category": ["Bear", "Lyra's World", "Adult"],
+    # },
     "John Parry": {
         "other_names": ["Parry", "Stanislaus", "Grumman", "Johnny", "John", "Jopari"],
         "disqualifiers": [

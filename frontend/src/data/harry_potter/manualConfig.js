@@ -12,7 +12,7 @@ export default {
       ],
     },
     {
-      name: "Gender",
+      name: "Genders",
       options: [
         { id: "Male", label: "Male" },
         { id: "Female", label: "Female" },

@@ -490,15 +490,15 @@ export default {
       options: [
         { id: "Main Character", label: "Main Character" },
         { id: "Family", label: "Family" },
-        { id: "Romantic Interest", label: "Romantic Interest" },
+        { id: "Romantic Interest", label: "Love Interest" },
         { id: "Extended Family", label: "Extended Family" },
         { id: "Romantic Rival", label: "Romantic Rival" },
         { id: "Friend", label: "Friend" },
         { id: "In-Law", label: "In-Law" },
-        {
-          id: "Family of Romantic Interest",
-          label: "Family of Romantic Interest",
-        },
+        // {
+        //   id: "Family of Romantic Interest",
+        //   label: "Family of Romantic Interest",
+        // },
       ],
     },
     // {

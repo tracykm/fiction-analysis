@@ -225,7 +225,7 @@ characters = {
     "Kitty Bennet": {
         "shortName": "Kitty",
         "name": "Kitty Bennet",
-        "other_names": ["Kitty"],
+        "other_names": ["Kitty", "Catherine"],
         "category": ["Female", "Unmarried", "Sibling", "Family"],
         "disqualifiers": [],
         "books": [2],
