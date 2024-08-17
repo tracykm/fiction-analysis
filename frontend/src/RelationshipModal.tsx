@@ -75,6 +75,20 @@ function useScrollToChapter({ chapter }: { chapter?: number }) {
   }, [chapter]);
 }
 
+function padOutChapters(chapters: number[], allChapters: number[]) {
+  if (!chapters.length) {
+    return [Number(allChapters[0]), Number(allChapters[1])];
+  }
+  const idx = allChapters.findIndex((d) => Number(d) === Number(chapters[0]));
+  return [
+    Number(allChapters[idx - 2]),
+    Number(allChapters[idx - 1]),
+    ...chapters,
+    Number(allChapters[idx + 1]),
+    Number(allChapters[idx + 2]),
+  ];
+}
+
 export function RefsModal({
   onClose,
   title,
@@ -98,40 +112,41 @@ export function RefsModal({
 
   const totalBookLength = chapters[chapters.length - 1].letterIndex;
 
+  const groupByChapter = groupBy(
+    sortedRefs,
+    (s) => indexedSentences[s].chapterFlat
+  );
+
   const groupedByBookThenChapter = Object.entries(
     groupBy(
-      Object.entries(
-        groupBy(sortedRefs, (s) => indexedSentences[s].chapterFlat)
-      ),
+      Object.entries(groupByChapter),
       (d) => chapters.find((c) => String(c.chapterFlat) === d[0])?.book
     )
   );
-  const selectedBook: number = selectedChapter
-    ? chapters.find((c) => c.chapterFlat === selectedChapter)?.book!
-    : Number(groupedByBookThenChapter[0][0]);
-  const [booksToShow, setBooksToShow] = useState(
-    selectedBook > 1 ? [selectedBook - 1, selectedBook] : [selectedBook]
+  let defaultChaptersToShow = selectedChapter ? [selectedChapter] : [];
+
+  const usedChapters = Object.keys(groupByChapter).map(Number);
+
+  const [chaptersToShow, setChaptersToShow] = useState(
+    padOutChapters(defaultChaptersToShow, usedChapters)
   );
 
-  const updateSetBooksToShow = useCallback(() => {
-    if (books.length === 1) return;
-    const visibleBooks = books
-      .map((b) => b.id)
-      .filter((bookIdx) => {
-        const bookEl = document.getElementById(`book-${bookIdx}`);
-        if (!bookEl) return;
-        if (isElementVisible(bookEl)) {
+  const updateChaptersToShow = useCallback(() => {
+    if (chapters.length === 1) return;
+    const visibleChapters = chapters
+      .map((c) => c.chapterFlat)
+      .filter((chapterFlat) => {
+        const elem = document.getElementById(getChapterId(chapterFlat));
+        if (!elem) return;
+        if (isElementVisible(elem)) {
           return true;
         }
       });
-    const firstBook = visibleBooks[0];
-    visibleBooks.unshift(firstBook - 1);
+    setChaptersToShow(padOutChapters(visibleChapters, usedChapters));
+  }, [chapters]);
 
-    setBooksToShow(visibleBooks);
-  }, [books]);
-
-  const handleScroll = useCallback(throttle(updateSetBooksToShow, 200), [
-    books,
+  const handleScroll = useCallback(throttle(updateChaptersToShow, 200), [
+    chapters,
   ]);
 
   return (
@@ -168,10 +183,8 @@ export function RefsModal({
               setSentenceRefs={setSentenceRefs}
               sentenceRefs={sortedRefs}
               originalRefs={refs}
-              displayPlaceholder={
-                refs.length > 1000 && !booksToShow.includes(Number(bookIdx))
-              }
-              updateSetBooksToShow={updateSetBooksToShow}
+              chaptersToShow={chaptersToShow}
+              updateChaptersToShow={updateChaptersToShow}
             />
           ))}
         </ErrorBoundary>
@@ -184,6 +197,7 @@ export function RefsModal({
   );
 }
 function isElementVisible(element) {
+  if (!element) return;
   const rect = element.getBoundingClientRect();
   const viewHeight = Math.max(
     document.documentElement.clientHeight,
@@ -214,8 +228,8 @@ function BookText({
   setSentenceRefs,
   sentenceRefs,
   originalRefs,
-  displayPlaceholder,
-  updateSetBooksToShow,
+  chaptersToShow,
+  updateChaptersToShow,
 }: {
   bookIdx: string;
   chaptersText: [string, number[]][];
@@ -225,8 +239,8 @@ function BookText({
   setSentenceRefs: SetState<number[]>;
   sentenceRefs: number[];
   originalRefs: number[];
-  displayPlaceholder?: boolean;
-  updateSetBooksToShow: () => void;
+  chaptersToShow: number[];
+  updateChaptersToShow: () => void;
 }) {
   const book = books[Number(bookIdx) - 1];
   const open = true;
@@ -261,7 +275,7 @@ function BookText({
               setSentenceRefs={setSentenceRefs}
               sentenceRefs={sentenceRefs}
               originalRefs={originalRefs}
-              displayPlaceholder={displayPlaceholder}
+              displayPlaceholder={!chaptersToShow.includes(Number(chapterIdx))}
             />
           );
         })}
@@ -434,7 +448,10 @@ function ChapterText({
             );
           }
           return (
-            <Box sx={{ my: 2, px: 2, color: originalRef ? "#ccc" : "#999" }}>
+            <Box
+              key={sentenceIdx}
+              sx={{ my: 2, px: 2, color: originalRef ? "#ccc" : "#999" }}
+            >
               {topGapNode}
               <Typography key={sentenceIdx} variant="body1">
                 <div dangerouslySetInnerHTML={{ __html: sentenceText }} />
