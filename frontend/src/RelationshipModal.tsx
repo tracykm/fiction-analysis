@@ -42,31 +42,32 @@ export function RelationshipModal({
 
 const getChapterId = (chapter: number) => `chapter-${chapter}`;
 
+function scrollToChapter(chapter: number) {
+  let chp = chapter;
+  let chapterEl = document.getElementById(getChapterId(chapter));
+  while (!chapterEl && chp > 0) {
+    chp--;
+    chapterEl = document.getElementById(getChapterId(chp));
+  }
+  if (isElementVisible(chapterEl)) return;
+  const container = document.getElementById("refs-modal");
+  if (chapterEl && container) {
+    const offset = 250;
+    const elementPosition =
+      chapterEl.getBoundingClientRect().top +
+      container.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - offset;
+    container.scrollTo({
+      top: offsetPosition,
+    });
+  }
+}
+
 function useScrollToChapter({ chapter }: { chapter?: number }) {
   useEffect(() => {
     if (!chapter) return;
-    const scrollToChapter = () => {
-      let chp = chapter;
-      let chapterEl = document.getElementById(getChapterId(chapter));
-      while (!chapterEl && chp > 0) {
-        chp--;
-        chapterEl = document.getElementById(getChapterId(chp));
-      }
-      if (isElementVisible(chapterEl)) return;
-      const container = document.getElementById("refs-modal");
-      if (chapterEl && container) {
-        const offset = 250;
-        const elementPosition =
-          chapterEl.getBoundingClientRect().top +
-          container.getBoundingClientRect().top;
-        const offsetPosition = elementPosition - offset;
-        container.scrollTo({
-          top: offsetPosition,
-        });
-      }
-    };
 
-    const timeoutId = setTimeout(scrollToChapter, 0);
+    const timeoutId = setTimeout(() => scrollToChapter(chapter), 0);
 
     return () => {
       clearTimeout(timeoutId);
@@ -178,21 +179,6 @@ export function RefsModal({
 
       <DialogActions>
         <Button onClick={onClose}>Close</Button>
-        <Button
-          onClick={() =>
-            setChaptersClosed(
-              chapters.reduce(
-                (acc, ch) => ({
-                  ...acc,
-                  [ch.chapterFlat]: !Object.values(chaptersClosed)[0],
-                }),
-                {}
-              )
-            )
-          }
-        >
-          Collapse Chapters
-        </Button>
       </DialogActions>
     </Dialog>
   );
@@ -243,7 +229,7 @@ function BookText({
   updateSetBooksToShow: () => void;
 }) {
   const book = books[Number(bookIdx) - 1];
-  const [open, setOpen] = useState(true);
+  const open = true;
 
   return (
     <div key={bookIdx}>
@@ -252,12 +238,7 @@ function BookText({
           ...collapseSx,
           textTransform: "uppercase",
           zIndex: 11,
-        }}
-        onClick={() => {
-          setOpen(!open);
-          setTimeout(() => {
-            updateSetBooksToShow();
-          }, 500);
+          height: 47,
         }}
         id={`book-${bookIdx}`}
       >
@@ -265,7 +246,7 @@ function BookText({
           {book?.title}{" "}
           <span style={{ opacity: 0.5 }}> Book {Number(bookIdx)}</span>
         </div>
-        <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box>
+        {/* <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box> */}
       </ListItemButton>
       <Collapse in={open}>
         {chaptersText.map(([chapterIdx, sentences]) => {
@@ -305,13 +286,13 @@ function ChapterTitle({
       onClick={onClick}
       sx={{ ...collapseSx, top: 46, justifyContent: "flex-start" }}
     >
-      <Box>
+      {/* <Box>
         {open ? (
           <ExpandMore sx={{ mt: 0.5 }} />
         ) : (
           <KeyboardArrowRightIcon sx={{ mt: 0.5 }} />
         )}
-      </Box>
+      </Box> */}
       <div>
         <Box
           id={getChapterId(chapter?.chapterFlat)}
@@ -349,7 +330,7 @@ function ChapterText({
 }) {
   const { chapters, indexedSentences, manualConfig } = useDataContext();
   const chapter = chapters.find((c) => c.chapterFlat === Number(chapterIdx))!;
-  const open = !chaptersClosed[chapter?.chapterFlat];
+  const open = true;
 
   if (displayPlaceholder) {
     return (
@@ -362,38 +343,7 @@ function ChapterText({
 
   return (
     <div>
-      <ChapterTitle
-        chapter={chapter}
-        open={open}
-        onClick={() => {
-          setChaptersClosed((cs) => ({
-            ...cs,
-            [chapter?.chapterFlat]: !cs[chapter?.chapterFlat],
-          }));
-          const chapterEl = document.getElementById(
-            getChapterId(chapter.chapterFlat)
-          );
-          if (chapterEl) {
-            setTimeout(() => {
-              const rect = chapterEl.getBoundingClientRect();
-              const isVisible =
-                rect.top >= 120 && // Adjusted top padding
-                rect.left >= 0 &&
-                rect.bottom <=
-                  (window.innerHeight ||
-                    document.documentElement.clientHeight) &&
-                rect.right <=
-                  (window.innerWidth || document.documentElement.clientWidth);
-              if (!isVisible) {
-                chapterEl.scrollIntoView({
-                  block: "start",
-                  behavior: "smooth",
-                });
-              }
-            }, 400);
-          }
-        }}
-      />
+      <ChapterTitle chapter={chapter} open={open} />
 
       <Collapse in={open}>
         {sentences.map((sentenceIdx, i) => {
