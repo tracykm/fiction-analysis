@@ -19,12 +19,13 @@ import {
   SetState,
 } from "./utils";
 import { useDataContext } from "./DataContext";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Close from "@mui/icons-material/Close";
 import { ErrorBoundary } from "./ErrorBoundry";
+import { VariableSizeList as List } from "react-window";
 
 export function RelationshipModal({
   relationship,
@@ -95,6 +96,38 @@ export function RefsModal({
     )
   );
 
+  const listRef = useRef();
+
+  const getItemSize = useCallback(
+    (index) => {
+      // Calculate the height of each item dynamically
+      const [bookIdx, chaptersText] = groupedByBookThenChapter[index];
+      const len = chaptersText.flatMap((d) => d[1]).length || 1;
+      // You can adjust the height calculation logic as needed
+      return 300 * len; // Example fixed height, replace with dynamic calculation if needed
+    },
+    [groupedByBookThenChapter]
+  );
+
+  const Row = ({ index, style }) => {
+    const [bookIdx, chaptersText] = groupedByBookThenChapter[index];
+    return (
+      <div style={style}>
+        <BookText
+          key={bookIdx}
+          bookIdx={bookIdx}
+          chaptersText={chaptersText}
+          books={books}
+          setChaptersClosed={setChaptersClosed}
+          chaptersClosed={chaptersClosed}
+          setSentenceRefs={setSentenceRefs}
+          sentenceRefs={sortedRefs}
+          originalRefs={refs}
+        />
+      </div>
+    );
+  };
+
   return (
     <Dialog
       open
@@ -114,19 +147,31 @@ export function RefsModal({
       </DialogTitle>
       <DialogContent sx={{ position: "relative", p: 0 }}>
         <ErrorBoundary>
-          {groupedByBookThenChapter.map(([bookIdx, chaptersText]) => (
-            <BookText
-              key={bookIdx}
-              bookIdx={bookIdx}
-              chaptersText={chaptersText}
-              books={books}
-              setChaptersClosed={setChaptersClosed}
-              chaptersClosed={chaptersClosed}
-              setSentenceRefs={setSentenceRefs}
-              sentenceRefs={sortedRefs}
-              originalRefs={refs}
-            />
-          ))}
+          {refs.length > 1000 ? (
+            <List
+              ref={listRef}
+              height={600} // You can adjust this height or make it dynamic
+              itemCount={groupedByBookThenChapter.length}
+              itemSize={getItemSize}
+              width={"100%"}
+            >
+              {Row}
+            </List>
+          ) : (
+            groupedByBookThenChapter.map(([bookIdx, chaptersText]) => (
+              <BookText
+                key={bookIdx}
+                bookIdx={bookIdx}
+                chaptersText={chaptersText}
+                books={books}
+                setChaptersClosed={setChaptersClosed}
+                chaptersClosed={chaptersClosed}
+                setSentenceRefs={setSentenceRefs}
+                sentenceRefs={sortedRefs}
+                originalRefs={refs}
+              />
+            ))
+          )}
         </ErrorBoundary>
       </DialogContent>
 
@@ -174,6 +219,8 @@ function BookText({
   setSentenceRefs,
   sentenceRefs,
   originalRefs,
+  setBookOpened,
+  bookOpened,
 }: {
   bookIdx: string;
   chaptersText: [string, number[]][];
@@ -183,9 +230,10 @@ function BookText({
   setSentenceRefs: SetState<number[]>;
   sentenceRefs: number[];
   originalRefs: number[];
+  setBookOpened: SetState<string>;
+  bookOpened: string;
 }) {
   const book = books[Number(bookIdx) - 1];
-  const [open, setOpen] = useState(true);
   return (
     <div key={bookIdx}>
       <ListItemButton
@@ -194,15 +242,15 @@ function BookText({
           textTransform: "uppercase",
           zIndex: 11,
         }}
-        onClick={() => setOpen(!open)}
+        onClick={() => setBookOpened((i) => (i === bookIdx ? "" : bookIdx))}
       >
         <div>
           {book?.title}{" "}
           <span style={{ opacity: 0.5 }}> Book {Number(bookIdx)}</span>
         </div>
-        <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box>
+        <Box>{bookOpened ? <ExpandLess /> : <ExpandMore />}</Box>
       </ListItemButton>
-      <Collapse in={open}>
+      <Collapse in={true}>
         {chaptersText.map(([chapterIdx, sentences]) => {
           return (
             <ChapterText
