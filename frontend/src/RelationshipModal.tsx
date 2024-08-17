@@ -11,7 +11,7 @@ import {
   Typography,
 } from "@mui/material";
 import { sort } from "d3";
-import { groupBy, uniq } from "lodash-es";
+import { groupBy, throttle, uniq } from "lodash-es";
 import {
   getPercent,
   LETTERS_PER_PAGE,
@@ -19,7 +19,7 @@ import {
   SetState,
 } from "./utils";
 import { useDataContext } from "./DataContext";
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
@@ -52,14 +52,25 @@ function useScrollToChapter({ chapter }: { chapter?: number }) {
         chp--;
         chapterEl = document.getElementById(getChapterId(chp));
       }
-      if (chapterEl) {
-        chapterEl.scrollIntoView();
+      if (isElementVisible(chapterEl)) return;
+      const container = document.getElementById("refs-modal");
+      if (chapterEl && container) {
+        const offset = 250;
+        const elementPosition =
+          chapterEl.getBoundingClientRect().top +
+          container.getBoundingClientRect().top;
+        const offsetPosition = elementPosition - offset;
+        container.scrollTo({
+          top: offsetPosition,
+        });
       }
     };
 
     const timeoutId = setTimeout(scrollToChapter, 0);
 
-    return () => clearTimeout(timeoutId);
+    return () => {
+      clearTimeout(timeoutId);
+    };
   }, [chapter]);
 }
 
@@ -94,6 +105,33 @@ export function RefsModal({
       (d) => chapters.find((c) => String(c.chapterFlat) === d[0])?.book
     )
   );
+  const selectedBook: number = selectedChapter
+    ? chapters.find((c) => c.chapterFlat === selectedChapter)?.book!
+    : Number(groupedByBookThenChapter[0][0]);
+  const [booksToShow, setBooksToShow] = useState(
+    selectedBook > 1 ? [selectedBook - 1, selectedBook] : [selectedBook]
+  );
+
+  const updateSetBooksToShow = useCallback(() => {
+    if (books.length === 1) return;
+    const visibleBooks = books
+      .map((b) => b.id)
+      .filter((bookIdx) => {
+        const bookEl = document.getElementById(`book-${bookIdx}`);
+        if (!bookEl) return;
+        if (isElementVisible(bookEl)) {
+          return true;
+        }
+      });
+    const firstBook = visibleBooks[0];
+    visibleBooks.unshift(firstBook - 1);
+
+    setBooksToShow(visibleBooks);
+  }, [books]);
+
+  const handleScroll = useCallback(throttle(updateSetBooksToShow, 200), [
+    books,
+  ]);
 
   return (
     <Dialog
@@ -103,7 +141,7 @@ export function RefsModal({
       sx={{ ".MuiDialog-paperScrollPaper": { maxWidth: 800 } }}
     >
       <DialogTitle sx={{ display: "flex", gap: 1, px: 2 }}>
-        <div>The Story of {title} </div>
+        <div>The Story of {title}</div>
         <div style={{ flexGrow: 1 }} />
         <div style={{ opacity: 0.5, fontWeight: "lighter" }}>
           {getPercent(totalLength / totalBookLength)}% of total text
@@ -112,7 +150,11 @@ export function RefsModal({
           <Close />
         </IconButton>
       </DialogTitle>
-      <DialogContent sx={{ position: "relative", p: 0 }}>
+      <DialogContent
+        sx={{ position: "relative", p: 0 }}
+        onScroll={handleScroll}
+        id="refs-modal"
+      >
         <ErrorBoundary>
           {groupedByBookThenChapter.map(([bookIdx, chaptersText]) => (
             <BookText
@@ -125,6 +167,10 @@ export function RefsModal({
               setSentenceRefs={setSentenceRefs}
               sentenceRefs={sortedRefs}
               originalRefs={refs}
+              displayPlaceholder={
+                refs.length > 1000 && !booksToShow.includes(Number(bookIdx))
+              }
+              updateSetBooksToShow={updateSetBooksToShow}
             />
           ))}
         </ErrorBoundary>
@@ -151,6 +197,14 @@ export function RefsModal({
     </Dialog>
   );
 }
+function isElementVisible(element) {
+  const rect = element.getBoundingClientRect();
+  const viewHeight = Math.max(
+    document.documentElement.clientHeight,
+    window.innerHeight
+  );
+  return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+}
 
 const collapseSx = {
   position: "sticky",
@@ -174,6 +228,8 @@ function BookText({
   setSentenceRefs,
   sentenceRefs,
   originalRefs,
+  displayPlaceholder,
+  updateSetBooksToShow,
 }: {
   bookIdx: string;
   chaptersText: [string, number[]][];
@@ -183,9 +239,12 @@ function BookText({
   setSentenceRefs: SetState<number[]>;
   sentenceRefs: number[];
   originalRefs: number[];
+  displayPlaceholder?: boolean;
+  updateSetBooksToShow: () => void;
 }) {
   const book = books[Number(bookIdx) - 1];
   const [open, setOpen] = useState(true);
+
   return (
     <div key={bookIdx}>
       <ListItemButton
@@ -194,7 +253,13 @@ function BookText({
           textTransform: "uppercase",
           zIndex: 11,
         }}
-        onClick={() => setOpen(!open)}
+        onClick={() => {
+          setOpen(!open);
+          setTimeout(() => {
+            updateSetBooksToShow();
+          }, 500);
+        }}
+        id={`book-${bookIdx}`}
       >
         <div>
           {book?.title}{" "}
@@ -215,11 +280,49 @@ function BookText({
               setSentenceRefs={setSentenceRefs}
               sentenceRefs={sentenceRefs}
               originalRefs={originalRefs}
+              displayPlaceholder={displayPlaceholder}
             />
           );
         })}
       </Collapse>
     </div>
+  );
+}
+
+function ChapterTitle({
+  open,
+  chapter,
+  onClick,
+}: {
+  open: boolean;
+  chapter: any;
+  onClick?: () => void;
+}) {
+  const noChapterName = String(chapter?.chapter) === chapter?.title;
+
+  return (
+    <ListItemButton
+      onClick={onClick}
+      sx={{ ...collapseSx, top: 46, justifyContent: "flex-start" }}
+    >
+      <Box>
+        {open ? (
+          <ExpandMore sx={{ mt: 0.5 }} />
+        ) : (
+          <KeyboardArrowRightIcon sx={{ mt: 0.5 }} />
+        )}
+      </Box>
+      <div>
+        <Box
+          id={getChapterId(chapter?.chapterFlat)}
+          sx={{ zIndex: -1, position: "relative" }}
+        />
+        <span style={{ opacity: 0.5 }}>
+          {noChapterName ? "" : `  Chapter ${chapter?.chapter} `}
+        </span>
+        {noChapterName ? ` Chapter ${chapter?.chapter} ` : chapter?.title}
+      </div>
+    </ListItemButton>
   );
 }
 
@@ -232,6 +335,7 @@ function ChapterText({
   setSentenceRefs,
   sentenceRefs,
   originalRefs,
+  displayPlaceholder,
 }: {
   chapterIdx: string;
   sentences: number[];
@@ -241,15 +345,26 @@ function ChapterText({
   setSentenceRefs: SetState<number[]>;
   sentenceRefs: number[];
   originalRefs: number[];
+  displayPlaceholder?: boolean;
 }) {
   const { chapters, indexedSentences, manualConfig } = useDataContext();
   const chapter = chapters.find((c) => c.chapterFlat === Number(chapterIdx))!;
-  const noChapterName = String(chapter?.chapter) === chapter?.title;
   const open = !chaptersClosed[chapter?.chapterFlat];
+
+  if (displayPlaceholder) {
+    return (
+      <div>
+        <ChapterTitle chapter={chapter} open={open} />
+        {open && <div style={{ height: sentences.length * 100 }} />}
+      </div>
+    );
+  }
 
   return (
     <div>
-      <ListItemButton
+      <ChapterTitle
+        chapter={chapter}
+        open={open}
         onClick={() => {
           setChaptersClosed((cs) => ({
             ...cs,
@@ -278,26 +393,8 @@ function ChapterText({
             }, 400);
           }
         }}
-        sx={{ ...collapseSx, top: 46, justifyContent: "flex-start" }}
-      >
-        <Box>
-          {open ? (
-            <ExpandMore sx={{ mt: 0.5 }} />
-          ) : (
-            <KeyboardArrowRightIcon sx={{ mt: 0.5 }} />
-          )}
-        </Box>
-        <div>
-          <Box
-            id={getChapterId(chapter?.chapterFlat)}
-            sx={{ pt: 7, mt: -7, zIndex: -1, position: "relative" }}
-          />
-          <span style={{ opacity: 0.5 }}>
-            {noChapterName ? "" : `  Chapter ${chapter?.chapter} `}
-          </span>
-          {noChapterName ? ` Chapter ${chapter?.chapter} ` : chapter?.title}
-        </div>
-      </ListItemButton>
+      />
+
       <Collapse in={open}>
         {sentences.map((sentenceIdx, i) => {
           let sentenceText = indexedSentences[sentenceIdx].sentence;
