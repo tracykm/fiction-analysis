@@ -8,22 +8,31 @@ import { TopCharacters } from "./TopCharacters";
 import { RelationshipsOverTime } from "./RelationshipsOverTime";
 import { DataContextProvider, useDataContext } from "./DataContext";
 import { FirstAndLastRefs } from "./FirstAndLastRefs";
+import { HelpTooltip } from "./HelpTooltip";
 
 function Section({
   children,
   title,
+  tooltipTitle,
 }: {
   children: React.ReactNode;
   title: string;
+  tooltipTitle?: string;
 }) {
   return (
     <>
       <Divider sx={{ mt: 4, mb: 1 }} />
       <Typography
-        sx={{ textTransform: "uppercase", fontWeight: "light", mb: 4 }}
+        sx={{
+          textTransform: "uppercase",
+          fontWeight: "light",
+          mb: 4,
+          display: "flex",
+          alignItems: "center",
+        }}
         component="h3"
       >
-        {title}
+        {title} <HelpTooltip title={tooltipTitle} />
       </Typography>
       {children}
     </>
@@ -90,16 +99,20 @@ function App() {
       </header>
 
       <DataContextProvider selectedBook={selectedBook} series={series}>
-        <MainContent setSelectedBook={setSelectedBook} />
+        <MainContent setSelectedBook={setSelectedBook} series={series} />
       </DataContextProvider>
     </Box>
   );
 }
 
+const preloadHasRelationshipTimelines = ["jane_austen", "his_dark_materials"];
+
 function MainContent({
   setSelectedBook,
+  series,
 }: {
   setSelectedBook: (book: number) => void;
+  series: string;
 }) {
   const fullContext = useDataContext();
 
@@ -118,11 +131,15 @@ function MainContent({
     <ErrorBoundary>
       <BookTabs {...{ setSelectedBook, selectedBook, books }} />
 
-      {(hasRelationshipTimelines || loading) && (
-        <Section title="Relationships Over Time">
+      {(hasRelationshipTimelines ||
+        (loading && preloadHasRelationshipTimelines.includes(series))) && (
+        <Section
+          title="Relationships Over Time"
+          tooltipTitle="Completely subjective data"
+        >
           <ErrorBoundary>
             {loading ? (
-              <Skeleton variant="rectangular" height={362} />
+              <Skeleton variant="rectangular" height={410} />
             ) : (
               <RelationshipsOverTime />
             )}
@@ -130,10 +147,13 @@ function MainContent({
         </Section>
       )}
 
-      <Section title="Top Relationships">
+      <Section
+        title="Top Relationships"
+        tooltipTitle="Counts are based on times characters are mentioned within 3 sentences of each other."
+      >
         <ErrorBoundary>
           {loading ? (
-            <Skeleton variant="rectangular" height={460} />
+            <Skeleton variant="rectangular" height={450} />
           ) : (
             <TopCharacters key={forceRemountKey} />
           )}
@@ -143,9 +163,22 @@ function MainContent({
       <Section title="Character Categories">
         <ErrorBoundary>
           {loading ? (
-            <Skeleton variant="rectangular" height={400} />
+            <Skeleton variant="rectangular" height={380} />
           ) : (
             <CharacterPieCharts />
+          )}
+        </ErrorBoundary>
+      </Section>
+
+      <Section
+        title="Character References Over Time"
+        tooltipTitle="Broken down by chapter. The number of sentences where the characters name or a pseudonym was used."
+      >
+        <ErrorBoundary>
+          {loading ? (
+            <Skeleton variant="rectangular" height={500} />
+          ) : (
+            <TimeGraphAndExcerpts />
           )}
         </ErrorBoundary>
       </Section>
@@ -153,19 +186,9 @@ function MainContent({
       <Section title="First and Last References">
         <ErrorBoundary>
           {loading ? (
-            <Skeleton variant="rectangular" height={400} />
+            <Skeleton variant="rectangular" height={1200} />
           ) : (
             <FirstAndLastRefs />
-          )}
-        </ErrorBoundary>
-      </Section>
-
-      <Section title="Character References Over Time">
-        <ErrorBoundary>
-          {loading ? (
-            <Skeleton variant="rectangular" height={400} />
-          ) : (
-            <TimeGraphAndExcerpts />
           )}
         </ErrorBoundary>
       </Section>

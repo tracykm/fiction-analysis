@@ -1,7 +1,12 @@
-import { Box } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { Group } from "@visx/group";
 import { scaleBand, scaleLinear } from "@visx/scale";
 import Bar from "@visx/shape/lib/shapes/Bar";
+import { useParentSize } from "@visx/responsive";
+import { COLORS } from "./utils";
+import { withTooltip, Tooltip, defaultStyles } from "@visx/tooltip";
+import { useRef } from "react";
+import { useDataContext } from "./DataContext";
 
 export interface HorizontalBarProps {
   height?: number;
@@ -22,12 +27,21 @@ const data_temp = [
   { label: "Solana", amount: 9 },
 ];
 
-export const BarChartTM: React.FC<HorizontalBarProps> = ({
-  height = 400,
-  width = 900,
+const BarChartTMInner: React.FC<HorizontalBarProps> = ({
+  height: _height = 400,
+  width: _width = 900,
   data = data_temp,
   onClick,
+  tooltipOpen,
+  tooltipLeft,
+  tooltipTop,
+  tooltipData,
+  hideTooltip,
+  showTooltip,
+  margin = { left: 0, top: 0, bottom: 0, right: 0 },
 }) => {
+  const { parentRef, width, height } = useParentSize({ debounceTime: 150 });
+  const { characters } = useDataContext();
   // bounds
   const xMax = width - 220;
   const yMax = height - 10;
@@ -54,12 +68,24 @@ export const BarChartTM: React.FC<HorizontalBarProps> = ({
     domain: [0, Math.max(...data.map(getCoinCount))],
   });
 
+  const tooltipStyles = {
+    ...defaultStyles,
+    minWidth: 60,
+    minHeight: 50,
+    backgroundColor: "rgba(255,255,255,1)",
+    color: "black",
+  };
+  const tooltipTimeout = useRef<number | undefined>();
+
   return (
     <Box
       sx={{
-        rect: { cursor: "pointer", opacity: 0.7 },
-        "rect:hover": { opacity: 1 },
+        rect: { cursor: "pointer" },
+        "rect:hover": { fill: COLORS[0] },
+        maxWidth: _width,
+        height: _height,
       }}
+      ref={parentRef}
     >
       <svg width={width} height={height}>
         <Group top={20}>
@@ -81,6 +107,32 @@ export const BarChartTM: React.FC<HorizontalBarProps> = ({
                   onClick={(e) => {
                     onClick(d);
                   }}
+                  onMouseLeave={() => {
+                    tooltipTimeout.current = window.setTimeout(() => {
+                      hideTooltip();
+                    }, 300);
+                  }}
+                  onMouseMove={() => {
+                    if (tooltipTimeout.current) {
+                      clearTimeout(tooltipTimeout.current);
+                    }
+                    // debugger;
+                    const top = barY + margin.top;
+                    const left = barHeight + margin.left;
+                    showTooltip({
+                      tooltipData: {
+                        x: barWidth,
+                        y: barY,
+                        label,
+                        value: d.amount,
+                        line: d,
+                        // character,
+                        // chapterFlat: info.chapterFlat,
+                      },
+                      tooltipTop: top,
+                      tooltipLeft: left,
+                    });
+                  }}
                 />
                 <text
                   x={barHeight + 10}
@@ -99,6 +151,19 @@ export const BarChartTM: React.FC<HorizontalBarProps> = ({
           })}
         </Group>
       </svg>
+      {tooltipOpen && tooltipData && (
+        <Tooltip top={tooltipTop} left={tooltipLeft} style={tooltipStyles}>
+          <Stack sx={{ p: 1 }} spacing={1}>
+            <div style={{ fontWeight: 600 }}>
+              {tooltipData.line.names
+                .map((name) => characters[name].name)
+                .join(" & ")}
+            </div>
+            <div>{tooltipData.value} Co-occurrences</div>
+          </Stack>
+        </Tooltip>
+      )}
     </Box>
   );
 };
+export const BarChartTM = withTooltip(BarChartTMInner);

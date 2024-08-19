@@ -69,19 +69,7 @@ def split_sentences(file: str):
             if line.startswith("~~~ CHAPTER"):
                 lines.append(line)
             else:
-                # Handle quotes to avoid splitting them
-                quote_pattern = re.compile(r"“[^”]*”")
-                parts = quote_pattern.split(line)
-                quotes = quote_pattern.findall(line)
-
-                chap_sentences = []
-                for i, part in enumerate(parts):
-                    if part:
-                        sentences = nltk.tokenize.sent_tokenize(part)
-                        chap_sentences.extend(sentences)
-                    if i < len(quotes):
-                        chap_sentences.append(quotes[i])
-                lines.extend(combine_short_sentences(chap_sentences))
+                lines.extend(combine_short_sentences(nltk.tokenize.sent_tokenize(line)))
 
     return lines
 

@@ -4,7 +4,20 @@ import { PieChartTM } from "./PieChartTM";
 import { useState } from "react";
 import { CharactersData } from "./utils";
 import { useDataContext } from "./DataContext";
+import { HelpOutline } from "@mui/icons-material";
 
+// const PIE_COLORS = [
+//   "#EA526F",
+//   "#EE5B6C",
+//   "#F16568",
+//   "#F56E65",
+//   "#F87762",
+//   "#FC815E",
+//   "#C3445D",
+//   "#9C374A",
+//   "#752938",
+//   "#FF8A5B",
+// ];
 const PIE_COLORS = [
   "#25CED1",
   "#3BC0C6",
@@ -17,7 +30,6 @@ const PIE_COLORS = [
   "#D4607A",
   "#EA526F",
 ];
-
 function getPieChartDataIndividuals(
   characters: CharactersData,
   types: { label: string; id: string }[]
@@ -103,7 +115,12 @@ export function CharacterPieCharts() {
   const subtitle = countType === "individuals" ? "Characters" : "References";
   return (
     <>
-      <Stack direction="row" spacing={3} sx={{ mb: 2 }}>
+      <Stack
+        direction={{ sm: "row" }}
+        flexWrap="wrap"
+        justifyContent="center"
+        sx={{ mb: 2 }}
+      >
         {manualConfig.characterCategories.map((category, i) => (
           <PieChartTM
             key={category.name}
@@ -111,7 +128,10 @@ export function CharacterPieCharts() {
             name={category.name}
             subtitle={subtitle}
             includeDetailPercent={countType === "refs"}
-            activeDirection={i == 2 ? "left" : "right"}
+            activeDirection={
+              window.innerWidth > 900 && i == 2 ? "left" : "right"
+            }
+            sx={{ mr: 2, mt: 2 }}
           />
         ))}
       </Stack>
@@ -122,6 +142,7 @@ export function CharacterPieCharts() {
             <Button
               onClick={() => setCountType("individuals")}
               variant={countType === "individuals" ? "contained" : "outlined"}
+              endIcon={<HelpOutline sx={{ height: 14 }} />}
             >
               By Individual
             </Button>
@@ -130,6 +151,7 @@ export function CharacterPieCharts() {
             <Button
               onClick={() => setCountType("refs")}
               variant={countType === "refs" ? "contained" : "outlined"}
+              endIcon={<HelpOutline sx={{ height: 14 }} />}
             >
               By References
             </Button>

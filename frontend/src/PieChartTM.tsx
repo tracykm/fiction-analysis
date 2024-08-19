@@ -2,7 +2,7 @@ import { useState, useMemo } from "react";
 import { Pie } from "@visx/shape";
 import { Group } from "@visx/group";
 import { Text } from "@visx/text";
-import { Box, Stack } from "@mui/material";
+import { Box, Stack, SxProps } from "@mui/material";
 import { sortBy, sumBy } from "lodash-es";
 
 export type PieData = {
@@ -74,6 +74,7 @@ export function PieChartTM({
   width = 280,
   includeDetailPercent,
   activeDirection = "right",
+  sx,
 }: {
   data: PieData[];
   name: string;
@@ -81,6 +82,7 @@ export function PieChartTM({
   width?: number;
   includeDetailPercent?: boolean;
   activeDirection?: "right" | "left";
+  sx?: SxProps;
 }) {
   const data = _data.filter((d) => d.amount);
   const [active, setActive] = useState<PieData | undefined>();
@@ -90,8 +92,9 @@ export function PieChartTM({
     () => Math.floor(data.reduce((acc, d) => acc + d.amount, 0)),
     [data[0].amount]
   );
+  const includesOther = data.some((d) => d.id.toLowerCase() === "other");
   return (
-    <Box sx={{ position: "relative" }}>
+    <Box sx={{ position: "relative", ...sx }}>
       {active && (
         <ActiveDetail
           active={active}
@@ -164,7 +167,7 @@ export function PieChartTM({
           ) : (
             <>
               <Text textAnchor="middle" fill="#ccc" fontSize={28} dy={0}>
-                {`${data.length} ${name}`}
+                {`${includesOther ? data.length - 1 : data.length} ${name}`}
               </Text>
 
               <Text textAnchor="middle" fill="#888" fontSize={18} dy={30}>

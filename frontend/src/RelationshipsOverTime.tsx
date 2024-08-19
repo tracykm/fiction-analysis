@@ -9,6 +9,7 @@ import { useDataContext } from "./DataContext";
 import { Tooltip } from "@visx/xychart";
 import { ErrorBoundary } from "./ErrorBoundry";
 import { COLORS } from "./utils";
+import { useParentSize } from "@visx/responsive";
 
 function getFeelingEmoji(value: number) {
   if (value > 5) return "💕";
@@ -19,102 +20,119 @@ function getFeelingEmoji(value: number) {
 }
 
 function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
-  const { chapters } = useDataContext();
-  const height = 300;
-  const width = 900;
+  const { chapters, selectedBook } = useDataContext();
+  const { parentRef, width, height } = useParentSize({ debounceTime: 150 });
   const yScale = scaleLinear().domain([-11, 11]).range([height, 0]);
   const margin = {
     left: 55,
     top: 12,
     bottom: 36,
-    right: 24,
+    right: 0,
   };
   const xScale = scaleLinear()
     .domain([
       chapters[0].chapterFlat,
       chapters[chapters.length - 1].chapterFlat,
     ])
-    .range([margin.left, width - (margin.left + margin.right)]);
+    .range([margin.left, width]);
   const yPosition = yScale(0);
   const sameReversed =
     data.length === 2 &&
     data[0].from === data[1].to &&
     data[1].from === data[0].to;
+
+  const tickValues = chapters
+    .filter((c, i) => {
+      if (c.book === chapters[i - 1]?.book) return false;
+      return true;
+    })
+    .map((c) => c.chapterFlat);
   return (
     <>
-      <LineChartTM
-        yScale={yScale}
-        xScale={xScale}
-        data={data}
-        keyName="chapterFlat"
-        width={width}
-        height={height}
-        margin={margin}
-        yAxisProps={{
-          tickFormat: (d) => {
-            if (typeof d !== "number") return "";
-            if (d === 0) return "Neutral";
-            if (d > 0) return "Love";
-            return "Hate";
-          },
-          tickValues: [-10, 0, 10],
-          left: margin.left - 10,
-        }}
-        xAxisProps={{ tickValues: undefined }}
-        onClick={onClick}
+      <Box
+        ref={parentRef}
+        style={{ maxWidth: 900, height: 300 }}
+        sx={{ svg: { cursor: "pointer" } }}
       >
-        <Annotation
-          x={margin.left}
-          y={yPosition}
-          dx={margin.left + width - margin.right}
-          dy={0}
+        <LineChartTM
+          yScale={yScale}
+          xScale={xScale}
+          data={data}
+          keyName="chapterFlat"
+          width={width}
+          height={height}
+          margin={margin}
+          yAxisProps={{
+            tickFormat: (d) => {
+              if (typeof d !== "number") return "";
+              if (d === 0) return "Neutral";
+              if (d > 0) return "Love";
+              return "Hate";
+            },
+            tickValues: [-10, 0, 10],
+            left: margin.left - 10,
+          }}
+          xAxisProps={{
+            tickValues: selectedBook ? undefined : tickValues,
+            top: height - margin.top - margin.bottom + 22,
+          }}
+          onClick={onClick}
         >
-          <Connector stroke="grey" pathProps={{ strokeDasharray: "4 4" }} />
-        </Annotation>
-        <ErrorBoundary>
-          <Tooltip<any>
-            snapTooltipToDatumX
-            snapTooltipToDatumY
-            showSeriesGlyphs
-            glyphStyle={{
-              fill: "white",
-              strokeWidth: 0,
-            }}
-            renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
-              const linesToShow = data.filter(
-                (d) =>
-                  nearestDatum.datum.chapterFlat > d.info[0].chapterFlat &&
-                  nearestDatum.datum.chapterFlat <
-                    d.info[d.info.length - 1].chapterFlat
-              );
-              return (
-                <ErrorBoundary>
-                  <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
-                    <ToolChapterTitle
-                      chapterFlat={nearestDatum.datum.chapterFlat}
-                    />
-                    {linesToShow.map((line) => {
-                      const value = datumByKey[line.name]?.datum.value;
-                      if (!value) return null;
-                      return (
-                        <Stack spacing={1}>
-                          <ToolCharacterRow
-                            key={line.name}
-                            line={line}
-                            name={`${line.name} ${getFeelingEmoji(value)}`}
-                            value={` ${value}/10`}
-                          />
-                          <Box>{datumByKey[line.name].datum.comment}</Box>
-                        </Stack>
-                      );
-                    })}
-                  </Stack>
-                </ErrorBoundary>
-              );
-            }}
-          />
-        </ErrorBoundary>
-      </LineChartTM>
+          <Annotation
+            x={margin.left}
+            y={yPosition}
+            dx={margin.left + width - margin.right}
+            dy={0}
+          >
+            <Connector stroke="grey" pathProps={{ strokeDasharray: "4 4" }} />
+          </Annotation>
+          <ErrorBoundary>
+            <Tooltip<any>
+              snapTooltipToDatumX
+              snapTooltipToDatumY
+              showSeriesGlyphs
+              glyphStyle={{
+                fill: "white",
+                strokeWidth: 0,
+              }}
+              renderTooltip={({
+                tooltipData: { datumByKey, nearestDatum },
+              }) => {
+                const linesToShow = data.filter(
+                  (d) =>
+                    nearestDatum.datum.chapterFlat > d.info[0].chapterFlat &&
+                    nearestDatum.datum.chapterFlat <
+                      d.info[d.info.length - 1].chapterFlat
+                );
+                return (
+                  <ErrorBoundary>
+                    <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
+                      <ToolChapterTitle
+                        chapterFlat={nearestDatum.datum.chapterFlat}
+                      />
+                      {linesToShow.map((line) => {
+                        const value = datumByKey[line.name]?.datum.value;
+                        if (!value) return null;
+                        return (
+                          <Stack spacing={1}>
+                            <ToolCharacterRow
+                              key={line.name}
+                              line={line}
+                              name={`${line.name} ${getFeelingEmoji(value)}`}
+                              value={` ${value}/10`}
+                            />
+                            <Box>{datumByKey[line.name].datum.comment}</Box>
+                          </Stack>
+                        );
+                      })}
+                    </Stack>
+                  </ErrorBoundary>
+                );
+              }}
+            />
+          </ErrorBoundary>
+        </LineChartTM>
+      </Box>
       <Stack direction="row" sx={{ mt: 2, flexWrap: "wrap" }}>
         {data.map((line) => (
           <Stack
@@ -124,9 +142,20 @@ function RelationshipTimeChart({ onClick, data, setSelectedRelationship }) {
             sx={{ alignItems: "center", mr: 3 }}
           >
             <Box sx={{ width: 12, height: 12, background: line.color }} />
-            <Box sx={{ fontSize: 18 }}>{line.name}</Box>
+            <Box
+              sx={{
+                fontSize: 18,
+                width: "100%",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                whiteSpace: "nowrap",
+              }}
+            >
+              {line.name}
+            </Box>
             {!sameReversed && (
               <Button
+                sx={{ whiteSpace: "nowrap" }}
                 onClick={() => {
                   setSelectedRelationship({ to: line.to, from: line.from });
                 }}
@@ -206,7 +235,7 @@ export function RelationshipsOverTime() {
   }, [selectedOption?.id]);
 
   const chartData = selectedOption?.value.map(({ from, to, name }, i) => ({
-    color: COLORS[i] || "white",
+    color: COLORS[i + 1] || "white",
     info: relationshipTimelines[from][to].positivity,
     name: name || `${from}${FROM_FEELINGS}`,
     to,

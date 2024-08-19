@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { BarChartTM } from "./BarChartTM";
-import { Autocomplete, TextField } from "@mui/material";
 import { COLORS } from "./utils";
 import { RelationshipModal } from "./RelationshipModal";
 import { sortBy } from "lodash-es";
 import { useDataContext } from "./DataContext";
+import { CharacterSearch } from "./CharacterSearch";
 
 export function TopCharacters() {
   const { characters, relationships } = useDataContext();
@@ -65,20 +65,14 @@ export function TopCharacters() {
           }
         />
       )}
-      <Autocomplete
-        value={search}
-        onChange={(e, opt) => setSearch(opt)}
-        options={charterOptions}
-        renderInput={(params) => (
-          <TextField label="Search characters" {...params} />
-        )}
-      />
+      <CharacterSearch value={search} onChange={(e, opt) => setSearch(opt)} />
       <BarChartTM
         data={topRels.map((d) => ({
           id: d.name,
           label: d.name,
           amount: d.count,
           color: COLORS[2],
+          names: [d.fromName, d.toName],
         }))}
         onClick={(d) => {
           setSelectedRelationship(d.id);

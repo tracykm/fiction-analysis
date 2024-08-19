@@ -127,6 +127,7 @@ export async function getBookData({
 
   return {
     characters,
+    fullCharacters: charactersJson.default,
     relationships,
     chapters,
     fullChapters: chaptersJson.default,

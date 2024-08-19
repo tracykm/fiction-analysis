@@ -72,7 +72,9 @@ export function FirstAndLastRefs() {
       {displayChars.map((character) => (
         <FirstAndLast key={character.name} character={character} />
       ))}
-      <Button onClick={() => setOpen(!open)}>Show All</Button>
+      <Button onClick={() => setOpen(!open)}>
+        {open ? "Hide Most" : "Show All"}
+      </Button>
     </Stack>
   );
 }

@@ -107,7 +107,7 @@ export function LineChartTM({
     .map((c) => c.chapterFlat);
 
   return (
-    <div>
+    <div style={{}}>
       <XYChart
         width={width}
         height={height}
@@ -146,6 +146,12 @@ export function LineChartTM({
             if (selectedBook) return `Ch ${chapter?.chapter}`;
             return `B ${chapter?.book}`;
           }}
+          tickLabelProps={{
+            fill: "white",
+            fontSize: 10,
+            textAnchor: "middle",
+            opacity: 0.5,
+          }}
           {...xAxisProps}
         />
         <AnimatedAxis
@@ -154,6 +160,11 @@ export function LineChartTM({
           orientation="left"
           numTicks={4}
           tickLabelProps={() => ({ dx: 0 })}
+          tickLabelProps={{
+            fill: "white",
+            fontSize: 10,
+            opacity: 0.5,
+          }}
           {...yAxisProps}
         />
 

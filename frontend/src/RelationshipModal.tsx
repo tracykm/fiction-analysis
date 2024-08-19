@@ -8,6 +8,7 @@ import {
   DialogTitle,
   IconButton,
   ListItemButton,
+  Stack,
   Typography,
 } from "@mui/material";
 import { sort } from "d3";
@@ -25,6 +26,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import Close from "@mui/icons-material/Close";
 import { ErrorBoundary } from "./ErrorBoundry";
+import { HelpTooltip } from "./HelpTooltip";
 
 export function RelationshipModal({
   relationship,
@@ -86,6 +88,7 @@ function padOutChapters(chapters: number[], allChapters: number[]) {
     ...chapters,
     Number(allChapters[idx + 1]),
     Number(allChapters[idx + 2]),
+    Number(allChapters[idx + 3]),
   ];
 }
 
@@ -123,9 +126,10 @@ export function RefsModal({
       (d) => chapters.find((c) => String(c.chapterFlat) === d[0])?.book
     )
   );
-  let defaultChaptersToShow = selectedChapter ? [selectedChapter] : [];
-
   const usedChapters = Object.keys(groupByChapter).map(Number);
+  let defaultChaptersToShow = selectedChapter
+    ? [selectedChapter]
+    : [usedChapters[0]];
 
   const [chaptersToShow, setChaptersToShow] = useState(
     padOutChapters(defaultChaptersToShow, usedChapters)
@@ -156,12 +160,21 @@ export function RefsModal({
       maxWidth="md"
       sx={{ ".MuiDialog-paperScrollPaper": { maxWidth: 800 } }}
     >
-      <DialogTitle sx={{ display: "flex", gap: 1, px: 2 }}>
-        <div>The Story of {title}</div>
-        <div style={{ flexGrow: 1 }} />
-        <div style={{ opacity: 0.5, fontWeight: "lighter" }}>
-          {getPercent(totalLength / totalBookLength)}% of total text
-        </div>
+      <DialogTitle sx={{ display: "flex", gap: 1, px: 2, alignItems: "start" }}>
+        <Stack direction={{ sm: "row" }} sx={{ width: "100%" }}>
+          <div>
+            <div style={{ display: "flex" }}>
+              The Story of {title}{" "}
+              <HelpTooltip title="The full text pruned down to the sentences that directly reference the selected characters" />
+            </div>
+          </div>
+          <div style={{ flexGrow: 1 }} />
+          <div style={{ opacity: 0.5, fontWeight: "lighter", display: "flex" }}>
+            <div>
+              {getPercent(totalLength / totalBookLength)}% of total text{" "}
+            </div>
+          </div>
+        </Stack>
         <IconButton onClick={onClose} size="small">
           <Close />
         </IconButton>
@@ -258,7 +271,13 @@ function BookText({
         }}
         id={`book-${bookIdx}`}
       >
-        <div>
+        <div
+          style={{
+            whiteSpace: "nowrap",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
           {book?.title}{" "}
           <span style={{ opacity: 0.5 }}> Book {Number(bookIdx)}</span>
         </div>
@@ -398,7 +417,6 @@ function ChapterText({
               <div style={{ position: "relative", zIndex: 1 }}>
                 {manualConfig.publicDomain ? (
                   <Button
-                    color="inherit"
                     sx={{ minWidth: 10 }}
                     onClick={() => {
                       setSentenceRefs((refs) => {
@@ -433,7 +451,6 @@ function ChapterText({
               <div style={{ position: "relative", zIndex: 1 }}>
                 {manualConfig.publicDomain ? (
                   <Button
-                    color="inherit"
                     sx={{ minWidth: 10 }}
                     onClick={() => {
                       setSentenceRefs((refs) => {
