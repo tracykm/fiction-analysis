@@ -1,9 +1,10 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import { Pie } from "@visx/shape";
 import { Group } from "@visx/group";
 import { Text } from "@visx/text";
 import { Box, Stack, SxProps } from "@mui/material";
 import { sortBy, sumBy } from "lodash-es";
+import { withTooltip, Tooltip, defaultStyles } from "@visx/tooltip";
 
 export type PieData = {
   label: string;
@@ -39,10 +40,11 @@ function ActiveDetail({
       sx={{
         position: "absolute",
         top: 0,
-        background: "black",
+        background: "white",
         zIndex: 10,
         p: 2,
-        opacity: 0.8,
+        color: "black",
+        borderRadius: 0.5,
         ...sx,
       }}
     >
@@ -67,7 +69,15 @@ function ActiveDetail({
   );
 }
 
-export function PieChartTM({
+type TooltipData = {
+  x: number;
+  y: number;
+  label: string;
+  value: number;
+  line: PieData;
+};
+
+export function PieChartTMInner({
   data: _data,
   name = "Sections",
   subtitle,
@@ -75,6 +85,13 @@ export function PieChartTM({
   includeDetailPercent,
   activeDirection = "right",
   sx,
+  tooltipOpen,
+  tooltipLeft,
+  tooltipTop,
+  tooltipData,
+  hideTooltip,
+  showTooltip,
+  margin = { left: 0, top: 0, bottom: 0, right: 0 },
 }: {
   data: PieData[];
   name: string;
@@ -83,9 +100,12 @@ export function PieChartTM({
   includeDetailPercent?: boolean;
   activeDirection?: "right" | "left";
   sx?: SxProps;
+  tooltipOpen: boolean;
+  tooltipLeft: number;
+  tooltipTop: number;
+  tooltipData: TooltipData;
 }) {
   const data = _data.filter((d) => d.amount);
-  const [active, setActive] = useState<PieData | undefined>();
   const half = width / 2;
 
   const total = useMemo(
@@ -93,11 +113,13 @@ export function PieChartTM({
     [data[0].amount]
   );
   const includesOther = data.some((d) => d.id.toLowerCase() === "other");
+
+  const tooltipTimeout = useRef<number | undefined>();
   return (
     <Box sx={{ position: "relative", ...sx }}>
-      {active && (
+      {tooltipData && (
         <ActiveDetail
-          active={active}
+          active={tooltipData.line}
           width={width}
           includeDetailPercent={includeDetailPercent}
           activeDirection={activeDirection}
@@ -110,7 +132,8 @@ export function PieChartTM({
             pieValue={(data) => data.amount}
             outerRadius={half}
             innerRadius={({ data }) => {
-              const size = active && data.id === active.id ? 52 : 40;
+              const size =
+                tooltipData && data.id === tooltipData.line.id ? 52 : 40;
               return half - size;
             }}
             cornerRadius={3}
@@ -122,8 +145,29 @@ export function PieChartTM({
                 return (
                   <g
                     key={arc.data.id}
-                    onMouseEnter={() => setActive(arc.data)}
-                    onMouseLeave={() => setActive()}
+                    onMouseLeave={() => {
+                      tooltipTimeout.current = window.setTimeout(() => {
+                        hideTooltip();
+                      }, 300);
+                    }}
+                    onMouseMove={() => {
+                      if (tooltipTimeout.current) {
+                        clearTimeout(tooltipTimeout.current);
+                      }
+                      const top = centroidY + margin.top;
+                      const left = centroidX + margin.left;
+                      showTooltip({
+                        tooltipData: {
+                          x: top,
+                          y: left,
+                          label: arc.data.label,
+                          value: arc.data.amount,
+                          line: arc.data,
+                        },
+                        tooltipTop: top,
+                        tooltipLeft: left,
+                      });
+                    }}
                     style={{ cursor: "pointer" }}
                   >
                     <path d={pie.path(arc)} fill={arc.data.color}></path>
@@ -144,24 +188,24 @@ export function PieChartTM({
             }}
           </Pie>
 
-          {active ? (
+          {tooltipOpen ? (
             <>
               <Text
                 textAnchor="middle"
                 fill="#ccc"
-                fontSize={active.label.length > 10 ? 22 : 28}
+                fontSize={tooltipData.label.length > 10 ? 22 : 28}
                 dy={0}
               >
-                {active.label}
+                {tooltipData.label}
               </Text>
 
               <Text
                 textAnchor="middle"
-                fill={active.color}
+                fill={tooltipData.line.color}
                 fontSize={20}
                 dy={30}
               >
-                {`${active.amount} ${subtitle}`}
+                {`${tooltipData.value} ${subtitle}`}
               </Text>
             </>
           ) : (
@@ -180,3 +224,5 @@ export function PieChartTM({
     </Box>
   );
 }
+
+export const PieChartTM = withTooltip(PieChartTMInner);
