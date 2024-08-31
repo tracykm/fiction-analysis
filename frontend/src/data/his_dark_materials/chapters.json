@@ -13,14 +13,14 @@
     "book": 1,
     "letterIndex": 23211,
     "chapterFlat": 2,
-    "characterRefCount": 0,
+    "characterRefCount": 135,
     "title": "The Idea of North",
-    "length": 25615
+    "length": 25382
   },
   {
     "chapter": 3,
     "book": 1,
-    "letterIndex": 48826,
+    "letterIndex": 48593,
     "chapterFlat": 3,
     "characterRefCount": 246,
     "title": "Lyra's Jordan",
@@ -29,7 +29,7 @@
   {
     "chapter": 4,
     "book": 1,
-    "letterIndex": 102931,
+    "letterIndex": 102698,
     "chapterFlat": 4,
     "characterRefCount": 162,
     "title": "The Alethiometer",
@@ -38,7 +38,7 @@
   {
     "chapter": 5,
     "book": 1,
-    "letterIndex": 126458,
+    "letterIndex": 126225,
     "chapterFlat": 5,
     "characterRefCount": 169,
     "title": "The Cocktail Party",
@@ -47,7 +47,7 @@
   {
     "chapter": 6,
     "book": 1,
-    "letterIndex": 153630,
+    "letterIndex": 153397,
     "chapterFlat": 6,
     "characterRefCount": 78,
     "title": "The Throwing Nets",
@@ -56,7 +56,7 @@
   {
     "chapter": 7,
     "book": 1,
-    "letterIndex": 172990,
+    "letterIndex": 172757,
     "chapterFlat": 7,
     "characterRefCount": 179,
     "title": "John Faa",
@@ -65,7 +65,7 @@
   {
     "chapter": 8,
     "book": 1,
-    "letterIndex": 206687,
+    "letterIndex": 206454,
     "chapterFlat": 8,
     "characterRefCount": 77,
     "title": "Frustration",
@@ -74,7 +74,7 @@
   {
     "chapter": 9,
     "book": 1,
-    "letterIndex": 225478,
+    "letterIndex": 225245,
     "chapterFlat": 9,
     "characterRefCount": 151,
     "title": "The Spies",
@@ -83,7 +83,7 @@
   {
     "chapter": 10,
     "book": 1,
-    "letterIndex": 256147,
+    "letterIndex": 255914,
     "chapterFlat": 10,
     "characterRefCount": 137,
     "title": "The Consul and the Bear",
@@ -92,7 +92,7 @@
   {
     "chapter": 11,
     "book": 1,
-    "letterIndex": 288726,
+    "letterIndex": 288493,
     "chapterFlat": 11,
     "characterRefCount": 146,
     "title": "Armour",
@@ -101,7 +101,7 @@
   {
     "chapter": 12,
     "book": 1,
-    "letterIndex": 324166,
+    "letterIndex": 323933,
     "chapterFlat": 12,
     "characterRefCount": 87,
     "title": "The Lost Boy",
@@ -110,7 +110,7 @@
   {
     "chapter": 13,
     "book": 1,
-    "letterIndex": 340420,
+    "letterIndex": 340187,
     "chapterFlat": 13,
     "characterRefCount": 118,
     "title": "Fencing ",
@@ -119,7 +119,7 @@
   {
     "chapter": 14,
     "book": 1,
-    "letterIndex": 367082,
+    "letterIndex": 366849,
     "chapterFlat": 14,
     "characterRefCount": 134,
     "title": "Bolvangar Lights ",
@@ -128,7 +128,7 @@
   {
     "chapter": 15,
     "book": 1,
-    "letterIndex": 393647,
+    "letterIndex": 393414,
     "chapterFlat": 15,
     "characterRefCount": 120,
     "title": "The D\u00e6mon Cages ",
@@ -137,7 +137,7 @@
   {
     "chapter": 16,
     "book": 1,
-    "letterIndex": 421129,
+    "letterIndex": 420896,
     "chapterFlat": 16,
     "characterRefCount": 91,
     "title": "The Silver Guillotine",
@@ -146,7 +146,7 @@
   {
     "chapter": 17,
     "book": 1,
-    "letterIndex": 444363,
+    "letterIndex": 444130,
     "chapterFlat": 17,
     "characterRefCount": 201,
     "title": "The Witches",
@@ -155,7 +155,7 @@
   {
     "chapter": 18,
     "book": 1,
-    "letterIndex": 483804,
+    "letterIndex": 483571,
     "chapterFlat": 18,
     "characterRefCount": 121,
     "title": "Fog and Ice",
@@ -164,7 +164,7 @@
   {
     "chapter": 19,
     "book": 1,
-    "letterIndex": 513678,
+    "letterIndex": 513445,
     "chapterFlat": 19,
     "characterRefCount": 156,
     "title": "Captivity",
@@ -173,16 +173,16 @@
   {
     "chapter": 20,
     "book": 1,
-    "letterIndex": 544169,
+    "letterIndex": 543936,
     "chapterFlat": 20,
-    "characterRefCount": 0,
+    "characterRefCount": 201,
     "title": "Mortal Combat",
-    "length": 29472
+    "length": 29237
   },
   {
     "chapter": 21,
     "book": 1,
-    "letterIndex": 573641,
+    "letterIndex": 573173,
     "chapterFlat": 21,
     "characterRefCount": 100,
     "title": "Lord Asriel's Welcome",
@@ -191,16 +191,16 @@
   {
     "chapter": 22,
     "book": 1,
-    "letterIndex": 602429,
+    "letterIndex": 601961,
     "chapterFlat": 22,
-    "characterRefCount": 0,
+    "characterRefCount": 83,
     "title": "Betrayal",
-    "length": 16079
+    "length": 15947
   },
   {
     "chapter": 23,
     "book": 1,
-    "letterIndex": 618508,
+    "letterIndex": 617908,
     "chapterFlat": 23,
     "characterRefCount": 102,
     "title": "The Bridge to the Stars",
@@ -209,34 +209,34 @@
   {
     "chapter": 1,
     "book": 2,
-    "letterIndex": 634851,
+    "letterIndex": 634251,
     "chapterFlat": 24,
     "characterRefCount": 95,
     "title": "The Cat and the Hornbeam Trees",
-    "length": 45827
+    "length": 45830
   },
   {
     "chapter": 2,
     "book": 2,
-    "letterIndex": 680678,
+    "letterIndex": 680081,
     "chapterFlat": 25,
     "characterRefCount": 212,
     "title": "Among the Witches",
-    "length": 43210
+    "length": 43213
   },
   {
     "chapter": 3,
     "book": 2,
-    "letterIndex": 723888,
+    "letterIndex": 723294,
     "chapterFlat": 26,
     "characterRefCount": 117,
     "title": "A Children's World",
-    "length": 25323
+    "length": 25326
   },
   {
     "chapter": 4,
     "book": 2,
-    "letterIndex": 749211,
+    "letterIndex": 748620,
     "chapterFlat": 27,
     "characterRefCount": 160,
     "title": "Trepanning",
@@ -245,7 +245,7 @@
   {
     "chapter": 5,
     "book": 2,
-    "letterIndex": 799486,
+    "letterIndex": 798895,
     "chapterFlat": 28,
     "characterRefCount": 90,
     "title": "Airmail Paper",
@@ -254,7 +254,7 @@
   {
     "chapter": 6,
     "book": 2,
-    "letterIndex": 822275,
+    "letterIndex": 821684,
     "chapterFlat": 29,
     "characterRefCount": 154,
     "title": "Lighted Fliers",
@@ -263,7 +263,7 @@
   {
     "chapter": 7,
     "book": 2,
-    "letterIndex": 870170,
+    "letterIndex": 869579,
     "chapterFlat": 30,
     "characterRefCount": 173,
     "title": "The Rolls-Royce",
@@ -272,7 +272,7 @@
   {
     "chapter": 8,
     "book": 2,
-    "letterIndex": 904603,
+    "letterIndex": 904012,
     "chapterFlat": 31,
     "characterRefCount": 214,
     "title": "The Tower of Angels",
@@ -281,7 +281,7 @@
   {
     "chapter": 9,
     "book": 2,
-    "letterIndex": 944974,
+    "letterIndex": 944383,
     "chapterFlat": 32,
     "characterRefCount": 123,
     "title": "Theft",
@@ -290,7 +290,7 @@
   {
     "chapter": 10,
     "book": 2,
-    "letterIndex": 972607,
+    "letterIndex": 972016,
     "chapterFlat": 33,
     "characterRefCount": 116,
     "title": "The Shaman",
@@ -299,52 +299,52 @@
   {
     "chapter": 11,
     "book": 2,
-    "letterIndex": 998031,
+    "letterIndex": 997440,
     "chapterFlat": 34,
     "characterRefCount": 121,
     "title": "The Belvedere",
-    "length": 24238
+    "length": 24241
   },
   {
     "chapter": 12,
     "book": 2,
-    "letterIndex": 1022269,
+    "letterIndex": 1021681,
     "chapterFlat": 35,
     "characterRefCount": 78,
     "title": "Screen Language",
-    "length": 25504
+    "length": 25507
   },
   {
     "chapter": 13,
     "book": 2,
-    "letterIndex": 1047773,
+    "letterIndex": 1047188,
     "chapterFlat": 36,
     "characterRefCount": 200,
     "title": "\u00c6sah\u00e6tter",
-    "length": 37944
+    "length": 37947
   },
   {
     "chapter": 14,
     "book": 2,
-    "letterIndex": 1085717,
+    "letterIndex": 1085135,
     "chapterFlat": 37,
     "characterRefCount": 214,
     "title": "Alama Gulch",
-    "length": 47279
+    "length": 47282
   },
   {
     "chapter": 15,
     "book": 2,
-    "letterIndex": 1132996,
+    "letterIndex": 1132417,
     "chapterFlat": 38,
     "characterRefCount": 164,
     "title": "Bloodmoss",
-    "length": 35295
+    "length": 35298
   },
   {
     "chapter": 1,
     "book": 3,
-    "letterIndex": 1168291,
+    "letterIndex": 1167715,
     "chapterFlat": 39,
     "characterRefCount": 77,
     "title": "The Enchanted Sleeper",
@@ -353,7 +353,7 @@
   {
     "chapter": 2,
     "book": 3,
-    "letterIndex": 1181739,
+    "letterIndex": 1181163,
     "chapterFlat": 40,
     "characterRefCount": 251,
     "title": "Balthamos and Baruch",
@@ -362,7 +362,7 @@
   {
     "chapter": 3,
     "book": 3,
-    "letterIndex": 1223757,
+    "letterIndex": 1223181,
     "chapterFlat": 41,
     "characterRefCount": 54,
     "title": "Scavengers",
@@ -371,7 +371,7 @@
   {
     "chapter": 4,
     "book": 3,
-    "letterIndex": 1236066,
+    "letterIndex": 1235490,
     "chapterFlat": 42,
     "characterRefCount": 59,
     "title": "Ama and the Bats",
@@ -380,7 +380,7 @@
   {
     "chapter": 5,
     "book": 3,
-    "letterIndex": 1249589,
+    "letterIndex": 1249013,
     "chapterFlat": 43,
     "characterRefCount": 74,
     "title": "The Adamant Tower",
@@ -389,7 +389,7 @@
   {
     "chapter": 6,
     "book": 3,
-    "letterIndex": 1266878,
+    "letterIndex": 1266302,
     "chapterFlat": 44,
     "characterRefCount": 72,
     "title": "Preemptive Absolution",
@@ -398,7 +398,7 @@
   {
     "chapter": 7,
     "book": 3,
-    "letterIndex": 1286873,
+    "letterIndex": 1286297,
     "chapterFlat": 45,
     "characterRefCount": 29,
     "title": "Mary, Alone",
@@ -407,7 +407,7 @@
   {
     "chapter": 8,
     "book": 3,
-    "letterIndex": 1308796,
+    "letterIndex": 1308220,
     "chapterFlat": 46,
     "characterRefCount": 142,
     "title": "Vodka",
@@ -416,7 +416,7 @@
   {
     "chapter": 9,
     "book": 3,
-    "letterIndex": 1337103,
+    "letterIndex": 1336527,
     "chapterFlat": 47,
     "characterRefCount": 85,
     "title": "Upriver",
@@ -425,7 +425,7 @@
   {
     "chapter": 10,
     "book": 3,
-    "letterIndex": 1354478,
+    "letterIndex": 1353902,
     "chapterFlat": 48,
     "characterRefCount": 47,
     "title": "Wheels",
@@ -434,16 +434,16 @@
   {
     "chapter": 11,
     "book": 3,
-    "letterIndex": 1376897,
+    "letterIndex": 1376321,
     "chapterFlat": 49,
     "characterRefCount": 141,
     "title": "The Dragonflies",
-    "length": 24092
+    "length": 24091
   },
   {
     "chapter": 12,
     "book": 3,
-    "letterIndex": 1400989,
+    "letterIndex": 1400412,
     "chapterFlat": 50,
     "characterRefCount": 130,
     "title": "The Break",
@@ -452,16 +452,16 @@
   {
     "chapter": 13,
     "book": 3,
-    "letterIndex": 1418790,
+    "letterIndex": 1418213,
     "chapterFlat": 51,
     "characterRefCount": 148,
     "title": "Tialys and Salmakia",
-    "length": 19822
+    "length": 19821
   },
   {
     "chapter": 14,
     "book": 3,
-    "letterIndex": 1438612,
+    "letterIndex": 1438034,
     "chapterFlat": 52,
     "characterRefCount": 169,
     "title": "Know What It Is",
@@ -470,7 +470,7 @@
   {
     "chapter": 15,
     "book": 3,
-    "letterIndex": 1461938,
+    "letterIndex": 1461360,
     "chapterFlat": 53,
     "characterRefCount": 146,
     "title": "The Forge",
@@ -479,7 +479,7 @@
   {
     "chapter": 16,
     "book": 3,
-    "letterIndex": 1484025,
+    "letterIndex": 1483447,
     "chapterFlat": 54,
     "characterRefCount": 166,
     "title": "The Intention Craft",
@@ -488,16 +488,16 @@
   {
     "chapter": 17,
     "book": 3,
-    "letterIndex": 1521163,
+    "letterIndex": 1520585,
     "chapterFlat": 55,
     "characterRefCount": 95,
     "title": "Oil and Lacquer",
-    "length": 25982
+    "length": 25981
   },
   {
     "chapter": 18,
     "book": 3,
-    "letterIndex": 1547145,
+    "letterIndex": 1546566,
     "chapterFlat": 56,
     "characterRefCount": 158,
     "title": "The Suburbs of the Dead",
@@ -506,16 +506,16 @@
   {
     "chapter": 19,
     "book": 3,
-    "letterIndex": 1574886,
+    "letterIndex": 1574307,
     "chapterFlat": 57,
     "characterRefCount": 119,
     "title": "Lyra and Her Death",
-    "length": 28287
+    "length": 28286
   },
   {
     "chapter": 20,
     "book": 3,
-    "letterIndex": 1603173,
+    "letterIndex": 1602593,
     "chapterFlat": 58,
     "characterRefCount": 22,
     "title": "Climbing",
@@ -524,7 +524,7 @@
   {
     "chapter": 21,
     "book": 3,
-    "letterIndex": 1614735,
+    "letterIndex": 1614155,
     "chapterFlat": 59,
     "characterRefCount": 153,
     "title": "The Harpies",
@@ -533,16 +533,16 @@
   {
     "chapter": 22,
     "book": 3,
-    "letterIndex": 1643766,
+    "letterIndex": 1643186,
     "chapterFlat": 60,
     "characterRefCount": 99,
     "title": "The Whisperers",
-    "length": 19106
+    "length": 19105
   },
   {
     "chapter": 23,
     "book": 3,
-    "letterIndex": 1662872,
+    "letterIndex": 1662291,
     "chapterFlat": 61,
     "characterRefCount": 112,
     "title": "No Way Out",
@@ -551,7 +551,7 @@
   {
     "chapter": 24,
     "book": 3,
-    "letterIndex": 1691430,
+    "letterIndex": 1690849,
     "chapterFlat": 62,
     "characterRefCount": 101,
     "title": "Mrs. Coulter in Geneva",
@@ -560,7 +560,7 @@
   {
     "chapter": 25,
     "book": 3,
-    "letterIndex": 1715429,
+    "letterIndex": 1714848,
     "chapterFlat": 63,
     "characterRefCount": 88,
     "title": "Saint-Jean-Les-Eaux",
@@ -569,7 +569,7 @@
   {
     "chapter": 26,
     "book": 3,
-    "letterIndex": 1739541,
+    "letterIndex": 1738960,
     "chapterFlat": 64,
     "characterRefCount": 120,
     "title": "The Abyss",
@@ -578,7 +578,7 @@
   {
     "chapter": 27,
     "book": 3,
-    "letterIndex": 1760840,
+    "letterIndex": 1760259,
     "chapterFlat": 65,
     "characterRefCount": 9,
     "title": "The Platform",
@@ -587,7 +587,7 @@
   {
     "chapter": 28,
     "book": 3,
-    "letterIndex": 1771418,
+    "letterIndex": 1770837,
     "chapterFlat": 66,
     "characterRefCount": 99,
     "title": "Midnight",
@@ -596,7 +596,7 @@
   {
     "chapter": 29,
     "book": 3,
-    "letterIndex": 1791496,
+    "letterIndex": 1790915,
     "chapterFlat": 67,
     "characterRefCount": 87,
     "title": "The Battle on the Plain",
@@ -605,25 +605,25 @@
   {
     "chapter": 30,
     "book": 3,
-    "letterIndex": 1808121,
+    "letterIndex": 1807540,
     "chapterFlat": 68,
     "characterRefCount": 43,
     "title": "The Clouded Mountain",
-    "length": 15145
+    "length": 15144
   },
   {
     "chapter": 31,
     "book": 3,
-    "letterIndex": 1823266,
+    "letterIndex": 1822684,
     "chapterFlat": 69,
     "characterRefCount": 189,
     "title": "Authority's End",
-    "length": 27334
+    "length": 27333
   },
   {
     "chapter": 32,
     "book": 3,
-    "letterIndex": 1850600,
+    "letterIndex": 1850017,
     "chapterFlat": 70,
     "characterRefCount": 121,
     "title": "Morning",
@@ -632,7 +632,7 @@
   {
     "chapter": 33,
     "book": 3,
-    "letterIndex": 1874920,
+    "letterIndex": 1874337,
     "chapterFlat": 71,
     "characterRefCount": 102,
     "title": "Marzipan",
@@ -641,7 +641,7 @@
   {
     "chapter": 34,
     "book": 3,
-    "letterIndex": 1899586,
+    "letterIndex": 1899003,
     "chapterFlat": 72,
     "characterRefCount": 23,
     "title": "There is Now",
@@ -650,7 +650,7 @@
   {
     "chapter": 35,
     "book": 3,
-    "letterIndex": 1911124,
+    "letterIndex": 1910541,
     "chapterFlat": 73,
     "characterRefCount": 112,
     "title": "Over the Hills and Far Away",
@@ -659,16 +659,16 @@
   {
     "chapter": 36,
     "book": 3,
-    "letterIndex": 1937845,
+    "letterIndex": 1937262,
     "chapterFlat": 74,
     "characterRefCount": 106,
     "title": "The Broken Arrow",
-    "length": 16263
+    "length": 16262
   },
   {
     "chapter": 37,
     "book": 3,
-    "letterIndex": 1954108,
+    "letterIndex": 1953524,
     "chapterFlat": 75,
     "characterRefCount": 165,
     "title": "The Dunes",
@@ -677,7 +677,7 @@
   {
     "chapter": 38,
     "book": 3,
-    "letterIndex": 1984994,
+    "letterIndex": 1984410,
     "chapterFlat": 76,
     "characterRefCount": 184,
     "title": "The Botanic Garden",

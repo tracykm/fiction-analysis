@@ -60,6 +60,7 @@ def find_references(
     sentence_window=3,
 ):
     chapters = []
+    books = []
     characters = people_data
     relationships: dict[str, dict[str, dict[str, int]]] = {}
 
@@ -98,6 +99,18 @@ def find_references(
         if "~~~ BOOK" in line:
             book += 1
             chapter = 0
+            book_name = str(book)
+            if ": " in line:
+                book_name = line.split(": ")[1].strip()
+            if books:
+                books[-1]["chapters"] = chapter_flat - books[-1]["chapters"]
+            books.append(
+                {
+                    "id": book,
+                    "title": book_name,
+                    "chapters": 0,
+                }
+            )
         sentence = line
         letter_index += len(sentence)
         recent_characters.append({"letter_index": letter_index, "characters": []})
@@ -144,6 +157,7 @@ def find_references(
     if chapters:
         chapters[-1]["length"] = letter_index - chapters[-1]["letterIndex"]
 
+    print(books)
     return (
         characters,
         chapters,
