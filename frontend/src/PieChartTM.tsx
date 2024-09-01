@@ -113,6 +113,11 @@ export function PieChartTMInner({
     [data[0].amount]
   );
   const includesOther = data.some((d) => d.id.toLowerCase() === "other");
+  const numCategories = includesOther ? data.length - 1 : data.length;
+  let titleText = `${numCategories} ${name}`;
+  if (numCategories === 1) {
+    titleText = name;
+  }
 
   const tooltipTimeout = useRef<number | undefined>();
   return (
@@ -211,7 +216,7 @@ export function PieChartTMInner({
           ) : (
             <>
               <Text textAnchor="middle" fill="#ccc" fontSize={28} dy={0}>
-                {`${includesOther ? data.length - 1 : data.length} ${name}`}
+                {titleText}
               </Text>
 
               <Text textAnchor="middle" fill="#888" fontSize={18} dy={30}>

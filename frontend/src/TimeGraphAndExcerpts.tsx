@@ -35,30 +35,7 @@ function RefCountByCharacterChart({
       onClick={onClick}
       margin={margin}
       height={700}
-    >
-      {/* <VixTooltip<any>
-        snapTooltipToDatumX
-        snapTooltipToDatumY
-        showSeriesGlyphs
-        glyphStyle={{
-          fill: "white",
-          strokeWidth: 0,
-        }}
-        renderTooltip={({ tooltipData: { datumByKey, nearestDatum } }) => {
-          return (
-            <Stack spacing={2} sx={{ m: 1, mb: 2 }}>
-              <ToolChapterTitle chapterFlat={nearestDatum.datum.chapterFlat} />
-              {data.map((line) => {
-                const value = datumByKey[line.name].datum.value;
-                return (
-                  <ToolCharacterRow key={line.name} line={line} value={value} />
-                );
-              })}
-            </Stack>
-          );
-        }}
-      /> */}
-    </RefChart>
+    ></RefChart>
   );
 }
 

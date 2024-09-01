@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "title": "Miss Brooke",
+    "chapters": 12
+  },
+  {
+    "id": 2,
+    "title": "Old And Young",
+    "chapters": 22
+  },
+  {
+    "id": 3,
+    "title": "Waiting For Death",
+    "chapters": 33
+  },
+  {
+    "id": 4,
+    "title": "Three Love Problems",
+    "chapters": 42
+  },
+  {
+    "id": 5,
+    "title": "The Dead Hand",
+    "chapters": 53
+  },
+  {
+    "id": 6,
+    "title": "The Widow And The Wife",
+    "chapters": 62
+  },
+  {
+    "id": 7,
+    "title": "Two Temptations",
+    "chapters": 71
+  },
+  {
+    "id": 8,
+    "title": "Sunset And Sunrise",
+    "chapters": 86
+  }
+]

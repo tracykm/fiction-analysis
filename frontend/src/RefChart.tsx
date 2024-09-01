@@ -24,17 +24,19 @@ export function ToolChapterTitle({ chapterFlat }: { chapterFlat: number }) {
   const chapter = chapters.find((c) => c.chapterFlat === chapterFlat);
   return (
     <Box>
-      <Typography
-        sx={{
-          fontSize: 12,
-          display: "flex",
-          justifyContent: "space-between",
-          gap: 1,
-        }}
-      >
-        <div>B {chapter?.book}</div>
-        <div>{books[chapter?.book - 1]?.title}</div>
-      </Typography>
+      {books.length > 1 && (
+        <Typography
+          sx={{
+            fontSize: 12,
+            display: "flex",
+            justifyContent: "space-between",
+            gap: 1,
+          }}
+        >
+          <div>B {chapter?.book}</div>
+          <div>{books[chapter?.book - 1]?.title}</div>
+        </Typography>
+      )}
       <Typography
         sx={{
           fontSize: 12,

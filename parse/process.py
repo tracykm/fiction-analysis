@@ -8,6 +8,8 @@ import books.jane_austen as jane_austen
 import books.the_expanse as the_expanse
 import books.harry_potter as harry_potter
 import books.war_and_peace as war_and_peace
+import books.middlemarch as middlemarch
+import books.little_women as little_women
 
 from find_references import find_references
 from split_sentences import split_sentences
@@ -35,6 +37,14 @@ def generate_data(book_title="his_dark_materials"):
         chapter_names = {}
     elif book_title == "war_and_peace":
         people_data = war_and_peace.people_data.characters
+        index_all_sentences = True
+        chapter_names = {}
+    elif book_title == "middlemarch":
+        people_data = middlemarch.people_data.characters
+        index_all_sentences = True
+        chapter_names = {}
+    elif book_title == "little_women":
+        people_data = little_women.people_data.characters
         index_all_sentences = True
         chapter_names = {}
     with open(f"./books/{book_title}/raw_text.txt", encoding="utf-8") as file:
@@ -68,4 +78,6 @@ def generate_data(book_title="his_dark_materials"):
 # generate_data("his_dark_materials")
 # generate_data("the_expanse")
 # generate_data("harry_potter")
-generate_data("war_and_peace")
+# generate_data("war_and_peace")
+generate_data("middlemarch")
+generate_data("little_women")

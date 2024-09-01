@@ -13,7 +13,20 @@ import { ChapterRow, CharactersRow } from "./utils";
 import Close from "@mui/icons-material/Close";
 import { useState } from "react";
 
-function ChapterParens({ chapter }: { chapter: ChapterRow }) {
+function ChapterParens({
+  chapter,
+  onlyOneBook,
+}: {
+  chapter: ChapterRow;
+  onlyOneBook: boolean;
+}) {
+  if (onlyOneBook) {
+    return (
+      <div style={{ opacity: 0.5 }}>
+        -Ch.{chapter?.chapter} {chapter?.title}
+      </div>
+    );
+  }
   return (
     <div style={{ opacity: 0.5 }}>
       -B.{chapter?.book} Ch.{chapter?.chapter} {chapter?.title}
@@ -22,12 +35,14 @@ function ChapterParens({ chapter }: { chapter: ChapterRow }) {
 }
 
 function FirstAndLast({ character }: { character: CharactersRow }) {
-  const { fullChapters, indexedSentences } = useDataContext();
+  const { fullChapters, indexedSentences, books } = useDataContext();
   const first = indexedSentences[character.refs[0]];
   const last = indexedSentences[character.refs[character.refs.length - 1]];
   if (!first || !last) {
     return null;
   }
+  const onlyOneBook = books.length === 1;
+
   return (
     <Stack key={character.name} spacing={1}>
       <div>
@@ -36,11 +51,17 @@ function FirstAndLast({ character }: { character: CharactersRow }) {
       </div>
       <div style={{ opacity: 0.7 }}>
         {first.sentence}{" "}
-        <ChapterParens chapter={fullChapters[first.chapterFlat - 1]} />
+        <ChapterParens
+          chapter={fullChapters[first.chapterFlat - 1]}
+          onlyOneBook={onlyOneBook}
+        />
       </div>
       <div style={{ opacity: 0.7 }}>
         {last.sentence}{" "}
-        <ChapterParens chapter={fullChapters[last?.chapterFlat - 1]} />{" "}
+        <ChapterParens
+          chapter={fullChapters[last?.chapterFlat - 1]}
+          onlyOneBook={onlyOneBook}
+        />{" "}
       </div>
     </Stack>
   );

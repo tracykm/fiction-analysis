@@ -260,29 +260,31 @@ function BookText({
 
   return (
     <div key={bookIdx}>
-      <Box
-        sx={{
-          ...collapseSx,
-          textTransform: "uppercase",
-          zIndex: 11,
-          // height: 47,
-          px: 2,
-          py: 1.5,
-        }}
-        id={`book-${bookIdx}`}
-      >
-        <div
-          style={{
-            whiteSpace: "nowrap",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
+      {
+        <Box
+          sx={{
+            ...collapseSx,
+            textTransform: "uppercase",
+            zIndex: 11,
+            // height: 47,
+            px: 2,
+            py: 1.5,
           }}
+          id={`book-${bookIdx}`}
         >
-          {book?.title}{" "}
-          <span style={{ opacity: 0.5 }}> Book {Number(bookIdx)}</span>
-        </div>
-        {/* <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box> */}
-      </Box>
+          <div
+            style={{
+              whiteSpace: "nowrap",
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {book?.title}{" "}
+            <span style={{ opacity: 0.5 }}> Book {Number(bookIdx)}</span>
+          </div>
+          {/* <Box>{open ? <ExpandLess /> : <ExpandMore />}</Box> */}
+        </Box>
+      }
       <Collapse in={open}>
         {chaptersText.map(([chapterIdx, sentences]) => {
           return (

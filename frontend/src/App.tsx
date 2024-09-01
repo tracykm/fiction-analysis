@@ -48,6 +48,7 @@ function BookTabs({
   selectedBook: number;
   books: { id: number; title: string }[];
 }) {
+  if (books.length === 1) return null;
   const manyBooks = books.length > 3;
   return (
     <Tabs
