@@ -1,6 +1,12 @@
 # fiction analysis
+see analysis
+- [his dark materials](https://tracykm.github.io/fiction-analysis/)
+- [jane austen](https://tracykm.github.io/fiction-analysis/?book=&series=jane_austen)
+- [the expanse](https://tracykm.github.io/fiction-analysis/?book=&series=the_expanse)
+- [harry potter](https://tracykm.github.io/fiction-analysis/?book=&series=harry_potter)
+- [middlemarch](https://tracykm.github.io/fiction-analysis/?book=&series=middlemarch)
+- [little women](https://tracykm.github.io/fiction-analysis/?book=&series=little_women)
 
-[see analysis](https://tracykm.github.io/fiction-analysis/)
 
 ## to re-generate data
 
