@@ -1,0 +1,1 @@
+const e={defaultSelectedCharacter:"Amos Burton",sharedCharacters:!0,publicDomain:!0,characterCategories:[{name:"Genders",options:[{id:"Female",label:"Female"},{id:"Male",label:"Male"}]}]};export{e as default};

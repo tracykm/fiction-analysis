@@ -1,0 +1,1 @@
+const a={defaultSelectedCharacter:"",sharedCharacters:!0,publicDomain:!0,characterCategories:[{name:"Genders",options:[{id:"Female",label:"Female"},{id:"Male",label:"Male"}]},{name:"Family/Other",options:[{id:"March Family",label:"March Family"}]}]};export{a as default};
